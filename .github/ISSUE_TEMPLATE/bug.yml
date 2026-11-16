@@ -1,0 +1,32 @@
+name: Crash or other bug
+description: oxradon crashes, hangs, or does something wrong that isn't a difference from radon.
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you expected, and what oxradon did instead. Include any error message.
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      placeholder: oxradon mi -s src/
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Input
+      description: The Python file or configuration file involved, or the smallest part of it that still shows the problem.
+      render: text
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Output of `oxradon --version`, how you installed it, and your operating system.
+      placeholder: oxradon 0.1.0 from PyPI, Ubuntu 24.04 on x86-64
+    validations:
+      required: true
