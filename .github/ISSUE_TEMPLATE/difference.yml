@@ -1,0 +1,48 @@
+name: Output differs from radon
+description: oxradon prints something different from radon 6.0.1 for the same file and command.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        oxradon promises the same output as radon 6.0.1 on Python 3.14.10. On other Python
+        versions radon's own output can change, so please check with those two if you can.
+        The known differences are listed in [COMPATIBILITY.md](https://github.com/jsquared-labs/oxradon/blob/main/COMPATIBILITY.md).
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      description: The exact command you ran with each tool.
+      placeholder: oxradon cc -s example.py
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Python file
+      description: The file, or the smallest part of it that still shows the difference.
+      render: python
+    validations:
+      required: true
+  - type: textarea
+    id: radon-output
+    attributes:
+      label: radon's output
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: oxradon-output
+    attributes:
+      label: oxradon's output
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Output of `oxradon --version`, `radon --version` and `python --version`, and your operating system.
+      placeholder: oxradon 0.1.0, radon 6.0.1, Python 3.14.10, macOS on Apple silicon
+    validations:
+      required: true

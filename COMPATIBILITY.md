@@ -44,6 +44,11 @@ Configuration is read the way radon reads it: `setup.cfg`, `radon.cfg`, `~/.rado
 file named by `RADONCFG` with `configparser`'s syntax and interpolation, and `pyproject.toml`
 with a port of CPython's `tomllib`.
 
+As in radon, `setup.cfg`, `radon.cfg` and `pyproject.toml` are read from the directory you run
+oxradon in, and they can set `output_file`. The report then replaces that file's contents,
+wherever it is. So don't run oxradon from inside a project you don't trust; run it from
+elsewhere and name the project's path instead (`oxradon cc path/to/project`).
+
 Jupyter notebooks are not analyzed. `--include-ipynb` and `--ipynb-cells` are accepted and
 notebooks are skipped, which is what radon itself does when `nbformat` is not installed.
 
