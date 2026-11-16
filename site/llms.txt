@@ -1,0 +1,23 @@
+# oxradon
+
+> A Rust port of radon, the code-metrics tool for Python.
+
+oxradon provides cyclomatic complexity (`cc`), Halstead metrics (`hal`), raw
+metrics (`raw`) and maintainability index (`mi`). It is MIT licensed, with
+prebuilt packages for Linux and macOS. Install with `uv tool install oxradon`,
+`pipx install oxradon`, `pip install oxradon` or `cargo install oxradon`.
+
+Output compatibility is checked against radon 6.0.1 on CPython 3.14.10, subject
+to the documented differences. It does not support Jupyter notebooks, Windows,
+radon's Python import API, or the `cc --xml`, `--md` and `--codeclimate` formats.
+oxradon is independent of radon's authors and is not affiliated with them.
+
+## Documentation
+
+- [Website](https://oxradon.dev/): Installation, benchmarks and compatibility overview.
+- [README](https://github.com/jsquared-labs/oxradon/blob/main/README.md): Commands, usage and benchmark method.
+- [Compatibility](https://github.com/jsquared-labs/oxradon/blob/main/COMPATIBILITY.md): Intentional differences and limits; consult before claiming identical behavior.
+- [Source](https://github.com/jsquared-labs/oxradon): Rust implementation and issue tracker.
+- [Security](https://github.com/jsquared-labs/oxradon/blob/main/SECURITY.md): Security expectations and private reporting.
+- [PyPI](https://pypi.org/project/oxradon/): Python package distribution.
+- [crates.io](https://crates.io/crates/oxradon): Rust package distribution.
