@@ -1,0 +1,16 @@
+tests/fixtures/bom.py
+    ERROR: <error>
+tests/fixtures/branches.py
+    F 17:0 loops - C (12)
+    F 4:0 conditionals - B (9)
+tests/fixtures/future_braces.py
+    ERROR: <error>
+tests/fixtures/newer_syntax.py
+    ERROR: <error>
+tests/fixtures/nul_byte.py
+    ERROR: <error>
+tests/fixtures/syntax_error.py
+    ERROR: <error>
+
+45 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.422222222222222)

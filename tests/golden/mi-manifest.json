@@ -1,0 +1,1141 @@
+{
+  "cases": {
+    "mi-text": {
+      "flags": [],
+      "files": [
+        "tests/fixtures/bom.py",
+        "tests/fixtures/branches.py",
+        "tests/fixtures/crlf.py",
+        "tests/fixtures/empty.py",
+        "tests/fixtures/format_specs.py",
+        "tests/fixtures/future_braces.py",
+        "tests/fixtures/hal/async_defs.py",
+        "tests/fixtures/hal/aug.py",
+        "tests/fixtures/hal/big_effort.py",
+        "tests/fixtures/hal/bigint_float.py",
+        "tests/fixtures/hal/bigint_hex.py",
+        "tests/fixtures/hal/boolop.py",
+        "tests/fixtures/hal/bytes_str.py",
+        "tests/fixtures/hal/compare.py",
+        "tests/fixtures/hal/concat.py",
+        "tests/fixtures/hal/contexts.py",
+        "tests/fixtures/hal/cr.py",
+        "tests/fixtures/hal/crlf_bytes.py",
+        "tests/fixtures/hal/dup.py",
+        "tests/fixtures/hal/empty.py",
+        "tests/fixtures/hal/format_specs.py",
+        "tests/fixtures/hal/fspec.py",
+        "tests/fixtures/hal/fstr.py",
+        "tests/fixtures/hal/inf.py",
+        "tests/fixtures/hal/lambda_comp.py",
+        "tests/fixtures/hal/match.py",
+        "tests/fixtures/hal/name_str_collide.py",
+        "tests/fixtures/hal/nested.py",
+        "tests/fixtures/hal/no_operators.py",
+        "tests/fixtures/hal/num_eq.py",
+        "tests/fixtures/hal/skipped.py",
+        "tests/fixtures/hal/surrogate.py",
+        "tests/fixtures/hal/tabs.py",
+        "tests/fixtures/hal/typealias.py",
+        "tests/fixtures/hal/walrus_starred.py",
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/ff_in_string.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/ls_parse_error.py",
+        "tests/fixtures/mi/ls_raw_error.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/raw_error{{y}}.py",
+        "tests/fixtures/mi/tabs.py",
+        "tests/fixtures/modern.py",
+        "tests/fixtures/newer_syntax.py",
+        "tests/fixtures/nul_byte.py",
+        "tests/fixtures/quirks.py",
+        "tests/fixtures/raw/cr.py",
+        "tests/fixtures/raw/docstrings.py",
+        "tests/fixtures/raw/errors.py",
+        "tests/fixtures/raw/field_bracket.py",
+        "tests/fixtures/raw/fstrings.py",
+        "tests/fixtures/raw/lines.py",
+        "tests/fixtures/raw/logical.py",
+        "tests/fixtures/raw/percent.py",
+        "tests/fixtures/raw/split_string.py",
+        "tests/fixtures/raw/unterminated.py",
+        "tests/fixtures/strings.py",
+        "tests/fixtures/syntax_error.py",
+        "tests/fixtures/tabs.py",
+        "tests/fixtures/long_shebang"
+      ],
+      "env": {},
+      "file": "mi-text.txt"
+    },
+    "mi-text-show": {
+      "flags": [
+        "-s"
+      ],
+      "files": [
+        "tests/fixtures/bom.py",
+        "tests/fixtures/branches.py",
+        "tests/fixtures/crlf.py",
+        "tests/fixtures/empty.py",
+        "tests/fixtures/format_specs.py",
+        "tests/fixtures/future_braces.py",
+        "tests/fixtures/hal/async_defs.py",
+        "tests/fixtures/hal/aug.py",
+        "tests/fixtures/hal/big_effort.py",
+        "tests/fixtures/hal/bigint_float.py",
+        "tests/fixtures/hal/bigint_hex.py",
+        "tests/fixtures/hal/boolop.py",
+        "tests/fixtures/hal/bytes_str.py",
+        "tests/fixtures/hal/compare.py",
+        "tests/fixtures/hal/concat.py",
+        "tests/fixtures/hal/contexts.py",
+        "tests/fixtures/hal/cr.py",
+        "tests/fixtures/hal/crlf_bytes.py",
+        "tests/fixtures/hal/dup.py",
+        "tests/fixtures/hal/empty.py",
+        "tests/fixtures/hal/format_specs.py",
+        "tests/fixtures/hal/fspec.py",
+        "tests/fixtures/hal/fstr.py",
+        "tests/fixtures/hal/inf.py",
+        "tests/fixtures/hal/lambda_comp.py",
+        "tests/fixtures/hal/match.py",
+        "tests/fixtures/hal/name_str_collide.py",
+        "tests/fixtures/hal/nested.py",
+        "tests/fixtures/hal/no_operators.py",
+        "tests/fixtures/hal/num_eq.py",
+        "tests/fixtures/hal/skipped.py",
+        "tests/fixtures/hal/surrogate.py",
+        "tests/fixtures/hal/tabs.py",
+        "tests/fixtures/hal/typealias.py",
+        "tests/fixtures/hal/walrus_starred.py",
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/ff_in_string.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/ls_parse_error.py",
+        "tests/fixtures/mi/ls_raw_error.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/raw_error{{y}}.py",
+        "tests/fixtures/mi/tabs.py",
+        "tests/fixtures/modern.py",
+        "tests/fixtures/newer_syntax.py",
+        "tests/fixtures/nul_byte.py",
+        "tests/fixtures/quirks.py",
+        "tests/fixtures/raw/cr.py",
+        "tests/fixtures/raw/docstrings.py",
+        "tests/fixtures/raw/errors.py",
+        "tests/fixtures/raw/field_bracket.py",
+        "tests/fixtures/raw/fstrings.py",
+        "tests/fixtures/raw/lines.py",
+        "tests/fixtures/raw/logical.py",
+        "tests/fixtures/raw/percent.py",
+        "tests/fixtures/raw/split_string.py",
+        "tests/fixtures/raw/unterminated.py",
+        "tests/fixtures/strings.py",
+        "tests/fixtures/syntax_error.py",
+        "tests/fixtures/tabs.py",
+        "tests/fixtures/long_shebang"
+      ],
+      "env": {},
+      "file": "mi-text-show.txt"
+    },
+    "mi-json": {
+      "flags": [
+        "-j"
+      ],
+      "files": [
+        "tests/fixtures/bom.py",
+        "tests/fixtures/branches.py",
+        "tests/fixtures/crlf.py",
+        "tests/fixtures/empty.py",
+        "tests/fixtures/format_specs.py",
+        "tests/fixtures/future_braces.py",
+        "tests/fixtures/hal/async_defs.py",
+        "tests/fixtures/hal/aug.py",
+        "tests/fixtures/hal/big_effort.py",
+        "tests/fixtures/hal/bigint_float.py",
+        "tests/fixtures/hal/bigint_hex.py",
+        "tests/fixtures/hal/boolop.py",
+        "tests/fixtures/hal/bytes_str.py",
+        "tests/fixtures/hal/compare.py",
+        "tests/fixtures/hal/concat.py",
+        "tests/fixtures/hal/contexts.py",
+        "tests/fixtures/hal/cr.py",
+        "tests/fixtures/hal/crlf_bytes.py",
+        "tests/fixtures/hal/dup.py",
+        "tests/fixtures/hal/empty.py",
+        "tests/fixtures/hal/format_specs.py",
+        "tests/fixtures/hal/fspec.py",
+        "tests/fixtures/hal/fstr.py",
+        "tests/fixtures/hal/inf.py",
+        "tests/fixtures/hal/lambda_comp.py",
+        "tests/fixtures/hal/match.py",
+        "tests/fixtures/hal/name_str_collide.py",
+        "tests/fixtures/hal/nested.py",
+        "tests/fixtures/hal/no_operators.py",
+        "tests/fixtures/hal/num_eq.py",
+        "tests/fixtures/hal/skipped.py",
+        "tests/fixtures/hal/surrogate.py",
+        "tests/fixtures/hal/tabs.py",
+        "tests/fixtures/hal/typealias.py",
+        "tests/fixtures/hal/walrus_starred.py",
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/ff_in_string.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/ls_parse_error.py",
+        "tests/fixtures/mi/ls_raw_error.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/raw_error{{y}}.py",
+        "tests/fixtures/mi/tabs.py",
+        "tests/fixtures/modern.py",
+        "tests/fixtures/newer_syntax.py",
+        "tests/fixtures/nul_byte.py",
+        "tests/fixtures/quirks.py",
+        "tests/fixtures/raw/cr.py",
+        "tests/fixtures/raw/docstrings.py",
+        "tests/fixtures/raw/errors.py",
+        "tests/fixtures/raw/field_bracket.py",
+        "tests/fixtures/raw/fstrings.py",
+        "tests/fixtures/raw/lines.py",
+        "tests/fixtures/raw/logical.py",
+        "tests/fixtures/raw/percent.py",
+        "tests/fixtures/raw/split_string.py",
+        "tests/fixtures/raw/unterminated.py",
+        "tests/fixtures/strings.py",
+        "tests/fixtures/syntax_error.py",
+        "tests/fixtures/tabs.py",
+        "tests/fixtures/long_shebang"
+      ],
+      "env": {},
+      "file": "mi-json.json"
+    },
+    "mi-text-no-multi": {
+      "flags": [
+        "-m",
+        "-s"
+      ],
+      "files": [
+        "tests/fixtures/bom.py",
+        "tests/fixtures/branches.py",
+        "tests/fixtures/crlf.py",
+        "tests/fixtures/empty.py",
+        "tests/fixtures/format_specs.py",
+        "tests/fixtures/future_braces.py",
+        "tests/fixtures/hal/async_defs.py",
+        "tests/fixtures/hal/aug.py",
+        "tests/fixtures/hal/big_effort.py",
+        "tests/fixtures/hal/bigint_float.py",
+        "tests/fixtures/hal/bigint_hex.py",
+        "tests/fixtures/hal/boolop.py",
+        "tests/fixtures/hal/bytes_str.py",
+        "tests/fixtures/hal/compare.py",
+        "tests/fixtures/hal/concat.py",
+        "tests/fixtures/hal/contexts.py",
+        "tests/fixtures/hal/cr.py",
+        "tests/fixtures/hal/crlf_bytes.py",
+        "tests/fixtures/hal/dup.py",
+        "tests/fixtures/hal/empty.py",
+        "tests/fixtures/hal/format_specs.py",
+        "tests/fixtures/hal/fspec.py",
+        "tests/fixtures/hal/fstr.py",
+        "tests/fixtures/hal/inf.py",
+        "tests/fixtures/hal/lambda_comp.py",
+        "tests/fixtures/hal/match.py",
+        "tests/fixtures/hal/name_str_collide.py",
+        "tests/fixtures/hal/nested.py",
+        "tests/fixtures/hal/no_operators.py",
+        "tests/fixtures/hal/num_eq.py",
+        "tests/fixtures/hal/skipped.py",
+        "tests/fixtures/hal/surrogate.py",
+        "tests/fixtures/hal/tabs.py",
+        "tests/fixtures/hal/typealias.py",
+        "tests/fixtures/hal/walrus_starred.py",
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/ff_in_string.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/ls_parse_error.py",
+        "tests/fixtures/mi/ls_raw_error.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/raw_error{{y}}.py",
+        "tests/fixtures/mi/tabs.py",
+        "tests/fixtures/modern.py",
+        "tests/fixtures/newer_syntax.py",
+        "tests/fixtures/nul_byte.py",
+        "tests/fixtures/quirks.py",
+        "tests/fixtures/raw/cr.py",
+        "tests/fixtures/raw/docstrings.py",
+        "tests/fixtures/raw/errors.py",
+        "tests/fixtures/raw/field_bracket.py",
+        "tests/fixtures/raw/fstrings.py",
+        "tests/fixtures/raw/lines.py",
+        "tests/fixtures/raw/logical.py",
+        "tests/fixtures/raw/percent.py",
+        "tests/fixtures/raw/split_string.py",
+        "tests/fixtures/raw/unterminated.py",
+        "tests/fixtures/strings.py",
+        "tests/fixtures/syntax_error.py",
+        "tests/fixtures/tabs.py",
+        "tests/fixtures/long_shebang"
+      ],
+      "env": {},
+      "file": "mi-text-no-multi.txt"
+    },
+    "mi-json-no-multi": {
+      "flags": [
+        "-j",
+        "-m"
+      ],
+      "files": [
+        "tests/fixtures/bom.py",
+        "tests/fixtures/branches.py",
+        "tests/fixtures/crlf.py",
+        "tests/fixtures/empty.py",
+        "tests/fixtures/format_specs.py",
+        "tests/fixtures/future_braces.py",
+        "tests/fixtures/hal/async_defs.py",
+        "tests/fixtures/hal/aug.py",
+        "tests/fixtures/hal/big_effort.py",
+        "tests/fixtures/hal/bigint_float.py",
+        "tests/fixtures/hal/bigint_hex.py",
+        "tests/fixtures/hal/boolop.py",
+        "tests/fixtures/hal/bytes_str.py",
+        "tests/fixtures/hal/compare.py",
+        "tests/fixtures/hal/concat.py",
+        "tests/fixtures/hal/contexts.py",
+        "tests/fixtures/hal/cr.py",
+        "tests/fixtures/hal/crlf_bytes.py",
+        "tests/fixtures/hal/dup.py",
+        "tests/fixtures/hal/empty.py",
+        "tests/fixtures/hal/format_specs.py",
+        "tests/fixtures/hal/fspec.py",
+        "tests/fixtures/hal/fstr.py",
+        "tests/fixtures/hal/inf.py",
+        "tests/fixtures/hal/lambda_comp.py",
+        "tests/fixtures/hal/match.py",
+        "tests/fixtures/hal/name_str_collide.py",
+        "tests/fixtures/hal/nested.py",
+        "tests/fixtures/hal/no_operators.py",
+        "tests/fixtures/hal/num_eq.py",
+        "tests/fixtures/hal/skipped.py",
+        "tests/fixtures/hal/surrogate.py",
+        "tests/fixtures/hal/tabs.py",
+        "tests/fixtures/hal/typealias.py",
+        "tests/fixtures/hal/walrus_starred.py",
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/ff_in_string.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/ls_parse_error.py",
+        "tests/fixtures/mi/ls_raw_error.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/raw_error{{y}}.py",
+        "tests/fixtures/mi/tabs.py",
+        "tests/fixtures/modern.py",
+        "tests/fixtures/newer_syntax.py",
+        "tests/fixtures/nul_byte.py",
+        "tests/fixtures/quirks.py",
+        "tests/fixtures/raw/cr.py",
+        "tests/fixtures/raw/docstrings.py",
+        "tests/fixtures/raw/errors.py",
+        "tests/fixtures/raw/field_bracket.py",
+        "tests/fixtures/raw/fstrings.py",
+        "tests/fixtures/raw/lines.py",
+        "tests/fixtures/raw/logical.py",
+        "tests/fixtures/raw/percent.py",
+        "tests/fixtures/raw/split_string.py",
+        "tests/fixtures/raw/unterminated.py",
+        "tests/fixtures/strings.py",
+        "tests/fixtures/syntax_error.py",
+        "tests/fixtures/tabs.py",
+        "tests/fixtures/long_shebang"
+      ],
+      "env": {},
+      "file": "mi-json-no-multi.json"
+    },
+    "mi-text-range": {
+      "flags": [
+        "-n",
+        "B",
+        "-x",
+        "C",
+        "-s"
+      ],
+      "files": [
+        "tests/fixtures/bom.py",
+        "tests/fixtures/branches.py",
+        "tests/fixtures/crlf.py",
+        "tests/fixtures/empty.py",
+        "tests/fixtures/format_specs.py",
+        "tests/fixtures/future_braces.py",
+        "tests/fixtures/hal/async_defs.py",
+        "tests/fixtures/hal/aug.py",
+        "tests/fixtures/hal/big_effort.py",
+        "tests/fixtures/hal/bigint_float.py",
+        "tests/fixtures/hal/bigint_hex.py",
+        "tests/fixtures/hal/boolop.py",
+        "tests/fixtures/hal/bytes_str.py",
+        "tests/fixtures/hal/compare.py",
+        "tests/fixtures/hal/concat.py",
+        "tests/fixtures/hal/contexts.py",
+        "tests/fixtures/hal/cr.py",
+        "tests/fixtures/hal/crlf_bytes.py",
+        "tests/fixtures/hal/dup.py",
+        "tests/fixtures/hal/empty.py",
+        "tests/fixtures/hal/format_specs.py",
+        "tests/fixtures/hal/fspec.py",
+        "tests/fixtures/hal/fstr.py",
+        "tests/fixtures/hal/inf.py",
+        "tests/fixtures/hal/lambda_comp.py",
+        "tests/fixtures/hal/match.py",
+        "tests/fixtures/hal/name_str_collide.py",
+        "tests/fixtures/hal/nested.py",
+        "tests/fixtures/hal/no_operators.py",
+        "tests/fixtures/hal/num_eq.py",
+        "tests/fixtures/hal/skipped.py",
+        "tests/fixtures/hal/surrogate.py",
+        "tests/fixtures/hal/tabs.py",
+        "tests/fixtures/hal/typealias.py",
+        "tests/fixtures/hal/walrus_starred.py",
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/ff_in_string.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/ls_parse_error.py",
+        "tests/fixtures/mi/ls_raw_error.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/raw_error{{y}}.py",
+        "tests/fixtures/mi/tabs.py",
+        "tests/fixtures/modern.py",
+        "tests/fixtures/newer_syntax.py",
+        "tests/fixtures/nul_byte.py",
+        "tests/fixtures/quirks.py",
+        "tests/fixtures/raw/cr.py",
+        "tests/fixtures/raw/docstrings.py",
+        "tests/fixtures/raw/errors.py",
+        "tests/fixtures/raw/field_bracket.py",
+        "tests/fixtures/raw/fstrings.py",
+        "tests/fixtures/raw/lines.py",
+        "tests/fixtures/raw/logical.py",
+        "tests/fixtures/raw/percent.py",
+        "tests/fixtures/raw/split_string.py",
+        "tests/fixtures/raw/unterminated.py",
+        "tests/fixtures/strings.py",
+        "tests/fixtures/syntax_error.py",
+        "tests/fixtures/tabs.py",
+        "tests/fixtures/long_shebang"
+      ],
+      "env": {},
+      "file": "mi-text-range.txt"
+    },
+    "mi-text-range-lower": {
+      "flags": [
+        "-n",
+        "b",
+        "-x",
+        "b",
+        "-s"
+      ],
+      "files": [
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/ff_in_string.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/ls_parse_error.py",
+        "tests/fixtures/mi/ls_raw_error.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/raw_error{{y}}.py",
+        "tests/fixtures/mi/tabs.py"
+      ],
+      "env": {},
+      "file": "mi-text-range-lower.txt"
+    },
+    "mi-json-range": {
+      "flags": [
+        "-j",
+        "-n",
+        "C"
+      ],
+      "files": [
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/ff_in_string.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/ls_parse_error.py",
+        "tests/fixtures/mi/ls_raw_error.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/raw_error{{y}}.py",
+        "tests/fixtures/mi/tabs.py"
+      ],
+      "env": {},
+      "file": "mi-json-range.json"
+    },
+    "mi-text-sort": {
+      "flags": [
+        "-s",
+        "--sort"
+      ],
+      "files": [
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/tabs.py"
+      ],
+      "env": {},
+      "file": "mi-text-sort.txt"
+    },
+    "mi-text-sort-error": {
+      "flags": [
+        "-s",
+        "--sort"
+      ],
+      "files": [
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/ff_in_string.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/ls_parse_error.py",
+        "tests/fixtures/mi/ls_raw_error.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/raw_error{{y}}.py",
+        "tests/fixtures/mi/tabs.py"
+      ],
+      "env": {},
+      "file": "mi-text-sort-error.txt"
+    },
+    "mi-text-sort-error-range": {
+      "flags": [
+        "--sort",
+        "-n",
+        "C"
+      ],
+      "files": [
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/ff_in_string.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/ls_parse_error.py",
+        "tests/fixtures/mi/ls_raw_error.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/raw_error{{y}}.py",
+        "tests/fixtures/mi/tabs.py"
+      ],
+      "env": {},
+      "file": "mi-text-sort-error-range.txt"
+    },
+    "mi-json-sort": {
+      "flags": [
+        "-j",
+        "--sort"
+      ],
+      "files": [
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/ff_in_string.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/ls_parse_error.py",
+        "tests/fixtures/mi/ls_raw_error.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/raw_error{{y}}.py",
+        "tests/fixtures/mi/tabs.py"
+      ],
+      "env": {},
+      "file": "mi-json-sort.json"
+    },
+    "mi-text-walk": {
+      "flags": [
+        "-s"
+      ],
+      "files": [
+        "tests/fixtures/mi"
+      ],
+      "env": {},
+      "file": "mi-text-walk.txt"
+    },
+    "mi-json-repeated": {
+      "flags": [
+        "-j"
+      ],
+      "files": [
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_b.py"
+      ],
+      "env": {},
+      "file": "mi-json-repeated.json"
+    },
+    "mi-json-notebook-flags": {
+      "flags": [
+        "-j",
+        "--include-ipynb",
+        "--ipynb-cells"
+      ],
+      "files": [
+        "tests/fixtures/raw/notebook.ipynb",
+        "tests/fixtures/mi/rank_b.py"
+      ],
+      "env": {},
+      "file": "mi-json-notebook-flags.json"
+    },
+    "mi-text-repeated-flags": {
+      "flags": [
+        "-m",
+        "-m",
+        "-s",
+        "-s"
+      ],
+      "files": [
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/ff_in_string.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/ls_parse_error.py",
+        "tests/fixtures/mi/ls_raw_error.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/raw_error{{y}}.py",
+        "tests/fixtures/mi/tabs.py"
+      ],
+      "env": {},
+      "file": "mi-text-repeated-flags.txt"
+    },
+    "mi-text-min-empty": {
+      "flags": [
+        "-n",
+        "",
+        "-s"
+      ],
+      "files": [
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/ff_in_string.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/ls_parse_error.py",
+        "tests/fixtures/mi/ls_raw_error.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/raw_error{{y}}.py",
+        "tests/fixtures/mi/tabs.py"
+      ],
+      "env": {},
+      "file": "mi-text-min-empty.txt"
+    },
+    "mi-text-max-empty": {
+      "flags": [
+        "-x",
+        ""
+      ],
+      "files": [
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/ff_in_string.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/ls_parse_error.py",
+        "tests/fixtures/mi/ls_raw_error.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/raw_error{{y}}.py",
+        "tests/fixtures/mi/tabs.py"
+      ],
+      "env": {},
+      "file": "mi-text-max-empty.txt"
+    },
+    "mi-text-min-sharp-s": {
+      "flags": [
+        "-n",
+        "\u00df"
+      ],
+      "files": [
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/ff_in_string.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/ls_parse_error.py",
+        "tests/fixtures/mi/ls_raw_error.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/raw_error{{y}}.py",
+        "tests/fixtures/mi/tabs.py"
+      ],
+      "env": {},
+      "file": "mi-text-min-sharp-s.txt"
+    },
+    "mi-text-max-sharp-s": {
+      "flags": [
+        "-x",
+        "\u00df"
+      ],
+      "files": [
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/ff_in_string.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/ls_parse_error.py",
+        "tests/fixtures/mi/ls_raw_error.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/raw_error{{y}}.py",
+        "tests/fixtures/mi/tabs.py"
+      ],
+      "env": {},
+      "file": "mi-text-max-sharp-s.txt"
+    },
+    "mi-json-empty": {
+      "flags": [
+        "-j",
+        "-n",
+        "D"
+      ],
+      "files": [
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/tabs.py"
+      ],
+      "env": {},
+      "file": "mi-json-empty.json"
+    },
+    "mi-text-empty": {
+      "flags": [
+        "-n",
+        "D"
+      ],
+      "files": [
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/tabs.py"
+      ],
+      "env": {},
+      "file": "mi-text-empty.txt"
+    },
+    "mi-text-color": {
+      "flags": [
+        "-s"
+      ],
+      "files": [
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/ff_in_string.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/ls_parse_error.py",
+        "tests/fixtures/mi/ls_raw_error.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/raw_error{{y}}.py",
+        "tests/fixtures/mi/tabs.py"
+      ],
+      "env": {
+        "COLOR": "yes"
+      },
+      "file": "mi-text-color.txt"
+    },
+    "mi-text-sort-color": {
+      "flags": [
+        "-s",
+        "--sort"
+      ],
+      "files": [
+        "tests/fixtures/mi/braces{{x}}.py",
+        "tests/fixtures/mi/docstrings.py",
+        "tests/fixtures/mi/empty_lines.py",
+        "tests/fixtures/mi/equal_a.py",
+        "tests/fixtures/mi/format_specs.py",
+        "tests/fixtures/mi/module_level.py",
+        "tests/fixtures/mi/one_name.py",
+        "tests/fixtures/mi/only_comments.py",
+        "tests/fixtures/mi/rank_b.py",
+        "tests/fixtures/mi/rank_c.py",
+        "tests/fixtures/mi/rank_zero.py",
+        "tests/fixtures/mi/tabs.py"
+      ],
+      "env": {
+        "COLOR": "yes"
+      },
+      "file": "mi-text-sort-color.txt"
+    }
+  },
+  "config": {
+    "multi-absent": {
+      "files": {
+        "a.py": "\"\"\"A module docstring\nover three lines.\n\"\"\"\n# A comment.\nimport os  # an inline comment\n\n\ndef f(x):\n    \"\"\"A docstring\n    on two lines.\"\"\"\n    # c1\n    # c2\n    s = \"\"\"not a docstring,\n    but multi-line\"\"\"\n    return x + len(s) + len(os.sep)\n\n\nclass C:\n    \"\"\"Class docstring.\"\"\"\n\n    def m(self):\n        \"\"\"Another\n        one.\"\"\"\n        return 1\n"
+      },
+      "args": [
+        "mi",
+        "-s",
+        "."
+      ],
+      "read": null,
+      "expected": {
+        "stdout": "a.py - A (88.10)\n"
+      }
+    },
+    "multi-absent-flag": {
+      "files": {
+        "a.py": "\"\"\"A module docstring\nover three lines.\n\"\"\"\n# A comment.\nimport os  # an inline comment\n\n\ndef f(x):\n    \"\"\"A docstring\n    on two lines.\"\"\"\n    # c1\n    # c2\n    s = \"\"\"not a docstring,\n    but multi-line\"\"\"\n    return x + len(s) + len(os.sep)\n\n\nclass C:\n    \"\"\"Class docstring.\"\"\"\n\n    def m(self):\n        \"\"\"Another\n        one.\"\"\"\n        return 1\n"
+      },
+      "args": [
+        "mi",
+        "-s",
+        "-m",
+        "."
+      ],
+      "read": null,
+      "expected": {
+        "stdout": "a.py - A (98.08)\n"
+      }
+    },
+    "multi-false": {
+      "files": {
+        "setup.cfg": "[radon]\nmulti = false\n",
+        "a.py": "\"\"\"A module docstring\nover three lines.\n\"\"\"\n# A comment.\nimport os  # an inline comment\n\n\ndef f(x):\n    \"\"\"A docstring\n    on two lines.\"\"\"\n    # c1\n    # c2\n    s = \"\"\"not a docstring,\n    but multi-line\"\"\"\n    return x + len(s) + len(os.sep)\n\n\nclass C:\n    \"\"\"Class docstring.\"\"\"\n\n    def m(self):\n        \"\"\"Another\n        one.\"\"\"\n        return 1\n"
+      },
+      "args": [
+        "mi",
+        "-s",
+        "."
+      ],
+      "read": null,
+      "expected": {
+        "stdout": "a.py - A (98.08)\n"
+      }
+    },
+    "multi-false-flag": {
+      "files": {
+        "setup.cfg": "[radon]\nmulti = false\n",
+        "a.py": "\"\"\"A module docstring\nover three lines.\n\"\"\"\n# A comment.\nimport os  # an inline comment\n\n\ndef f(x):\n    \"\"\"A docstring\n    on two lines.\"\"\"\n    # c1\n    # c2\n    s = \"\"\"not a docstring,\n    but multi-line\"\"\"\n    return x + len(s) + len(os.sep)\n\n\nclass C:\n    \"\"\"Class docstring.\"\"\"\n\n    def m(self):\n        \"\"\"Another\n        one.\"\"\"\n        return 1\n"
+      },
+      "args": [
+        "mi",
+        "-s",
+        "-m",
+        "."
+      ],
+      "read": null,
+      "expected": {
+        "stdout": "a.py - A (88.10)\n"
+      }
+    },
+    "multi-true-flag": {
+      "files": {
+        "radon.cfg": "[radon]\nmulti = yes\n",
+        "a.py": "\"\"\"A module docstring\nover three lines.\n\"\"\"\n# A comment.\nimport os  # an inline comment\n\n\ndef f(x):\n    \"\"\"A docstring\n    on two lines.\"\"\"\n    # c1\n    # c2\n    s = \"\"\"not a docstring,\n    but multi-line\"\"\"\n    return x + len(s) + len(os.sep)\n\n\nclass C:\n    \"\"\"Class docstring.\"\"\"\n\n    def m(self):\n        \"\"\"Another\n        one.\"\"\"\n        return 1\n"
+      },
+      "args": [
+        "mi",
+        "-s",
+        "-m",
+        "."
+      ],
+      "read": null,
+      "expected": {
+        "stdout": "a.py - A (98.08)\n"
+      }
+    },
+    "show-mi": {
+      "files": {
+        "radon.cfg": "[radon]\nshow_mi = on\n",
+        "a.py": "\"\"\"A module docstring\nover three lines.\n\"\"\"\n# A comment.\nimport os  # an inline comment\n\n\ndef f(x):\n    \"\"\"A docstring\n    on two lines.\"\"\"\n    # c1\n    # c2\n    s = \"\"\"not a docstring,\n    but multi-line\"\"\"\n    return x + len(s) + len(os.sep)\n\n\nclass C:\n    \"\"\"Class docstring.\"\"\"\n\n    def m(self):\n        \"\"\"Another\n        one.\"\"\"\n        return 1\n"
+      },
+      "args": [
+        "mi",
+        "."
+      ],
+      "read": null,
+      "expected": {
+        "stdout": "a.py - A (88.10)\n"
+      }
+    },
+    "show-mi-flag": {
+      "files": {
+        "radon.cfg": "[radon]\nshow_mi = on\n",
+        "a.py": "\"\"\"A module docstring\nover three lines.\n\"\"\"\n# A comment.\nimport os  # an inline comment\n\n\ndef f(x):\n    \"\"\"A docstring\n    on two lines.\"\"\"\n    # c1\n    # c2\n    s = \"\"\"not a docstring,\n    but multi-line\"\"\"\n    return x + len(s) + len(os.sep)\n\n\nclass C:\n    \"\"\"Class docstring.\"\"\"\n\n    def m(self):\n        \"\"\"Another\n        one.\"\"\"\n        return 1\n"
+      },
+      "args": [
+        "mi",
+        "-s",
+        "."
+      ],
+      "read": null,
+      "expected": {
+        "stdout": "a.py - A\n"
+      }
+    },
+    "mi-min-max": {
+      "files": {
+        "pyproject.toml": "[tool.radon]\nmi_min = \"b\"\nmi_max = \"c\"\n",
+        "a.py": "\"\"\"A module docstring\nover three lines.\n\"\"\"\n# A comment.\nimport os  # an inline comment\n\n\ndef f(x):\n    \"\"\"A docstring\n    on two lines.\"\"\"\n    # c1\n    # c2\n    s = \"\"\"not a docstring,\n    but multi-line\"\"\"\n    return x + len(s) + len(os.sep)\n\n\nclass C:\n    \"\"\"Class docstring.\"\"\"\n\n    def m(self):\n        \"\"\"Another\n        one.\"\"\"\n        return 1\n",
+        "b.py": "def f(a, b, c):\n    if a == 0 and b > 0 or c < 0:\n        a = (a * 0 + b - c) ** 2 % 1\n    if a == 1 and b > 7 or c < 3:\n        a = (a * 1 + b - c) ** 2 % 2\n    if a == 2 and b > 14 or c < 6:\n        a = (a * 2 + b - c) ** 2 % 3\n    if a == 3 and b > 21 or c < 9:\n        a = (a * 3 + b - c) ** 2 % 4\n    if a == 4 and b > 28 or c < 12:\n        a = (a * 4 + b - c) ** 2 % 5\n    if a == 5 and b > 35 or c < 15:\n        a = (a * 5 + b - c) ** 2 % 6\n    if a == 6 and b > 42 or c < 18:\n        a = (a * 6 + b - c) ** 2 % 7\n    if a == 7 and b > 49 or c < 21:\n        a = (a * 7 + b - c) ** 2 % 8\n    if a == 8 and b > 56 or c < 24:\n        a = (a * 8 + b - c) ** 2 % 9\n    if a == 9 and b > 63 or c < 27:\n        a = (a * 9 + b - c) ** 2 % 10\n    if a == 10 and b > 70 or c < 30:\n        a = (a * 10 + b - c) ** 2 % 11\n    if a == 11 and b > 77 or c < 33:\n        a = (a * 11 + b - c) ** 2 % 12\n    if a == 12 and b > 84 or c < 36:\n        a = (a * 12 + b - c) ** 2 % 13\n    if a == 13 and b > 91 or c < 39:\n        a = (a * 13 + b - c) ** 2 % 14\n    if a == 14 and b > 98 or c < 42:\n        a = (a * 14 + b - c) ** 2 % 15\n    if a == 15 and b > 105 or c < 45:\n        a = (a * 15 + b - c) ** 2 % 16\n    if a == 16 and b > 112 or c < 48:\n        a = (a * 16 + b - c) ** 2 % 17\n    if a == 17 and b > 119 or c < 51:\n        a = (a * 17 + b - c) ** 2 % 18\n    if a == 18 and b > 126 or c < 54:\n        a = (a * 18 + b - c) ** 2 % 19\n    if a == 19 and b > 133 or c < 57:\n        a = (a * 19 + b - c) ** 2 % 20\n    if a == 20 and b > 140 or c < 60:\n        a = (a * 20 + b - c) ** 2 % 21\n    if a == 21 and b > 147 or c < 63:\n        a = (a * 21 + b - c) ** 2 % 22\n    if a == 22 and b > 154 or c < 66:\n        a = (a * 22 + b - c) ** 2 % 23\n    if a == 23 and b > 161 or c < 69:\n        a = (a * 23 + b - c) ** 2 % 24\n    if a == 24 and b > 168 or c < 72:\n        a = (a * 24 + b - c) ** 2 % 25\n    if a == 25 and b > 175 or c < 75:\n        a = (a * 25 + b - c) ** 2 % 26\n    if a == 26 and b > 182 or c < 78:\n        a = (a * 26 + b - c) ** 2 % 27\n    if a == 27 and b > 189 or c < 81:\n        a = (a * 27 + b - c) ** 2 % 28\n    if a == 28 and b > 196 or c < 84:\n        a = (a * 28 + b - c) ** 2 % 29\n    if a == 29 and b > 203 or c < 87:\n        a = (a * 29 + b - c) ** 2 % 30\n    if a == 30 and b > 210 or c < 90:\n        a = (a * 30 + b - c) ** 2 % 31\n    if a == 31 and b > 217 or c < 93:\n        a = (a * 31 + b - c) ** 2 % 32\n    if a == 32 and b > 224 or c < 96:\n        a = (a * 32 + b - c) ** 2 % 33\n    if a == 33 and b > 231 or c < 99:\n        a = (a * 33 + b - c) ** 2 % 34\n    if a == 34 and b > 238 or c < 102:\n        a = (a * 34 + b - c) ** 2 % 35\n    if a == 35 and b > 245 or c < 105:\n        a = (a * 35 + b - c) ** 2 % 36\n    if a == 36 and b > 252 or c < 108:\n        a = (a * 36 + b - c) ** 2 % 37\n    if a == 37 and b > 259 or c < 111:\n        a = (a * 37 + b - c) ** 2 % 38\n    if a == 38 and b > 266 or c < 114:\n        a = (a * 38 + b - c) ** 2 % 39\n    if a == 39 and b > 273 or c < 117:\n        a = (a * 39 + b - c) ** 2 % 40\n    return a\n"
+      },
+      "args": [
+        "mi",
+        "-s",
+        "."
+      ],
+      "read": null,
+      "expected": {
+        "stdout": "b.py - B (13.82)\n"
+      }
+    },
+    "mi-min-flag-wins": {
+      "files": {
+        "setup.cfg": "[radon]\nmi_min = C\n",
+        "a.py": "\"\"\"A module docstring\nover three lines.\n\"\"\"\n# A comment.\nimport os  # an inline comment\n\n\ndef f(x):\n    \"\"\"A docstring\n    on two lines.\"\"\"\n    # c1\n    # c2\n    s = \"\"\"not a docstring,\n    but multi-line\"\"\"\n    return x + len(s) + len(os.sep)\n\n\nclass C:\n    \"\"\"Class docstring.\"\"\"\n\n    def m(self):\n        \"\"\"Another\n        one.\"\"\"\n        return 1\n"
+      },
+      "args": [
+        "mi",
+        "-n",
+        "A",
+        "."
+      ],
+      "read": null,
+      "expected": {
+        "stdout": "a.py - A\n"
+      }
+    },
+    "cc-min-not-read": {
+      "files": {
+        "setup.cfg": "[radon]\ncc_min = C\n",
+        "a.py": "\"\"\"A module docstring\nover three lines.\n\"\"\"\n# A comment.\nimport os  # an inline comment\n\n\ndef f(x):\n    \"\"\"A docstring\n    on two lines.\"\"\"\n    # c1\n    # c2\n    s = \"\"\"not a docstring,\n    but multi-line\"\"\"\n    return x + len(s) + len(os.sep)\n\n\nclass C:\n    \"\"\"Class docstring.\"\"\"\n\n    def m(self):\n        \"\"\"Another\n        one.\"\"\"\n        return 1\n"
+      },
+      "args": [
+        "mi",
+        "."
+      ],
+      "read": null,
+      "expected": {
+        "stdout": "a.py - A\n"
+      }
+    },
+    "output-file": {
+      "files": {
+        "setup.cfg": "[radon]\noutput_file = report.txt\nexclude = b*.py\n",
+        "a.py": "\"\"\"A module docstring\nover three lines.\n\"\"\"\n# A comment.\nimport os  # an inline comment\n\n\ndef f(x):\n    \"\"\"A docstring\n    on two lines.\"\"\"\n    # c1\n    # c2\n    s = \"\"\"not a docstring,\n    but multi-line\"\"\"\n    return x + len(s) + len(os.sep)\n\n\nclass C:\n    \"\"\"Class docstring.\"\"\"\n\n    def m(self):\n        \"\"\"Another\n        one.\"\"\"\n        return 1\n",
+        "b.py": "x = 1\n"
+      },
+      "args": [
+        "mi",
+        "-s",
+        "."
+      ],
+      "read": "report.txt",
+      "expected": {
+        "stdout": "",
+        "file": "a.py - \u001b[32mA (88.10)\u001b[0m\n"
+      }
+    }
+  },
+  "stdin": [
+    {
+      "stdin": "\"\"\"A module docstring\r\nover three lines.\r\n\"\"\"\r\n# A comment.\r\nimport os  # an inline comment\r\n\r\n\r\ndef f(x):\r\n    \"\"\"A docstring\r\n    on two lines.\"\"\"\r\n    # c1\r\n    # c2\r\n    s = \"\"\"not a docstring,\r\n    but multi-line\"\"\"\r\n    return x + len(s) + len(os.sep)\r\n\r\n\r\nclass C:\r\n    \"\"\"Class docstring.\"\"\"\r\n\r\n    def m(self):\r\n        \"\"\"Another\r\n        one.\"\"\"\r\n        return 1\r\n",
+      "flags": [],
+      "stdout": "{\"-\": {\"mi\": 88.10457859682612, \"rank\": \"A\"}}\n"
+    },
+    {
+      "stdin": "\"\"\"A module docstring\r\nover three lines.\r\n\"\"\"\r\n# A comment.\r\nimport os  # an inline comment\r\n\r\n\r\ndef f(x):\r\n    \"\"\"A docstring\r\n    on two lines.\"\"\"\r\n    # c1\r\n    # c2\r\n    s = \"\"\"not a docstring,\r\n    but multi-line\"\"\"\r\n    return x + len(s) + len(os.sep)\r\n\r\n\r\nclass C:\r\n    \"\"\"Class docstring.\"\"\"\r\n\r\n    def m(self):\r\n        \"\"\"Another\r\n        one.\"\"\"\r\n        return 1\r\n",
+      "flags": [
+        "-m"
+      ],
+      "stdout": "{\"-\": {\"mi\": 98.08062671374432, \"rank\": \"A\"}}\n"
+    },
+    {
+      "stdin": "\"\"\"A module docstring\rover three lines.\r\"\"\"\r# A comment.\rimport os  # an inline comment\r\r\rdef f(x):\r    \"\"\"A docstring\r    on two lines.\"\"\"\r    # c1\r    # c2\r    s = \"\"\"not a docstring,\r    but multi-line\"\"\"\r    return x + len(s) + len(os.sep)\r\r\rclass C:\r    \"\"\"Class docstring.\"\"\"\r\r    def m(self):\r        \"\"\"Another\r        one.\"\"\"\r        return 1\r",
+      "flags": [],
+      "stdout": "{\"-\": {\"mi\": 88.10457859682612, \"rank\": \"A\"}}\n"
+    },
+    {
+      "stdin": "\"\"\"A module docstring\rover three lines.\r\"\"\"\r# A comment.\rimport os  # an inline comment\r\r\rdef f(x):\r    \"\"\"A docstring\r    on two lines.\"\"\"\r    # c1\r    # c2\r    s = \"\"\"not a docstring,\r    but multi-line\"\"\"\r    return x + len(s) + len(os.sep)\r\r\rclass C:\r    \"\"\"Class docstring.\"\"\"\r\r    def m(self):\r        \"\"\"Another\r        one.\"\"\"\r        return 1\r",
+      "flags": [
+        "-m"
+      ],
+      "stdout": "{\"-\": {\"mi\": 98.08062671374432, \"rank\": \"A\"}}\n"
+    },
+    {
+      "stdin": "import sys\r\n\r\nif sys.argv and len(sys.argv) > 1 or not sys.argv:\r\n    def inside_if(x):\r\n        return [y for y in x if y if y > 1]\r\nelif sys.platform == \"x\":\r\n    pass\r\nelse:\r\n    x = 1 if sys.argv else 2\r\n\r\nfor i in range(3):\r\n    pass\r\nelse:\r\n    pass\r\n\r\nwhile False:\r\n    break\r\n\r\ntry:\r\n    import nothing\r\nexcept ImportError:\r\n    pass\r\nexcept Exception:\r\n    pass\r\nelse:\r\n    pass\r\nfinally:\r\n    pass\r\n\r\ntry:\r\n    pass\r\nexcept* ValueError:\r\n    pass\r\n\r\nassert sys.argv, \"assert counts at module level\"\r\n\r\nmatch sys.argv:\r\n    case [a]:\r\n        pass\r\n    case [a, b]:\r\n        pass\r\n    case _:\r\n        pass\r\n\r\nsquares = {k: v for k in range(3) for v in range(k) if v}\r\ngen = (z for z in range(3))\r\nf = lambda q: q and q or not q\r\n\r\n\r\n@staticmethod\r\ndef decorated(a, b=[i for i in range(2) if i]):\r\n    if a:\r\n        def closure():\r\n            if b:\r\n                return 1\r\n            return 2\r\n        return closure\r\n    return None\r\n\r\n\r\nclass Outer:\r\n    if True:\r\n        attr = 1\r\n\r\n    def method(self):\r\n        for _ in self:\r\n            while self:\r\n                break\r\n        return [w for w in self if w]\r\n\r\n    class Inner:\r\n        def inner_method(self):\r\n            return 1 if self else 0\r\n\r\n\r\nwith open(__file__) as fh:\r\n    def in_with():\r\n        return fh and 1\r\n",
+      "flags": [],
+      "stdout": "{\"-\": {\"mi\": 41.71191939633909, \"rank\": \"A\"}}\n"
+    },
+    {
+      "stdin": "import sys\r\n\r\nif sys.argv and len(sys.argv) > 1 or not sys.argv:\r\n    def inside_if(x):\r\n        return [y for y in x if y if y > 1]\r\nelif sys.platform == \"x\":\r\n    pass\r\nelse:\r\n    x = 1 if sys.argv else 2\r\n\r\nfor i in range(3):\r\n    pass\r\nelse:\r\n    pass\r\n\r\nwhile False:\r\n    break\r\n\r\ntry:\r\n    import nothing\r\nexcept ImportError:\r\n    pass\r\nexcept Exception:\r\n    pass\r\nelse:\r\n    pass\r\nfinally:\r\n    pass\r\n\r\ntry:\r\n    pass\r\nexcept* ValueError:\r\n    pass\r\n\r\nassert sys.argv, \"assert counts at module level\"\r\n\r\nmatch sys.argv:\r\n    case [a]:\r\n        pass\r\n    case [a, b]:\r\n        pass\r\n    case _:\r\n        pass\r\n\r\nsquares = {k: v for k in range(3) for v in range(k) if v}\r\ngen = (z for z in range(3))\r\nf = lambda q: q and q or not q\r\n\r\n\r\n@staticmethod\r\ndef decorated(a, b=[i for i in range(2) if i]):\r\n    if a:\r\n        def closure():\r\n            if b:\r\n                return 1\r\n            return 2\r\n        return closure\r\n    return None\r\n\r\n\r\nclass Outer:\r\n    if True:\r\n        attr = 1\r\n\r\n    def method(self):\r\n        for _ in self:\r\n            while self:\r\n                break\r\n        return [w for w in self if w]\r\n\r\n    class Inner:\r\n        def inner_method(self):\r\n            return 1 if self else 0\r\n\r\n\r\nwith open(__file__) as fh:\r\n    def in_with():\r\n        return fh and 1\r\n",
+      "flags": [
+        "-m"
+      ],
+      "stdout": "{\"-\": {\"mi\": 41.71191939633909, \"rank\": \"A\"}}\n"
+    },
+    {
+      "stdin": "import sys\r\rif sys.argv and len(sys.argv) > 1 or not sys.argv:\r    def inside_if(x):\r        return [y for y in x if y if y > 1]\relif sys.platform == \"x\":\r    pass\relse:\r    x = 1 if sys.argv else 2\r\rfor i in range(3):\r    pass\relse:\r    pass\r\rwhile False:\r    break\r\rtry:\r    import nothing\rexcept ImportError:\r    pass\rexcept Exception:\r    pass\relse:\r    pass\rfinally:\r    pass\r\rtry:\r    pass\rexcept* ValueError:\r    pass\r\rassert sys.argv, \"assert counts at module level\"\r\rmatch sys.argv:\r    case [a]:\r        pass\r    case [a, b]:\r        pass\r    case _:\r        pass\r\rsquares = {k: v for k in range(3) for v in range(k) if v}\rgen = (z for z in range(3))\rf = lambda q: q and q or not q\r\r\r@staticmethod\rdef decorated(a, b=[i for i in range(2) if i]):\r    if a:\r        def closure():\r            if b:\r                return 1\r            return 2\r        return closure\r    return None\r\r\rclass Outer:\r    if True:\r        attr = 1\r\r    def method(self):\r        for _ in self:\r            while self:\r                break\r        return [w for w in self if w]\r\r    class Inner:\r        def inner_method(self):\r            return 1 if self else 0\r\r\rwith open(__file__) as fh:\r    def in_with():\r        return fh and 1\r",
+      "flags": [],
+      "stdout": "{\"-\": {\"mi\": 41.71191939633909, \"rank\": \"A\"}}\n"
+    },
+    {
+      "stdin": "import sys\r\rif sys.argv and len(sys.argv) > 1 or not sys.argv:\r    def inside_if(x):\r        return [y for y in x if y if y > 1]\relif sys.platform == \"x\":\r    pass\relse:\r    x = 1 if sys.argv else 2\r\rfor i in range(3):\r    pass\relse:\r    pass\r\rwhile False:\r    break\r\rtry:\r    import nothing\rexcept ImportError:\r    pass\rexcept Exception:\r    pass\relse:\r    pass\rfinally:\r    pass\r\rtry:\r    pass\rexcept* ValueError:\r    pass\r\rassert sys.argv, \"assert counts at module level\"\r\rmatch sys.argv:\r    case [a]:\r        pass\r    case [a, b]:\r        pass\r    case _:\r        pass\r\rsquares = {k: v for k in range(3) for v in range(k) if v}\rgen = (z for z in range(3))\rf = lambda q: q and q or not q\r\r\r@staticmethod\rdef decorated(a, b=[i for i in range(2) if i]):\r    if a:\r        def closure():\r            if b:\r                return 1\r            return 2\r        return closure\r    return None\r\r\rclass Outer:\r    if True:\r        attr = 1\r\r    def method(self):\r        for _ in self:\r            while self:\r                break\r        return [w for w in self if w]\r\r    class Inner:\r        def inner_method(self):\r            return 1 if self else 0\r\r\rwith open(__file__) as fh:\r    def in_with():\r        return fh and 1\r",
+      "flags": [
+        "-m"
+      ],
+      "stdout": "{\"-\": {\"mi\": 41.71191939633909, \"rank\": \"A\"}}\n"
+    },
+    {
+      "stdin": "def f(a, b, c):\r\n    if a == 0 and b > 0 or c < 0:\r\n        a = (a * 0 + b - c) ** 2 % 1\r\n    if a == 1 and b > 7 or c < 3:\r\n        a = (a * 1 + b - c) ** 2 % 2\r\n    if a == 2 and b > 14 or c < 6:\r\n        a = (a * 2 + b - c) ** 2 % 3\r\n    if a == 3 and b > 21 or c < 9:\r\n        a = (a * 3 + b - c) ** 2 % 4\r\n    if a == 4 and b > 28 or c < 12:\r\n        a = (a * 4 + b - c) ** 2 % 5\r\n    if a == 5 and b > 35 or c < 15:\r\n        a = (a * 5 + b - c) ** 2 % 6\r\n    if a == 6 and b > 42 or c < 18:\r\n        a = (a * 6 + b - c) ** 2 % 7\r\n    if a == 7 and b > 49 or c < 21:\r\n        a = (a * 7 + b - c) ** 2 % 8\r\n    if a == 8 and b > 56 or c < 24:\r\n        a = (a * 8 + b - c) ** 2 % 9\r\n    if a == 9 and b > 63 or c < 27:\r\n        a = (a * 9 + b - c) ** 2 % 10\r\n    if a == 10 and b > 70 or c < 30:\r\n        a = (a * 10 + b - c) ** 2 % 11\r\n    if a == 11 and b > 77 or c < 33:\r\n        a = (a * 11 + b - c) ** 2 % 12\r\n    if a == 12 and b > 84 or c < 36:\r\n        a = (a * 12 + b - c) ** 2 % 13\r\n    if a == 13 and b > 91 or c < 39:\r\n        a = (a * 13 + b - c) ** 2 % 14\r\n    if a == 14 and b > 98 or c < 42:\r\n        a = (a * 14 + b - c) ** 2 % 15\r\n    if a == 15 and b > 105 or c < 45:\r\n        a = (a * 15 + b - c) ** 2 % 16\r\n    if a == 16 and b > 112 or c < 48:\r\n        a = (a * 16 + b - c) ** 2 % 17\r\n    if a == 17 and b > 119 or c < 51:\r\n        a = (a * 17 + b - c) ** 2 % 18\r\n    if a == 18 and b > 126 or c < 54:\r\n        a = (a * 18 + b - c) ** 2 % 19\r\n    if a == 19 and b > 133 or c < 57:\r\n        a = (a * 19 + b - c) ** 2 % 20\r\n    if a == 20 and b > 140 or c < 60:\r\n        a = (a * 20 + b - c) ** 2 % 21\r\n    if a == 21 and b > 147 or c < 63:\r\n        a = (a * 21 + b - c) ** 2 % 22\r\n    if a == 22 and b > 154 or c < 66:\r\n        a = (a * 22 + b - c) ** 2 % 23\r\n    if a == 23 and b > 161 or c < 69:\r\n        a = (a * 23 + b - c) ** 2 % 24\r\n    if a == 24 and b > 168 or c < 72:\r\n        a = (a * 24 + b - c) ** 2 % 25\r\n    if a == 25 and b > 175 or c < 75:\r\n        a = (a * 25 + b - c) ** 2 % 26\r\n    if a == 26 and b > 182 or c < 78:\r\n        a = (a * 26 + b - c) ** 2 % 27\r\n    if a == 27 and b > 189 or c < 81:\r\n        a = (a * 27 + b - c) ** 2 % 28\r\n    if a == 28 and b > 196 or c < 84:\r\n        a = (a * 28 + b - c) ** 2 % 29\r\n    if a == 29 and b > 203 or c < 87:\r\n        a = (a * 29 + b - c) ** 2 % 30\r\n    if a == 30 and b > 210 or c < 90:\r\n        a = (a * 30 + b - c) ** 2 % 31\r\n    if a == 31 and b > 217 or c < 93:\r\n        a = (a * 31 + b - c) ** 2 % 32\r\n    if a == 32 and b > 224 or c < 96:\r\n        a = (a * 32 + b - c) ** 2 % 33\r\n    if a == 33 and b > 231 or c < 99:\r\n        a = (a * 33 + b - c) ** 2 % 34\r\n    if a == 34 and b > 238 or c < 102:\r\n        a = (a * 34 + b - c) ** 2 % 35\r\n    if a == 35 and b > 245 or c < 105:\r\n        a = (a * 35 + b - c) ** 2 % 36\r\n    if a == 36 and b > 252 or c < 108:\r\n        a = (a * 36 + b - c) ** 2 % 37\r\n    if a == 37 and b > 259 or c < 111:\r\n        a = (a * 37 + b - c) ** 2 % 38\r\n    if a == 38 and b > 266 or c < 114:\r\n        a = (a * 38 + b - c) ** 2 % 39\r\n    if a == 39 and b > 273 or c < 117:\r\n        a = (a * 39 + b - c) ** 2 % 40\r\n    return a\r\n",
+      "flags": [],
+      "stdout": "{\"-\": {\"mi\": 13.821487415762208, \"rank\": \"B\"}}\n"
+    },
+    {
+      "stdin": "def f(a, b, c):\r\n    if a == 0 and b > 0 or c < 0:\r\n        a = (a * 0 + b - c) ** 2 % 1\r\n    if a == 1 and b > 7 or c < 3:\r\n        a = (a * 1 + b - c) ** 2 % 2\r\n    if a == 2 and b > 14 or c < 6:\r\n        a = (a * 2 + b - c) ** 2 % 3\r\n    if a == 3 and b > 21 or c < 9:\r\n        a = (a * 3 + b - c) ** 2 % 4\r\n    if a == 4 and b > 28 or c < 12:\r\n        a = (a * 4 + b - c) ** 2 % 5\r\n    if a == 5 and b > 35 or c < 15:\r\n        a = (a * 5 + b - c) ** 2 % 6\r\n    if a == 6 and b > 42 or c < 18:\r\n        a = (a * 6 + b - c) ** 2 % 7\r\n    if a == 7 and b > 49 or c < 21:\r\n        a = (a * 7 + b - c) ** 2 % 8\r\n    if a == 8 and b > 56 or c < 24:\r\n        a = (a * 8 + b - c) ** 2 % 9\r\n    if a == 9 and b > 63 or c < 27:\r\n        a = (a * 9 + b - c) ** 2 % 10\r\n    if a == 10 and b > 70 or c < 30:\r\n        a = (a * 10 + b - c) ** 2 % 11\r\n    if a == 11 and b > 77 or c < 33:\r\n        a = (a * 11 + b - c) ** 2 % 12\r\n    if a == 12 and b > 84 or c < 36:\r\n        a = (a * 12 + b - c) ** 2 % 13\r\n    if a == 13 and b > 91 or c < 39:\r\n        a = (a * 13 + b - c) ** 2 % 14\r\n    if a == 14 and b > 98 or c < 42:\r\n        a = (a * 14 + b - c) ** 2 % 15\r\n    if a == 15 and b > 105 or c < 45:\r\n        a = (a * 15 + b - c) ** 2 % 16\r\n    if a == 16 and b > 112 or c < 48:\r\n        a = (a * 16 + b - c) ** 2 % 17\r\n    if a == 17 and b > 119 or c < 51:\r\n        a = (a * 17 + b - c) ** 2 % 18\r\n    if a == 18 and b > 126 or c < 54:\r\n        a = (a * 18 + b - c) ** 2 % 19\r\n    if a == 19 and b > 133 or c < 57:\r\n        a = (a * 19 + b - c) ** 2 % 20\r\n    if a == 20 and b > 140 or c < 60:\r\n        a = (a * 20 + b - c) ** 2 % 21\r\n    if a == 21 and b > 147 or c < 63:\r\n        a = (a * 21 + b - c) ** 2 % 22\r\n    if a == 22 and b > 154 or c < 66:\r\n        a = (a * 22 + b - c) ** 2 % 23\r\n    if a == 23 and b > 161 or c < 69:\r\n        a = (a * 23 + b - c) ** 2 % 24\r\n    if a == 24 and b > 168 or c < 72:\r\n        a = (a * 24 + b - c) ** 2 % 25\r\n    if a == 25 and b > 175 or c < 75:\r\n        a = (a * 25 + b - c) ** 2 % 26\r\n    if a == 26 and b > 182 or c < 78:\r\n        a = (a * 26 + b - c) ** 2 % 27\r\n    if a == 27 and b > 189 or c < 81:\r\n        a = (a * 27 + b - c) ** 2 % 28\r\n    if a == 28 and b > 196 or c < 84:\r\n        a = (a * 28 + b - c) ** 2 % 29\r\n    if a == 29 and b > 203 or c < 87:\r\n        a = (a * 29 + b - c) ** 2 % 30\r\n    if a == 30 and b > 210 or c < 90:\r\n        a = (a * 30 + b - c) ** 2 % 31\r\n    if a == 31 and b > 217 or c < 93:\r\n        a = (a * 31 + b - c) ** 2 % 32\r\n    if a == 32 and b > 224 or c < 96:\r\n        a = (a * 32 + b - c) ** 2 % 33\r\n    if a == 33 and b > 231 or c < 99:\r\n        a = (a * 33 + b - c) ** 2 % 34\r\n    if a == 34 and b > 238 or c < 102:\r\n        a = (a * 34 + b - c) ** 2 % 35\r\n    if a == 35 and b > 245 or c < 105:\r\n        a = (a * 35 + b - c) ** 2 % 36\r\n    if a == 36 and b > 252 or c < 108:\r\n        a = (a * 36 + b - c) ** 2 % 37\r\n    if a == 37 and b > 259 or c < 111:\r\n        a = (a * 37 + b - c) ** 2 % 38\r\n    if a == 38 and b > 266 or c < 114:\r\n        a = (a * 38 + b - c) ** 2 % 39\r\n    if a == 39 and b > 273 or c < 117:\r\n        a = (a * 39 + b - c) ** 2 % 40\r\n    return a\r\n",
+      "flags": [
+        "-m"
+      ],
+      "stdout": "{\"-\": {\"mi\": 13.821487415762208, \"rank\": \"B\"}}\n"
+    },
+    {
+      "stdin": "def f(a, b, c):\r    if a == 0 and b > 0 or c < 0:\r        a = (a * 0 + b - c) ** 2 % 1\r    if a == 1 and b > 7 or c < 3:\r        a = (a * 1 + b - c) ** 2 % 2\r    if a == 2 and b > 14 or c < 6:\r        a = (a * 2 + b - c) ** 2 % 3\r    if a == 3 and b > 21 or c < 9:\r        a = (a * 3 + b - c) ** 2 % 4\r    if a == 4 and b > 28 or c < 12:\r        a = (a * 4 + b - c) ** 2 % 5\r    if a == 5 and b > 35 or c < 15:\r        a = (a * 5 + b - c) ** 2 % 6\r    if a == 6 and b > 42 or c < 18:\r        a = (a * 6 + b - c) ** 2 % 7\r    if a == 7 and b > 49 or c < 21:\r        a = (a * 7 + b - c) ** 2 % 8\r    if a == 8 and b > 56 or c < 24:\r        a = (a * 8 + b - c) ** 2 % 9\r    if a == 9 and b > 63 or c < 27:\r        a = (a * 9 + b - c) ** 2 % 10\r    if a == 10 and b > 70 or c < 30:\r        a = (a * 10 + b - c) ** 2 % 11\r    if a == 11 and b > 77 or c < 33:\r        a = (a * 11 + b - c) ** 2 % 12\r    if a == 12 and b > 84 or c < 36:\r        a = (a * 12 + b - c) ** 2 % 13\r    if a == 13 and b > 91 or c < 39:\r        a = (a * 13 + b - c) ** 2 % 14\r    if a == 14 and b > 98 or c < 42:\r        a = (a * 14 + b - c) ** 2 % 15\r    if a == 15 and b > 105 or c < 45:\r        a = (a * 15 + b - c) ** 2 % 16\r    if a == 16 and b > 112 or c < 48:\r        a = (a * 16 + b - c) ** 2 % 17\r    if a == 17 and b > 119 or c < 51:\r        a = (a * 17 + b - c) ** 2 % 18\r    if a == 18 and b > 126 or c < 54:\r        a = (a * 18 + b - c) ** 2 % 19\r    if a == 19 and b > 133 or c < 57:\r        a = (a * 19 + b - c) ** 2 % 20\r    if a == 20 and b > 140 or c < 60:\r        a = (a * 20 + b - c) ** 2 % 21\r    if a == 21 and b > 147 or c < 63:\r        a = (a * 21 + b - c) ** 2 % 22\r    if a == 22 and b > 154 or c < 66:\r        a = (a * 22 + b - c) ** 2 % 23\r    if a == 23 and b > 161 or c < 69:\r        a = (a * 23 + b - c) ** 2 % 24\r    if a == 24 and b > 168 or c < 72:\r        a = (a * 24 + b - c) ** 2 % 25\r    if a == 25 and b > 175 or c < 75:\r        a = (a * 25 + b - c) ** 2 % 26\r    if a == 26 and b > 182 or c < 78:\r        a = (a * 26 + b - c) ** 2 % 27\r    if a == 27 and b > 189 or c < 81:\r        a = (a * 27 + b - c) ** 2 % 28\r    if a == 28 and b > 196 or c < 84:\r        a = (a * 28 + b - c) ** 2 % 29\r    if a == 29 and b > 203 or c < 87:\r        a = (a * 29 + b - c) ** 2 % 30\r    if a == 30 and b > 210 or c < 90:\r        a = (a * 30 + b - c) ** 2 % 31\r    if a == 31 and b > 217 or c < 93:\r        a = (a * 31 + b - c) ** 2 % 32\r    if a == 32 and b > 224 or c < 96:\r        a = (a * 32 + b - c) ** 2 % 33\r    if a == 33 and b > 231 or c < 99:\r        a = (a * 33 + b - c) ** 2 % 34\r    if a == 34 and b > 238 or c < 102:\r        a = (a * 34 + b - c) ** 2 % 35\r    if a == 35 and b > 245 or c < 105:\r        a = (a * 35 + b - c) ** 2 % 36\r    if a == 36 and b > 252 or c < 108:\r        a = (a * 36 + b - c) ** 2 % 37\r    if a == 37 and b > 259 or c < 111:\r        a = (a * 37 + b - c) ** 2 % 38\r    if a == 38 and b > 266 or c < 114:\r        a = (a * 38 + b - c) ** 2 % 39\r    if a == 39 and b > 273 or c < 117:\r        a = (a * 39 + b - c) ** 2 % 40\r    return a\r",
+      "flags": [],
+      "stdout": "{\"-\": {\"mi\": 13.821487415762208, \"rank\": \"B\"}}\n"
+    },
+    {
+      "stdin": "def f(a, b, c):\r    if a == 0 and b > 0 or c < 0:\r        a = (a * 0 + b - c) ** 2 % 1\r    if a == 1 and b > 7 or c < 3:\r        a = (a * 1 + b - c) ** 2 % 2\r    if a == 2 and b > 14 or c < 6:\r        a = (a * 2 + b - c) ** 2 % 3\r    if a == 3 and b > 21 or c < 9:\r        a = (a * 3 + b - c) ** 2 % 4\r    if a == 4 and b > 28 or c < 12:\r        a = (a * 4 + b - c) ** 2 % 5\r    if a == 5 and b > 35 or c < 15:\r        a = (a * 5 + b - c) ** 2 % 6\r    if a == 6 and b > 42 or c < 18:\r        a = (a * 6 + b - c) ** 2 % 7\r    if a == 7 and b > 49 or c < 21:\r        a = (a * 7 + b - c) ** 2 % 8\r    if a == 8 and b > 56 or c < 24:\r        a = (a * 8 + b - c) ** 2 % 9\r    if a == 9 and b > 63 or c < 27:\r        a = (a * 9 + b - c) ** 2 % 10\r    if a == 10 and b > 70 or c < 30:\r        a = (a * 10 + b - c) ** 2 % 11\r    if a == 11 and b > 77 or c < 33:\r        a = (a * 11 + b - c) ** 2 % 12\r    if a == 12 and b > 84 or c < 36:\r        a = (a * 12 + b - c) ** 2 % 13\r    if a == 13 and b > 91 or c < 39:\r        a = (a * 13 + b - c) ** 2 % 14\r    if a == 14 and b > 98 or c < 42:\r        a = (a * 14 + b - c) ** 2 % 15\r    if a == 15 and b > 105 or c < 45:\r        a = (a * 15 + b - c) ** 2 % 16\r    if a == 16 and b > 112 or c < 48:\r        a = (a * 16 + b - c) ** 2 % 17\r    if a == 17 and b > 119 or c < 51:\r        a = (a * 17 + b - c) ** 2 % 18\r    if a == 18 and b > 126 or c < 54:\r        a = (a * 18 + b - c) ** 2 % 19\r    if a == 19 and b > 133 or c < 57:\r        a = (a * 19 + b - c) ** 2 % 20\r    if a == 20 and b > 140 or c < 60:\r        a = (a * 20 + b - c) ** 2 % 21\r    if a == 21 and b > 147 or c < 63:\r        a = (a * 21 + b - c) ** 2 % 22\r    if a == 22 and b > 154 or c < 66:\r        a = (a * 22 + b - c) ** 2 % 23\r    if a == 23 and b > 161 or c < 69:\r        a = (a * 23 + b - c) ** 2 % 24\r    if a == 24 and b > 168 or c < 72:\r        a = (a * 24 + b - c) ** 2 % 25\r    if a == 25 and b > 175 or c < 75:\r        a = (a * 25 + b - c) ** 2 % 26\r    if a == 26 and b > 182 or c < 78:\r        a = (a * 26 + b - c) ** 2 % 27\r    if a == 27 and b > 189 or c < 81:\r        a = (a * 27 + b - c) ** 2 % 28\r    if a == 28 and b > 196 or c < 84:\r        a = (a * 28 + b - c) ** 2 % 29\r    if a == 29 and b > 203 or c < 87:\r        a = (a * 29 + b - c) ** 2 % 30\r    if a == 30 and b > 210 or c < 90:\r        a = (a * 30 + b - c) ** 2 % 31\r    if a == 31 and b > 217 or c < 93:\r        a = (a * 31 + b - c) ** 2 % 32\r    if a == 32 and b > 224 or c < 96:\r        a = (a * 32 + b - c) ** 2 % 33\r    if a == 33 and b > 231 or c < 99:\r        a = (a * 33 + b - c) ** 2 % 34\r    if a == 34 and b > 238 or c < 102:\r        a = (a * 34 + b - c) ** 2 % 35\r    if a == 35 and b > 245 or c < 105:\r        a = (a * 35 + b - c) ** 2 % 36\r    if a == 36 and b > 252 or c < 108:\r        a = (a * 36 + b - c) ** 2 % 37\r    if a == 37 and b > 259 or c < 111:\r        a = (a * 37 + b - c) ** 2 % 38\r    if a == 38 and b > 266 or c < 114:\r        a = (a * 38 + b - c) ** 2 % 39\r    if a == 39 and b > 273 or c < 117:\r        a = (a * 39 + b - c) ** 2 % 40\r    return a\r",
+      "flags": [
+        "-m"
+      ],
+      "stdout": "{\"-\": {\"mi\": 13.821487415762208, \"rank\": \"B\"}}\n"
+    }
+  ]
+}

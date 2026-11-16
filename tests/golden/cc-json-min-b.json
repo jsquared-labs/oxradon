@@ -1,0 +1,39 @@
+{
+  "tests/fixtures/bom.py": {
+    "error": "<error>"
+  },
+  "tests/fixtures/branches.py": [
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 12,
+      "endline": 30,
+      "lineno": 17,
+      "name": "loops",
+      "rank": "C",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 9,
+      "endline": 14,
+      "lineno": 4,
+      "name": "conditionals",
+      "rank": "B",
+      "type": "function"
+    }
+  ],
+  "tests/fixtures/future_braces.py": {
+    "error": "<error>"
+  },
+  "tests/fixtures/newer_syntax.py": {
+    "error": "<error>"
+  },
+  "tests/fixtures/nul_byte.py": {
+    "error": "<error>"
+  },
+  "tests/fixtures/syntax_error.py": {
+    "error": "<error>"
+  }
+}

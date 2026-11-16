@@ -1,0 +1,11527 @@
+[
+[
+"def f():\n    return F\"{a:{b}{c}{b:{c}}}\" + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t\t\t\t\t  pass\n  \t  \t\t pass\n    \t\t  while c:\n \t\t  \t pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return f\"{a:>10}}{[1}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = 0j\n",
+null
+],
+[
+"x = )\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"def f():\n    return rf'{a:\\N{BULLET}{{x}}}' + (p or q)\n",
+null
+],
+[
+"x = 1e+ \n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x = {(}'\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '('",
+1
+]
+],
+[
+"def f():\n\t\t\t\t \t \twhile c:\n  \t  \t while c:\n  \t  \t \tx = 1\n\t \t \t\t\t x = 1\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"a\u1885 = a\u00a0b.\u00e9\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"\u309b = \u309b.\u20ac\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n    return rf'{a:{b}{b:{c}}:>10}' + (p or q)\n",
+null
+],
+[
+"x = }',1[\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n    return f\"{a:}}{b:{c}}x{{{c}}}}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = )\nif a:\n\tx = f'{a:{b}{{y or z}}}'\n\ty = 2\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"\u0301x = \ufeffa.\u00e91\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"\u0301x = \u20ac.\u00e9\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"a\u20ac = a\u1885.a\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x = )a{]:,[\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"0b2\nx = f'{a:{b}{{x if y else z}}}'\n",
+[
+"invalid digit '2' in binary literal",
+1
+]
+],
+[
+"x = 1\n",
+null
+],
+[
+"def f():\n    return t'{a:{b}:}' + (p or q)\n",
+null
+],
+[
+"x = (]\n",
+[
+"closing parenthesis ']' does not match opening parenthesis '('",
+1
+]
+],
+[
+"def f():\n    return F'{a:\n{{x or y}}{{{}' + (p or q)\n",
+[
+"f-string: newlines are not allowed in format specifiers for single quoted f-strings",
+2
+]
+],
+[
+"a\u200b = a.\u540d\u524d\n",
+[
+"invalid non-printable character U+200B",
+1
+]
+],
+[
+"x = 0e0abc\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x = 0l\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n \t\t\t    if a:\n\t\t  \t\t pass\n\t\t \t    pass\n\n  \t\t\t\twith d:\n\t \t \t  pass\n\t \t \t\t\t x = 1\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = ,:]a]\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n    return t'''{a:{{x or y}} {{x}}{b:{c}}}''' + (p or q)\n",
+[
+"t-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n\t\t  \t\t\t\t\n \t  \t\t\t pass\n",
+null
+],
+[
+"def f():\n    return F\"{a: >10(:}\" + (p or q)\n",
+null
+],
+[
+"def f():\n    return F'{a:x{b}[1{{{c}}}}' + (p or q)\n",
+null
+],
+[
+"\u00e9 = _\u00e9.\u00e9\n",
+null
+],
+[
+"def f():\n\t \t\t   x = 1\n    \\\nwhile c:\n  \t\t   \tpass\n\t    \t \ty = x or z\n \t \t \t\t y = x or z\n\t  \t\t \t x = 1\n\t\t     \t\\\n    \n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n \t \t \t  for i in b:\n\t \t\t\t   x = 1\n   \t\t  x = 1\ny = x or z\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n\t\f\tfor i in b:\n \t \t\t   def g():\n \t \t\t\t\tpass\n \t   pass\n\t  \twhile c:\n\t\t      x = 1\n\t\t      pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"def f():\n\tif a:\n   return 1\nif a:\n\tx = f'{a:{b}{{y or z}}}'\n\ty = 2\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return t'''{a:}''' + (p or q)\n",
+null
+],
+[
+"def f():\n    return t'{a:{b}{c}}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return F\"{a{b}{c}{b=}{b}{c}}}[1\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"\u309b = a\u00e9.\u212e\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n  \t\t\t  \tpass\n  \t \t \t\twhile c:\n  \t\t\t  \t         pass\n",
+null
+],
+[
+"x = 'abc\nif a:\n\tx = f'{a:{b}{{y or z}}}'\n\ty = 2\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n \t\t\t \t y = x or z\n\t     with d:\n   \t\t\t\t\ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return f'{a:}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return t'''{a:{{b}{c}{b=}{{}''' + (p or q)\n",
+[
+"t-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n    return rf'''{a:{{{x or y}}}''' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n    return rf'{a:!r{{x}}{{x}}}' + (p or q)\n",
+null
+],
+[
+"\u00b7a = a\u00a0b.a\u1885\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"x = {(]'\n",
+[
+"closing parenthesis ']' does not match opening parenthesis '('",
+1
+]
+],
+[
+"def f():\n    return f'{a:{b=}:{b!r}\\=}' + (p or q)\n",
+null
+],
+[
+"x = ft'a\\'\\N{BULLET}'\n",
+[
+"'f' and 't' prefixes are incompatible",
+1
+]
+],
+[
+"x\u0660 = _\u00e9.a\u00a0b\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"x = ,1\n'(,\n",
+[
+"unterminated string literal (detected at line 2)",
+2
+]
+],
+[
+"def f():\n   \t\t\t\t x = 1\n\t \t \t  pass\n\t\t  \t \t \n\t \t  \t  if a:\n\t  \ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n\t \t \t\t\t x = 1\nif a:\n \t \t\t\t  y = x or z\n \t \t    x = 1\n \t\t \t\t \tif a:\n \t \t while c:\n \t \t          pass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n    return f\"{a:\\{\\{{b:{c}}=}\" + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"x = u'''{xa\\''''\n",
+null
+],
+[
+"def f():\n\t  \t  \t y = x or z\n \t\t   \t x = 1\nx = 1\n \t\t \t \ty = x or z\n\t\t\t \t  \tx = 1\n   \t\t\ty = x or z\n    \\\nwith d:\n\t  \t\t\t\t          pass\n",
+[
+"unindent does not match any outer indentation level",
+7
+]
+],
+[
+"def f():\n    \\\nwith d:\n\t\t\t \t\t\t y = x or z\ny = x or z\n  \t \t \t y = x or z\n \t\t \t \t pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+7
+]
+],
+[
+"def f():\n    return rf'{a{{{>10( ' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n   \t\twhile c:\n\t\t\t\t \t \tpass\n\t\t\t\t  \t x = 1\n \t \t   \tpass\n\t \t \t\t\t while c:\n  # comment\nz = (\n\\\n\t1)\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n\t\t\t\t  \t# comment\n\t\t\t \t \twhile c:\n\t \t\t\t\t \tx = 1\n\t\t \t\t\t \tpass\n",
+null
+],
+[
+"def f():\n \t\t\t\t\t x = 1\n\t \t\t\t\t\t\tx = 1\n",
+null
+],
+[
+"x = t'''{{}}'''\n",
+null
+],
+[
+"x = 1abc\nx = f'{a:{b}{{((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((1))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))}}}'\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x = Rb\"\"\"{x!r}a\\\nb\" + 'a'\n",
+[
+"unterminated triple-quoted string literal (detected at line 2)",
+1
+]
+],
+[
+"x = 0e0l\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"a\u309b = \u1885.\u309b\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"x = (]\nx = f'{a:{b}{{((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((1))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))}}}'\n",
+[
+"closing parenthesis ']' does not match opening parenthesis '('",
+1
+]
+],
+[
+"def f():\n\t \t\t \t\t x = 1\nif a:\n\t   \t # comment\n  \t\t\t  # comment\n \t   \tdef g():\n  \t\t\t           pass\n",
+null
+],
+[
+"x = 09.5not in y\n",
+null
+],
+[
+"a\u20ac = \u00b7a.a\u309b\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"\u00a9 = a\u00a9.a\u1885\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n\t\t\t \t  \twith d:\n     \t pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return rf\"{a:{b:{c}}}\" + (p or q)\n",
+null
+],
+[
+"def f():\n    return F\"{a:({}\" + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n    \\\npass\n \t\t \t\t  x = 1\n\t  \t \t \tif a:\n\t  \t \t \t         pass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"a\u309b = \u309b.\u2118\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n  \t\t \t\t y = x or z\n\t  \t \t\t x = 1\n",
+null
+],
+[
+"if a:\n\tx = 1\n        y = 2\nif a:\n\tx = f'{a:{b}{{y or z}}}'\n\ty = 2\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = bf\"{x=}{x=} + 'a'\n",
+[
+"'b' and 'f' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n    \t \t\tfor i in b:\n\t\t\t \t pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n    \t \t\t# comment\n  \t    \twhile c:\n\t\t\t\t\t  def g():\n\t \t\t\t\t\t\tx = 1\n\t \t\t\t\t\tx = 1\n\t\t\t\t \t\tpass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"def f():\n\t\t\t\t \t \tpass\nfor i in b:\n\t\t\t\t   \tpass\n \t\t     pass\nwhile c:\n  \t\t\t   if a:\n\t \t\t    x = 1\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n       \t\\\nif a:\n\t \t  \t \tpass\n\t\t\t\t \t\ty = x or z\n \t\t   with d:\n \t\t            pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"x = a\u00a9\nif a:\n\tx = f'{a:{b}{{y or z}}}'\n\ty = 2\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"a\u200b = a\u00b7.x\u0660\n",
+[
+"invalid non-printable character U+200B",
+1
+]
+],
+[
+"x = ur'''x}x}'''\ny = 1\n",
+[
+"'u' and 'r' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n   \t \twith d:\n \t \t   x = 1\nfor i in b:\n  \t\t\t \tpass\n",
+null
+],
+[
+"def f():\n\t \t\t\t  x = 1\n\t\t\t \t  x = 1\n \t\t\t\t\t\t\tpass\n",
+null
+],
+[
+"def f():\n    return f'''{a:>10{{ }''' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"x = 0else\n",
+null
+],
+[
+"x = 0o\n",
+[
+"invalid octal literal",
+1
+]
+],
+[
+"x = 0b101j\n",
+[
+"invalid binary literal",
+1
+]
+],
+[
+"x = 012x\n",
+[
+"leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+1
+]
+],
+[
+"def f():\n    return f'{a:{{{c}}}{{x or y}}{{{c}}}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = \"{x{{\" + 'a'\n",
+null
+],
+[
+"x = 1_000if y else 2\n",
+null
+],
+[
+"def f():\n    return f\"{a:{{{c}}}{b!r}}\" + (p or q)\n",
+null
+],
+[
+"x = r\"a{x!r}\"\n",
+null
+],
+[
+"x = 1)a\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"x = )\nx = f'{a:{b}{{((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((1))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))}}}'\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"def f():\n\t \t\t\t\t\t\tfor i in b:\n\t\t\t\t\t\tfor i in b:\n\t\t\t\t\t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return f'{a:x}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return F'''{a:({{{c}}}{{}}''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = tr\"\"\"{x=}{x\"\"\"\n",
+[
+"t-string: expecting '}'",
+1
+]
+],
+[
+"x = b'a\\'a\nb'\ny = 1\n",
+[
+"unterminated string literal (detected at line 1); perhaps you escaped the end quote?",
+1
+]
+],
+[
+"\u2118 = \u309b.\u00a9\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n    return rf'''{a:{b}{c}\\{>10{{x or y}}}''' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"x = 0_0(\n",
+[
+"'(' was never closed",
+1
+]
+],
+[
+"def f():\n   \t\t\t\t\ty = x or z\n  \t\t\t \t\tfor i in b:\n   \t\t\t\t\t         pass\n",
+null
+],
+[
+"x = t\"\"\"{x}\"\"\" + 'a'\n",
+null
+],
+[
+"def f():\n    return f'''{a''' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n    return f'''{a:{{b}{}''' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n\t\t \t  \ty = x or z\n  \t\t\t \t\n\t\t   \t x = 1\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = {f'{,}''f'{\n",
+[
+"'{' was never closed",
+1
+]
+],
+[
+"def f():\n\f  x = 1\n \t \t  \t # comment\n",
+null
+],
+[
+"x = {,\n])}'[\n",
+[
+"closing parenthesis ']' does not match opening parenthesis '{' on line 1",
+2
+]
+],
+[
+"def f():\n\t  \t\t\twhile c:\n\t\t\t \t\t\tpass\n",
+null
+],
+[
+"def f():\n\t\t  \t\t y = x or z\n    \\\nx = 1\ny = x or z\ny = x or z\nx = 1\ny = x or z\nx = 1\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n \t\t \t\t\ty = x or z\n\t \t\t   with d:\n\t\t  \t\t\t x = 1\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return F'{a:}' + (p or q)\n",
+null
+],
+[
+"def f():\n \t\t  \t\t with d:\n \t\t  \t\twith d:\n\t\t  \t\t\t if a:\n\t\t  \t\t\t          pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n \t  \t\t pass\n \t\t\t \t \tpass\n",
+null
+],
+[
+"x = 00_\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n    return rf'{a: \\N{BULLET}}' + (p or q)\n",
+null
+],
+[
+"x = b'a\\\nb{{'\n",
+null
+],
+[
+"x = ,]f'{a}\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n       \t\\\n# comment\n  \t\t   x = 1\n  \t\t   y = x or z\n",
+null
+],
+[
+"a\u0e33 = x\u0301.\u00a9\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"x = (]\nx = f'{a:{b}{{x if y else z}}}'\n",
+[
+"closing parenthesis ']' does not match opening parenthesis '('",
+1
+]
+],
+[
+"def f():\n\tif a:\n   return 1\nx = f'{a:{b}{{x if y else z}}}'\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = \"{{x}\"\n",
+null
+],
+[
+"def f():\n    return f'''{a:(=x:}''' + (p or q)\n",
+null
+],
+[
+"if a:\n\tx = 1\n        y = 2\nx = f'{a:{b}{{x if y else z}}}'\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n    return f\"{a\" + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"x = 1_000e\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"\u20ac = a\u1885.x\u0301\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"def f():\n    return rf\"{a:{{{b}[1\\}\" + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"def f():\n    return f'{a:{b=}{b}{c}}' + (p or q)\n",
+null
+],
+[
+"x = (]\nif a:\n\tx = f'{a:{b}{{y or z}}}'\n\ty = 2\n",
+[
+"closing parenthesis ']' does not match opening parenthesis '('",
+1
+]
+],
+[
+"def f():\n    return rf'''{a:}}\\{{b:{c}}}''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return f'{a::}}{\\{}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n \t\t \twith d:\n\t\t\t \t   y = x or z\n \t  \t  \tpass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"x = '''a\nb}}'\ny = 1\n",
+[
+"unterminated triple-quoted string literal (detected at line 3)",
+1
+]
+],
+[
+"x = ub'x}{x + 'a'\n",
+[
+"'u' and 'b' prefixes are incompatible",
+1
+]
+],
+[
+"x = 0.0j]\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n    return f'{a:!r(\\{b!r}}' + (p or q)\n",
+null
+],
+[
+"x = rf'{x=}a\\'\ny = 1\n",
+[
+"unterminated f-string literal (detected at line 1)",
+1
+]
+],
+[
+"a\u00e9 = \u00a9.\ud83d\ude00\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n \t \t \t\t\t\n\f  pass\n",
+null
+],
+[
+"def f():\n\t \t\t\t\t x = 1\n\t \t\t\t \t\tpass\n\t \t\t\t\t # comment\n",
+null
+],
+[
+"x = 1,))\na\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"def f():\n \t   \t  y = x or z\n    \t if a:\n    \t          pass\nz = (\n\f1)\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = ]:[\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"x = )}:[)\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"a\u1885 = a\u1885.\ud83d\ude00\n",
+[
+"invalid character '\ud83d\ude00' (U+1F600)",
+1
+]
+],
+[
+"x = rb'''a{x'''\ny = 1\n",
+null
+],
+[
+"def f():\n\t     y = x or z\n\t  \t\t \tpass\n \t\t \t \t\tdef g():\n \t\t \t \t\t         pass\n",
+null
+],
+[
+"def f():\n    \t\t \twith d:\n\t\t \t  def g():\n\t\t \t \t pass\n    \t \t\tx = 1\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"if a:\n\tx = 1\n        y = 2\nx = f'{a:{b}{{((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((1))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))}}}'\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n    return t'{a:{b:{c}}[1}' + (p or q)\n",
+null
+],
+[
+"x = )\nx = f'{a:{b}{{x if y else z}}}'\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"0b2\nx = f'{a:{b}{{((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((1))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))}}}'\n",
+[
+"invalid digit '2' in binary literal",
+1
+]
+],
+[
+"def f():\n    return f\"{a:{b:{c}}}\" + (p or q)\n",
+null
+],
+[
+"def f():\n \t  with d:\n  \t\t  \t with d:\n \t \t\t\t\ty = x or z\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"x = rb'{x}a\\\nb'\ny = 1\n",
+null
+],
+[
+"x = rb'''{x!r}a\\'''\n",
+[
+"unterminated triple-quoted string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n\tif a:\n   return 1\nx = f'{a:{b}{{((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((1))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))}}}'\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = 0bx\n",
+[
+"invalid binary literal",
+1
+]
+],
+[
+"def f():\n    return F'''{a:}''' + (p or q)\n",
+null
+],
+[
+"def f():\n    return f'{a:x{{\n{{x or y}}}' + (p or q)\n",
+[
+"f-string: expecting '}'",
+3
+]
+],
+[
+"def f():\n    return f'{a>10\\N{BULLET}{{{' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"def f():\n    return F'''{a: >10=}''' + (p or q)\n",
+null
+],
+[
+"a\u00b7 = \u2118.\u00a9\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n    return rf'{a:\n\n}' + (p or q)\n",
+[
+"f-string: newlines are not allowed in format specifiers for single quoted f-strings",
+2
+]
+],
+[
+"def f():\n\t\t \t\t\t\t\twith d:\n\\\nwith d:\n \t \t x = 1\n",
+null
+],
+[
+"def f():\n\t \t\t \n\t \t\t  x = 1\n",
+null
+],
+[
+"def f():\n \t   x = 1\n\t \t\t y = x or z\n  \t\t y = x or z\n\t\t\t\t \t pass\n \t   pass\n  \t\t\t  y = x or z\n     \t \tfor i in b:\n     \t \t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = bf\"\"\"{x!r}a\nb + 'a'\n",
+[
+"'b' and 'f' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n \t  \t  \fy = x or z\n   \t\t   while c:\n\t   \t\t\t if a:\n\t   \t\t\t          pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"x = {}[)}')1\n",
+[
+"closing parenthesis ')' does not match opening parenthesis '['",
+1
+]
+],
+[
+"x = 1for\n",
+null
+],
+[
+"\ufeffa = a\u20ac.a\u0e33\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"a\u00e9 = \u2118.a\u20ac\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x = (11]':\n",
+[
+"closing parenthesis ']' does not match opening parenthesis '('",
+1
+]
+],
+[
+"x = r\"\"\"}}}}\"\ny = 1\n",
+[
+"unterminated triple-quoted string literal (detected at line 2)",
+1
+]
+],
+[
+"x = u'aa\\\nb\ny = 1\n",
+[
+"unterminated string literal (detected at line 2)",
+1
+]
+],
+[
+"x = []{}\n",
+null
+],
+[
+"\u00b7a = \u00e91.\u212e\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"_\u00e9 = a\u1885.a\u00b7\n",
+null
+],
+[
+"def f():\n    return f\"{a: {b=}}\" + (p or q)\n",
+null
+],
+[
+"def f():\n    return rf'''{a:\n({{{c}}}}''' + (p or q)\n",
+null
+],
+[
+"a\u00b7 = \u00e91.\ufeffa\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"def f():\n    return f'{a}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return F'{a:}}}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return t'''{a:\\N{BULLET}{{{c}}}={b}{{x}}}''' + (p or q)\n",
+null
+],
+[
+"x = 0.0j\u00e9\n",
+null
+],
+[
+"def f():\n\t   \t\t \t\nx = 1\n",
+null
+],
+[
+"x = ){}}'\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"x = 0(\n",
+[
+"'(' was never closed",
+1
+]
+],
+[
+"def f():\n  \t \t  \tdef g():\n \t  \ty = x or z\ny = x or z\n    \\\n    x = 1\n \t\t\t \tx = 1\n \t\t \t\t \tdef g():\n \t\t \t\t \t         pass\nz = (\n\t\\\n1)\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = 00abc\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x = F\"\"\"}}a\\\nb + 'a'\n",
+[
+"unterminated triple-quoted f-string literal (detected at line 2)",
+1
+]
+],
+[
+"def f():\n    return F'{a:\\{b:{c}}}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return f'''{a:\\}{b}}''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = 012abc\n",
+[
+"leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+1
+]
+],
+[
+"def f():\n     \t\t\tif a:\n\t  \t   pass\n \t  \t\t \n\\\nwith d:\n  \t \t \t\t# comment\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = r'{x!r}a\nb'\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n    return t'{a:x{b}{b}{c}{b=}}' + (p or q)\n",
+null
+],
+[
+"\ud83d\ude00 = x\u0301.\ud83d\ude00\n",
+[
+"invalid character '\ud83d\ude00' (U+1F600)",
+1
+]
+],
+[
+"\u00b7a = \u00a9.\ud83d\ude00\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"def f():\n   \t \t\ty = x or z\ny = x or z\n\t\t \t \t  # comment\n\n \t \t \t \tx = 1\n",
+null
+],
+[
+"def f():\n    return rf'''{a:{}''' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n\t   \t \ty = x or z\n\t   \t \t \n\t   \t \twith d:\n\t\t\t\t\t\t\t\tpass\n\n",
+null
+],
+[
+"def f():\n\t  \t \t\ty = x or z\n\t  \t \t\ty = x or z\n\t\t\t\t\t \t # comment\n \t\t\t \t\t y = x or z\n",
+null
+],
+[
+"x = 12x\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n \t  \t\tif a:\n \t\t \t  def g():\n \t \t\t \t # comment\n# comment\n",
+null
+],
+[
+"def f():\n    return f'''{a{{x or y}}{''' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n\t\t\t\t \tfor i in b:\n \t\t\t\t \t y = x or z\n  \t\t\t\t\t x = 1\n",
+null
+],
+[
+"def f():\n   \t\t\t\t\tpass\nx = 1\nz = (\n    \\\n    1)\n",
+null
+],
+[
+"x = u'''{{{{''' + 'a'\n",
+null
+],
+[
+"def f():\n  \t \t  with d:\n  \t \t \t\tx = 1\n \t\t\t\t  for i in b:\n\t\t\t\t\t\t\t\tx = 1\n   \t\t  pass\n \t\t \t   # comment\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"x = 1e+l\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n    return rf'{a:\\N{BULLET}}{{{c}}}{}}}' + (p or q)\n",
+null
+],
+[
+"a\u1885 = \u00e9.a\u00a0b\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"x = 0.0jj\n",
+[
+"invalid imaginary literal",
+1
+]
+],
+[
+"def f():\n    return t\"{a:}}{b}{c}}\" + (p or q)\n",
+[
+"t-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = 'a\\\nb}}'\ny = 1\n",
+null
+],
+[
+"x = 1abc\nx = f'{a:{b}{{x if y else z}}}'\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n    return rf'''{a:\\\\N{BULLET}}''' + (p or q)\n",
+null
+],
+[
+"x = r\"a\nba\" + 'a'\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"a\u00a0b = \u309b._\u00e9\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"\u00a9 = x\u0301.\u20ac\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n \t \t   \twhile c:\n  \t \t \t # comment\n \t \t  \t pass\n   \t\t\t\twhile c:\n  \t \t \t          pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"def f():\n   \t\t\t\t\twhile c:\n\t \t \t\t  pass\n\t  \t    # comment\n\t\t\t\t\t\t\twhile c:\n\t  \t             pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n\t\t\t \t with d:\n\t\t  \t\t  while c:\n\t\t\t  while c:\n \t \t\t\t\t\tdef g():\n\t \t   y = x or z\n  \t\t\t\t with d:\n \t\t\t  \t\tpass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = 'a1}1\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n  \t       \\\n# comment\n\t  \t\t \t\tx = 1\n   \t\t\t\t\t# comment\n\t\t\t  \t \ty = x or z\n\t\t  \t\tdef g():\n\t\t  \t\t\twith d:\n  \t\t\t\t\t\ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+7
+]
+],
+[
+"a\u20ac = \u20ac.a\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x = 012\nx = f'{a:{b}{{((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((1))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))}}}'\n",
+[
+"leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+1
+]
+],
+[
+"0b2\nif a:\n\tx = f'{a:{b}{{y or z}}}'\n\ty = 2\n",
+[
+"invalid digit '2' in binary literal",
+1
+]
+],
+[
+"x = 1 \\ 2\nx = f'{a:{b}{{((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((1))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))}}}'\n",
+[
+"unexpected character after line continuation character",
+1
+]
+],
+[
+"def f():\n    return f\"{a:{{{c}}}}}=}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n\t\f\tif a:\n \t     x = 1\n",
+null
+],
+[
+"def f():\n  \t \t for i in b:\n \t \t\t\t\t\tfor i in b:\n\t\t\t \t  \tx = 1\ny = x or z\nfor i in b:\n \t\t\t\t \t def g():\n \t\t\t\t \t          pass\nz = (\n\t  \\\n  1)\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = [[}\n},{:\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '['",
+1
+]
+],
+[
+"def f():\n\t \tpass\npass\n\t  \t\t\t y = x or z\n\nwhile c:\n         pass\n",
+null
+],
+[
+"def f():\n    return f\"{a:\\{\n\n{}\" + (p or q)\n",
+[
+"f-string: expecting '}'",
+4
+]
+],
+[
+"def f():\n  \t \t  \ty = x or z\nif a:\n  \t\t\t while c:\n  \t\t\t          pass\n",
+null
+],
+[
+"x = 0e0or y\n",
+null
+],
+[
+"def f():\n\t\t \t\t\t \twith d:\n \t\t\t \t\t while c:\n \t\t\t \t\t          pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"_\u00e9 = \u540d\u524d.a\u1885\n",
+null
+],
+[
+"def f():\n  \t \t\t\t\twith d:\n    \t if a:\n \t \t\t \t\twith d:\n\t\t\t\t\t\t  pass\n    \t x = 1\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = 0o]\n",
+[
+"invalid octal literal",
+1
+]
+],
+[
+"a\u200b = a\u00b7.a\n",
+[
+"invalid non-printable character U+200B",
+1
+]
+],
+[
+"def f():\n    \t\t  y = x or z\n\\\n\\\n  def g():\n  \t   \t\tx = 1\n\t \t\t\t\t\t\ty = x or z\n\t \t \twhile c:\n \t   \t\t\tpass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"a\u00a0b = \u212e.\u1885\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"def f():\n \t   \t  pass\n  \t  \t  for i in b:\n \t   \t           pass\n",
+null
+],
+[
+"def f():\n\t  \t\t\t \ty = x or z\n\t \t\t   x = 1\n \t   \t\t\twith d:\n \t   \t\t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return F'''{a:\\{{b}{c}\\}''' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"def f():\n\t   \t  x = 1\n   \t\t \t y = x or z\n\t   \t  for i in b:\n\t\t \t\t \t\tdef g():\n  \t   \t y = x or z\n    \t \t if a:\n  \t   \t          pass\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"def f():\n    return f'''{ax\n}}''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+3
+]
+],
+[
+"\u00a9 = \u00b7a.\u0301x\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n\t\t \t\t \t\tx = 1\n \t\t\t\t\t \twhile c:\n  \t\t   \tdef g():\n   \t y = x or z\n\t   \t\t# comment\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n \t \t\t\t x = 1\n    \\\nwhile c:\n  \t \t\t  if a:\n  \t \t\t           pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = \n:{'f'{)1\n",
+[
+"closing parenthesis ')' does not match opening parenthesis '{'",
+2
+]
+],
+[
+"x = b'{x}{x}' + 'a'\n",
+null
+],
+[
+"def f():\n\t\t\t\t\t pass\n\t  \t\t\t with d:\n       \t\\\nx = 1\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"\u0301x = \u0660x.\ufeffa\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"def f():\n    return F'{a:={b!r}{b}{c}}' + (p or q)\n",
+null
+],
+[
+"x = a\u00a9\nx = f'{a:{b}{{x if y else z}}}'\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"a\u1885 = a\u200b.\ud83d\ude00\n",
+[
+"invalid non-printable character U+200B",
+1
+]
+],
+[
+"x = t'a\nb}}'\n",
+[
+"unterminated t-string literal (detected at line 1)",
+1
+]
+],
+[
+"x = ]{(]{f'{a)\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"x = br'''{x!r}{x}'\ny = 1\n",
+[
+"unterminated triple-quoted string literal (detected at line 2)",
+1
+]
+],
+[
+"def f():\n    return t\"{a:\\{{{{c}}}[1\\N{BULLET}:}\" + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"def f():\n    return rf\"{a:\\{!r}\" + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"x = r'{{a\nb'\ny = 1\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"x = }'\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n\\\n    while c:\n     x = 1\n",
+null
+],
+[
+"def f():\n\t\t   \tx = 1\n\t\t   \t \t\f  for i in b:\n   \t  \twith d:\n \t    \t\tx = 1\n\t  \t  \t# comment\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return F'{a:\n}' + (p or q)\n",
+[
+"f-string: newlines are not allowed in format specifiers for single quoted f-strings",
+2
+]
+],
+[
+"x = br'a\\a'\n",
+null
+],
+[
+"x = b'{x{x\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"x = tr'''{xa\nb'\ny = 1\n",
+[
+"unterminated string literal (detected at line 2)",
+2
+]
+],
+[
+"x = 'abc\nx = f'{a:{b}{{x if y else z}}}'\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"x = 0.0jl\n",
+[
+"invalid imaginary literal",
+1
+]
+],
+[
+"def f():\n\t  \t  \t\twhile c:\n\t\t \t  \tpass\n    \\\n    if a:\n\t\t \t\t\t           pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n    return t'{a::{{}' + (p or q)\n",
+[
+"t-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n    return f'{a' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n    return rf\"{a:{{x}}{b}{c}{{x}}x{{{c}}}}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = b'''{{\ny = 1\n",
+[
+"unterminated triple-quoted string literal (detected at line 2)",
+1
+]
+],
+[
+"x = b\"\"\"{x!r}}}\" + 'a'\n",
+[
+"unterminated triple-quoted string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n    return f'{a::x\\}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return F'{a:!r}' + (p or q)\n",
+null
+],
+[
+"\u309b = a\u00b7.\u1885\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n    return rf\"{a:\\N{BULLET}\\{{b}x=}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return t'{a:=:}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return t\"{a:{{x or y}}{{{c}}}}\" + (p or q)\n",
+null
+],
+[
+"x = rb'{x!r}{x'\n",
+null
+],
+[
+"\ufeffa = x\u0301.a\u00a9\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"a\u00e9 = \u0660x.\u540d\u524d\n",
+[
+"invalid character '\u0660' (U+0660)",
+1
+]
+],
+[
+"def f():\n\t   \t\t def g():\n\t \t \t  \ty = x or z\ny = x or z\n \t def g():\n\t  \t\t\tfor i in b:\n\t\t \t\t \tfor i in b:\n\t\t \t\t \t         pass\n",
+null
+],
+[
+"def f():\n    return f\"{a:}\" + (p or q)\n",
+null
+],
+[
+"x = 1x\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"a\u200b = \u212e._\u00e9\n",
+[
+"invalid non-printable character U+200B",
+1
+]
+],
+[
+"def f():\n    return f'{a:(:}' + (p or q)\n",
+null
+],
+[
+"def f():\n  \t\t\t\t\tdef g():\n\\\nif a:\n\\\n\\\n  y = x or z\n",
+null
+],
+[
+"def f():\n    \\\nwhile c:\n \t\t\t  \t def g():\n\t\t\t\t\t\t\twith d:\n\t\t\t\t\t\t\t def g():\n\t\t\t  \tpass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+5
+]
+],
+[
+"def f():\n \t\t \t\t\t\t\npass\n \t \t   \tx = 1\n\t \t \t\ty = x or z\n\t \t    \t\nz = (\n\\\n1)\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+5
+]
+],
+[
+"def f():\n\t\t\t\t\t  \tpass\n\t\t \t\t \t\t# comment\n",
+null
+],
+[
+"x = 0xj\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"x = 0bin y\n",
+[
+"invalid binary literal",
+1
+]
+],
+[
+"x = [\n\n",
+[
+"'[' was never closed",
+1
+]
+],
+[
+"def f():\n\t\t  \t\tx = 1\nif a:\n\\\nx = 1\n \t\t  y = x or z\n",
+null
+],
+[
+"a\u1885 = \u2118.x\u0301\n",
+null
+],
+[
+"x = fr'''{{{x=}'\ny = 1\n",
+[
+"unterminated triple-quoted f-string literal (detected at line 2)",
+1
+]
+],
+[
+"def f():\n    return f'''{a:}''' + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t\t  # comment\n\t   \t\t\ty = x or z\n  \t \t\t\t while c:\n  \t \t\t\t          pass\nz = (\n\f  1)\n",
+null
+],
+[
+"x = (}'{\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '('",
+1
+]
+],
+[
+"a = a\u309b.a\u0e33\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n    return rf'{a:}' + (p or q)\n",
+null
+],
+[
+"x = a\n",
+null
+],
+[
+"x = u\"\"\"a\nba\nb\"\"\" + 'a'\n",
+null
+],
+[
+"x = u'x}a\\'' + 'a'\n",
+null
+],
+[
+"def f():\n\t \t\t  \tif a:\n\t\t \t\t\t  pass\n \t  \t\t\ty = x or z\n \t  \t\t\tx = 1\n",
+null
+],
+[
+"def f():\n    return t\"{a:{}\n{b=}{b=}}\" + (p or q)\n",
+[
+"unterminated t-string literal (detected at line 2)",
+2
+]
+],
+[
+"x = f'{(}(1)'\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '('",
+1
+]
+],
+[
+"x = )(:)\n\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"x = (1]\n",
+[
+"closing parenthesis ']' does not match opening parenthesis '('",
+1
+]
+],
+[
+"def f():\n  \t\t\t\t\tif a:\n\t\t\t \t\t  pass\n \t\t\t\t \ty = x or z\n  \t\t  \t\tx = 1\n\t\t\t  \t \tx = 1\n\t\t\t\t\t \t y = x or z\n\t \t\t\t\t\t x = 1\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n    return rf'{a:!r\\>10}}}' + (p or q)\n",
+null
+],
+[
+"def f():\n\t \t  \t\t x = 1\n\t\t\t   \ty = x or z\n\t \t\t \t# comment\n\t\t\t\t \t\t # comment\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n \t  \t\t\tdef g():\n  \t\t\t\t  x = 1\n \t\t\t \t  def g():\n\t\t    for i in b:\n\t\t  \t \t\tx = 1\n\t\t    pass\n   \t \t\t\tpass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n    return rf\"{a:{b}{c}{b}{c}}\" + (p or q)\n",
+null
+],
+[
+"def f():\n    return f'''{a:{{}''' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"x = 'f'{(}':}]\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '('",
+1
+]
+],
+[
+"def f():\n\t\t\t\t\t\t  while c:\n\t \t \tpass\n# comment\nx = 1\nx = 1\n\\\n\t\n\t \t\t\t \tpass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = aa}}1'a\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"x = 0xnot in y\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"def f():\n    return F'{a::{b:{c}}}' + (p or q)\n",
+null
+],
+[
+"def f():\n\t  \t \t\t for i in b:\n\t  \t  \tdef g():\n\t  \t  \t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return f'{a:{b}x({b:{c}}}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return f\"{a:{b:{c}}{b}{c}>10}\" + (p or q)\n",
+null
+],
+[
+"def f():\n \t\t  \t  with d:\n \t\t  \t\t\t\n   \t\t\tpass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n    return F'{a:}}}' + (p or q)\n",
+null
+],
+[
+"x = '])[[']a\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"\u00e91 = \u0660x.\u00e9\n",
+[
+"invalid character '\u0660' (U+0660)",
+1
+]
+],
+[
+"a\u309b = a\u00a0b.\ud83d\ude00\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n  \t\t    x = 1\n# comment\npass\nwhile c:\n\t\t \t\t\t # comment\n\t\t\t \t\t pass\nz = (\n\t\f\t1)\n",
+null
+],
+[
+"_\u00e9 = x\u0660.a\u20ac\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x = a(\n",
+[
+"'(' was never closed",
+1
+]
+],
+[
+"def f():\n    return t'{a:{{{c}}}}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return F'{a:x{b!r}\\{}}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = 1 \\ 2\nif a:\n\tx = f'{a:{b}{{y or z}}}'\n\ty = 2\n",
+[
+"unexpected character after line continuation character",
+1
+]
+],
+[
+"def f():\n    return rf'''{a\\''' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"x = 1e5in y\n",
+null
+],
+[
+"def f():\n\t \t\t\t\t\tx = 1\n\t \t   y = x or z\n\t\t\t \t\t\t\tdef g():\n\t \t \t \t\twhile c:\n\t \t \t \t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = 1:\n",
+null
+],
+[
+"def f():\n\t\t \t\t\t\twhile c:\n \t\t\t  with d:\n\t\t\t\t\t\t\t\tpass\n \t\t\t\t\t\tx = 1\n \t\t\t\t\t\twhile c:\n\t\t\t\t\t\t \tx = 1\n    \tx = 1\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return F'{a:}{b}x}}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return f'{a:\n{b}{c}}' + (p or q)\n",
+[
+"f-string: newlines are not allowed in format specifiers for single quoted f-strings",
+2
+]
+],
+[
+"def f():\n \t \t \t\t\tpass\n \t\t  \t\t\twhile c:\n \t \t \t\t\t         pass\n",
+null
+],
+[
+"def f():\n    return f'''{a:(}(>10}''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return rf'''{a:{{x or y}}\\\\}''' + (p or q)\n",
+null
+],
+[
+"def f():\n    return f'{a:({b}}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return t\"{a:[1}\" + (p or q)\n",
+null
+],
+[
+"def f():\n    return f'{a:{b:{c}}\\N{BULLET}{{}' + (p or q)\n",
+null
+],
+[
+"def f():\n \t \t \t  for i in b:\n\t\t\t \t \t\tx = 1\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = rb\"{x}x}\"\ny = 1\n",
+null
+],
+[
+"def f():\n \t\t\t \t\t# comment\n\t\t\t  \t\twith d:\n \t\t\t \t\t         pass\n",
+null
+],
+[
+"def f():\n    return F'''{a:!r[1\\N{BULLET}{b}{c}(}''' + (p or q)\n",
+null
+],
+[
+"def f():\n    return f\"{a:\\{b!r}:\n}\" + (p or q)\n",
+[
+"unterminated f-string literal (detected at line 2)",
+2
+]
+],
+[
+"def f():\n  \t\t \t\t\tpass\n \t \t    y = x or z\n \t\t \t\t def g():\n \t \t\t\t\t\tpass\n  \t   \t y = x or z\n\t \t\t\tpass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n \t  \t \t pass\ndef g():\n         pass\n",
+null
+],
+[
+"def f():\n    return t\"{a:{b:{c}}}\" + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t\t\t\t  \ty = x or z\nx = 1\n\t\t\t \t  # comment\n\t\t \t\t\t\t \fx = 1\ny = x or z\n\fif a:\n\\\n\ty = x or z\n",
+null
+],
+[
+"def f():\n    return f'{a: {{x or y}}\\N{BULLET}>10{b}}' + (p or q)\n",
+null
+],
+[
+"a\u0e33 = \u309b.a\u200b\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n    return f'{a::\\{\\{}' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"def f():\n    return rf'{a:{b:{c}}}' + (p or q)\n",
+null
+],
+[
+"\u309b = \u0660x.\u1885\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"x = 1 \\ 2\nx = f'{a:{b}{{x if y else z}}}'\n",
+[
+"unexpected character after line continuation character",
+1
+]
+],
+[
+"def f():\n    return F'{a:\\N{BULLET}\\ }[1}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = \n}'\n]\n",
+[
+"unmatched '}'",
+2
+]
+],
+[
+"x = 0b2else\n",
+[
+"invalid digit '2' in binary literal",
+1
+]
+],
+[
+"def f():\n  \t  \t\t\t# comment\n \t\t   \t\ty = x or z\n \t\t\t   \ty = x or z\n  \t\t\t\t pass\n\t    for i in b:\n  \t  \t\t\t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+5
+]
+],
+[
+"x = 0xis y\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"x = 1j]\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n  \t pass\n \t  \t\t \tif a:\n \t\t    \ty = x or z\ndef g():\n   \t\t\t# comment\n \t \t\t y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n\t\t\t \t  x = 1\n \t\t\t\t  pass\n\t\t \t\t  while c:\n\t\t \t\t  \tpass\n \t\t\t\t  y = x or z\ny = x or z\n       \t\\\nx = 1\n",
+null
+],
+[
+"x = ,\n",
+null
+],
+[
+"x = f'{\n}''f'{:a\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"x = tr\"{x!r}a\\' + 'a'\n",
+[
+"unterminated t-string literal (detected at line 1)",
+1
+]
+],
+[
+"x = }}a\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n \t \t \t \tx = 1\n    \\\nif a:\n\t  \t\t  \twith d:\n\t\t\t   \t\fy = x or z\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = t\"\"\"a\"\"\"\ny = 1\n",
+null
+],
+[
+"def f():\n\t\t     x = 1\n\t     \fwith d:\n    \t \t\ty = x or z\n",
+null
+],
+[
+"x = u\"\"\"{x=}x}\ny = 1\n",
+[
+"unterminated triple-quoted string literal (detected at line 2)",
+1
+]
+],
+[
+"a\u200b = a\u309b.x\u0301\n",
+[
+"invalid non-printable character U+200B",
+1
+]
+],
+[
+"a = \ud83d\ude00.a\u1885\n",
+[
+"invalid character '\ud83d\ude00' (U+1F600)",
+1
+]
+],
+[
+"def f():\n    return f'{a:\n{{{c}}}}' + (p or q)\n",
+[
+"f-string: newlines are not allowed in format specifiers for single quoted f-strings",
+2
+]
+],
+[
+"def f():\n    return f'{a:\\N{BULLET}}' + (p or q)\n",
+null
+],
+[
+"a\u309b = a\u00a9.x\u0660\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n \t   \t\t while c:\n\t\t  \t   pass\n\t\t \t\t y = x or z\n \t\t\t\t \tdef g():\n\t\t  \t            pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n\t \t  \t\t with d:\n\t \t   \t for i in b:\n\t \t   \t          pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n\\\npass\n\t\t\t\t  \t # comment\n\\\n# comment\n\t\t\t\t\tpass\nif a:\n\t \t \t\t\tdef g():\n       \t\\\ny = x or z\n",
+[
+"unindent does not match any outer indentation level",
+11
+]
+],
+[
+"x = 1is y\n",
+null
+],
+[
+"_\u00e9 = a\u200b.x\u0660\n",
+[
+"invalid non-printable character U+200B",
+1
+]
+],
+[
+"x = \n['\n]\n",
+[
+"unterminated string literal (detected at line 2)",
+2
+]
+],
+[
+"def f():\n    return f'{a:}}\n}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return rf'{a:\\N{BULLET}{!r}' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"x = 012l\n",
+[
+"leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+1
+]
+],
+[
+"x = bf'x}\n",
+[
+"'b' and 'f' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n\t\t   \t  y = x or z\nx = 1\n\n\t\t\t \t  pass\n   \t\t  \twhile c:\n\t\t  \t\t \tx = 1\n    \t\t \tdef g():\n   \t\t  \t         pass\nz = (\n\\\n    1)\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"x = 0for\n",
+null
+],
+[
+"x = 012\nx = f'{a:{b}{{x if y else z}}}'\n",
+[
+"leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+1
+]
+],
+[
+"def f():\n    return f'{a::{b}{{{b=}}' + (p or q)\n",
+null
+],
+[
+"def f():\n   \tx = 1\nx = 1\nz = (\n\\\n\\\n  1)\n",
+null
+],
+[
+"x = 0e0for\n",
+null
+],
+[
+"x = rb'}}a' + 'a'\n",
+null
+],
+[
+"x = rb\"a\\{x=}\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"x = 0.0jelse\n",
+null
+],
+[
+"def f():\n    return f\"{a::}>10(:}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n \t\t\t  \tx = 1\n \t\t  \twith d:\n \t\t  \t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = 012\nif a:\n\tx = f'{a:{b}{{y or z}}}'\n\ty = 2\n",
+[
+"leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+1
+]
+],
+[
+"x = .5is y\n",
+null
+],
+[
+"def f():\n    return f\"{a {\\{{\n\" + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"def f():\n \t\t\t\t\t  while c:\n\t\t     \tx = 1\n \t\t\t\t\t  if a:\n\t\t \t\t \ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n  \t \t\t  pass\n\t   \t\t  pass\nfor i in b:\n \t   \t\tx = 1\n",
+null
+],
+[
+"x = 1not in y\n",
+null
+],
+[
+"x = 0b101or y\n",
+null
+],
+[
+"def f():\n    return f'''{a:{b}}''' + (p or q)\n",
+null
+],
+[
+"a\u00a9 = _\u00e9.\u0660x\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"a\u20ac = a\u200b.a\u00a9\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"\u00b7a = \u1885.a\u309b\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"def f():\n\t\t\t \t\t\t def g():\n  \t \t \t\tfor i in b:\n  \t\t\t\t y = x or z\n \t\t \t\t\t\tdef g():\n  \t\t\t\t\t pass\n \t\t  \t\t y = x or z\n\t\t\t  \t y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n  \t\t\t\t\ty = x or z\n\t\t\t \t \tpass\n\t\t\t\t\t\twhile c:\n\t \t\t\t\t\t\twith d:\n    \t pass\n    \t\t pass\n\t\t\t\t\t\tx = 1\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"def f():\n    return rf'{a:\\{b!r}{{{{}' + (p or q)\n",
+null
+],
+[
+"x = t\"\"\"a\nb{x!r}\"\n",
+[
+"unterminated triple-quoted t-string literal (detected at line 2)",
+1
+]
+],
+[
+"x = 1.5in y\n",
+null
+],
+[
+"x = b'''{xa\\'''\ny = 1\n",
+[
+"unterminated triple-quoted string literal (detected at line 2)",
+1
+]
+],
+[
+"\u00a9 = a\u0e33._\u00e9\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n    return t\"{a:{{{c}}}!r}!r}\" + (p or q)\n",
+[
+"t-string: single '}' is not allowed",
+2
+]
+],
+[
+"\u2118 = \u2118.x\u0660\n",
+null
+],
+[
+"def f():\n    return f'{a:\\[1{b:{c}}\\}' + (p or q)\n",
+null
+],
+[
+"x = .5_\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n   \t\t\t\t\tdef g():\n\t\t  \t\t  \n  \t\t\t\t  \\\n\t\n",
+null
+],
+[
+"def f():\n    return f'''{a:\\{\\{}}{b}{c}}''' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"x = uf\"}}\\N{BULLET}\" + 'a'\n",
+[
+"'u' and 'f' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n\t\f\tx = 1\ny = x or z\n\t  \t    x = 1\n \t \t\t \t\tx = 1\n\t\t\t \t   with d:\n\t\t\t  \t while c:\n\t\t\t  \t          pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+5
+]
+],
+[
+"x = ']\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n    return f'''{a:\\N{BULLET}}''' + (p or q)\n",
+null
+],
+[
+"x = 0e0_\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n    return F\"{a:x}\" + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t\t \t  pass\ndef g():\n \t \t \t with d:\n  \t \t\ty = x or z\n\t  \t \t # comment\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n    return F'{a{{x}}' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"a\u00b7 = x\u0660.x\u0660\n",
+null
+],
+[
+"def f():\n\t\t   \t for i in b:\n\t \t\t \t  def g():\n \t\t\t\t \t\ty = x or z\n  \t \t  \t# comment\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"x = rf'''}}{{'''\n",
+null
+],
+[
+"x = \"\"\"{x}a\"\"\"\ny = 1\n",
+null
+],
+[
+"\u0660x = \u20ac.a\u00a9\n",
+[
+"invalid character '\u0660' (U+0660)",
+1
+]
+],
+[
+"x = },]\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"\ufeffa = \u20ac.a\u309b\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"def f():\n    return rf'''{a:x }\\N{BULLET}}''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = }}\n}']]:\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n     \t  with d:\n    \t\t if a:\n    \t\t          pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n    return F\"{a:: }\" + (p or q)\n",
+null
+],
+[
+"def f():\n    \t  \tfor i in b:\n \t  def g():\n    \\\n    \n   \t   \ty = x or z\n\t      \tpass\ny = x or z\nif a:\n         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n\t \t\t\t\t \ty = x or z\n    \\\npass\n\t\t\t  \t \twith d:\n\t  \t\t   \f  pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n    return F'''{a:!r{{x or y}}{:}}}''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return f'''{a{{{c}}}{{x}}{\\N{BULLET}[1''' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"x = ]{(\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n    return f'{a:!r(}=}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"\u0301x = a\u0e33.\u00b7a\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"def f():\n \t   \t  pass\n    \t\t  if a:\n   \tpass\n \t\t\t y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n    return F'''{a:\\{}''' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"a\u00a9 = _\u00e9.a\u0e33\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"x = ,1}\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"x = rt\"a\\\nb{{\"\ny = 1\n",
+null
+],
+[
+"def f():\n \t\t   \t\t# comment\nx = 1\nfor i in b:\n\t \t\t \t\tpass\n    \\\n    y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+7
+]
+],
+[
+"def f():\n    return F\"{a:{{x}}{b}{c}\\N{BULLET}\\{=}\" + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n    return t'{a:\\\\{{b:{c}}{b=}\\{}' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"def f():\n    return f'{a:\n\n}}' + (p or q)\n",
+[
+"f-string: newlines are not allowed in format specifiers for single quoted f-strings",
+2
+]
+],
+[
+"x = ]]\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n    return f'''{a:{b=}{b!r}[1}''' + (p or q)\n",
+null
+],
+[
+"x = 1{a}\n",
+null
+],
+[
+"def f():\n \t\t\t # comment\n\t \tfor i in b:\n \t \t\t\t \tif a:\n\t\t\t  \t \tfor i in b:\n \t\t  \t\t\tdef g():\n\t \t \t \t x = 1\n",
+[
+"unindent does not match any outer indentation level",
+7
+]
+],
+[
+"x = ']\n(\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"a\u1885 = \u0301x.\u00b7a\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"def f():\n\t \t\f  while c:\n\t   \t\t\t pass\n  \t\t  def g():\n\t\t\t  \t\t\t# comment\n \t \t\t\t\tfor i in b:\n  \t \t  y = x or z\n \t\t     with d:\n \t\t              pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n    return f'{a:{{}' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"x = rb\"{x=}\"\ny = 1\n",
+null
+],
+[
+"x = ft\"x}a\" + 'a'\n",
+[
+"'f' and 't' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n    return f'{a:{b}{c}=\\N{BULLET} }' + (p or q)\n",
+null
+],
+[
+"def f():\n \t\t\t\t  y = x or z\n\t\t\t\t \t# comment\n    \\\nx = 1\n \t\t\t\t  pass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"\ufeffa = \u00e91.a\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"\u00e9 = \u00e9.a\u1885\n",
+null
+],
+[
+"x = 0o17or y\n",
+null
+],
+[
+"def f():\n    return F'''{a:{{{c}}} {b}}''' + (p or q)\n",
+null
+],
+[
+"x = 0_\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x = rt'x}\\N{BULLET}'\ny = 1\n",
+[
+"t-string: single '}' is not allowed",
+1
+]
+],
+[
+"x = u'''{x!r}'''\n",
+null
+],
+[
+"x = 0o8j\n",
+[
+"invalid digit '8' in octal literal",
+1
+]
+],
+[
+"def f():\n    return t\"{a:{{x or y}}}\" + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t\t\t   y = x or z\npass\n    \\\n# comment\n\t  \t   \ty = x or z\n",
+null
+],
+[
+"def f():\n    return f'''{a:{{ }''' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n    return rf'''{a:{{{c}}}\\N{BULLET}}''' + (p or q)\n",
+null
+],
+[
+"x = 1.e2in y\n",
+null
+],
+[
+"def f():\n\t   \t  \t# comment\n \t\t\t\t   x = 1\n    \t   def g():\n\t\t\t\t \t\t x = 1\n# comment\nfor i in b:\n\t\t\t\t\t   pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n\t\t\t\t \t\ty = x or z\n \t\t\t\t\t\tpass\n\t\t\t\t \t\t\tfor i in b:\n\t\t\t\t \t\t\t         pass\n",
+null
+],
+[
+"x = ub'''a\\'a\nb + 'a'\n",
+[
+"'u' and 'b' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n\t\t\t  \t if a:\n      while c:\n\t\t \t \t\t pass\n      while c:\n  \t\t \t\tpass\n   \t \t\tdef g():\n\t \t\t \t \twith d:\n\t \t\t \t \t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return F\"{a::}}}\" + (p or q)\n",
+null
+],
+[
+"\u1885 = \u20ac.\u0301x\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"def f():\n\t  \t  with d:\n\t\t  \t\t y = x or z\n\t\t pass\n\\\n\\\n  y = x or z\n\t\t   \t\t\tfor i in b:\n       \t\\\ny = x or z\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = t'{x}'\ny = 1\n",
+null
+],
+[
+"def f():\n    return f'{a:{{x}}}}}' + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t\t\t\t\t \ty = x or z\n\t\t  \t\t def g():\n\t\t \t\t\t\t\tfor i in b:\n   \tfor i in b:\n\t\t\t  \t # comment\n\t\t\t\t   y = x or z\n  \t\t \t\t\tdef g():\n  \t\t \t\t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n  \\\n  y = x or z\n     while c:\n\t\t \t  x = 1\n\t \t\t  def g():\n\t\t\t\t\t \tpass\n",
+null
+],
+[
+"\u309b = \ud83d\ude00.\u20ac\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n    return f'{a:= }}\\{}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return rf\"{a:{{{{c}}}[1{b=}{b=}}\" + (p or q)\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '['",
+2
+]
+],
+[
+"def f():\n   \t \t  \f  # comment\n  \t\t\t\t\t for i in b:\n   \t\t  \ty = x or z\n  \t  \t  x = 1\n\t    \t  for i in b:\n\t \t\t\t \t \t\f\ty = x or z\n\t\t \t  \twith d:\n\t\t \t  \t         pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = }'1a}()\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"x = {\n]\n",
+[
+"closing parenthesis ']' does not match opening parenthesis '{' on line 1",
+2
+]
+],
+[
+"def f():\n \t\t  \t for i in b:\n\t\t\t\t\t\t\t y = x or z\n \t\t\t  \t\tfor i in b:\n\t\t\t\t\t\t\t          pass\nz = (\n\t\\\n1)\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"a = a\u309b.a\u200b\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n    return F'''{a:x>10{b!r}\n}''' + (p or q)\n",
+null
+],
+[
+"def f():\n     \t\t x = 1\n\t\t \t    # comment\n  \t   \t for i in b:\n \t\t\t \t \nz = (\n \f\t\\\n  1)\n",
+null
+],
+[
+"x = 1e+_\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x\u0660 = a\u309b.\u212e\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"x = tr\"\"\"{x{x!r} + 'a'\n",
+[
+"'{' was never closed",
+1
+]
+],
+[
+"x = u\"\"\"a\\'{x!r}\"\"\" + 'a'\n",
+null
+],
+[
+"x = 0b2for\n",
+[
+"invalid digit '2' in binary literal",
+1
+]
+],
+[
+"def f():\n\\\n    with d:\n\t\t\t\t\t\t \tx = 1\n \t   \t\tdef g():\n  \t \t \t with d:\n  \t \t \t          pass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n   \t \tfor i in b:\n\t\t   \t\t\tif a:\n\t\t \t \t\t\t\n",
+null
+],
+[
+"def f():\n    return f'{a:}}{{x or y}}{!rx}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"\u00e91 = \u20ac.\u20ac\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x\u0660 = \u1885.a\u200b\n",
+[
+"invalid non-printable character U+200B",
+1
+]
+],
+[
+"def f():\n\t\t \t\tfor i in b:\n\t  \t\t\t\t\twith d:\n\t  \t\t\t\t\t         pass\n",
+null
+],
+[
+"def f():\n \t\t      \t\\\n\t\n \t     \tpass\n \t\t    # comment\n\t\t  \t y = x or z\n\t  \t  \t y = x or z\nwith d:\n         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+6
+]
+],
+[
+"x = 1.e2not in y\n",
+null
+],
+[
+"x = r\"\\N{BULLET}{x}\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n    return t'{a::(\n}' + (p or q)\n",
+[
+"t-string: newlines are not allowed in format specifiers for single quoted t-strings",
+2
+]
+],
+[
+"def f():\n    return f'''{a:[1}''' + (p or q)\n",
+null
+],
+[
+"\u0301x = a\u1885.x\u0301\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"def f():\n    return f\"{a::=}\" + (p or q)\n",
+null
+],
+[
+"def f():\n\t     \tpass\n     \t\t\n       x = 1\npass\n \t  \t y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = [[]a'\n(\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"a\u00a9 = a\u00a9.\u2118\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"\ufeffa = \ud83d\ude00.a\u20ac\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"def f():\n\t \t    \tdef g():\n     \t  if a:\n  \t \t\t # comment\npass\ny = x or z\n \t      pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = u\"\"\"a{x!r}\"\"\" + 'a'\n",
+null
+],
+[
+"def f():\n    return f'''{a:\\N{BULLET}{{}''' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"x = 00 \n",
+null
+],
+[
+"def f():\n\t\t\t\t    x = 1\ndef g():\n         pass\n",
+null
+],
+[
+"x = 1abc\nif a:\n\tx = f'{a:{b}{{y or z}}}'\n\ty = 2\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n    return f'{a:}}\\N{BULLET}{(}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return rf'''{a:{{x or y}}(\n}''' + (p or q)\n",
+null
+],
+[
+"\u2118 = a\u00e9.a\u00b7\n",
+null
+],
+[
+"x = ft'''a\\'{x!r}'''\n",
+[
+"'f' and 't' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n    return f'{a:{b}{c}}' + (p or q)\n",
+null
+],
+[
+"def f():\n      x = 1\n      \\\nx = 1\n     \t\ndef g():\n         pass\nz = (\n       \t\\\n1)\n",
+null
+],
+[
+"x = ur\"aa\\\nb\" + 'a'\n",
+[
+"'u' and 'r' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n      \t\fx = 1\n      \ty = x or z\n      \t\ndef g():\n\t\t with d:\n\t \t  \t\t x = 1\n",
+null
+],
+[
+"x = ['a()\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n \t \t y = x or z\ny = x or z\n\t \t\t\t while c:\n\t \t\t\t\t\tfor i in b:\n\f  y = x or z\n\t \t \t \t\tx = 1\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"def f():\n  \t \t   if a:\n x = 1\n \n  \t\t\t   x = 1\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n  \t    \tpass\nwhile c:\n\t\t \t\t\t \tfor i in b:\n   \t\t while c:\n   \t\t          pass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n  \t   \ty = x or z\n# comment\nz = (\n    \\\n    1)\n",
+null
+],
+[
+"\ufeffa = a\u00a9.\u212e\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"def f():\n    return t\"{a:\\\\{\n{{x}}}\" + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n    return t'{a:}' + (p or q)\n",
+null
+],
+[
+"def f():\n\fx = 1\n\t  \t    pass\n",
+null
+],
+[
+"x = \n\n1\n",
+null
+],
+[
+"x = r\"}}a\\\nb\"\ny = 1\n",
+null
+],
+[
+"\u1885 = a\u20ac.\u0301x\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"def f():\n    return t'{a:!r!r{b}{c}{b!r}}' + (p or q)\n",
+null
+],
+[
+"x = 1.e2j\n",
+null
+],
+[
+"def f():\n    return rf'{a:[1}}\\{b:{c}}}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = {}}{1a\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"x = br'''x}'\n",
+[
+"unterminated triple-quoted string literal (detected at line 1)",
+1
+]
+],
+[
+"x = )af'{}\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"def f():\n    return F'{a:{b:{c}}[1{{x or y}}:}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return rf'{a:>10}}}' + (p or q)\n",
+null
+],
+[
+"_\u00e9 = a\u00a0b.a\u00a0b\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"def f():\n  \t\t \t# comment\n\t\t \t \t\t\tpass\n  \t  \twith d:\n\t\t \t \t\t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n \t\t x = 1\ny = x or z\nfor i in b:\n         pass\n",
+null
+],
+[
+"def f():\n    return t'{a:{b=}\n{b}{c}(}' + (p or q)\n",
+[
+"unterminated t-string literal (detected at line 2)",
+2
+]
+],
+[
+"def f():\n    return rf'{a:[1}' + (p or q)\n",
+null
+],
+[
+"def f():\n\t \t \t\t\twhile c:\n\t\t \t\t \t\tfor i in b:\n  \t  \t \t# comment\n\t\t \t \t\t\tpass\n    \t \t # comment\n",
+null
+],
+[
+"a\u00a0b = a\u00e9.\u2118\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"x = bf'''\\N{BULLET}{x}'\ny = 1\n",
+[
+"'b' and 'f' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n\t\t\t  \t y = x or z\n \t\t \t\tpass\n \t\t\t   x = 1\n\t\t \t \tif a:\n \t\t \t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = 0o8l\n",
+[
+"invalid digit '8' in octal literal",
+1
+]
+],
+[
+"def f():\n   \t\t def g():\n \t    \t with d:\n \t    \t          pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = 1else\n",
+null
+],
+[
+"def f():\n\t\t\t\t \t\t \f  # comment\n\t \t\t\t\t\t if a:\n\t \t\t \t\t\tpass\n\t\t\t\t  \tpass\nz = (\n\t\f\t1)\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n   \t    y = x or z\n   \t    pass\n \t  \t\t\ty = x or z\n \t\t \t\t\t if a:\n\t\t \t  \t x = 1\n \t\t    \tfor i in b:\n\t\t   \t  y = x or z\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"x = 0x]\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"\u00e91 = \u00a9._\u00e9\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"x = 0b101\u00e9\n",
+null
+],
+[
+"\u00a9 = \u00e91.x\u0660\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"x = b\"\"\"{x}}}\"\ny = 1\n",
+[
+"unterminated triple-quoted string literal (detected at line 2)",
+1
+]
+],
+[
+"x\u0301 = \u309b.a\u00a0b\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n    return rf'''{a:{b:{c}}{b:{c}}{{x or y}}\\{x}''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return t'{a:{{x}}}{b}{{{c}}}{{x}}}' + (p or q)\n",
+[
+"t-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return f'''{a:{{\\{b!r}{b=}}''' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"a\u20ac = \u00e91.a\u0e33\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"def f():\n    return rf'{a:{{x or y}}{{}' + (p or q)\n",
+null
+],
+[
+"x = rt\"{x}a\ny = 1\n",
+[
+"unterminated t-string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n  \\\n  pass\npass\n \t\t\t\t\t  # comment\nx = 1\n \t\t\t\t  pass\n",
+null
+],
+[
+"x = tr\"\"\"a\nba\\'\"\"\"\n",
+null
+],
+[
+"_\u00e9 = a\u00a0b.a\u00e9\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"def f():\n    return F'''{a:: {b=}{b:{c}}}''' + (p or q)\n",
+null
+],
+[
+"x = rt'x}}} + 'a'\n",
+[
+"t-string: single '}' is not allowed",
+1
+]
+],
+[
+"x = )f'{'}'\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"def f():\n   \t\t  \twhile c:\n\t\t \tx = 1\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"\u309b = x\u0660.\u0301x\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n    return f\"{a:{{{c}}}!r{b}{c}{b!r}x}\" + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t\t pass\ny = x or z\n\t \t \t\t\tif a:\n\t  \t  pass\n    \\\npass\n\t\t\t x = 1\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"x = }'1}}''\n{\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n    return f'{a{{{c}}}x\\N{BULLET}' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"def f():\n   \t  if a:\n  \t\t\t\t with d:\n\t \t \t \t\ty = x or z\n       \t\\\nwhile c:\n\t \t\t\t\t  y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"x = '}'1\n",
+null
+],
+[
+"def f():\n\t\t \t   pass\n\\\nx = 1\npass\n  \t\t\t\t\t x = 1\n\t\t\t   \t\tx = 1\ny = x or z\ny = x or z\n",
+[
+"unindent does not match any outer indentation level",
+7
+]
+],
+[
+"a\u1885 = a.a\u309b\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n   \t  while c:\n   \t\t\t \twith d:\n   \t   def g():\n   \t            pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n    return t'{a:{{{c}}}:>10}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return f\"{a:{{x}}=[1}\" + (p or q)\n",
+null
+],
+[
+"\u0301x = a\u0e33.\ufeffa\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"a = \u00a9.\u540d\u524d\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n    return rf'{a:}xx}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = 0.0jfor\n",
+null
+],
+[
+"x = aa'\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n   \t\t\t\ty = x or z\nx = 1\npass\n  \t\t    y = x or z\n \t \t    # comment\n",
+null
+],
+[
+"x = }\n',[}[\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"a\u200b = \ufeffa.\u540d\u524d\n",
+[
+"invalid non-printable character U+200B",
+1
+]
+],
+[
+"x = 0_0abc\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n    return t'{a:(xx{b:{c}}}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return rf'{a:>10{{x}}{b}{{x or y}}>10}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n       \tx = 1\n       \tpass\n\t\t \t \t \twhile c:\n\t\t\t\t  \t\tfor i in b:\n\t\t\t\t  \t\t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"def f():\n    return f\"{a:{{[1}\" + (p or q)\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '['",
+2
+]
+],
+[
+"\u00a9 = a\u200b.a\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"a\u00e9 = a\u1885.\u0301x\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"def f():\n \t\t\t\t for i in b:\n  \\\n  for i in b:\n \t\t\t\t\t\t\tpass\n\t \t\t\ty = x or z\n\t \t\t\t# comment\n\t \t\t\t \tdef g():\n\t\t\t\t\t \t x = 1\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"\u00e9 = x\u0301.\u309b\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n \t \t  with d:\n\t\t\twhile c:\n\f  pass\n \t\t\t\t  \t\n\t\t\tx = 1\n\t  \t  with d:\n \t \t           pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = a:)f'{'(,}\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"x = 1e5j\n",
+null
+],
+[
+"def f():\n    return f'''{a:xx}''' + (p or q)\n",
+null
+],
+[
+"x\u0660 = \u00b7a.\u00e91\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"x = 1_or y\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n \t \t  # comment\nx = 1\n\t \t \t \tdef g():\n\t \t\t\t # comment\n",
+null
+],
+[
+"x = rt\"a\\\\N{BULLET}\"\ny = 1\n",
+null
+],
+[
+"def f():\n\t  \t \t\t\tpass\n \t\t \t\t \tpass\n\t \t  \t\t\ty = x or z\n\t\t      y = x or z\n\fy = x or z\n\t\t \t \t\t\twith d:\n\t  \t \t\t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n    return rf'{a:{{{x}}}}' + (p or q)\n",
+null
+],
+[
+"def f():\n\t \t\t\t \t # comment\n    \\\n    y = x or z\n \t\t \t \t\twith d:\n\t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"def f():\n   x = 1\n   if a:\n \t  \t\twith d:\n \t  \t\t         pass\nz = (\n\\\n\\\n  1)\n",
+null
+],
+[
+"\u20ac = \u2118.\u309b\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"a\u309b = \u00a9.a\u00a0b\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"x = ub'x}\\N{BULLET}'\n",
+[
+"'u' and 'b' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n    return f'''{a:{{(}''' + (p or q)\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '('",
+2
+]
+],
+[
+"\u00e91 = a.x\u0660\n",
+null
+],
+[
+"def f():\n    return f\"{a:\\{{{{x}}}\" + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n\t\t    \t\tpass\ny = x or z\nfor i in b:\n         pass\n",
+null
+],
+[
+"def f():\n \t\t\t  \t pass\n \t\t\t \t y = x or z\n    \t \t\tpass\ny = x or z\n\t \t\t  for i in b:\n\t  \t\t\t  y = x or z\n    \t \ty = x or z\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n   \t\t \t\t# comment\n \t\t \t \t\tpass\n\\\n\tx = 1\n \t \t \t \t# comment\n\t  \t \t \tpass\n\t  \t \t\t x = 1\n\t\t  \t  \tx = 1\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n      \t x = 1\n\t\t \t # comment\n\f\n",
+null
+],
+[
+"\u212e = a\u00e9.x\u0301\n",
+null
+],
+[
+"\u00a9 = \u1885.a\u200b\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n \t\t    \n\t\t \t\t  if a:\n   \t\t\t\t pass\n  \t\t\t\t \tfor i in b:\n   \t\t\t with d:\n\t\t    \t\ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = 1eor y\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x = [:{:}a(1\n",
+[
+"'(' was never closed",
+1
+]
+],
+[
+"x\u0660 = a\u00a0b.a\u00e9\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"def f():\n  \t\t    pass\n\t\t  \t\t with d:\n\t\t\t \t   pass\n\t\t \t\t \t\tif a:\n\t  \t \t\t\n \t\t\t\t   x = 1\n \t\t\t\t   if a:\n\t\t\t \t            pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n    return rf'''{a=''' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n    return f'{a:{{x}}>10}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n\t\t\t\t    pass\n\t \t\t\t\t  y = x or z\n\t    \t  while c:\n \t\t\t\t\tpass\n# comment\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = ub\"a\nb{{ + 'a'\n",
+[
+"'u' and 'b' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n     \t  # comment\n \t    \t\t\f\tfor i in b:\n \t  \t\t\t def g():\n \t\t\t  \twith d:\n \t\t\t  \t         pass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n  \t\t \t\t while c:\n\t\t  \t\tpass\n    \\\n    # comment\n# comment\nif a:\n\t\t \t   \tpass\ny = x or z\nz = (\n\\\n\\\n  1)\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return t'{a:>10{b=}=}' + (p or q)\n",
+null
+],
+[
+"x = }}')af'{,\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n    return F\"{a:((:}\" + (p or q)\n",
+null
+],
+[
+"def f():\n   \t \t \twhile c:\n   \t\t \t\tx = 1\npass\npass\n\t\t \t\t\t\t def g():\n\t \t\t  \tpass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n  \t\t\t\t pass\n\t\t \t\t\t\t y = x or z\n\t   \t \tx = 1\n \t  \t\t\t if a:\n \t  \t\t\t          pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n    \t\t \t\n\\\n\\\n  for i in b:\n\t \t\t\t \tx = 1\n\t\t\t \t \tpass\npass\n\f  x = 1\n",
+null
+],
+[
+"def f():\n\f  x = 1\n \t \t \t\t\t\ny = x or z\n",
+null
+],
+[
+"a\u00b7 = \u00e91.\u1885\n",
+null
+],
+[
+"_\u00e9 = a\u20ac.\u0660x\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"def f():\n \t    pass\n\t \t\t\t\t\t\tpass\n\f  y = x or z\nwith d:\n \t\t     while c:\n\t \t\t \t\t with d:\n\t \t\t \t\t          pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = 0b101is y\n",
+null
+],
+[
+"def f():\n    return t'''{a:{{x}} !r{}''' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n    return rf'''{a:\\N{BULLET} \\N{BULLET}{{x}}}''' + (p or q)\n",
+null
+],
+[
+"x = 0o8 \n",
+[
+"invalid digit '8' in octal literal",
+1
+]
+],
+[
+"def f():\n    return f'{a:!r{b}}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return f'{a:{{x}} =}' + (p or q)\n",
+null
+],
+[
+"def f():\n \t    \tpass\n  \t   \t# comment\n  \t   \tx = 1\n\t\t  \t\t\t while c:\n \t \t  \t if a:\n\t \t \tif a:\n\t\t \t\t \t x = 1\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"x = }'a\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n    return rf'{a:x=\\N{BULLET}{b}}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return t'''{a:{b}{c}}''' + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t     y = x or z\n\\\n\twhile c:\n \t   \t\t x = 1\n\t \t\t \t\t\tpass\n  \t  \t\t y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = }'f'{a\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n    return t\"{a:\\N{BULLET}{{x or y}}{b:{c}}{{}\" + (p or q)\n",
+null
+],
+[
+"x = 0o17not in y\n",
+null
+],
+[
+"def f():\n\t   \t\t\tdef g():\n\t\t\t\t   \tdef g():\n\t\t\t\t   \t         pass\n",
+null
+],
+[
+"a\u00e9 = \u0660x.\u0660x\n",
+[
+"invalid character '\u0660' (U+0660)",
+1
+]
+],
+[
+"def f():\n\\\n    # comment\n\t\t\t  \t  x = 1\npass\n\t\t\t\t  \t\tx = 1\n",
+null
+],
+[
+"x = rb'''{x=}a''' + 'a'\n",
+null
+],
+[
+"x = uf\"\"\"a\\\nb\\N{BULLET}\"\"\" + 'a'\n",
+[
+"'u' and 'f' prefixes are incompatible",
+1
+]
+],
+[
+"x = ur\"{x}\"\n",
+[
+"'u' and 'r' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n    return f'{a:{{{b!r}\\N{BULLET}\\N{BULLET}}' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"\u1885 = x\u0301.\u00e9\n",
+null
+],
+[
+"def f():\n\t \t\t \t\tfor i in b:\n\t\t \t\t\t\t y = x or z\n    \\\ny = x or z\n\t   \t  \tdef g():\n\t \t  for i in b:\n\f  if a:\n \t\t\t   \tpass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n    return rf\"{a:{b=}\n}\" + (p or q)\n",
+[
+"unterminated f-string literal (detected at line 2)",
+2
+]
+],
+[
+"x = ()}f'{\n\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"x = 0b]\n",
+[
+"invalid binary literal",
+1
+]
+],
+[
+"def f():\n    return rf'''{a:{b!r}{{{c}}}}''' + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t   \t\ty = x or z\n\t\t\t   \tx = 1\n\t\t\t  \f  for i in b:\n\t\t   \t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"\u540d\u524d = \u00b7a.a\u00a9\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"def f():\n \t\t \t\t \tif a:\n \t  \t\f\tpass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = r\"\"\"a\\a\nb\"\"\"\ny = 1\n",
+null
+],
+[
+"a = a\u00a9.a\u00a0b\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n    return F'{a:!r\\}}}' + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t \t# comment\n\t \t\t# comment\n",
+null
+],
+[
+"def f():\n    \\\n    if a:\n\t\t\t\t \t with d:\n\t\t\t\t\t\t\t\tpass\n    \\\n    pass\n\t \t\t\t\t\t\tif a:\n\t\t\t   \t\tpass\n  \t\t \tx = 1\n",
+[
+"unindent does not match any outer indentation level",
+9
+]
+],
+[
+"def f():\n \t  \t \t\tif a:\n\t \t \twhile c:\n \t\t\t\t x = 1\n \t \t\tfor i in b:\n\t \t \t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = t\"\"\"a\\'a\\\nb\"\"\"\ny = 1\n",
+null
+],
+[
+"x = 1.5or y\n",
+null
+],
+[
+"def f():\n    return f\"{a:}}x}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = \n(}\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '('",
+2
+]
+],
+[
+"x = :(1):{,\n",
+[
+"'{' was never closed",
+1
+]
+],
+[
+"\u540d\u524d = a\u309b.\u1885\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n\t\t   pass\n       \t\\\nx = 1\n\t \t\t \t  def g():\n\t     \t\t# comment\n\t\t\t  \t\t\tif a:\n \t\t \t\t\t\ty = x or z\ny = x or z\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n\t \t   \t def g():\n \t\t\t\t \t\ty = x or z\n       \t\\\nwhile c:\n\\\n\tpass\n    \t  pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"\u00e9 = \u2118.\u540d\u524d\n",
+null
+],
+[
+"def f():\n \t \t\t  y = x or z\n\\\n    x = 1\n\t\t\t\t \t  with d:\n\t    \t \tpass\n\t \t\t\t\t\t\tx = 1\n \t\t\t\t\t  y = x or z\n   \t\t y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"a\u00a9 = a\u00a0b.\u309b\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"x = {}1,,]\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"x = [,\n",
+[
+"'[' was never closed",
+1
+]
+],
+[
+"x = rf'''{{{x=}\ny = 1\n",
+[
+"unterminated triple-quoted f-string literal (detected at line 2)",
+1
+]
+],
+[
+"\u00e91 = _\u00e9.a\n",
+null
+],
+[
+"x = F\"\"\"{x=}a\\\"\"\"\n",
+[
+"unterminated triple-quoted f-string literal (detected at line 1)",
+1
+]
+],
+[
+"a\u200b = \u00e9.a\n",
+[
+"invalid non-printable character U+200B",
+1
+]
+],
+[
+"x = 12in y\n",
+null
+],
+[
+"x = 0\n",
+null
+],
+[
+"x = F'x}{x=}' + 'a'\n",
+[
+"f-string: single '}' is not allowed",
+1
+]
+],
+[
+"\u0301x = a\u200b.a\u200b\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"def f():\n \t\t \t   y = x or z\n \t  \t\t y = x or z\n \t\t \t   x = 1\n \t\t \t   x = 1\n\t\t\t \t\t\t\ty = x or z\nwhile c:\n   \t\t \ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return rf'''{a:{{x}}}''' + (p or q)\n",
+null
+],
+[
+"x = ,1]}'f'{\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"x = 012e\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x = 1j \n",
+null
+],
+[
+"def f():\n \t\t   \t pass\n \t \t  \t x = 1\n     \t \tx = 1\n   \t \t\t if a:\n \t     # comment\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n\t\t\t\t\t\t\t\t# comment\n\t\t \t\t\t\t\tpass\n\t\t\t\t \t\t\tpass\n\t\t\t\t\t\t\t\tfor i in b:\n\t\t\t\t\t\t\t\t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+5
+]
+],
+[
+"a\u00a0b = \u2118.a\u20ac\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"x = 12or y\n",
+null
+],
+[
+"x = 0o8e\n",
+[
+"invalid digit '8' in octal literal",
+1
+]
+],
+[
+"a\u0e33 = a\u0e33.\u212e\n",
+null
+],
+[
+"x = :1f'{\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n \t\t\t\t\t\t# comment\n\t\t\t\t\t\t\t\tif a:\n\\\nwhile c:\n \t\t\t  with d:\n\t\t\t\t\t\t\t if a:\n\t\t\t\t\t\t\t          pass\n",
+null
+],
+[
+"x = (\nf'{({a\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n\t \t \t\t\t # comment\n \t\t \t\t\t \fx = 1\n\t\f\ty = x or z\n\t\t \t\t\t y = x or z\n \t\t\t\t\t x = 1\n",
+null
+],
+[
+"\u2118 = \u2118.a\u309b\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"\ufeffa = \u00e91.a\u00e9\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"def f():\n\t\t\t\t\t \t x = 1\ny = x or z\n \t \tx = 1\n \t\t\t    \t\\\n\t\n",
+null
+],
+[
+"def f():\n    return F\"{a:}\" + (p or q)\n",
+null
+],
+[
+"x = ,',,}'\n",
+null
+],
+[
+"x = r'''a\\\nb{{'\n",
+[
+"unterminated triple-quoted string literal (detected at line 2)",
+1
+]
+],
+[
+"def f():\n \t \t\t\t\t while c:\n \t\t\t  while c:\n \t\t\t           pass\nz = (\n    \\\n1)\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return F\"{a:{b!r}}\" + (p or q)\n",
+null
+],
+[
+"def f():\n    return f\"{a:{{{c}}}:}\" + (p or q)\n",
+null
+],
+[
+"def f():\n\t   \t   for i in b:\n\t \t\t  \n \t  \t   # comment\n\t  \t \t  x = 1\n\t\t  \t\t \ty = x or z\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+5
+]
+],
+[
+"def f():\n     # comment\ny = x or z\n \t\t   \tdef g():\n \t \t \t\t pass\n  \t \t\t\t x = 1\n  \t     with d:\n \t \t \t\t          pass\n",
+[
+"unindent does not match any outer indentation level",
+7
+]
+],
+[
+"\u0301x = \u0660x.a\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"def f():\n \t    pass\nx = 1\n    \t\n  \t\t   \tx = 1\n   \t\t \t\tdef g():\n\t \t\t   \tx = 1\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+6
+]
+],
+[
+"\u0301x = \u00e91.\u0301x\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"def f():\n    return f\"{a::x}\" + (p or q)\n",
+null
+],
+[
+"def f():\n  \t  \t y = x or z\n\t\t \t\t  \t    \\\n\n  \\\n  if a:\n  \t\t\t \t\tif a:\n\t\t     y = x or z\n\\\n\\\n  while c:\n\t \t \t\t\ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"def f():\n    return f'''{a[1\\N{BULLET}{b=}{b:{c}}''' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"x = tr\"a{x\" + 'a'\n",
+[
+"t-string: expecting '}'",
+1
+]
+],
+[
+"x = '}}{x\ny = 1\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"x\u0660 = \u20ac.\u212e\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"def f():\n \t \t \t \t# comment\n\t   \t\t \t\n  \t  \t\t\twhile c:\n\t \t \t\t\t\tpass\n \t\n\t   \t \tpass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+5
+]
+],
+[
+"x\u0301 = \u00b7a.\u20ac\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"x = Rb'{xa\nb + 'a'\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"x = )a){:]()\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"x = Rb'''{{{x=}'\ny = 1\n",
+[
+"unterminated triple-quoted string literal (detected at line 2)",
+1
+]
+],
+[
+"x = bf\"a\\\nb\n",
+[
+"'b' and 'f' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n    return F'''{a:{b:{c}}(}''' + (p or q)\n",
+null
+],
+[
+"def f():\n   \t x = 1\n   \t if a:\n\t\t  \t\t\t\twith d:\n\t\t\t \t\t\twith d:\n\t\t\t \t\t\t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+5
+]
+],
+[
+"def f():\n  \t\t   with d:\n\t\t\t \t \t x = 1\n \t \t \t\t\tpass\n\t\t  \t  pass\n\t  \t\t\t  \n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = 0xor y\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"def f():\n    return F'{a:\\{}}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = 1.real\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x\u0301 = x\u0301.\ud83d\ude00\n",
+[
+"invalid character '\ud83d\ude00' (U+1F600)",
+1
+]
+],
+[
+"def f():\n    return F'''{a:\n\\N{BULLET}}''' + (p or q)\n",
+null
+],
+[
+"def f():\n    return F'''{a:\\}''' + (p or q)\n",
+null
+],
+[
+"x = ur\"\\N{BULLET}a\"\ny = 1\n",
+[
+"'u' and 'r' prefixes are incompatible",
+1
+]
+],
+[
+"\u00b7a = a\u00a9.\u1885\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"\u212e = _\u00e9.a\n",
+null
+],
+[
+"x = 0x_if y else 2\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"def f():\n\t \t \t   # comment\n \t\t \t   y = x or z\n\\\n    pass\n  \t\t\t   with d:\n\t\t\t\t  def g():\n \t\t\t \t\t x = 1\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n \t\t   \t\twith d:\n      \twhile c:\n     \t \twhile c:\n   \t\t for i in b:\n   \t   \tpass\n     \t \twhile c:\n \t\t \t \t if a:\n \t\t \t \t          pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = F'''{x\\N{BULLET}' + 'a'\n",
+[
+"unexpected character after line continuation character",
+1
+]
+],
+[
+"x = .5for\n",
+null
+],
+[
+"def f():\n\t\tdef g():\n\t\t   \t\tx = 1\n\t   \t\t\twhile c:\n\t\t   \t\t         pass\n",
+null
+],
+[
+"x = [\n{]'\n",
+[
+"closing parenthesis ']' does not match opening parenthesis '{'",
+2
+]
+],
+[
+"x = ur'''{x!r}{{'''\ny = 1\n",
+[
+"'u' and 'r' prefixes are incompatible",
+1
+]
+],
+[
+"\u00a9 = a\u1885.\u00b7a\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n    return t'''{a:{b!r}!r}''' + (p or q)\n",
+null
+],
+[
+"def f():\n      \t\ty = x or z\n      \t\tx = 1\n      \t\t\n      \t\ty = x or z\n\fwhile c:\n \t  \t# comment\n   \t  \t\twith d:\n \t  \t         pass\n",
+null
+],
+[
+"def f():\n    return rf'{a:\\N{BULLET}\\:{{x or y}}{b}{c}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n  \t pass\n  \t\t  \t while c:\n \t\t\t    pass\n  \t y = x or z\n\t \t\t\t  \ty = x or z\n \t \t\t \tx = 1\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"x = F\"{{a\\\ny = 1\n",
+[
+"unterminated f-string literal (detected at line 2)",
+1
+]
+],
+[
+"def f():\n    return f\"{a:{b}{b!r}}\" + (p or q)\n",
+null
+],
+[
+"x = Rb'''a{x''' + 'a'\n",
+null
+],
+[
+"def f():\n    return f'{a:{b:{c}}{b:{c}}}} }' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return f'''{a:\n{{{c}}}\\}''' + (p or q)\n",
+null
+],
+[
+"x = fr\"\"\"a\\'\\N{BULLET}\"\"\" + 'a'\n",
+null
+],
+[
+"x = br\"x}a\\\ny = 1\n",
+[
+"unterminated string literal (detected at line 2)",
+1
+]
+],
+[
+"x = f'{x=}\ny = 1\n",
+[
+"unterminated f-string literal (detected at line 1)",
+1
+]
+],
+[
+"x = uf'''}}'''\n",
+[
+"'u' and 'f' prefixes are incompatible",
+1
+]
+],
+[
+"x = 1eif y else 2\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n \t\t\t\t\tif a:\n\t \t\t\t \t\tdef g():\n \t \t\t\t pass\n    \t pass\n \t\t\t\t\t  for i in b:\n \t\t \t\tx = 1\n\t  \t\t \t y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n\t\t\t \t  \ty = x or z\nwith d:\n         pass\n",
+null
+],
+[
+"def f():\n \t  \t\t \ty = x or z\n \t\t  \t x = 1\n \t\t\t\t\tx = 1\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"a\u20ac = \u540d\u524d.\ufeffa\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x = rb\"{x=}a\"\n",
+null
+],
+[
+"x = \na]})a\n",
+[
+"unmatched ']'",
+2
+]
+],
+[
+"def f():\n    return F\"{a:{{x}}}\" + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t\t  \t\t\tif a:\n \t\t\t    # comment\n\t  \t  \t\ty = x or z\n  \t    \t# comment\ny = x or z\nwhile c:\n  \t\t  \t for i in b:\n  \t\t  \t          pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n\t\t \t\t\twith d:\n\t  \t\t\t\t def g():\n \t\t   y = x or z\n  \t\t\t\t \twhile c:\n\t\t\t \t\t \tif a:\n   \t\t  \ty = x or z\n\t \t   \t\ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n\t\t\t \t \t\f  for i in b:\n \t\t\t\t\t\t def g():\n  \t\t\t # comment\n   \t\t\t \n",
+null
+],
+[
+"x = 1):a\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"def f():\n    return rf'{a:{b:{c}}{{x or y}}\\{}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return f'''{a}={b}''' + (p or q)\n",
+null
+],
+[
+"_\u00e9 = \u212e.a\u00a9\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n    return f'{a:x( }' + (p or q)\n",
+null
+],
+[
+"x = u'\\N{BULLET}a\\\nb' + 'a'\n",
+null
+],
+[
+"x = 1__0 \n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n\t\t\t  \tif a:\n \t  \t\t\t\ty = x or z\n  \\\n  x = 1\ny = x or z\nfor i in b:\n  \t   if a:\n  \t            pass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n \t\t\t\t  \tpass\n    \\\nwith d:\n\t   \t \t y = x or z\n\t  \t\ty = x or z\npass\n \t\t\t  \t x = 1\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n    return F'{a:\n\\}' + (p or q)\n",
+[
+"f-string: newlines are not allowed in format specifiers for single quoted f-strings",
+2
+]
+],
+[
+"x = 1.e2is y\n",
+null
+],
+[
+"def f():\n   \t   # comment\n   \t   pass\nfor i in b:\n         pass\n",
+null
+],
+[
+"x = 0b\n",
+[
+"invalid binary literal",
+1
+]
+],
+[
+"x = 00else\n",
+null
+],
+[
+"\u0301x = \ud83d\ude00.a\u00b7\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"a\u00e9 = \u00b7a.\u00e91\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"x = [:a}')\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '['",
+1
+]
+],
+[
+"x\u0301 = \u00e91.x\u0660\n",
+null
+],
+[
+"def f():\n    \\\nwith d:\n\t  \t\t  def g():\n\t  \t\t           pass\n",
+null
+],
+[
+"def f():\n    return rf'{a:{b}{c}\\N{BULLET}\\N{BULLET}}' + (p or q)\n",
+null
+],
+[
+"a\u00e9 = a\u00b7.a\u00e9\n",
+null
+],
+[
+"x = \n\n",
+null
+],
+[
+"def f():\n  \t\t\t\twith d:\n\t\t\t\t \t while c:\n\t\t \t\t \t\tx = 1\n",
+null
+],
+[
+"def f():\n\t  \t \t y = x or z\n\t \t \t  \t\f  x = 1\n \t  while c:\n  \t\t\t   x = 1\n# comment\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    \\\nx = 1\nfor i in b:\n \t \t\t  \t\n \t\t\t\t  pass\n  \t \t\t \tpass\n",
+[
+"unindent does not match any outer indentation level",
+7
+]
+],
+[
+"def f():\n    \t\t \ty = x or z\npass\ny = x or z\n  \t \tfor i in b:\n\t\t\t\t\t\ty = x or z\n    \t\t\t x = 1\n       \t\\\n# comment\nz = (\n\t\\\n1)\n",
+[
+"unindent does not match any outer indentation level",
+7
+]
+],
+[
+"x = }']][(1\n(\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n    return f'{a:' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"x = }'[(1}}:)\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"x = 'x}a\nb'\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"x = {}:\n",
+null
+],
+[
+"x = br\"\"\"a\\\nba\\\nb\"\"\" + 'a'\n",
+null
+],
+[
+"x = ft\"{x!r}{x}\" + 'a'\n",
+[
+"'f' and 't' prefixes are incompatible",
+1
+]
+],
+[
+"x = :\n\n\n",
+null
+],
+[
+"x = F\"{x=}{{\" + 'a'\n",
+null
+],
+[
+"def f():\n    return F'''{a:{b}{c}{b!r}{b=}}''' + (p or q)\n",
+null
+],
+[
+"\u0660x = \u00e91.\u0660x\n",
+[
+"invalid character '\u0660' (U+0660)",
+1
+]
+],
+[
+"\u2118 = \ufeffa.\u540d\u524d\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"def f():\n    return t'{a{{x}}' + (p or q)\n",
+[
+"t-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n \t  \t  x = 1\n\n  \t   \t\tif a:\n\t\t \t \ty = x or z\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+5
+]
+],
+[
+"def f():\n\t\t  \t \t while c:\n  \t\t  \tif a:\n\t \t\t\t   pass\n \t\t\t\t   x = 1\n\t \t\t\t  x = 1\n\t\t\t\t\t\t \tpass\n\t\t\t   \t pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = .5if y else 2\n",
+null
+],
+[
+"def f():\n    return rf'''{a::=}''' + (p or q)\n",
+null
+],
+[
+"def f():\n    \\\nx = 1\n  \t\t\t \t with d:\n\t \t  \t \tpass\n\t\t\t \t\tpass\n\t \t\t\t\t\t\tpass\n\t\t\t  \t pass\n \t\t \t  \tdef g():\n\t\t\t  \t          pass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"\ufeffa = a.\u309b\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"def f():\n    return f\"{a:{{x}}\\>10}\" + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t\t \t \t\tif a:\n  \t \t\t \n   \t\t\t y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"\u00a9 = \ud83d\ude00.a\u200b\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"_\u00e9 = \u00e91.\u00b7a\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"\u2118 = a\u0e33.a\u00b7\n",
+null
+],
+[
+"x = \n,'{11\n",
+[
+"unterminated string literal (detected at line 2)",
+2
+]
+],
+[
+"x = ()\n",
+null
+],
+[
+"x = a:[f'{,\n",
+[
+"'{' was never closed",
+1
+]
+],
+[
+"x = 0oor y\n",
+[
+"invalid octal literal",
+1
+]
+],
+[
+"def f():\n     \t\t\n\t \t\t \t \tfor i in b:\n \t \t\t\t  pass\n  \t\t\t\t  y = x or z\nz = (\n       \t\\\n1)\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = rt'''{xa\\\n",
+[
+"'{' was never closed",
+1
+]
+],
+[
+"def f():\n    return f'{a:\nxx=\\N{BULLET}}' + (p or q)\n",
+[
+"f-string: newlines are not allowed in format specifiers for single quoted f-strings",
+2
+]
+],
+[
+"x = }{}[],,'\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"x = fr'''x}a\nb'''\ny = 1\n",
+[
+"f-string: single '}' is not allowed",
+1
+]
+],
+[
+"x = u'''{x}a\nb'''\n",
+null
+],
+[
+"a\u00e9 = \u309b.\u2118\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n    return f'{a:=\\}}{b=}[1}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = r\"\"\"{x!r}\"\ny = 1\n",
+[
+"unterminated triple-quoted string literal (detected at line 2)",
+1
+]
+],
+[
+"def f():\n    return rf'{a[1{{{{\\{' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"x = 11\n",
+null
+],
+[
+"def f():\n    return rf'{a::\\:}' + (p or q)\n",
+null
+],
+[
+"a\u00a9 = a\u0e33.\u540d\u524d\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"x = 1e\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x = ub\"\"\"{x}{x!r}\"\"\"\n",
+[
+"'u' and 'b' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n    return f'{a:{b=}{{{c}}}}}{{{c}}}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = 0o8if y else 2\n",
+[
+"invalid digit '8' in octal literal",
+1
+]
+],
+[
+"x = (\n",
+[
+"'(' was never closed",
+1
+]
+],
+[
+"x = Rb\"a\\{x=}\" + 'a'\n",
+null
+],
+[
+"x = 0x1fand y\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"x = ft\"ax} + 'a'\n",
+[
+"'f' and 't' prefixes are incompatible",
+1
+]
+],
+[
+"x = rt'''}}' + 'a'\n",
+[
+"unterminated triple-quoted t-string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n \t \t\t  \tpass\n\n",
+null
+],
+[
+"def f():\n    return f'{a:{{{c}}}\\{}}{{{c}}}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return f'''{a:{b=}}''' + (p or q)\n",
+null
+],
+[
+"def f():\n    return f\"{a:{b}{c}:}\" + (p or q)\n",
+null
+],
+[
+"x = ub\"a\\'{x=}\"\n",
+[
+"'u' and 'b' prefixes are incompatible",
+1
+]
+],
+[
+"x = 012]\n",
+[
+"leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+1
+]
+],
+[
+"x = 1_000(\n",
+[
+"'(' was never closed",
+1
+]
+],
+[
+"x = 1e5for\n",
+null
+],
+[
+"def f():\n\t\\\n# comment\n\t\t \t\t  \tx = 1\n\t      x = 1\npass\nx = 1\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"x = '{(]\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n    return F'{a:{b}{{x}}!r}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return rf'{a' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"x = 09.5if y else 2\n",
+null
+],
+[
+"x = ]}''[\n1[\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"x = ''[,])\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"x\u0301 = \u0660x._\u00e9\n",
+[
+"invalid character '\u0660' (U+0660)",
+1
+]
+],
+[
+"def f():\n\t \t \t\t\t\tpass\n\t\t\t \t\t\tpass\n \t\t\t\t  # comment\n\t\t  \t \t\tpass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n\t\t\t \t pass\ndef g():\n\t\t\t  \t x = 1\n\t \t \t\t\t\tx = 1\n  \t\t\t\t pass\nz = (\n    \\\n    1)\n",
+null
+],
+[
+"def f():\n \t \t \t\t\ty = x or z\n\t      def g():\n     \t \ty = x or z\n\t      pass\n\t\t \t\t   if a:\n\t               pass\nz = (\n\t  \\\n  1)\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"a\u309b = x\u0660.a\u200b\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n\t \t    x = 1\n\t \t    x = 1\nx = 1\npass\n",
+null
+],
+[
+"def f():\n   \t\t   for i in b:\n\t  \t\t \t\tif a:\n    \t\t \n\t\t\t\t \t\t\tx = 1\n  \t \t   pass\n \t \t    with d:\n\t\t  \t\t\t\tfor i in b:\n\t\t  \t\t\t\t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n\t\t   \t \n    \t \t with d:\n\t\t   \t          pass\n",
+null
+],
+[
+"def f():\n\t\t\t\t\t  def g():\n\t\t \t \t\t\t\n",
+null
+],
+[
+"x = }')})')\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n   \t\t\t\t while c:\n  \t \t \twith d:\n\t\t\t \t\t\t\tx = 1\n\t\t  while c:\n \t\t   \ty = x or z\n\t\t     # comment\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return rf\"{a:{{x or y}}{{}\" + (p or q)\n",
+null
+],
+[
+"a\u00a9 = a.x\u0301\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n    return f\"{a:{b}(\\}}}\" + (p or q)\n",
+null
+],
+[
+"x = 1f'{f'{)',1(\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n    return f'{a: ({{x}}}' + (p or q)\n",
+null
+],
+[
+"x = 1f'{,]}'\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n\t \t \t\t\t\ty = x or z\n# comment\n\t  \\\n  \n\t\t\t \t y = x or z\nx = 1\n# comment\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"x = tr\"\"\"aa + 'a'\n",
+[
+"unterminated triple-quoted t-string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n\t\t \t x = 1\n\t \t\t \t\twith d:\n\t \t \t \t \n",
+null
+],
+[
+"x = 0b2(\n",
+[
+"invalid digit '2' in binary literal",
+1
+]
+],
+[
+"x = tr'''{x}a\\'' + 'a'\n",
+[
+"unterminated triple-quoted t-string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n     while c:\n  \t\\\n\t# comment\n \t  \t  \twith d:\n    \\\n    with d:\n \t\t \t\t\t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+7
+]
+],
+[
+"x = '{[\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"\u0301x = \u00b7a.\u1885\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"x = ur\"\"\"a\nb{x}\ny = 1\n",
+[
+"'u' and 'r' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n\t  \t   pass\nwhile c:\n\t\t\t\t  \t\ty = x or z\n \t  \t if a:\n \t\t\t\t \t x = 1\ny = x or z\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n \t \t \t \twhile c:\n \t\t while c:\n \t\t\t \t pass\n \t\t \t\t\t\ty = x or z\n\t \t x = 1\n   \t\t  pass\n\\\n    # comment\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n  \t   \t x = 1\n \t\t \t pass\ndef g():\n\\\n    while c:\n\t \t\t\t\t \tx = 1\nz = (\n\\\n\t1)\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n\t\t  \t   x = 1\nfor i in b:\n         pass\nz = (\n\\\n\\\n  1)\n",
+null
+],
+[
+"def f():\n   \t\t\t  \n\t\t \t\t   while c:\n   \t\t\t           pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"x = ub\"{{{x!r}\"\n",
+[
+"'u' and 'b' prefixes are incompatible",
+1
+]
+],
+[
+"x = }'{\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n    return F'''{a:{b}{c}}''' + (p or q)\n",
+null
+],
+[
+"def f():\n  \t  \t  # comment\n   \t \t  x = 1\n     \t\t\tx = 1\n  \t\t\t\t\t\twith d:\n\t \t \t\t\n\t \t\t \t \tx = 1\n\t  \t  \t\tfor i in b:\n\t \t\t \t \t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"a\u309b = \ufeffa.a\u00a0b\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"a\u20ac = a\u309b.a\u00a9\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x = rb\"\"\"\ny = 1\n",
+[
+"unterminated triple-quoted string literal (detected at line 2)",
+1
+]
+],
+[
+"x = '\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n\t \t\t \tpass\n\t  \t\t\twhile c:\n\t\t\t \t \tdef g():\n \t\t\t\t \t\tpass\n\t\t \t\t\twhile c:\n \t\t\t \t\t# comment\n\t \t\t \t\t\twhile c:\n\t \t\t \t\t\t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+6
+]
+],
+[
+"def f():\n    return f'{a:\\N{BULLET}{{{c}}}}' + (p or q)\n",
+null
+],
+[
+"\u00e91 = \u00e91.x\u0301\n",
+null
+],
+[
+"def f():\n\t\t\t   \t\tdef g():\n  \t    \t# comment\n  \t \t\t\t\t\npass\n",
+null
+],
+[
+"x = 1e5is y\n",
+null
+],
+[
+"x = tr'''}}a\nb''' + 'a'\n",
+null
+],
+[
+"x = f'{(}(\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '('",
+1
+]
+],
+[
+"def f():\n   \t\t \t # comment\n \t\t \t\t\tpass\ndef g():\n         pass\nz = (\n\t\\\n1)\n",
+null
+],
+[
+"def f():\n\t\t\t    while c:\n\t\t\t\t\t\t\t x = 1\n\t\t\t    x = 1\n# comment\ny = x or z\n",
+null
+],
+[
+"def f():\n\t\t \t   x = 1\n\t\t\t\t\t   # comment\n \t\t    x = 1\n \t\t  \t\t\tx = 1\n\t \t\t \t\t y = x or z\npass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = u\"\"\"\\N{BULLET}x}\"\"\"\n",
+null
+],
+[
+"def f():\n    return f\"{a:=={{x}}=}\" + (p or q)\n",
+null
+],
+[
+"def f():\n    return f'{a::}' + (p or q)\n",
+null
+],
+[
+"def f():\n \t \t \t \tfor i in b:\n \t   \t  for i in b:\n \t   \t           pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = 'abc\nx = f'{a:{b}{{((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((1))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))}}}'\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n    return t'{a:!r{b:{c}}!r{b=}}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return f\"{a:{b}{c} }{{>10}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return rf\"{a:\n{b:{c}}{{x}}}\" + (p or q)\n",
+[
+"f-string: newlines are not allowed in format specifiers for single quoted f-strings",
+2
+]
+],
+[
+"def f():\n\t   \t\t\t\tx = 1\n    \\\n    x = 1\n\t\t\t\t x = 1\n\t\t\t\t pass\nx = 1\ndef g():\n\t     with d:\n\t              pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = u\"{x=}a\\\nb + 'a'\n",
+[
+"unterminated string literal (detected at line 2)",
+1
+]
+],
+[
+"def f():\n    return f\"{a:{b}}\" + (p or q)\n",
+null
+],
+[
+"x = 1_000.real\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n    return f\"{a:\\{}\" + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"x = 1_000 \n",
+null
+],
+[
+"def f():\n    return rf\"{a:}}{b=}{{\\{}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return f'''{a:>10{{{c}}}{b=}\\}''' + (p or q)\n",
+null
+],
+[
+"def f():\n \t\t  x = 1\n# comment\n \t\t \t\ty = x or z\n   \t  \t\tx = 1\n \t\t \t\ty = x or z\n\t  \t\t\t# comment\n \t\t\t \t  while c:\n \t\t \t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"x = 1_ \n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x = 11}(\na:}\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n    return f\"{a:{b=}:}\" + (p or q)\n",
+null
+],
+[
+"def f():\n    return F'{a:{(}' + (p or q)\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '('",
+2
+]
+],
+[
+"def f():\n    return t'{a:(:}' + (p or q)\n",
+null
+],
+[
+"x = \n\n(},]\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '('",
+3
+]
+],
+[
+"a\u0e33 = \u1885.x\u0301\n",
+null
+],
+[
+"def f():\n\t\t  \t \t\n\t \t\t\t\t \ty = x or z\n\t\t\t\t \t\t\t# comment\n \t\t\t\t\t \tx = 1\n\t\t \t\t \t\tdef g():\n\\\nfor i in b:\n    \t\t \t         pass\n",
+null
+],
+[
+"x = 0x.real\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"x = ,}'[\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n    return f\"{a:[1{b!r}}\" + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t\t\t\t\t  y = x or z\n       \t\\\ny = x or z\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = a},\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n    return rf\"{a:::!r{b}}\" + (p or q)\n",
+null
+],
+[
+"x = 00and y\n",
+null
+],
+[
+"x = 0x1f\n",
+null
+],
+[
+"def f():\n \t\t  \tfor i in b:\n\t \t\t\t\t\t\tpass\n",
+null
+],
+[
+"x = u'''}}a\\'\ny = 1\n",
+[
+"unterminated triple-quoted string literal (detected at line 2)",
+1
+]
+],
+[
+"x = 0o17is y\n",
+null
+],
+[
+"x = {:\n",
+[
+"'{' was never closed",
+1
+]
+],
+[
+"x = b\"{{{x=}\"\ny = 1\n",
+null
+],
+[
+"\u540d\u524d = a\u0e33.a\u0e33\n",
+null
+],
+[
+"def f():\n\t  \t\t\tif a:\n   \t\t\t\t\tx = 1\nwith d:\n\t\t\t \t\twith d:\n\t\t\t \t\t         pass\n",
+null
+],
+[
+"x = rt'''{{{x''' + 'a'\n",
+[
+"t-string: expecting '}'",
+1
+]
+],
+[
+"x = 1.5(\n",
+[
+"'(' was never closed",
+1
+]
+],
+[
+"\u20ac = \u2118.a\u20ac\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x = 1.e2or y\n",
+null
+],
+[
+"def f():\n\t  \\\n  # comment\n\fx = 1\n\t   \t  \t\\\n    \ny = x or z\nwith d:\n\t \t\t \t \tx = 1\n",
+null
+],
+[
+"x = )]\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"def f():\n    return f'{a:{b}{c}{b:{c}}:}' + (p or q)\n",
+null
+],
+[
+"def f():\n\t\f\twhile c:\n \t   \t\tpass\npass\n  \t \t\t  y = x or z\n\t\t\t\t   \tx = 1\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+6
+]
+],
+[
+"def f():\n \t    \tdef g():\n\t \t\t \t\t\twith d:\n\t\t   \t \tdef g():\n \t \t\twith d:\n \t\t  \t pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n    return t'{a={b!r}:{b=}' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"x = 1e+for\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x = br\"aa\\\"\n",
+[
+"unterminated string literal (detected at line 1); perhaps you escaped the end quote?",
+1
+]
+],
+[
+"def f():\n    return t'''{a\\{{b!r}''' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"x = 0or y\n",
+[
+"invalid octal literal",
+1
+]
+],
+[
+"def f():\n\t\t \t\t\t  pass\nx = 1\ny = x or z\n\t\t\t\t   \tx = 1\n",
+null
+],
+[
+"def f():\n\t\t     \ty = x or z\n  \t\t\tif a:\n\t\t \t\t \t\t\fy = x or z\n\t\t  \t\t\t\tfor i in b:\n\t\t\t\t  \t if a:\n\t\t \t\t  \ty = x or z\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = ub\"\"\"{{}}\" + 'a'\n",
+[
+"'u' and 'b' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n\fwith d:\n \t\t\t   \tx = 1\n \t\t \t\t for i in b:\n \t\t \t\t          pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"def f():\n    return rf'''{a{b}}} {b}{c}{''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = 0xif y else 2\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"x = t\"{x}\\N{BULLET} + 'a'\n",
+[
+"unterminated t-string literal (detected at line 1)",
+1
+]
+],
+[
+"\u2118 = \u00a9.\u1885\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n    return f'{a:{b:{c}}[1{{}' + (p or q)\n",
+null
+],
+[
+"def f():\n\t    \t  while c:\n\t  \t \tx = 1\n \t   \t  y = x or z\n\t  \t  \t pass\n   \t  \t \f  def g():\n \t\t\t  \t \n\t \t  \t\t\tfor i in b:\n\t \t  \t\t\t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n \t\t  \t  pass\ny = x or z\nwhile c:\n\t \t\t  \t\ty = x or z\n\t\t   \t\t y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"def f():\n    return F\"{a:{{{c}}}:{{x}}}\" + (p or q)\n",
+null
+],
+[
+"\ud83d\ude00 = \u2118.\u20ac\n",
+[
+"invalid character '\ud83d\ude00' (U+1F600)",
+1
+]
+],
+[
+"def f():\n   \t\t \t pass\nwith d:\n\t\t \t \t  x = 1\ny = x or z\n",
+null
+],
+[
+"def f():\n   \t\t \t x = 1\n\fy = x or z\ny = x or z\n    \t   def g():\n\t\t \t\t\t\t x = 1\n\t\t\t \t\t\t with d:\n\t\t\t\tx = 1\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+6
+]
+],
+[
+"def f():\n \t\t\t\t\t y = x or z\n \t\t\twhile c:\n\t\t\t\t\t\t  y = x or z\npass\nz = (\n\\\n1)\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return rf'''{a:x{{\\N{BULLET}}''' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"x = ,1{:1\n(}\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '('",
+2
+]
+],
+[
+"a = a.a\u1885\n",
+null
+],
+[
+"def f():\n    return rf'{a!r}>10[1' + (p or q)\n",
+null
+],
+[
+"def f():\n\t   \t\t \t# comment\n \t\t\t  \t\t\f\nwhile c:\n\fif a:\n \t \t \t\t# comment\n\n",
+null
+],
+[
+"x = 1)}'\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"def f():\n    return F'{a:{{x or y}}}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = fr'}}{{'\ny = 1\n",
+null
+],
+[
+"x = ]',{:(\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"x = bf\"a\\{x\ny = 1\n",
+[
+"'b' and 'f' prefixes are incompatible",
+1
+]
+],
+[
+"x = ]1)(}'(f'{[\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"x = ,{)\n\n",
+[
+"closing parenthesis ')' does not match opening parenthesis '{'",
+1
+]
+],
+[
+"x = a\u00a9\nx = f'{a:{b}{{((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((1))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))}}}'\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n \t\t\t\t\t\t if a:\n    \t\t\t\tpass\n\t  \t\t  y = x or z\npass\n\\\n\ty = x or z\nz = (\n\\\n\t1)\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"\u00a9 = a\u0e33.\u0301x\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n    return t'''{a:}{b=}}''' + (p or q)\n",
+[
+"t-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = 0bfor\n",
+[
+"invalid binary literal",
+1
+]
+],
+[
+"x = fr'''a\nba\\\nb'''\n",
+null
+],
+[
+"def f():\n    return f'''{a:\n{b}=}''' + (p or q)\n",
+null
+],
+[
+"def f():\n    return F'''{a\n{b}x{b}[1''' + (p or q)\n",
+[
+"f-string: expecting '}'",
+3
+]
+],
+[
+"x = .5l\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"a\u00a0b = a\u0e33.\u00a9\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"x = }aa(\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n\t\t\t\t \t  with d:\n\t \t\t for i in b:\n\t \t\t          pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n     \t x = 1\n\t\t\t\t\t pass\n   \t \t  y = x or z\n     \t \ty = x or z\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = 1.e2abc\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n   \t  with d:\n\t\t \t \t pass\n\t\t\t  \t y = x or z\n   \t  pass\n",
+null
+],
+[
+"def f():\n    return F\"{a{}{b}{b}\" + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n    return F'{a:{{x}}{b:{c}}{{b:{c}}:}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"a\u20ac = a\u20ac.\u00e91\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x = a]1,\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n    return F'{a:}}{b:{c}}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = {\n",
+[
+"'{' was never closed",
+1
+]
+],
+[
+"a\u1885 = x\u0301.a\u309b\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n    with d:\n\t\t\t\t\t \t if a:\n \t\t\t \t  def g():\n\t\t \t\t\t\t\t# comment\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = a\n,,1}\n]\n",
+[
+"unmatched '}'",
+2
+]
+],
+[
+"a = \u540d\u524d.\u00e9\n",
+null
+],
+[
+"def f():\n \t\t \t\t  # comment\ndef g():\n\t\t    \t pass\nwith d:\n \t \t\t \tpass\n \t \t \t\t\ny = x or z\n",
+null
+],
+[
+"a\u1885 = a\u20ac.a\u00e9\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x = 09.5and y\n",
+null
+],
+[
+"def f():\n \t \t\t with d:\n\t\t \t\t  \twith d:\n\f  x = 1\n \t\t    \tdef g():\n\t \t\t\t\t\ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n    return rf'{a:>10{{{c}}}{}' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"a\u0e33 = \u2118.a\u00b7\n",
+null
+],
+[
+"def f():\n\t\t  \t\t \tx = 1\nfor i in b:\n \t\t\t \t \ty = x or z\nz = (\n\\\n\\\n  1)\n",
+null
+],
+[
+"x = )'}],\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"x = 12else\n",
+null
+],
+[
+"def f():\n\t\t\t\t\t \t x = 1\n\t\t \t \t\t\t# comment\n\t\t\t\t\t \t while c:\n\t\t\t  with d:\n\t\t\t \t  \tpass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n \t\t\t\t\t \tx = 1\n# comment\npass\n\t \t\t    def g():\n  \t  \t  pass\npass\n \t  \tpass\nz = (\n\t\\\n1)\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"def f():\n    return f\"{a:{b!r}!r{b}{c}}\" + (p or q)\n",
+null
+],
+[
+"a\u200b = \u00e9.\u309b\n",
+[
+"invalid non-printable character U+200B",
+1
+]
+],
+[
+"\u00e91 = a\u00b7.a\u0e33\n",
+null
+],
+[
+"x = b\"\"\"{x!r}\"\n",
+[
+"unterminated triple-quoted string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n  \t \t\t\t x = 1\n  \\\n  \n",
+null
+],
+[
+"def f():\n    return rf'''{a:}''' + (p or q)\n",
+null
+],
+[
+"def f():\n     \t\t\tpass\n\t     \t\twhile c:\n \t\t\t \tx = 1\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"def f():\n \t \t\t\twith d:\n\t\t\t\t\t\t\tpass\nfor i in b:\n \t\t\t\t\t # comment\nx = 1\n \t  \t \t x = 1\n",
+null
+],
+[
+"def f():\n\t \t# comment\nx = 1\nz = (\n  \t\\\n\t1)\n",
+null
+],
+[
+"def f():\n      \ty = x or z\n\t\t   \t y = x or z\n\t \t\t    y = x or z\n\t\t  \t \t def g():\n   \t \t \tfor i in b:\n   \t \t \t         pass\nz = (\n\\\n    1)\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"\u00e9 = x\u0660.a\u20ac\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x = 1.5\n",
+null
+],
+[
+"x = ]a][)''\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n \t \t\t   if a:\n  \t \t\t x = 1\n \t\t \t   if a:\n \t \t\t            pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n\t\t  \t\tpass\nwhile c:\n         pass\n",
+null
+],
+[
+"x = 1((}a]\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '('",
+1
+]
+],
+[
+"def f():\n    return rf'{a:{{x}}}' + (p or q)\n",
+null
+],
+[
+"x = {a[\n",
+[
+"'[' was never closed",
+1
+]
+],
+[
+"def f():\n\t\t\t  \t \f  for i in b:\n\t\t \t\t  \tx = 1\ny = x or z\n# comment\npass\n  \t \t\t\t\tx = 1\n\t\\\n# comment\n",
+null
+],
+[
+"def f():\n    return rf'''{a:{{{c}}}{b!r}{b}{{{c}}}}''' + (p or q)\n",
+null
+],
+[
+"def f():\n  \t  \t  x = 1\n  \t \t\t pass\n\t\t \t\t  \tpass\n\t  \t\t\t while c:\n\t  \t\t\t          pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n\t\f\t\n\t \t\t \t x = 1\n\ny = x or z\n",
+null
+],
+[
+"x = 0b2\n",
+[
+"invalid digit '2' in binary literal",
+1
+]
+],
+[
+"def f():\n\t   \tif a:\n \t\t\t \t y = x or z\n \t\t\t\t\t\t\twhile c:\n\t   pass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n\t   \t\tpass\nfor i in b:\n\t  \t\ty = x or z\ny = x or z\nz = (\n    \\\n    1)\n",
+null
+],
+[
+"def f():\n    return f\"{a: >10!rx\\N{BULLET}}\" + (p or q)\n",
+null
+],
+[
+"x = 09.5_\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x = fr\"\"\"aa\nb\"\ny = 1\n",
+[
+"unterminated triple-quoted f-string literal (detected at line 3)",
+1
+]
+],
+[
+"\ufeffa = \u212e.a\u00e9\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"def f():\n    return t\"{a:}\" + (p or q)\n",
+null
+],
+[
+"x = (a1'a{]\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"x = u'{x}{x'\ny = 1\n",
+null
+],
+[
+"def f():\n \t \t \t\t for i in b:\n\t       def g():\n\t\t   \t if a:\n \t\t\t \t\t with d:\n \t  \t\t\t while c:\n\t\t  \t\t\tpass\n\t \t\t \t\t\ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n   \t   pass\n \t\t\t\t\t \tpass\npass\n\t\t\t \t\t  pass\n \t  \t \t pass\n\t    \t\t if a:\n \t  \t \t          pass\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"x = ):,)::]]\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"def f():\n    return t\"{a:{{{{c}}}{{{c}}}}\" + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"x = 1__0not in y\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x = 1.e2else\n",
+null
+],
+[
+"def f():\n\t  \t x = 1\n \t\t   def g():\n   \t\t\t \tdef g():\n\t \t# comment\n \t\t \t \t\tpass\n\t     \t # comment\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+6
+]
+],
+[
+"x = ,}'\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"x = (,:'\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n\t\t  \t \tx = 1\n\t  \t\t \ty = x or z\n\t \t  def g():\n \t\t\t   pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n\t \t\t \t pass\n\t \t \t\t\t\tif a:\n\t\t   pass\nx = 1\ny = x or z\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = 00j\n",
+null
+],
+[
+"x = ft\"\"\"{x!r}a\nb\"\"\"\n",
+[
+"'f' and 't' prefixes are incompatible",
+1
+]
+],
+[
+"x = 0xx\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"def f():\n    return F'''{a: \\\\N{BULLET}\\x}''' + (p or q)\n",
+null
+],
+[
+"def f():\n    return t'{a\n {{x or y}}' + (p or q)\n",
+[
+"t-string: expecting '}'",
+3
+]
+],
+[
+"def f():\n    \t# comment\n    \tx = 1\n# comment\npass\nx = 1\ny = x or z\n",
+null
+],
+[
+"def f():\n\t \t \t \n  \t\t\t y = x or z\n# comment\n",
+null
+],
+[
+"def f():\n    return F'''{a:}}{b:{c}}}''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n\t    \t def g():\n   \t\t\t  # comment\n\t\t  \t  \tpass\n",
+null
+],
+[
+"x = r\"a\\'{{\"\ny = 1\n",
+null
+],
+[
+"x = 0.0j\n",
+null
+],
+[
+"def f():\n    return f'''{a:{b:{c}}{{{c}}}{{x}}{b}\\{}''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return f'{a:\\N{BULLET}{b}}' + (p or q)\n",
+null
+],
+[
+"a\u00a9 = \u00e9.x\u0301\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n       \t\\\nx = 1\n \t\t \t   with d:\n    \t\t y = x or z\n\t\t    \t y = x or z\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"def f():\n\t \t\t\t\t \tpass\n\t\t  x = 1\n\t\t \t \t  # comment\n\t\t  # comment\n  \t\t\t\t\t\twith d:\n\t    \t\t\ty = x or z\n\t\f\tif a:\n\t    \t\t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"a\u20ac = a.a\u309b\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x\u0301 = a\u0e33._\u00e9\n",
+null
+],
+[
+"def f():\n    return rf'''{a{{x}}>10{{\\N{BULLET}''' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"def f():\n    return f'{a:{{{c}}}[1>10}' + (p or q)\n",
+null
+],
+[
+"x = 1{aa]:\n:\n",
+[
+"closing parenthesis ']' does not match opening parenthesis '{'",
+1
+]
+],
+[
+"def f():\n    return f\"{a:{{x}}{b=}{{x or y}}:>10}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = rb\"\"\"a\\a\nb\"\"\"\ny = 1\n",
+null
+],
+[
+"def f():\n    return F\"{a>10{b!r}!rx\" + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"x = \"\\N{BULLET}{{\" + 'a'\n",
+null
+],
+[
+"def f():\n    return t\"{a:{b=}\\N{BULLET}{b}{c}}\" + (p or q)\n",
+null
+],
+[
+"x = 0x_in y\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"x = 1_000\u00e9\n",
+null
+],
+[
+"x = t'a\\'{x!r}' + 'a'\n",
+null
+],
+[
+"def f():\n    y = x or z\n \t\t    \tfor i in b:\n \t\t\t \t  pass\n\t\t\t\t\t\t \twhile c:\n\t\t\t\t\t\t \t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"x = r\"a\\\\N{BULLET}\"\n",
+null
+],
+[
+"x = 0b101else\n",
+null
+],
+[
+"def f():\n\t \t \t\t \tfor i in b:\n    \t\t\tif a:\n\t\t \t\t \t \n\t \t\t    # comment\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = 1je\n",
+[
+"invalid imaginary literal",
+1
+]
+],
+[
+"def f():\n    return f'{a:{{({{x or y}}{{{c}}}}' + (p or q)\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '('",
+2
+]
+],
+[
+"x = 1e5and y\n",
+null
+],
+[
+"x = fr'''a\\{x'''\n",
+[
+"f-string: expecting '}'",
+1
+]
+],
+[
+"def f():\n\t\t  \t  x = 1\n\t \t \t  with d:\n   \t\t  \tdef g():\n\t \t\t\t\t\t# comment\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n \t\t    \t\n    \\\ny = x or z\n\t \t    \twith d:\n \t\t    \t         pass\nz = (\n\\\n\\\n  1)\n",
+null
+],
+[
+"def f():\n    return rf'{a:[1{{x or y}}{b=}\\{\\{}' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"def f():\n  \t    while c:\n\t\t \t \t\t\t\f  y = x or z\n  \t    x = 1\n# comment\n  \\\n  pass\n\t \t\t\t\t\t\twith d:\n\t \t\t\t\t\t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = 1e5.real\n",
+null
+],
+[
+"def f():\n   \t\t   pass\ny = x or z\n\t\t\t  \t\t\tx = 1\n",
+null
+],
+[
+"def f():\n    return F'{a{b}' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n\t\t     if a:\n  \t \t\t\t pass\n",
+null
+],
+[
+"x = ft\"{x\\N{BULLET}\" + 'a'\n",
+[
+"'f' and 't' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n \t \t\t\t\t \fx = 1\n\t \t\t\t y = x or z\n \t\t\t\t # comment\n    \t\t \tif a:\n\t  \t\t pass\n\t\t\t \t for i in b:\n\t \t\t\t          pass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n  \\\n  y = x or z\nfor i in b:\n \t \t   \tpass\n",
+null
+],
+[
+"def f():\n\\\n\\\n  if a:\n\\\n\\\n  if a:\n    \t\t\t\t         pass\n",
+null
+],
+[
+"def f():\n    return f'''{a:!r{b}{c}{{{b=}}}}''' + (p or q)\n",
+null
+],
+[
+"x = tr\"\"\"\\N{BULLET}{{\n",
+[
+"unterminated triple-quoted t-string literal (detected at line 1)",
+1
+]
+],
+[
+"x = }'(]{))[,\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n    return t'''{a:{{{c}}}{{x}}{{x{b}}''' + (p or q)\n",
+[
+"t-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = 1__0(\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x\u0301 = a\u00a0b.a\u20ac\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"def f():\n    return rf'''{a:({{x or y}}{{x or y}}\\}''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n\t\t\t \t \tx = 1\npass\n",
+null
+],
+[
+"x = bf'a' + 'a'\n",
+[
+"'b' and 'f' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n    return f'''{a:\n\\{:{>10}''' + (p or q)\n",
+[
+"'{' was never closed",
+3
+]
+],
+[
+"x = br'{x}a\\\nb'\n",
+null
+],
+[
+"\ufeffa = \u20ac.\u00e9\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"def f():\n\t\t  \t \t\t\n\t \t \t \t\twith d:\n \t \t\t\t\t x = 1\n \t\t\t    for i in b:\n  \t\t\t\t \tpass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"def f():\n    return f'''{a:xx{{{{{c}}}(}''' + (p or q)\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '('",
+2
+]
+],
+[
+"def f():\n  \t\\\n\t\n     \t  pass\n\t\t\t \t\t\t\tx = 1\n \t  pass\n\t\t\t\t\t \t\twith d:\n\t\t\t\t\t \t\t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+5
+]
+],
+[
+"def f():\n    return t'''{a:{{x or y}}{b}{b:{c}}}}''' + (p or q)\n",
+[
+"t-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = }'\n\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n    return f'''{a:\n{b}{c}\\N{BULLET}}''' + (p or q)\n",
+null
+],
+[
+"\u0660x = x\u0660.\u00e91\n",
+[
+"invalid character '\u0660' (U+0660)",
+1
+]
+],
+[
+"def f():\n    \t\tdef g():\n\t\t\t\t\t\t if a:\n\t\t\t\t\t\t          pass\n",
+null
+],
+[
+"x = r'x}}}'\n",
+null
+],
+[
+"x = rb\"\"\"aa\\\nb\"\"\"\ny = 1\n",
+null
+],
+[
+"def f():\n  \t\t \t \twith d:\n  \t  \t # comment\n\t \t\t   \twhile c:\n  \t\t \t\tfor i in b:\n \f\t\\\n  # comment\n \t     \tpass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+5
+]
+],
+[
+"x = rb\"\"\"{x}x} + 'a'\n",
+[
+"unterminated triple-quoted string literal (detected at line 1)",
+1
+]
+],
+[
+"x = 0e0(\n",
+[
+"'(' was never closed",
+1
+]
+],
+[
+"x = 0x1f_\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"x = '}'{})'\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"x = (('\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"\u2118 = \u00e9.\u0660x\n",
+[
+"invalid character '\u0660' (U+0660)",
+1
+]
+],
+[
+"def f():\n    return rf\"{a:}\" + (p or q)\n",
+null
+],
+[
+"def f():\n \t  \t \tx = 1\n\t \t\t \t \ty = x or z\n\t\t\t\t  \t\tdef g():\n\t\t\t\t  \t\t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"\u309b = \ud83d\ude00.\u0660x\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"\ud83d\ude00 = _\u00e9.a\u20ac\n",
+[
+"invalid character '\ud83d\ude00' (U+1F600)",
+1
+]
+],
+[
+"x = }}'1}'\n(\n\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"x = f\"\"\"{{x}\"\"\" + 'a'\n",
+[
+"f-string: single '}' is not allowed",
+1
+]
+],
+[
+"x = 0o17abc\n",
+[
+"invalid octal literal",
+1
+]
+],
+[
+"x = f'''x}{x'''\n",
+[
+"f-string: single '}' is not allowed",
+1
+]
+],
+[
+"x = t'''a\\\nba'''\n",
+null
+],
+[
+"def f():\n \t   \t \tx = 1\npass\ny = x or z\n\t\t  \t\t  # comment\n    y = x or z\n",
+null
+],
+[
+"def f():\n    return f'{a:{{{c}}}\\N{BULLET}}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return F'{a:\\}x}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return rf'''{a}\\N{BULLET}''' + (p or q)\n",
+null
+],
+[
+"\u0301x = a\u00b7.x\u0301\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"x = ur'{x\\N{BULLET}' + 'a'\n",
+[
+"'u' and 'r' prefixes are incompatible",
+1
+]
+],
+[
+"x = '}f'{1))\n",
+[
+"closing parenthesis ')' does not match opening parenthesis '{'",
+1
+]
+],
+[
+"x = u'{xa' + 'a'\n",
+null
+],
+[
+"def f():\n    return f'{a:!r}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return f'''{a:(!r}''' + (p or q)\n",
+null
+],
+[
+"x = ub\"\"\"a\\'a\\\"\"\"\n",
+[
+"'u' and 'b' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n    return rf\"{a:\\}\" + (p or q)\n",
+null
+],
+[
+"x = f'{}}'\n",
+[
+"f-string: single '}' is not allowed",
+1
+]
+],
+[
+"a = \u1885.a\u00b7\n",
+null
+],
+[
+"def f():\n    return t'{a:\\{{b!r}{}' + (p or q)\n",
+[
+"t-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n \t\t   pass\n\t   \t   pass\n# comment\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n\t \t\t\t  x = 1\n\fy = x or z\n\t       if a:\n\t  \t\t \t\tif a:\n\t\t\t  def g():\n \t\t \t \tx = 1\n \t \t\t \tpass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+5
+]
+],
+[
+"x = '{\n1aaf'{)\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"\u00a9 = \u540d\u524d.a\u00e9\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n \t\t\t\t \t y = x or z\ny = x or z\n\t\t\t\t\t \t y = x or z\n\t\t\t\t\t \t y = x or z\n\t \t\t    x = 1\n \t\t\t\t\t\t x = 1\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"def f():\n    return f'''{a:=}}''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = 1.e2and y\n",
+null
+],
+[
+"def f():\n    return rf'{a:=x {{x or y}}}' + (p or q)\n",
+null
+],
+[
+"x = 0x1ffor\n",
+null
+],
+[
+"def f():\n    return F'''{a:{b!r}}}}''' + (p or q)\n",
+null
+],
+[
+"x = \n}(}'a{\n",
+[
+"unmatched '}'",
+2
+]
+],
+[
+"x = r\"{{\"\n",
+null
+],
+[
+"def f():\n \t\t \t\t y = x or z\n\\\n    y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = },,[,f'{\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n    return f'''{a:{b}x}''' + (p or q)\n",
+null
+],
+[
+"x = b\"{x}a\\\" + 'a'\n",
+[
+"unterminated string literal (detected at line 1); perhaps you escaped the end quote?",
+1
+]
+],
+[
+"def f():\n\t\t\t   def g():\n\t\t\t \t   x = 1\n\t \t \t\tx = 1\n\t\t\t \t          \t\\\n# comment\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n \t  \t\t pass\n  \t\t\t   \ny = x or z\n\\\n\\\n  while c:\n\t \t\t   def g():\n\t \t  \t \tdef g():\n\t\t\t    # comment\n",
+null
+],
+[
+"def f():\n\t  \twith d:\n\t\t\t\t  \t y = x or z\n  \t\ty = x or z\n \t \ty = x or z\n    \\\ny = x or z\n\t\t   with d:\n\t\t\t\t\t \t         pass\n",
+[
+"unindent does not match any outer indentation level",
+7
+]
+],
+[
+"def f():\n    return f\"{a:=\\N{BULLET}{b!r}{{x or y}}}\" + (p or q)\n",
+null
+],
+[
+"def f():\n    return t'{a:=}}' + (p or q)\n",
+[
+"t-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n\\\n\twhile c:\n\t\t\t\t \t\twith d:\n\t \t\t\t\t\t\twith d:\n\t \t\t\t\t\t\t         pass\n",
+null
+],
+[
+"x = 0b \n",
+[
+"invalid binary literal",
+1
+]
+],
+[
+"def f():\n    return f'{a[1!r{b!r}=' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n    return t'{a:}}\\}' + (p or q)\n",
+[
+"t-string: single '}' is not allowed",
+2
+]
+],
+[
+"a\u1885 = a\u309b.a\u0e33\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"x = 0be\n",
+[
+"invalid binary literal",
+1
+]
+],
+[
+"x = br\"{x{x}\" + 'a'\n",
+null
+],
+[
+"x = )f'{{a(()1\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"x = f'{'}:(f'{\n",
+[
+"'{' was never closed",
+1
+]
+],
+[
+"def f():\n \t\t\t\t\t \t# comment\n\t\t \t \t\t\ty = x or z\n    \\\n    x = 1\n\t  \t\t\t\t\ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"x = ur\"a\\'\\N{BULLET}\" + 'a'\n",
+[
+"'u' and 'r' prefixes are incompatible",
+1
+]
+],
+[
+"x = \n{\n\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"x = }\n'}'}\n\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"\u1885 = a\u00a9.\u2118\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n \t\t \t\t\t\tx = 1\n\t\t \t   \tdef g():\n \t\t    x = 1\ndef g():\n\t \t \t\t\tdef g():\n\t \t \t\t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x\u0660 = a\u00a0b.a\u0e33\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"x = ']]a,}']\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"x = ,'a}a}1\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"x = (}\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '('",
+1
+]
+],
+[
+"def f():\n\t  \t \tx = 1\n \t \t \t# comment\n       \t\\\ny = x or z\nwith d:\n \t\t \t\t def g():\n\t\t\t\t\t \t pass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"x = 1_(\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n    return f'{a:{{x}}}' + (p or q)\n",
+null
+],
+[
+"x = fr'''{x!r}a\\''\ny = 1\n",
+[
+"unterminated triple-quoted f-string literal (detected at line 2)",
+1
+]
+],
+[
+"x = f'{,]\n:a\n",
+[
+"f-string: unmatched ']'",
+1
+]
+],
+[
+"def f():\n  \t \t\t \t# comment\n\t \t \t\t\t\tif a:\n       x = 1\n \t    if a:\n                pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n  \t\n\t \t\t \tdef g():\n\t \t \t\t \ty = x or z\n\t      \ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"x = 00(\n",
+[
+"'(' was never closed",
+1
+]
+],
+[
+"x = .5]\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n    return rf'''{a:{{x}}[1{b}{b}{c}}''' + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t   \t\tfor i in b:\n\t \t\t\t \t\tx = 1\n  \n\\\nwith d:\n\t   \t \tdef g():\n\t   \t \t         pass\n",
+null
+],
+[
+"\ud83d\ude00 = a\u200b.\u1885\n",
+[
+"invalid character '\ud83d\ude00' (U+1F600)",
+1
+]
+],
+[
+"x = t\"\"\"{{x}\"\"\"\n",
+[
+"t-string: single '}' is not allowed",
+1
+]
+],
+[
+"def f():\n    return F'''{a:\\N{BULLET}{b=}\\{}''' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n  \t \t# comment\n\t   \tif a:\n\t\t\t \t\t\t\tdef g():\n\t  \t \t  def g():\n \t\t \t\t\t for i in b:\n\t \t\t   \tfor i in b:\n\t   \t     \t\\\n\t# comment\nz = (\n    \\\n    1)\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"x = (af'{}:::\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"x = ft'a\\\nb'\n",
+[
+"'f' and 't' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n    return t'{a:{{x{{x or y}}={b}{c}}' + (p or q)\n",
+[
+"t-string: expecting '}'",
+2
+]
+],
+[
+"x = r\"\"\"{x\\N{BULLET}\" + 'a'\n",
+[
+"unterminated triple-quoted string literal (detected at line 1)",
+1
+]
+],
+[
+"x = f'{}]\n}{\n",
+[
+"unterminated f-string literal (detected at line 1)",
+1
+]
+],
+[
+"a\u309b = \u1885.\u2118\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n    \t   pass\n   \t\t \t # comment\n \t\t \t   x = 1\n    \t   \n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"def f():\n    return t'{a:={b:{c}}}' + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t\t\t   \tx = 1\ndef g():\n  \t\t\t\tdef g():\nx = 1\n\t\t\t \ty = x or z\n",
+null
+],
+[
+"x = 0b101in y\n",
+null
+],
+[
+"x = 1e+x\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"\u540d\u524d = a\u309b.a\u00a9\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n    return F'{a:>10({{x or y}}\\N{BULLET}}' + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t  \t\t\twith d:\n\t \t\t \t\t y = x or z\n\t\t  \t\t\tdef g():\n \t \t\t\t\t\ty = x or z\n",
+null
+],
+[
+"\u540d\u524d = a\u200b.a\u1885\n",
+[
+"invalid non-printable character U+200B",
+1
+]
+],
+[
+"x = 0bnot in y\n",
+[
+"invalid binary literal",
+1
+]
+],
+[
+"x = rt\"\"\"}}\ny = 1\n",
+[
+"unterminated triple-quoted t-string literal (detected at line 2)",
+1
+]
+],
+[
+"def f():\n\t    \t\t y = x or z\n\t   \t \t \n     \t  x = 1\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n  \t\t\t   pass\n \t  \t \t\tif a:\n    \\\nwith d:\n\t   \t\t y = x or z\n\t \t \t\t\t pass\n    \\\n    pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = rb\"\"\"{x}a\\\"\"\"\n",
+[
+"unterminated triple-quoted string literal (detected at line 1)",
+1
+]
+],
+[
+"x = b'\\N{BULLET}{x' + 'a'\n",
+null
+],
+[
+"\u309b = \u212e.\ud83d\ude00\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"x = tr'''{{a'''\n",
+null
+],
+[
+"x = F'a\\\nb}}' + 'a'\n",
+null
+],
+[
+"def f():\n\t\t\t   \twith d:\n \t \t\t\t\t for i in b:\n    y = x or z\n\t\t\t\t  if a:\n \t  \t\t  y = x or z\n   \t  \t def g():\n   pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n    return rf'''{a:[1\\\\N{BULLET}}''' + (p or q)\n",
+null
+],
+[
+"def f():\n   \t\t \t\ty = x or z\n\t  \t\t  \tx = 1\ny = x or z\n\t\t\t \t\t \f  with d:\n\t\t \t\t\t\t\tdef g():\n\t\t \t\t\t\t\t         pass\n",
+null
+],
+[
+"def f():\n  \t\t\t\t  while c:\n\t\t \t\t\t\tdef g():\n\t\t \t\t\t\t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = 0o17x\n",
+[
+"invalid octal literal",
+1
+]
+],
+[
+"def f():\n \t   \t\t pass\n\t \t\t\t\t\t\tdef g():\n\t \t\t \t if a:\n   \t\t  \tpass\nz = (\n\\\n\\\n  1)\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = f'{{\n",
+[
+"unterminated f-string literal (detected at line 1)",
+1
+]
+],
+[
+"x = Rb\"a\\\nba\\'\"\n",
+null
+],
+[
+"def f():\n\t\t\t\t  \t y = x or z\n  \t\t\t  y = x or z\npass\ny = x or z\ny = x or z\n\t \t\t pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return t'{a:\n{b=}}' + (p or q)\n",
+[
+"t-string: newlines are not allowed in format specifiers for single quoted t-strings",
+2
+]
+],
+[
+"x = uf'a\\N{BULLET}'\n",
+[
+"'u' and 'f' prefixes are incompatible",
+1
+]
+],
+[
+"x = tr\"\"\"{x=}a\\\" + 'a'\n",
+[
+"unterminated triple-quoted t-string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n    return f'{a:}{}' + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t\t \t  with d:\n\t\t  \t\t\t\ty = x or z\npass\n\t \t\t\t \t if a:\n \t  \t\t\t pass\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"a\u20ac = \u2118.\u00a9\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"def f():\n    return t'''{a:\\{:={{}''' + (p or q)\n",
+[
+"t-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n  \t   \t if a:\n\t      x = 1\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n   \t\t\tpass\n\t \t \t  if a:\n\t\t   \t\t x = 1\n\t \t\t  \t with d:\n  \t \t\tdef g():\n  \t \t\t         pass\n",
+null
+],
+[
+"def f():\n    return rf'{a:{{{:}' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"x = 1_.real\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x = 0xelse\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"\u540d\u524d = x\u0660.\u00a9\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n    return t'''{a::{{x or y}} {b}}''' + (p or q)\n",
+null
+],
+[
+"def f():\n  \t \t\t\tx = 1\n\t   \t\t\t\tx = 1\nwith d:\n\t \t \t\t \tdef g():\n \t\t  \t  for i in b:\n for i in b:\n\t     def g():\n\t              pass\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"def f():\n \t \t\t # comment\nwhile c:\n\t \t\t \t  def g():\n  \t\t\t\t  def g():\n  \t\t\t\t           pass\n",
+null
+],
+[
+"def f():\n    return f'''{a{b:{c}}''' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"x = :{,]{\n",
+[
+"closing parenthesis ']' does not match opening parenthesis '{'",
+1
+]
+],
+[
+"def f():\n   \t\t\twhile c:\n\t\t\t \t\t\t pass\n",
+null
+],
+[
+"def f():\n\t\f\twhile c:\n \t\t  \t\tpass\n \t\t\t  \tif a:\n  \t\t\t\t\t\twhile c:\n \t \t\t\t while c:\n \t \t\t\t          pass\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"def f():\n    \t\t \twith d:\n\t   \t\t\t y = x or z\n\t    \t \tx = 1\n \t\t if a:\n\t  \t \t \tx = 1\n  \t \t# comment\n  \t \t\ty = x or z\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = )}'):\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"def f():\n    return f\"{a::={{{c}}}\\}}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n\t   \t\t\tfor i in b:\n\t\t\t\t\t   pass\n\t\t\t\t\t   y = x or z\nfor i in b:\n \t\t   def g():\n\t   \t \t pass\n",
+null
+],
+[
+"x = )}\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"x = }}'{{f'{\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"x = fr\"a\nb\" + 'a'\n",
+[
+"unterminated f-string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n    return F'{a:\n  {b=}}' + (p or q)\n",
+[
+"f-string: newlines are not allowed in format specifiers for single quoted f-strings",
+2
+]
+],
+[
+"def f():\n    return F\"{a:\\N{BULLET}}\" + (p or q)\n",
+null
+],
+[
+"def f():\n    return f\"{a:}}[1}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n \t   \t\t pass\n \t \t \t  pass\n \t \t  \t y = x or z\n\t    \t\t if a:\n \t   \t\t          pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = ((f'{}:}[\n\n",
+[
+"f-string: single '}' is not allowed",
+1
+]
+],
+[
+"x = 1.5abc\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"\u00a9 = \u0301x.x\u0301\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"x = ],a['\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n    return f'{a[1{{x}}' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n    return F'{a}{b=}' + (p or q)\n",
+null
+],
+[
+"a\u1885 = a\u00e9.x\u0301\n",
+null
+],
+[
+"def f():\n    return F'{a:\\N{BULLET}{{x}}}' + (p or q)\n",
+null
+],
+[
+"def f():\n\t \t\t \t\tif a:\n \t\t \t\t\t\tx = 1\n\\\n\t# comment\n \t\t\t \t\t\ty = x or z\n",
+null
+],
+[
+"def f():\n\t  \t \t\twhile c:\n\t \t\t\t \t\tif a:\n  \t    x = 1\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n    return f\"{a>10}{{\" + (p or q)\n",
+null
+],
+[
+"def f():\n    return f\"{a:{{!r\\N{BULLET}}\" + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"def f():\n    return f\"{a:}(!r}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"a\u1885 = \ud83d\ude00.a\u200b\n",
+[
+"invalid character '\ud83d\ude00' (U+1F600)",
+1
+]
+],
+[
+"def f():\n \t \t\t\t\t\ty = x or z\n \t    \t with d:\n\\\nfor i in b:\n  \t\t\t \t\tx = 1\n\t\t\t\t   \ty = x or z\n\\\n    y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = fr'a\\\nb{{\ny = 1\n",
+[
+"unterminated f-string literal (detected at line 2)",
+1
+]
+],
+[
+"def f():\n    return F'{a:[1}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return rf'{a{b=}{{' + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"x = },\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n  if a:\n \t \t x = 1\n \t \t for i in b:\n   \t\t \t\ty = x or z\n  if a:\n  \t\t\t  \tif a:\n  \t\t\t  \t         pass\n",
+null
+],
+[
+"x = 0.0jor y\n",
+null
+],
+[
+"x = rf'a\nb{x!r}\n",
+[
+"unterminated f-string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n\t \t\t\t \t\tpass\n \t    \t def g():\n   \t\t\tpass\n\f\n\t\t  \t\t\t\tpass\n\\\n\tpass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"\u0660x = \u309b.x\u0660\n",
+[
+"invalid character '\u0660' (U+0660)",
+1
+]
+],
+[
+"def f():\n    return rf\"{a:{{x or y}}{{x}}=}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n\t\t  \t  # comment\n\t \t\t\t\tx = 1\n \t    \tpass\n\t\t\t\t \t# comment\n\\\n    y = x or z\n\t  \t\t  pass\ny = x or z\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"\ud83d\ude00 = a\u0e33.\u0301x\n",
+[
+"invalid character '\ud83d\ude00' (U+1F600)",
+1
+]
+],
+[
+"x = 0o17\n",
+null
+],
+[
+"x = Rb\"\"\"a\nb{{\"\"\" + 'a'\n",
+null
+],
+[
+"x = 1ex\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n\t\t\t    for i in b:\n\t\t \t\t\t  for i in b:\n \t      pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"a = a\u00a0b.\u309b\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"x = ,(:({)}'}\n",
+[
+"closing parenthesis ')' does not match opening parenthesis '{'",
+1
+]
+],
+[
+"def f():\n    return F'{a:\\N{BULLET}{b}{c}{{x}}\\N{BULLET}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return F\"{a}\n{b:{c}}\\\" + (p or q)\n",
+[
+"unterminated f-string literal (detected at line 2)",
+2
+]
+],
+[
+"def f():\n\t  \\\n  \n\t\t \t  \t x = 1\n \t \t \t\tx = 1\n\t\t \t  \tdef g():\n \t\t\t  \t\tpass\n   \t    y = x or z\n\t \t  \t  y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n      \t\tif a:\n    \\\npass\n    \t  \twith d:\n\\\n\tx = 1\nif a:\n \t\t\t \t\tdef g():\n   \t  \tfor i in b:\n   \t  \t         pass\nz = (\n\\\n\\\n  1)\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n    return rf\"{a:\\\n{{x}}}\" + (p or q)\n",
+null
+],
+[
+"def f():\n    return t\"{a:{b=}}\" + (p or q)\n",
+null
+],
+[
+"x = )}11\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"x = 12e\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x = }'}}'1:(]\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n    return rf'{a:x}' + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t\t \t\t\t\tdef g():\n\t\t\t\t\t \t def g():\n \t\t    \tdef g():\n\t# comment\ny = x or z\nz = (\n\\\n1)\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = '[}'\n",
+null
+],
+[
+"def f():\n\t\t\t     while c:\n      \t pass\n\t\f\twith d:\n\t\t\t              pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return f\"{a:>10{b}\n}\" + (p or q)\n",
+[
+"unterminated f-string literal (detected at line 2)",
+2
+]
+],
+[
+"x = tr'''a\\\nb{x=} + 'a'\n",
+[
+"unterminated triple-quoted t-string literal (detected at line 2)",
+1
+]
+],
+[
+"def f():\n\\\n\\\n  x = 1\n \t \t   \ty = x or z\n",
+null
+],
+[
+"def f():\n    return f'{a:{b=}}' + (p or q)\n",
+null
+],
+[
+"\ufeffa = \u2118.a\u20ac\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"def f():\n\t\t\t\t\t\t y = x or z\nwhile c:\n  \t \t\t\t\twhile c:\n  \t \t\t\t\t         pass\n",
+null
+],
+[
+"def f():\n pass\n y = x or z\n",
+null
+],
+[
+"def f():\n\\\n    x = 1\n     \t\t\t# comment\n\t\t\t\t  if a:\n\t\t  \t\t\t# comment\nfor i in b:\n         pass\nz = (\n\\\n    1)\n",
+null
+],
+[
+"x = r'''{{{x\n",
+[
+"unterminated triple-quoted string literal (detected at line 1)",
+1
+]
+],
+[
+"a\u0e33 = x\u0301.a\u00a0b\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"def f():\n    return F'{a:{b:{c}}\n{{[1}' + (p or q)\n",
+[
+"unterminated f-string literal (detected at line 2)",
+2
+]
+],
+[
+"x = 0e0if y else 2\n",
+null
+],
+[
+"x = fr'''{x!r}a'\n",
+[
+"unterminated triple-quoted f-string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n\t\t  \t \t y = x or z\n\t \t \t\twhile c:\n\t \t \t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = ),:'f'{1{(\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"x = a}'1'\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n    return F'''{a::{{{c}}}{b}}}''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n\t\t\t\t  \t\twhile c:\n\t\t\t\t\t  \tdef g():\n\t\t \t  \t pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = ,)'(},\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"x = t'a\\\nba'\n",
+null
+],
+[
+"def f():\n    return t'{a:{b}}' + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t\t \t\t\tpass\nfor i in b:\n    \t\t  with d:\n    \t\t           pass\n",
+null
+],
+[
+"def f():\n    return F\"{a:{{{b=}{{x}}}}\" + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"x = )}'(]}\n\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"x = rf'''{x}\\N{BULLET}''' + 'a'\n",
+null
+],
+[
+"def f():\n    return F'{a:}}{b!r}{b}{c}\\{{b!r}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"\u212e = \u0301x.\u00a9\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"\u1885 = \ufeffa.a\u00a9\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"def f():\n    return F\"{a:}}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n\t\t\t \t def g():\n  \t\t\t\t\tpass\npass\ny = x or z\npass\n",
+null
+],
+[
+"def f():\n    return t\"{a:\\{{{c}}}{b=}{b!r}}\" + (p or q)\n",
+null
+],
+[
+"\u20ac = a\u309b.x\u0301\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"def f():\n    return F'{a:{{x or y}}={}' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"x = rf\"\"\"{x}a\n",
+[
+"unterminated triple-quoted f-string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n \t\t\t\t\t def g():\n \t\t\t \t\t\twith d:\n \t \t\t\t\t pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"def f():\n    return f\"{a:{b}{c}}\" + (p or q)\n",
+null
+],
+[
+"def f():\n    return f'''{a:\\{\\{\\{}}}}''' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"x = }1\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"x = f'{,{,f'{\n",
+[
+"'{' was never closed",
+1
+]
+],
+[
+"x = 0x1fx\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"def f():\n    \\\nx = 1\nx = 1\n# comment\n\\\n\\\n  for i in b:\n\t\t\t \t  \tx = 1\n\t\t\t\t\t\t\t\tdef g():\n\t\t\t\t\t\t\t\t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+10
+]
+],
+[
+"def f():\n \t\t \t  \tpass\ny = x or z\n\t  \t  \t\tx = 1\n",
+null
+],
+[
+"def f():\n\t\t \t  \t\tpass\n\t\t\t\t  \tx = 1\n \t \t\t \t\tx = 1\n   \t\ty = x or z\n\t\t  \t   x = 1\n\t\t   \t\t\ty = x or z\n \f\t\\\n  \n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n  \t\t \t\tpass\n\t \t\t\t \t # comment\n\t  \t  x = 1\n\t  \t  \tx = 1\n \t  \t\t\ty = x or z\n \t\t\t\t\t  # comment\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = ]\n)f'{}f'{(\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"x = r\"a\nb\"\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"\u00a9 = x\u0660.\u212e\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n  \t\t \t\t \nif a:\n         pass\n",
+null
+],
+[
+"x = r'''a\\\nba\\\ny = 1\n",
+[
+"unterminated triple-quoted string literal (detected at line 3)",
+1
+]
+],
+[
+"\u1885 = x\u0301.\u540d\u524d\n",
+null
+],
+[
+"\u00e9 = _\u00e9.\u309b\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"x = 0_0.real\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x = 1 \n",
+null
+],
+[
+"x = b'a\nb{{'\ny = 1\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n \t \t\t \t while c:\n\t \t\t\t\t\t pass\n\t\t \t\t\t\t \n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n    return f\"{a::}\n[1:}\" + (p or q)\n",
+[
+"unterminated f-string literal (detected at line 2)",
+2
+]
+],
+[
+"x = {[{1\n",
+[
+"'{' was never closed",
+1
+]
+],
+[
+"def f():\n \t \t\t  \tpass\n\f  x = 1\n\t\t\t\t \t with d:\n\t\t\t\t \t\t if a:\n \t\t   pass\nx = 1\n\t\t \t \tx = 1\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return F'''{a:{b=}{[1{b:{c}}}''' + (p or q)\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '['",
+2
+]
+],
+[
+"a\u00a0b = x\u0660.\u2118\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"x = 1_000_\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n\t\t\t \t\t \twhile c:\n  \tx = 1\n  \ty = x or z\n  \tx = 1\n  \t \t\t\t\twhile c:\n  \t \t\t\t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = F'''}}a'''\ny = 1\n",
+null
+],
+[
+"x = ]f'{)\n\n(\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"x = uf'{x!r}{x=}'\ny = 1\n",
+[
+"'u' and 'f' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n\t\t\t\t \t\t\tx = 1\n\t\t\t\t\t \t\twith d:\n\t\t\t\t \t\t\t         pass\nz = (\n\f  1)\n",
+null
+],
+[
+"def f():\n    return f'''{a:{[1\n}''' + (p or q)\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '[' on line 2",
+3
+]
+],
+[
+"def f():\n\t\t \t \t\t if a:\n \t   y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = [\n\na}'{\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '[' on line 1",
+3
+]
+],
+[
+"x = rb'''a\\\nbx}'''\ny = 1\n",
+null
+],
+[
+"x = uf\"\"\"aa\\'\"\"\"\n",
+[
+"'u' and 'f' prefixes are incompatible",
+1
+]
+],
+[
+"x = }':)'}f'{}}'\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n    return t'{a:[1}' + (p or q)\n",
+null
+],
+[
+"x = '''a\\a\\\nb'''\ny = 1\n",
+null
+],
+[
+"def f():\n  \t\t\t \t\tpass\n\t\t\t\t  for i in b:\n\t  \t\t\t\tfor i in b:\n\t\t \t\t \t if a:\n\t\t \t\t \t          pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = uf\"\"\"aa\\\"\"\" + 'a'\n",
+[
+"'u' and 'f' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n    return f'{a:}!r}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = rt'''{x=}a\\ + 'a'\n",
+[
+"unterminated triple-quoted t-string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n    \t \tpass\n    \t \tx = 1\n \t    \t\fif a:\n    \\\nfor i in b:\n \t  \tfor i in b:\n   \t \t  # comment\n",
+null
+],
+[
+"x = F'''a\\'}}'''\n",
+null
+],
+[
+"x\u0660 = a\u200b.a\u00e9\n",
+[
+"invalid non-printable character U+200B",
+1
+]
+],
+[
+"def f():\n    return f'{a:\\{{{c}}}}x}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"\u2118 = \u20ac.\u00a9\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x = br'''{x}}}'''\ny = 1\n",
+null
+],
+[
+"a = x\u0301.\u00e91\n",
+null
+],
+[
+"def f():\n    return t\"{a:(:{{x or y}}}\" + (p or q)\n",
+null
+],
+[
+"x = f'{{}',]]1\n",
+[
+"f-string: single '}' is not allowed",
+1
+]
+],
+[
+"x = f'{{]{\n",
+[
+"'{' was never closed",
+1
+]
+],
+[
+"def f():\n    return t'{a:{}' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n    return f'{a:\\N{BULLET}\\{>10:}' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n    return F'{a:{{{c}}}\\}' + (p or q)\n",
+null
+],
+[
+"a\u1885 = \u0660x.a\u309b\n",
+[
+"invalid character '\u0660' (U+0660)",
+1
+]
+],
+[
+"def f():\n\t  \t   \tfor i in b:\n  \t\t\t  \tpass\n\\\n\tpass\n \t\t  \t\t \n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n\t  \tx = 1\n\t \t  \t\t x = 1\n",
+null
+],
+[
+"x = rt'''x}{{' + 'a'\n",
+[
+"t-string: single '}' is not allowed",
+1
+]
+],
+[
+"x = ]1\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"x = ur'{x}{x'\n",
+[
+"'u' and 'r' prefixes are incompatible",
+1
+]
+],
+[
+"x = ]}':,\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n    return f'{a:(!r{b}{c}[1}' + (p or q)\n",
+null
+],
+[
+"def f():\n\t  \t\t\t\t while c:\n \t\t\t    if a:\n \t\t\t             pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = f'{'}a(,\n",
+[
+"f-string: expecting '}'",
+1
+]
+],
+[
+"a = \u309b.\u309b\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"x = 0xand y\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"def f():\n    return f'{a:{x(}' + (p or q)\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '('",
+2
+]
+],
+[
+"\u00b7a = x\u0660.a\u1885\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"def f():\n    return f'''{a:}}{b!r}{b}{c}{{x or y}}}''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n \t \t\t   x = 1\ny = x or z\n\f  y = x or z\n\n \t  \t \t pass\n\t  \t  \t y = x or z\n",
+null
+],
+[
+"x = 1_\u00e9\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n    \t\t\tdef g():\n       \t\\\ny = x or z\n \t\t\t\t  \tx = 1\n\t\t \t\t \t y = x or z\n\t  \t\t\t\t\tpass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = {,\n",
+[
+"'{' was never closed",
+1
+]
+],
+[
+"def f():\n\t     \t\tpass\nx = 1\n\t \t\t\t def g():\n \t \t \t\t\tx = 1\nwith d:\n  \t \t\t\ty = x or z\n",
+null
+],
+[
+"def f():\n\t \t\t\twith d:\n  \t \t\t\t\tpass\n  \t\t\t\t \tfor i in b:\n  \\\n  if a:\n \t\t  \t\tpass\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"x = ur'''a\nb{{'''\n",
+[
+"'u' and 'r' prefixes are incompatible",
+1
+]
+],
+[
+"\u2118 = a\u00a0b.\u00e91\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"def f():\n    return f'''{a::{b} {{{c}}}}''' + (p or q)\n",
+null
+],
+[
+"x = }')\n,a,}'\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"x = 1.5j\n",
+null
+],
+[
+"a\u0e33 = a\u1885.a\n",
+null
+],
+[
+"x = F\"\\N{BULLET}{x\" + 'a'\n",
+[
+"f-string: expecting '}'",
+1
+]
+],
+[
+"a\u00a9 = \u00e9._\u00e9\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n    return f\"{a:\n=:\\}\" + (p or q)\n",
+[
+"f-string: newlines are not allowed in format specifiers for single quoted f-strings",
+2
+]
+],
+[
+"x = 012for\n",
+[
+"leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+1
+]
+],
+[
+"def f():\n  \t\t\t\t\ty = x or z\n \t\t\t\t \t\n\t\t \t\t \t def g():\n\t\t \t\t \t          pass\n",
+null
+],
+[
+"x = 0x_and y\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"x = 0_0]\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"\u00b7a = \u0301x.a\u00a9\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"x = 0o8for\n",
+[
+"invalid digit '8' in octal literal",
+1
+]
+],
+[
+"def f():\n\t\t    \t # comment\nif a:\n\\\n# comment\n\\\n# comment\n\t  \t\t  \tpass\n\t   \t\t \ty = x or z\n\t \t  \t \tpass\n",
+null
+],
+[
+"x = af'{:{{]1}'\n",
+null
+],
+[
+"def f():\n    return t'{a:{{x}}}' + (p or q)\n",
+null
+],
+[
+"x = u\"\"\"\\N{BULLET}\"\"\"\n",
+null
+],
+[
+"x = (\n]a1:(,\n",
+[
+"closing parenthesis ']' does not match opening parenthesis '(' on line 1",
+2
+]
+],
+[
+"def f():\n    return rf'{a:{b!r}{{x or y}}\\N{BULLET}{b!r}{{{c}}}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return f'''{a:{{x or y}}{{}''' + (p or q)\n",
+null
+],
+[
+"x = 1__0x\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x = \na}':\n",
+[
+"unmatched '}'",
+2
+]
+],
+[
+"def f():\n    return F\"{a:{{x or y}}{{{c}}}(}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"a\u00b7 = \u00b7a.\u540d\u524d\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"\ufeffa = \u00e9.a\u200b\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"def f():\n \t\t\t\t for i in b:\n\t\t \t \t\twith d:\n\t\t \t \t\t         pass\n",
+null
+],
+[
+"def f():\n\t\t   \t \tx = 1\n\t    \t\t\tpass\n\t   \t \t\ty = x or z\n\t  \t  \t\tif a:\n   \t   \ty = x or z\n \t  \t\t \tif a:\n  \t\t\t\t\tx = 1\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"def f():\n\t \t\t\t   if a:\n   \t\t\t\tpass\n \t\t \t \ty = x or z\n \t\t  \t\t\tx = 1\ny = x or z\n \t\t\t \t\t y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"a\u20ac = \u309b.a\u00a0b\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x = ur\"{x!r}{{ + 'a'\n",
+[
+"'u' and 'r' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n\t  \\\n  # comment\ny = x or z\nx = 1\n\t \t  \t with d:\n         pass\n",
+[
+"unindent does not match any outer indentation level",
+7
+]
+],
+[
+"x = 1jx\n",
+[
+"invalid imaginary literal",
+1
+]
+],
+[
+"a = \u00e91.\u309b\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"x = b'''a\\\nba\\\nb'''\ny = 1\n",
+null
+],
+[
+"def f():\n\t\t \t\t   with d:\n    \\\n    pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = 1e_\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"\u00e91 = \u20ac.\u0301x\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x = 1_]\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n\t\t  \t\t \tpass\n \t\t   \t\tdef g():\n \t\t   \t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return t'{a:}{b}{c}{{{c}}}}' + (p or q)\n",
+[
+"t-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = 0x_not in y\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"def f():\n    return f'{a:\\{}' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n    return f'{a:{ {b}}' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n\t\t\t  \t\tdef g():\n \t\t \t\t\t\ty = x or z\ny = x or z\n\t \t  \t\tx = 1\n",
+null
+],
+[
+"def f():\n\t\t  \t\t\t\tif a:\n  \t \t y = x or z\n\t\t \t \t\t\n\t  \t   \tx = 1\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n \t  \t\t  \n  \t\t\t\tx = 1\n  \\\n  while c:\n \t\t \tfor i in b:\n \t\t \t         pass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n \t \t\t\t\t# comment\n\t \t\t\t\t\t\tpass\n\t\t\t\t \t\t\t\f# comment\n# comment\ny = x or z\n    \\\n    for i in b:\n  \t  \t\t\tpass\n",
+null
+],
+[
+"x = 012not in y\n",
+[
+"leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers",
+1
+]
+],
+[
+"x = 12abc\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"def f():\n\t  \t   pass\n  \t\t   def g():\n\t\t\t   \t for i in b:\n    \t   x = 1\n\t \t\t\t\t y = x or z\n  \t \t\t\t y = x or z\npass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"x = ft'''a\\''\n",
+[
+"'f' and 't' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n    return t'{a:!r}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return t'{a:{b=}}}{{{c}}}\\{}' + (p or q)\n",
+[
+"t-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n  \t \t\t\t \n \t \t\t  \ty = x or z\npass\n",
+null
+],
+[
+"x = {]\n",
+[
+"closing parenthesis ']' does not match opening parenthesis '{'",
+1
+]
+],
+[
+"_\u00e9 = a\u309b.\u00e91\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"x = }1[\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n  \t\t\t\t \tif a:\n\t\t\t\t  \tfor i in b:\n\t\t\t\t  \t\ty = x or z\n     \t\tif a:\n \t\t \t\t\t # comment\npass\ndef g():\n         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = a'}'),,[\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"def f():\n    return F'{a:{}}\\}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n\t   \t \t with d:\n\t       y = x or z\ndef g():\n \t \t\t\ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return F'{a:({b}[1}' + (p or q)\n",
+null
+],
+[
+"def f():\n\t \t \t\t\twhile c:\n   \tpass\n\t\t  \t  y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = br\"\"\"\\N{BULLET}a\\\"\"\" + 'a'\n",
+[
+"unterminated triple-quoted string literal (detected at line 1)",
+1
+]
+],
+[
+"\ud83d\ude00 = \u1885.\u20ac\n",
+[
+"invalid character '\ud83d\ude00' (U+1F600)",
+1
+]
+],
+[
+"def f():\n\t\t \t\t \tif a:\n \t\t \t\t\t\twith d:\n   \t\t  y = x or z\nz = (\n  \\\n  1)\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n\t\t \t\t  \twith d:\n\t    \t  while c:\n \t \t with d:\n\t \t \t  pass\n\t\t \t\t\t  pass\n\t\t  \t \t\t# comment\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n\\\nx = 1\n  \t\t \t\t\tdef g():\n \t  \nfor i in b:\n\t \t\t\t\t\tpass\n\t\t\t\t \t\t\n",
+null
+],
+[
+"a\u309b = \u309b.a\u1885\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n    return rf'{a:{{x}}\\N{BULLET}!r\\N{BULLET}}' + (p or q)\n",
+null
+],
+[
+"def f():\n \t      # comment\n\t  \tpass\n\t\t   \t \t\t\f\tdef g():\n \t      pass\n \t      # comment\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = u'{x!r}\ny = 1\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"_\u00e9 = \u2118.a\u309b\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"x = f'{],a,\n",
+[
+"f-string: unmatched ']'",
+1
+]
+],
+[
+"def f():\n \t \t\t  if a:\n\t\t  \t\t\t while c:\n\t\t \t  y = x or z\n \t\t\t \t\t pass\n\\\n\\\n  x = 1\nfor i in b:\n \t\t \t \twhile c:\n \t\t \t \t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"def f():\n    return t'''{a:{b!r}{{{{x or y}}>10}''' + (p or q)\n",
+[
+"t-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return f'{a:[1}' + (p or q)\n",
+null
+],
+[
+"def f():\n \t\t\t\t \ty = x or z\n   \t\t\ty = x or z\n# comment\n  \\\n  while c:\n\t \t\t\t\t \ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n\t  \t\t\t\t \n   \t\t  pass\nx = 1\nz = (\n\\\n\t1)\n",
+null
+],
+[
+"x = F'}} + 'a'\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"x = uf\"\"\"}}{x!r}\"\"\"\ny = 1\n",
+[
+"'u' and 'f' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n    return F'{a:x {b}{c}:}' + (p or q)\n",
+null
+],
+[
+"def f():\n  \t \t\twhile c:\n\t \t\t \t\t# comment\n  \t\t\t\t\t x = 1\n\t  \t \ty = x or z\ndef g():\n \t \twhile c:\n \t\t\t\t \ty = x or z\n",
+null
+],
+[
+"def f():\n\t\t\t \t   if a:\n\t \t\t\t\t\t\t# comment\n\t\t\t \t\t\t\tpass\n\t\t\t\t\t\t \t\n  \t\t  \t y = x or z\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"\u00e9 = \u00e9.\u20ac\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x = ]1][\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"x = \"a\\{{\"\ny = 1\n",
+null
+],
+[
+"x = u\"{x\"\ny = 1\n",
+null
+],
+[
+"a\u20ac = \u20ac.\u540d\u524d\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"\u00e91 = \u0301x.\u2118\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"def f():\n   \t\t  \t\n \t\t    \tx = 1\n  \t\t   \tfor i in b:\n\t\t\t\tx = 1\n     \t\t for i in b:\n\t\t\t\t  \ty = x or z\n \t\t\t \t\t def g():\n\t\t\t\t  \t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+5
+]
+],
+[
+"def f():\n\\\n\\\n  pass\n   \t\t \t def g():\n   \t \t\t\tfor i in b:\n\t\t   x = 1\n \t\t\t  \t# comment\nz = (\n\\\n\\\n  1)\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+6
+]
+],
+[
+"x = rf'''}}a\\''''\n",
+null
+],
+[
+"x = \"\"\"}}{{\"\"\"\n",
+null
+],
+[
+"def f():\n\t\t \t \t\t y = x or z\n# comment\nwith d:\n\t  \t\t \tx = 1\nz = (\n\\\n\t1)\n",
+null
+],
+[
+"a\u309b = a\u20ac.\ud83d\ude00\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"a\u309b = a\u20ac.\u00b7a\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"x = \n{1f'{\n)\n",
+[
+"invalid decimal literal",
+2
+]
+],
+[
+"def f():\n   \t  \t # comment\n     \t\t x = 1\n   \t x = 1\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n \t\t\t\t  # comment\n\t\t \t\t  pass\n\t  \t\t\t\t while c:\n\t \t  \t\t with d:\n \t \t\t \tpass\n \t \t\t\t \ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"\u0660x = \u00e9.\u20ac\n",
+[
+"invalid character '\u0660' (U+0660)",
+1
+]
+],
+[
+"def f():\n    \t   pass\n \t\t  \t\t pass\n \t\t \t\t  y = x or z\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = f\"{x=}x}\"\ny = 1\n",
+[
+"f-string: single '}' is not allowed",
+1
+]
+],
+[
+"x = 0o \n",
+[
+"invalid octal literal",
+1
+]
+],
+[
+"def f():\n\t  \t\tdef g():\n\t\t \t\t   pass\nx = 1\n       \t\\\nx = 1\nfor i in b:\n    \t\t\t with d:\n    \t\t\t          pass\n",
+null
+],
+[
+"def f():\n    return rf\"{a:!r{{{c}}}\n(:}\" + (p or q)\n",
+[
+"unterminated f-string literal (detected at line 2)",
+2
+]
+],
+[
+"x = 0_0for\n",
+null
+],
+[
+"def f():\n \t\t \t\t\tpass\n   \t \t  y = x or z\n# comment\nwith d:\n\t \t \t \t\ty = x or z\n   \t \tfor i in b:\n   \t \t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"\u00b7a = a\u00b7.a\u20ac\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"def f():\n    \t\t\tx = 1\n\t \t\t\t \t\tdef g():\n\t \t\t\t \t\t         pass\n",
+null
+],
+[
+"x = fr'x}{x}'\ny = 1\n",
+[
+"f-string: single '}' is not allowed",
+1
+]
+],
+[
+"def f():\n    return f\"{a:{{{{!r}\" + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n\f  pass\n\t \t \t \t\tfor i in b:\n  \t   \t pass\n \t\t\t\t  \ty = x or z\n\t \t with d:\n\t \t          pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = .5\n",
+null
+],
+[
+"x = 0o.real\n",
+[
+"invalid octal literal",
+1
+]
+],
+[
+"x = 0o8x\n",
+[
+"invalid digit '8' in octal literal",
+1
+]
+],
+[
+"x = t'x}a'\ny = 1\n",
+[
+"t-string: single '}' is not allowed",
+1
+]
+],
+[
+"a\u309b = \u2118.a\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"x = a{'[]f'{]\n",
+[
+"closing parenthesis ']' does not match opening parenthesis '{'",
+1
+]
+],
+[
+"def f():\n\t \t   \tdef g():\n\t    \t\t\twith d:\n \t\t\t\t  pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"def f():\n\t\t   \t  while c:\n\t \t\t  \t x = 1\n  \t \t\t \t\n  \t \t\t\t # comment\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"\u0301x = a\u00a0b.a\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"def f():\n       \t\\\nwhile c:\n  \t     y = x or z\n  \t     x = 1\n\t    \t y = x or z\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"def f():\n\t\t      while c:\n\t \t\t   with d:\n\t \t\t  \t for i in b:\n\t\t\t\t    # comment\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n  \t\t\t \tx = 1\ny = x or z\ndef g():\n \t      with d:\n \t      y = x or z\n \t      pass\nz = (\n\\\n\\\n  1)\n",
+null
+],
+[
+"\u540d\u524d = \ud83d\ude00.\u00e9\n",
+[
+"invalid character '\ud83d\ude00' (U+1F600)",
+1
+]
+],
+[
+"x = rb\"\"\"{x!r}\\N{BULLET}\"\"\"\n",
+null
+],
+[
+"x = t'''{x''' + 'a'\n",
+[
+"t-string: expecting '}'",
+1
+]
+],
+[
+"def f():\n\\\n\\\n  def g():\n\t  \t\t \t # comment\n   \t\t\t\t for i in b:\n    \\\ny = x or z\n\t \t\t \t\t\ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+8
+]
+],
+[
+"def f():\n    return F'{a:}}{{b:{c}}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = 0o17e\n",
+[
+"invalid octal literal",
+1
+]
+],
+[
+"x = 0b101not in y\n",
+null
+],
+[
+"def f():\n    return rf\"{a:{b:{c}}\nx{b:{c}}}\" + (p or q)\n",
+[
+"unterminated f-string literal (detected at line 2)",
+2
+]
+],
+[
+"x = 0b2x\n",
+[
+"invalid digit '2' in binary literal",
+1
+]
+],
+[
+"def f():\n\t \t \t   for i in b:\n      \t \n\t \t   pass\n\t\t  \t\t  with d:\n  \t \tfor i in b:\n  \t \t         pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = ur\"\"\"{x}{x\"\"\"\ny = 1\n",
+[
+"'u' and 'r' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n    return rf'''{a: !r}''' + (p or q)\n",
+null
+],
+[
+"a\u00e9 = a\u20ac.\ufeffa\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x = 0_0is y\n",
+null
+],
+[
+"def f():\n    return f\"{a:{{{x or y}}}!r\" + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n   \t\t\t# comment\n\n",
+null
+],
+[
+"def f():\n    return f\"{a:x}\" + (p or q)\n",
+null
+],
+[
+"def f():\n    return t\"{a:\\{}\" + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n   for i in b:\n     \t\t # comment\nfor i in b:\n         pass\n",
+null
+],
+[
+"\u309b = \u00a9.a\u00e9\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n    return F'{a:x[1{b}{c}{b}{c}{b!r}}' + (p or q)\n",
+null
+],
+[
+"\u2118 = a\u200b.a\u200b\n",
+[
+"invalid non-printable character U+200B",
+1
+]
+],
+[
+"def f():\n    return t'{a:[1{{x}}\\N{BULLET}}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return f'{a:>10(}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return rf\"{a:{{x or y}}{{{c}}}}\" + (p or q)\n",
+null
+],
+[
+"x = ur\"a\\'x}\" + 'a'\n",
+[
+"'u' and 'r' prefixes are incompatible",
+1
+]
+],
+[
+"x = a}'}')\n\n]\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"x = :}'{)\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n \t\t  with d:\n\t \t\t \t  x = 1\n\t \t  pass\n   \t \t\t\tpass\n\t \t  for i in b:\n\t\t  \t \t\twith d:\n    \t \t\ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+8
+]
+],
+[
+"def f():\n\\\n    pass\n# comment\n\t\t \t \tpass\n",
+null
+],
+[
+"def f():\n    return rf'''{a:x{{x or y}}{{x}}{{x or y}}\n}''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return F'{a\\N{BULLET}}}}{b!r}\\' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"def f():\n\t  \t \t y = x or z\n\t\t\t \t\t  y = x or z\n",
+null
+],
+[
+"x = 1}(]]'\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"a\u0e33 = \u00e9.\u00b7a\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"def f():\n\t\t \t\t \tx = 1\n\t\t \t\t \t if a:\n\t\t \t\t \t          pass\n",
+null
+],
+[
+"def f():\n  \t  \t\tx = 1\n\t\t\t\t\t \t\twith d:\n\t\t   \t\t\ty = x or z\nx = 1\n  \t\t\t\t\t def g():\n  \t\t\t\t\t          pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n  \t \t\t \tpass\n\t\t   \t \tx = 1\n# comment\npass\n",
+null
+],
+[
+"def f():\n  \t  \t \tif a:\n \t\t \t with d:\n\t\t\t\t \t\t\ty = x or z\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = a((\n",
+[
+"'(' was never closed",
+1
+]
+],
+[
+"x = rb'''\\N{BULLET}a\nb'\n",
+[
+"unterminated triple-quoted string literal (detected at line 2)",
+1
+]
+],
+[
+"def f():\n\t\t  \t\t \tx = 1\n\t\t   \t\tx = 1\nx = 1\n \t\t\t\t\tpass\n\t\t\t\t\t\t x = 1\npass\n \t\t  \t \ty = x or z\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return rf\"{a:>10}\n}\" + (p or q)\n",
+[
+"unterminated f-string literal (detected at line 2)",
+2
+]
+],
+[
+"x = 1\u00e9\n",
+null
+],
+[
+"def f():\n    return f\"{a:!rx}\" + (p or q)\n",
+null
+],
+[
+"def f():\n\t\t \t\t\t\t\tdef g():\n\t  \t\t  \twhile c:\n\t\t\t\t \t\t\ty = x or z\n\t  \t \t\t\twhile c:\n\t  \t \t\t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return f'{a:\n}' + (p or q)\n",
+[
+"f-string: newlines are not allowed in format specifiers for single quoted f-strings",
+2
+]
+],
+[
+"x = '}''\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n\t   \t  while c:\n \t \t   \tpass\n\t \t\t   if a:\n\t\t   \t \tx = 1\n\t\t\t\t\t\t \t# comment\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"def f():\n \t \t\t with d:\n\t\t \t   y = x or z\n\t \t\t   y = x or z\ny = x or z\nwhile c:\n         pass\n",
+null
+],
+[
+"def f():\n    return f\"{a:={{b=}\n}}}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+3
+]
+],
+[
+"x = }}'\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n \t\t\t x = 1\n\t\t\t \t\t\t\tx = 1\n\t \t  def g():\n \t    \t\ty = x or z\n       \t\\\nif a:\n         pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n\\\nfor i in b:\n \t \t\t \t\tx = 1\n",
+null
+],
+[
+"x = ]}'{}'}'f'{\n,\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n    return f'{a:{b}{b}{{x or y}}{{{c}}}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n\t\t\t \t  \t\n\t \t     if a:\n\t \t              pass\n",
+null
+],
+[
+"a\u309b = \u2118.a\u0e33\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n \t\t\t\t y = x or z\ny = x or z\n      \t with d:\n         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+5
+]
+],
+[
+"\ud83d\ude00 = a\u0e33.x\u0660\n",
+[
+"invalid character '\ud83d\ude00' (U+1F600)",
+1
+]
+],
+[
+"\u0301x = \u212e.\ud83d\ude00\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"def f():\n    return rf'{a{b}{b}{c}:' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n   \t \t\t\tfor i in b:\n\t \tx = 1\n\t\t  \t  pass\nif a:\n         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = '''{x{x'''\ny = 1\n",
+null
+],
+[
+"def f():\n \t \t\t while c:\n\t \t\t   pass\n    \\\nx = 1\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"x = bf\"a\\'{x=}\"\ny = 1\n",
+[
+"'b' and 'f' prefixes are incompatible",
+1
+]
+],
+[
+"a\u00a0b = a\u00e9.\u00a9\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"a\u00a0b = a\u00a0b.\u00e9\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"x = ft'x}a'\n",
+[
+"'f' and 't' prefixes are incompatible",
+1
+]
+],
+[
+"x = \n1[[,a,\n",
+[
+"'[' was never closed",
+2
+]
+],
+[
+"x = 0]\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n  \t\t\t \t for i in b:\n\t\t    \t while c:\n\t\t \t\t\t\tx = 1\ny = x or z\n\t     \t\ty = x or z\nif a:\n  \t\t\t \tpass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = b'''a\\{x!r}\n",
+[
+"unterminated triple-quoted string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n\t\t   \t\tx = 1\nif a:\n \t    \t for i in b:\n \t    \t          pass\n",
+null
+],
+[
+"x = b'''{x{x!r} + 'a'\n",
+[
+"unterminated triple-quoted string literal (detected at line 1)",
+1
+]
+],
+[
+"x = )'\naa[\n",
+[
+"unmatched ')'",
+1
+]
+],
+[
+"def f():\n\t\t \t \t\ty = x or z\n\fwith d:\n \t\t\t \t\t\tif a:\n   \t \t\t y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"def f():\n\t \t   \ty = x or z\n    \t\t\twhile c:\n\t \t   \t         pass\n",
+null
+],
+[
+"x = ]\n])(\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n   \t  x = 1\n\t\t\t\t\t\t\t y = x or z\n",
+null
+],
+[
+"x = 1_000]\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n   \t \t\t \n \t \t\t\t  y = x or z\n  \t\t  \t y = x or z\n\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"\u0301x = a\u309b._\u00e9\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"\u540d\u524d = \u1885.\u20ac\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"def f():\n\\\n\\\n  y = x or z\ndef g():\n\t\t    y = x or z\ny = x or z\n",
+null
+],
+[
+"def f():\n    return rf'''{a:\n}''' + (p or q)\n",
+null
+],
+[
+"def f():\n \t      y = x or z\n \t      for i in b:\n\t\t\t \t\t  x = 1\n \t      y = x or z\n \t      if a:\n \t               pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"def f():\n \t  \t\t for i in b:\n    \t\t\tx = 1\n\t \t  \t \tpass\n \t\t\t   \tx = 1\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return F'''{a: !r\\:{b}}''' + (p or q)\n",
+null
+],
+[
+"def f():\n    return f\"{a:{b}{c}\n:}}=}\" + (p or q)\n",
+[
+"unterminated f-string literal (detected at line 2)",
+2
+]
+],
+[
+"x = ur'{x=}'\n",
+[
+"'u' and 'r' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n \t \t   \tpass\nx = 1\nwith d:\n \t  \t   if a:\n\t\t\t  \t\t\tx = 1\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+6
+]
+],
+[
+"x = a}\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"\u0301x = a\u00b7.a\u20ac\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"x = tr'''\\N{BULLET}a\nb + 'a'\n",
+[
+"unterminated triple-quoted t-string literal (detected at line 2)",
+1
+]
+],
+[
+"\u00b7a = \u0660x.x\u0301\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"x = :1[:}'{'}\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '['",
+1
+]
+],
+[
+"x = 1e5or y\n",
+null
+],
+[
+"def f():\n    return f'{a::{{x}} {{{c}}}}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return f'''{a:\\{b=}{{{c}}} }''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n \t  \t \t x = 1\nfor i in b:\n\t \t  \t x = 1\n  \t\t\t\t \t# comment\n",
+null
+],
+[
+"def f():\n    return f\"{a:}}:{{{c}}}x}\" + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"a\u00b7 = \u0301x.\u00e9\n",
+[
+"invalid character '\u0301' (U+0301)",
+1
+]
+],
+[
+"x = 1__0.real\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"x = ur'''x}{x}'''\n",
+[
+"'u' and 'r' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n    return f'{a:\n\\N{BULLET}{}' + (p or q)\n",
+[
+"f-string: newlines are not allowed in format specifiers for single quoted f-strings",
+2
+]
+],
+[
+"def f():\n  \t \n  \t def g():\n \t\t\t   \t# comment\n",
+null
+],
+[
+"x = bf'{x=}a\\'\ny = 1\n",
+[
+"'b' and 'f' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n  \t\t# comment\ndef g():\n         pass\nz = (\n\\\n    1)\n",
+null
+],
+[
+"def f():\n    \t   x = 1\n\t \t\t  \t\tif a:\n  \t\t\t\t\t\t# comment\n \t\t\t \t  while c:\n  \t\t \t\t pass\n    \t   # comment\n    \t   def g():\n    \t            pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n\fdef g():\n \t  \t\t \ty = x or z\n\t \t\t\t  y = x or z\n \t \t \t \tx = 1\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"def f():\n    return F\"{a:{{x or y}}\n=}}\" + (p or q)\n",
+[
+"unterminated f-string literal (detected at line 2)",
+2
+]
+],
+[
+"def f():\n    return rf\"{a:{b!r}=}\" + (p or q)\n",
+null
+],
+[
+"def f():\n\t \t   \t# comment\n\t \t   \tpass\n",
+null
+],
+[
+"x = 0.0jabc\n",
+[
+"invalid imaginary literal",
+1
+]
+],
+[
+"def f():\n  \t \t\t\t\t# comment\n  \t for i in b:\n\t\t      x = 1\n \t     if a:\n\t  \t\t  \tx = 1\n\t\t\t \t \ty = x or z\n \t     # comment\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"x = tr'a\\\n",
+[
+"unterminated t-string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n  \t\t\t  \tfor i in b:\n\t \t \t\t\t\ty = x or z\n\t\t \t \t\t\n\t\t\t\t \t pass\n\\\ny = x or z\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = u\"a\\\nba\\\"\n",
+[
+"unterminated string literal (detected at line 2); perhaps you escaped the end quote?",
+1
+]
+],
+[
+"x = f'{]]\n",
+[
+"f-string: unmatched ']'",
+1
+]
+],
+[
+"x = }'[)\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n  \t\t\t def g():\n \t\t\t\t \ty = x or z\n \t\t \t pass\n",
+null
+],
+[
+"x = ]f'{[(]a)a\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n\f  if a:\n \t\t \t\t \tpass\n",
+null
+],
+[
+"x = ,'a(('{\n",
+[
+"'{' was never closed",
+1
+]
+],
+[
+"def f():\n  \t\t  \t\tx = 1\n \t \t\t  \tpass\n\t\t \t   \t# comment\n",
+null
+],
+[
+"x = ub'''{x!r}x} + 'a'\n",
+[
+"'u' and 'b' prefixes are incompatible",
+1
+]
+],
+[
+"x = 1el\n",
+[
+"invalid decimal literal",
+1
+]
+],
+[
+"\u212e = \u0660x.a\u20ac\n",
+[
+"invalid character '\u0660' (U+0660)",
+1
+]
+],
+[
+"x = :\n",
+null
+],
+[
+"x = }f'{(}'\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n    return f'{a:[1 {}' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n\f  x = 1\npass\n \t\t\t  \t y = x or z\n\t  \t \t y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"x = rt\"{{a\nb\"\ny = 1\n",
+[
+"unterminated t-string literal (detected at line 1)",
+1
+]
+],
+[
+"x = rb\"}}\"\n",
+null
+],
+[
+"def f():\n    return f\"{a:={b!r}}\" + (p or q)\n",
+null
+],
+[
+"\ufeffa = a.\u00a9\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"def f():\n  \t\t\t\t\t if a:\n  \t    def g():\n  \t\t  \tfor i in b:\n  \t\t  \t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return F'''{a:\n{{{c}}}}''' + (p or q)\n",
+null
+],
+[
+"def f():\n\t \t\t \t\t \n \t\t\t \t\t pass\n\t \tfor i in b:\n\t \t         pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"a\u20ac = a\u00a0b.a\u00e9\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"def f():\n\t\t\t\t  \tx = 1\ny = x or z\npass\n \t\t\t\t   x = 1\n",
+null
+],
+[
+"x = Rb\"\"\"a\\\nba\\\nb\"\"\" + 'a'\n",
+null
+],
+[
+"x = '}'\n{,a1}'\n",
+[
+"unterminated string literal (detected at line 2)",
+2
+]
+],
+[
+"def f():\n    return f\"{a\\N{BULLET}\\\\\" + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"x = rf'''}}\n",
+[
+"unterminated triple-quoted f-string literal (detected at line 1)",
+1
+]
+],
+[
+"x = }}'f'{:{:[[\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n\t\t  \t\tif a:\n \t\t \t \t x = 1\ny = x or z\n\t  \t\t \t x = 1\n",
+null
+],
+[
+"\u00b7a = \u0301x.\u0660x\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"x\u0301 = a\u1885.a\u309b\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n \t   \t\t with d:\n\t\t\t   \twith d:\n \t\t\t \t\t\tif a:\n \t\t\t \t\t\t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n\t \t\t  \tpass\n\t\t\t \t \t if a:\n\t\t\t \t \t          pass\n",
+null
+],
+[
+"def f():\n\t \t\t \t\t\twhile c:\n   \t\t \t\tpass\n \t\t \t  \tx = 1\n\f  y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = 1.5for\n",
+null
+],
+[
+"x = :]]],[\n\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n    return F\"{a:=x{{{c}}}{b=}{{{c}}}}\" + (p or q)\n",
+null
+],
+[
+"x = [')f'{\n",
+[
+"'{' was never closed",
+1
+]
+],
+[
+"a\u00e9 = a\u00b7._\u00e9\n",
+null
+],
+[
+"x = rf'''{{{x=}' + 'a'\n",
+[
+"unterminated triple-quoted f-string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n\t \t  \t\t \n \t\t \t \t pass\n",
+null
+],
+[
+"x = '}'\n[,{\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n  \t\t\t\tpass\n\t\t\t \t  \tpass\nwith d:\n\t\t\t\t\t  with d:\n\t\t\t\t\t           pass\n",
+null
+],
+[
+"x = a('{),)\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n\t \t\t\t\t\t\twith d:\n\t \t\tdef g():\n\t \t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = 12and y\n",
+null
+],
+[
+"def f():\n\t   \t\t\tx = 1\n\t  \t \t\t# comment\n",
+null
+],
+[
+"x\u0660 = \u00b7a.\u00b7a\n",
+[
+"invalid character '\u00b7' (U+00B7)",
+1
+]
+],
+[
+"x = ft'''{{{x=}\n",
+[
+"'f' and 't' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n    return f'{a:}}{b=}}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return t'{a:\n}' + (p or q)\n",
+[
+"t-string: newlines are not allowed in format specifiers for single quoted t-strings",
+2
+]
+],
+[
+"def f():\n    return F'{a:{b}{{}' + (p or q)\n",
+null
+],
+[
+"x = 1jis y\n",
+null
+],
+[
+"x = 0b_\n",
+[
+"invalid binary literal",
+1
+]
+],
+[
+"def f():\n\t\t \t\t \t\ty = x or z\nx = 1\n\\\n    \ny = x or z\n",
+null
+],
+[
+"def f():\n\\\n\\\n  \n# comment\nwith d:\n\t\t  \t\tfor i in b:\n\t\t\t\t\t\t \t# comment\n",
+null
+],
+[
+"def f():\n\t\t  \t\t\t\ty = x or z\nwhile c:\n \t\t\tpass\n\t\t\t\t\t \t y = x or z\n \t  \t\t  with d:\n\t \t \t \tdef g():\n\t \t \t \t         pass\nz = (\n\f1)\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"x = ['{[)\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"x = br\"\"\"\\N{BULLET}\\N{BULLET}\"\ny = 1\n",
+[
+"unterminated triple-quoted string literal (detected at line 2)",
+1
+]
+],
+[
+"\ufeffa = a\u1885.x\u0301\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"def f():\n    return F'{a:{b}>10:\\N{BULLET}\n}' + (p or q)\n",
+[
+"unterminated f-string literal (detected at line 2)",
+2
+]
+],
+[
+"def f():\n \t x = 1\n\t\t      with d:\n \t          pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"\u309b = a\u200b.\u0301x\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n    return t'{a:}}' + (p or q)\n",
+[
+"t-string: single '}' is not allowed",
+2
+]
+],
+[
+"\ud83d\ude00 = \u0660x.a\u0e33\n",
+[
+"invalid character '\ud83d\ude00' (U+1F600)",
+1
+]
+],
+[
+"def f():\n\t\t  \t\t  x = 1\nx = 1\n\t\t\t \t\t \ty = x or z\ny = x or z\n  \t \t \t\tx = 1\npass\n",
+null
+],
+[
+"def f():\n    return f\"{a=\" + (p or q)\n",
+[
+"f-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n\t\t\t  \t\t\t\n\t    \t\t for i in b:\n\t    \t\t          pass\n",
+null
+],
+[
+"\u309b = \u00b7a.a\u1885\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"x = tr'aa\\''\n",
+null
+],
+[
+"\u2118 = a\u20ac.a\u0e33\n",
+[
+"invalid character '\u20ac' (U+20AC)",
+1
+]
+],
+[
+"x = 0ois y\n",
+[
+"invalid octal literal",
+1
+]
+],
+[
+"def f():\n    return F'{a::>10{b}}' + (p or q)\n",
+null
+],
+[
+"def f():\n    return t'{a:!r{{{c}}}\\{x}' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n    return f'{a:{b}{{x or y}} \\{[1}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = tr\"\"\"x}a\nb\"\"\"\ny = 1\n",
+[
+"t-string: single '}' is not allowed",
+1
+]
+],
+[
+"x = u'x}{x=}\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n    return t'''{a:}}{b}{c}}''' + (p or q)\n",
+[
+"t-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n    return rf'{a:{{x or y}}\\{b}}' + (p or q)\n",
+null
+],
+[
+"x = br'{x=}x}'\n",
+null
+],
+[
+"x = ](('}a\n(\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"def f():\n    return rf'{a:({{{{x}}{b:{c}}\\{}' + (p or q)\n",
+[
+"unexpected character after line continuation character",
+2
+]
+],
+[
+"x = 00if y else 2\n",
+null
+],
+[
+"def f():\n\t\t      \t  \\\n  \n\f  while c:\n \t\t\t \t \tx = 1\n\t \t\t  \t\t# comment\n",
+null
+],
+[
+"x = rf\"\"\"{x!r}x}\"\ny = 1\n",
+[
+"f-string: single '}' is not allowed",
+1
+]
+],
+[
+"x = }a}1}'f'{(\n",
+[
+"unmatched '}'",
+1
+]
+],
+[
+"def f():\n\t\t\t    \ty = x or z\n\nx = 1\n",
+null
+],
+[
+"def f():\n\t\t\t   \t\ty = x or z\ndef g():\n   \t\t\tif a:\n \t  \t \t x = 1\n \f\t\\\n  \n   \t\t\t  \n  \t   y = x or z\n",
+[
+"unindent does not match any outer indentation level",
+9
+]
+],
+[
+"def f():\n    return F'''{a:{x:\\N{BULLET} }''' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"def f():\n\t \t \t \tif a:\n \t  \t\t\t\tpass\nx = 1\nz = (\n       \t\\\n1)\n",
+null
+],
+[
+"a = \u2118.a\u00a0b\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"def f():\n    return t\"{a:}(}}}\" + (p or q)\n",
+[
+"t-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n \t   \t with d:\n\t     pass\n    \t\t pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n \t   \t\tpass\n\t\t\t  \t\ty = x or z\n\t    \t\tpass\n  \t  \t\tif a:\n \t\t \t   x = 1\n \t\t \t   pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"def f():\n    return t\"{a{{{c}}}\" + (p or q)\n",
+[
+"t-string: expecting '}'",
+2
+]
+],
+[
+"x = rf\"{x}a\\\nb\ny = 1\n",
+[
+"unterminated f-string literal (detected at line 2)",
+1
+]
+],
+[
+"def f():\n    return F'''{a:\\N{BULLET}{b:{c}}!r}''' + (p or q)\n",
+null
+],
+[
+"a\u00a0b = \u309b.a\u200b\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"def f():\n    return f'''{a:\n}\\}''' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+3
+]
+],
+[
+"def f():\n\t\t \t y = x or z\n \t\t\t x = 1\n \t\t\t y = x or z\n    \\\n    x = 1\n\t\t \t   \tpass\n\t\t\t  \tx = 1\n",
+[
+"unindent does not match any outer indentation level",
+6
+]
+],
+[
+"def f():\n    \t\t # comment\n    \t\t y = x or z\n  \t  \t y = x or z\nwhile c:\n \t\t\t \t\t\ty = x or z\n",
+null
+],
+[
+"x = 0e0]\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"\ufeffa = \u00b7a.a\u00a0b\n",
+[
+"invalid non-printable character U+FEFF",
+1
+]
+],
+[
+"def f():\n \t\t  \tx = 1\n    \\\npass\nx = 1\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"def f():\n\\\n    y = x or z\n\fpass\nx = 1\nwhile c:\n   \t\t\tx = 1\n",
+null
+],
+[
+"x = [a\n",
+[
+"'[' was never closed",
+1
+]
+],
+[
+"def f():\n\t\t y = x or z\nwith d:\n         pass\n",
+null
+],
+[
+"x = ft'{x\\N{BULLET}'\n",
+[
+"'f' and 't' prefixes are incompatible",
+1
+]
+],
+[
+"def f():\n    return t'''{a:{{x or y}}\\{{{b!r}}''' + (p or q)\n",
+null
+],
+[
+"x = ((a:f'{]}1\n",
+[
+"f-string: unmatched ']'",
+1
+]
+],
+[
+"x = 0b2_\n",
+[
+"invalid digit '2' in binary literal",
+1
+]
+],
+[
+"x = :,{\na,'\n",
+[
+"unterminated string literal (detected at line 2)",
+2
+]
+],
+[
+"def f():\n    return F'{a: [1{b}} }' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"x = 0_0\n",
+null
+],
+[
+"def f():\n    return f'{a:{b=}>10{{x}}:\\{}' + (p or q)\n",
+[
+"f-string: single '}' is not allowed",
+2
+]
+],
+[
+"def f():\n\t\t\t \t\t \twhile c:\n  \t \t\tx = 1\n \t\t\t \t\t\ty = x or z\n\t \t \t\t\tif a:\n \t\t\t\t \t while c:\n\t\t\t\t def g():\n\t\t\t\t          pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = rt\"\"\"{{}}\"\ny = 1\n",
+[
+"unterminated triple-quoted t-string literal (detected at line 2)",
+1
+]
+],
+[
+"x = 1_000for\n",
+null
+],
+[
+"def f():\n  \t\t\t  while c:\n\t\t  \t\t \t# comment\n\t \t \t\t\t y = x or z\n",
+null
+],
+[
+"x\u0301 = a\u00a0b.a\u00a0b\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"\u00a9 = a\u200b.\u540d\u524d\n",
+[
+"invalid character '\u00a9' (U+00A9)",
+1
+]
+],
+[
+"def f():\n\t \t     pass\n  \t\t  \t\tpass\n\t \t       \t\\\n\t\n\t \t\t\t   x = 1\n\t \t  \ty = x or z\n  \t\t   with d:\n\t \t  \t         pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+3
+]
+],
+[
+"x = b\"\\N{BULLET}a\\\nb\"\ny = 1\n",
+null
+],
+[
+"x = {[11]'a1\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"def f():\n   \t\t \t\tx = 1\n  \t\t\t  # comment\n\t\t   \t\tx = 1\nwith d:\n \t \t\t\t  pass\n \t   \tx = 1\n  \t\t\t\t  pass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+4
+]
+],
+[
+"x = t\"{{{{\" + 'a'\n",
+null
+],
+[
+"def f():\n   \t    x = 1\n   \t    \f  pass\n  \t  while c:\n   \t             pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"def f():\n    return t\"{a:{{{{x}}x}\" + (p or q)\n",
+[
+"t-string: expecting '}'",
+2
+]
+],
+[
+"def f():\n    return f'''{a:x:{}''' + (p or q)\n",
+[
+"'{' was never closed",
+2
+]
+],
+[
+"x = ('\n",
+[
+"unterminated string literal (detected at line 1)",
+1
+]
+],
+[
+"a\u00a0b = \u2118.x\u0660\n",
+[
+"invalid non-printable character U+00A0",
+1
+]
+],
+[
+"def f():\n \t \t\t \tx = 1\ny = x or z\n \t \t\t\t\tpass\n\t\f\tif a:\n         pass\n",
+[
+"unindent does not match any outer indentation level",
+5
+]
+],
+[
+"\u309b = a\u00b7.a\u309b\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"x = 0x1fl\n",
+[
+"invalid hexadecimal literal",
+1
+]
+],
+[
+"x = ur\"\"\"a\\'{{\"\"\"\ny = 1\n",
+[
+"'u' and 'r' prefixes are incompatible",
+1
+]
+],
+[
+"\u540d\u524d = \u309b.\u2118\n",
+[
+"invalid character '\u309b' (U+309B)",
+1
+]
+],
+[
+"def f():\n\t  \t \tpass\n  \t\t \t\t y = x or z\n# comment\n\t   \t \t # comment\n  \t   \t\ty = x or z\npass\npass\n",
+[
+"inconsistent use of tabs and spaces in indentation",
+6
+]
+],
+[
+"def f():\n\t \t\t\t\t\tpass\n \t  \t\t  pass\n \t\t\t\t\t\t# comment\n\t    \t with d:\n\t \t\t\t\t\t         pass\n",
+[
+"unindent does not match any outer indentation level",
+3
+]
+],
+[
+"x = 'a]}']11\n",
+[
+"unmatched ']'",
+1
+]
+],
+[
+"x = 00\n",
+null
+],
+[
+"x = 0x_for\n",
+null
+],
+[
+"def f():\n    return t\"{a:>10}\" + (p or q)\n",
+null
+],
+[
+"def f():\n    return f\"{a:{b}{c}{b}{c}x[1{b=}}\" + (p or q)\n",
+null
+],
+[
+"def f():\n\t  \t  \twhile c:\n\t\t\t\t\t\t  x = 1\n\t\t\t for i in b:\n\t\t\t\t\t\t           pass\n",
+[
+"unindent does not match any outer indentation level",
+4
+]
+],
+[
+"x = ,f'{\n[\n}',\n",
+[
+"closing parenthesis '}' does not match opening parenthesis '[' on line 2",
+3
+]
+]
+]

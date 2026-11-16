@@ -1,0 +1,41 @@
+# Packaging for PyPI: maturin builds a wheel that holds only the `oxradon` binary, no Python code.
+# The version comes from Cargo.toml. Releases are built by .github/workflows/release.yml.
+
+[build-system]
+requires = ["maturin>=1.16,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "oxradon"
+description = "A fast, drop-in Rust port of radon, the Python code metrics tool"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+# The Python that installs the wheel, not the Python oxradon analyzes.
+requires-python = ">=3.9"
+authors = [{ name = "J Squared Labs" }]
+keywords = ["radon", "complexity", "metrics", "cyclomatic", "maintainability"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Operating System :: MacOS",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Rust",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://oxradon.dev"
+Repository = "https://github.com/jsquared-labs/oxradon"
+Compatibility = "https://github.com/jsquared-labs/oxradon/blob/main/COMPATIBILITY.md"
+
+[tool.maturin]
+# Explicit: maturin only infers `bin` for a crate with nothing but a binary, and this one also
+# has a library (linked into the binary, not shipped).
+bindings = "bin"
+strip = true
+auditwheel = "check"

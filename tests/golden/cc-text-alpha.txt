@@ -1,0 +1,63 @@
+tests/fixtures/bom.py
+    ERROR: <error>
+tests/fixtures/branches.py
+    F 77:0 asynchronous - A
+    F 4:0 conditionals - B
+    F 33:0 exceptions - A
+    F 70:0 lambdas_and_walrus - A
+    F 17:0 loops - C
+    F 50:0 matching - A
+    F 62:0 matching_without_default - A
+tests/fixtures/crlf.py
+    F 2:0 windows_newlines - A
+tests/fixtures/format_specs.py
+    F 8:0 literal_text - A
+    F 12:0 literal_then_code - A
+    F 26:0 nested_string - A
+    F 36:0 really_code - A
+    F 30:0 triple - A
+    F 22:0 two_in_one - A
+    F 16:0 unbalanced_text - A
+tests/fixtures/future_braces.py
+    ERROR: <error>
+tests/fixtures/modern.py
+    C 8:0 Box - A
+    M 9:4 Box.__init__ - A
+    F 4:0 first - A
+    M 12:4 Box.get - A
+    F 16:0 templates - A
+    F 21:0 unicode_names - A
+tests/fixtures/newer_syntax.py
+    ERROR: <error>
+tests/fixtures/nul_byte.py
+    ERROR: <error>
+tests/fixtures/quirks.py
+    C 88:0 Child - A
+    C 59:0 Empty - A
+    C 63:0 Outer - A
+    F 14:0 asserts - A
+    M 71:8 Outer.conditional_method - A
+    F 9:0 decorated - A
+    F 32:0 ends_with_assert - A
+    F 38:0 ends_with_concatenated_fstrings - A
+    F 20:0 ends_with_nested_def - A
+    M 66:4 Outer.first - A
+    M 89:4 Child.only - A
+    F 45:0 outer - A
+    M 84:4 Outer.prop - A
+tests/fixtures/strings.py
+    F 10:0 empty_format_spec - A
+    F 4:0 empty_piece_starts_the_run - A
+    F 27:0 escaped_newline_piece - A
+    F 15:0 nested_spec_and_conversion - A
+    F 21:0 template_strings - A
+tests/fixtures/syntax_error.py
+    ERROR: <error>
+tests/fixtures/tabs.py
+    C 20:0 C - A
+    M 21:1 C.m - A
+    M 30:1 C.n - A
+    F 12:0 one_level_spelled_two_ways - A
+    F 4:0 tabs - A
+tests/fixtures/long_shebang
+    F 2:0 from_a_script - A

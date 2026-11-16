@@ -1,0 +1,71 @@
+tests/fixtures/bom.py
+    ERROR: <error>
+tests/fixtures/branches.py
+    F 4:0 conditionals - B (9)
+    F 17:0 loops - C (12)
+    F 33:0 exceptions - A (4)
+    F 50:0 matching - A (4)
+    F 62:0 matching_without_default - A (3)
+    F 70:0 lambdas_and_walrus - A (5)
+    F 77:0 asynchronous - A (3)
+tests/fixtures/crlf.py
+    F 2:0 windows_newlines - A (2)
+tests/fixtures/format_specs.py
+    F 8:0 literal_text - A (1)
+    F 12:0 literal_then_code - A (2)
+    F 16:0 unbalanced_text - A (2)
+    F 22:0 two_in_one - A (1)
+    F 26:0 nested_string - A (1)
+    F 30:0 triple - A (1)
+    F 36:0 really_code - A (3)
+tests/fixtures/future_braces.py
+    ERROR: <error>
+tests/fixtures/modern.py
+    F 4:0 first - A (2)
+    C 8:0 Box - A (3)
+    M 9:4 Box.__init__ - A (1)
+    M 12:4 Box.get - A (2)
+    F 16:0 templates - A (1)
+    F 21:0 unicode_names - A (2)
+tests/fixtures/newer_syntax.py
+    ERROR: <error>
+tests/fixtures/nul_byte.py
+    ERROR: <error>
+tests/fixtures/quirks.py
+    F 9:0 decorated - A (1)
+    F 14:0 asserts - A (3)
+    F 20:0 ends_with_nested_def - A (1)
+    F 23:4 ends_with_nested_def.inner - A (1)
+    F 27:4 ends_with_nested_def.last - A (2)
+    F 32:0 ends_with_assert - A (2)
+    F 38:0 ends_with_concatenated_fstrings - A (1)
+    F 45:0 outer - A (1)
+    F 51:4 outer.closure - A (1)
+    F 52:8 outer.closure.deeper - A (2)
+    C 59:0 Empty - A (1)
+    C 63:0 Outer - A (3)
+    M 66:4 Outer.first - A (2)
+    M 71:8 Outer.conditional_method - A (1)
+    C 74:4 Outer.Inner - A (3)
+    M 75:8 Outer.Inner.inner_method - A (2)
+    C 79:8 Outer.Inner.Deepest - A (3)
+    M 80:12 Outer.Inner.Deepest.deepest_method - A (2)
+    M 84:4 Outer.prop - A (1)
+    C 88:0 Child - A (3)
+    M 89:4 Child.only - A (2)
+tests/fixtures/strings.py
+    F 4:0 empty_piece_starts_the_run - A (1)
+    F 10:0 empty_format_spec - A (1)
+    F 15:0 nested_spec_and_conversion - A (2)
+    F 21:0 template_strings - A (1)
+    F 27:0 escaped_newline_piece - A (1)
+tests/fixtures/syntax_error.py
+    ERROR: <error>
+tests/fixtures/tabs.py
+    F 4:0 tabs - A (3)
+    F 12:0 one_level_spelled_two_ways - A (3)
+    C 20:0 C - A (4)
+    M 21:1 C.m - A (3)
+    M 30:1 C.n - A (2)
+tests/fixtures/long_shebang
+    F 2:0 from_a_script - A (2)

@@ -1,0 +1,743 @@
+{
+  "tests/fixtures/bom.py": {
+    "error": "<error>"
+  },
+  "tests/fixtures/branches.py": [
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 12,
+      "endline": 30,
+      "lineno": 17,
+      "name": "loops",
+      "rank": "C",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 9,
+      "endline": 14,
+      "lineno": 4,
+      "name": "conditionals",
+      "rank": "B",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 5,
+      "endline": 74,
+      "lineno": 70,
+      "name": "lambdas_and_walrus",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 4,
+      "endline": 59,
+      "lineno": 50,
+      "name": "matching",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 4,
+      "endline": 47,
+      "lineno": 33,
+      "name": "exceptions",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 3,
+      "endline": 82,
+      "lineno": 77,
+      "name": "asynchronous",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 3,
+      "endline": 67,
+      "lineno": 62,
+      "name": "matching_without_default",
+      "rank": "A",
+      "type": "function"
+    }
+  ],
+  "tests/fixtures/crlf.py": [
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 2,
+      "endline": 5,
+      "lineno": 2,
+      "name": "windows_newlines",
+      "rank": "A",
+      "type": "function"
+    }
+  ],
+  "tests/fixtures/format_specs.py": [
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 3,
+      "endline": 37,
+      "lineno": 36,
+      "name": "really_code",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 2,
+      "endline": 19,
+      "lineno": 16,
+      "name": "unbalanced_text",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 2,
+      "endline": 13,
+      "lineno": 12,
+      "name": "literal_then_code",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 1,
+      "endline": 33,
+      "lineno": 30,
+      "name": "triple",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 1,
+      "endline": 27,
+      "lineno": 26,
+      "name": "nested_string",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 1,
+      "endline": 23,
+      "lineno": 22,
+      "name": "two_in_one",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 1,
+      "endline": 9,
+      "lineno": 8,
+      "name": "literal_text",
+      "rank": "A",
+      "type": "function"
+    }
+  ],
+  "tests/fixtures/future_braces.py": {
+    "error": "<error>"
+  },
+  "tests/fixtures/long_shebang": [
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 2,
+      "endline": 3,
+      "lineno": 2,
+      "name": "from_a_script",
+      "rank": "A",
+      "type": "function"
+    }
+  ],
+  "tests/fixtures/modern.py": [
+    {
+      "col_offset": 0,
+      "complexity": 3,
+      "endline": 13,
+      "lineno": 8,
+      "methods": [
+        {
+          "classname": "Box",
+          "closures": [],
+          "col_offset": 4,
+          "complexity": 1,
+          "endline": 10,
+          "lineno": 9,
+          "name": "__init__",
+          "rank": "A",
+          "type": "method"
+        },
+        {
+          "classname": "Box",
+          "closures": [],
+          "col_offset": 4,
+          "complexity": 2,
+          "endline": 13,
+          "lineno": 12,
+          "name": "get",
+          "rank": "A",
+          "type": "method"
+        }
+      ],
+      "name": "Box",
+      "rank": "A",
+      "type": "class"
+    },
+    {
+      "classname": "Box",
+      "closures": [],
+      "col_offset": 4,
+      "complexity": 2,
+      "endline": 13,
+      "lineno": 12,
+      "name": "get",
+      "rank": "A",
+      "type": "method"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 2,
+      "endline": 23,
+      "lineno": 21,
+      "name": "unicode_names",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 2,
+      "endline": 5,
+      "lineno": 4,
+      "name": "first",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "classname": "Box",
+      "closures": [],
+      "col_offset": 4,
+      "complexity": 1,
+      "endline": 10,
+      "lineno": 9,
+      "name": "__init__",
+      "rank": "A",
+      "type": "method"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 1,
+      "endline": 18,
+      "lineno": 16,
+      "name": "templates",
+      "rank": "A",
+      "type": "function"
+    }
+  ],
+  "tests/fixtures/newer_syntax.py": {
+    "error": "<error>"
+  },
+  "tests/fixtures/nul_byte.py": {
+    "error": "<error>"
+  },
+  "tests/fixtures/quirks.py": [
+    {
+      "col_offset": 0,
+      "complexity": 3,
+      "endline": 91,
+      "lineno": 88,
+      "methods": [
+        {
+          "classname": "Child",
+          "closures": [],
+          "col_offset": 4,
+          "complexity": 2,
+          "endline": 91,
+          "lineno": 89,
+          "name": "only",
+          "rank": "A",
+          "type": "method"
+        }
+      ],
+      "name": "Child",
+      "rank": "A",
+      "type": "class"
+    },
+    {
+      "col_offset": 0,
+      "complexity": 3,
+      "endline": 85,
+      "lineno": 63,
+      "methods": [
+        {
+          "classname": "Outer",
+          "closures": [],
+          "col_offset": 4,
+          "complexity": 2,
+          "endline": 68,
+          "lineno": 66,
+          "name": "first",
+          "rank": "A",
+          "type": "method"
+        },
+        {
+          "classname": "Outer",
+          "closures": [],
+          "col_offset": 8,
+          "complexity": 1,
+          "endline": 72,
+          "lineno": 71,
+          "name": "conditional_method",
+          "rank": "A",
+          "type": "method"
+        },
+        {
+          "classname": "Outer",
+          "closures": [],
+          "col_offset": 4,
+          "complexity": 1,
+          "endline": 85,
+          "lineno": 84,
+          "name": "prop",
+          "rank": "A",
+          "type": "method"
+        }
+      ],
+      "name": "Outer",
+      "rank": "A",
+      "type": "class"
+    },
+    {
+      "col_offset": 4,
+      "complexity": 3,
+      "endline": 77,
+      "lineno": 74,
+      "methods": [
+        {
+          "classname": "Inner",
+          "closures": [],
+          "col_offset": 8,
+          "complexity": 2,
+          "endline": 77,
+          "lineno": 75,
+          "name": "inner_method",
+          "rank": "A",
+          "type": "method"
+        }
+      ],
+      "name": "Outer.Inner",
+      "rank": "A",
+      "type": "class"
+    },
+    {
+      "col_offset": 8,
+      "complexity": 3,
+      "endline": 81,
+      "lineno": 79,
+      "methods": [
+        {
+          "classname": "Deepest",
+          "closures": [],
+          "col_offset": 12,
+          "complexity": 2,
+          "endline": 81,
+          "lineno": 80,
+          "name": "deepest_method",
+          "rank": "A",
+          "type": "method"
+        }
+      ],
+      "name": "Outer.Inner.Deepest",
+      "rank": "A",
+      "type": "class"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 3,
+      "endline": 17,
+      "lineno": 14,
+      "name": "asserts",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "classname": "Child",
+      "closures": [],
+      "col_offset": 4,
+      "complexity": 2,
+      "endline": 91,
+      "lineno": 89,
+      "name": "only",
+      "rank": "A",
+      "type": "method"
+    },
+    {
+      "classname": "Outer",
+      "closures": [],
+      "col_offset": 4,
+      "complexity": 2,
+      "endline": 68,
+      "lineno": 66,
+      "name": "first",
+      "rank": "A",
+      "type": "method"
+    },
+    {
+      "classname": "Outer.Inner",
+      "closures": [],
+      "col_offset": 8,
+      "complexity": 2,
+      "endline": 77,
+      "lineno": 75,
+      "name": "inner_method",
+      "rank": "A",
+      "type": "method"
+    },
+    {
+      "classname": "Outer.Inner.Deepest",
+      "closures": [],
+      "col_offset": 12,
+      "complexity": 2,
+      "endline": 81,
+      "lineno": 80,
+      "name": "deepest_method",
+      "rank": "A",
+      "type": "method"
+    },
+    {
+      "closures": [],
+      "col_offset": 8,
+      "complexity": 2,
+      "endline": 53,
+      "lineno": 52,
+      "name": "outer.closure.deeper",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 2,
+      "endline": 32,
+      "lineno": 32,
+      "name": "ends_with_assert",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 4,
+      "complexity": 2,
+      "endline": 29,
+      "lineno": 27,
+      "name": "ends_with_nested_def.last",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "classname": "Outer",
+      "closures": [],
+      "col_offset": 4,
+      "complexity": 1,
+      "endline": 85,
+      "lineno": 84,
+      "name": "prop",
+      "rank": "A",
+      "type": "method"
+    },
+    {
+      "classname": "Outer",
+      "closures": [],
+      "col_offset": 8,
+      "complexity": 1,
+      "endline": 72,
+      "lineno": 71,
+      "name": "conditional_method",
+      "rank": "A",
+      "type": "method"
+    },
+    {
+      "col_offset": 0,
+      "complexity": 1,
+      "endline": 60,
+      "lineno": 59,
+      "methods": [],
+      "name": "Empty",
+      "rank": "A",
+      "type": "class"
+    },
+    {
+      "closures": [
+        {
+          "closures": [
+            {
+              "closures": [],
+              "col_offset": 8,
+              "complexity": 2,
+              "endline": 53,
+              "lineno": 52,
+              "name": "deeper",
+              "rank": "A",
+              "type": "function"
+            }
+          ],
+          "col_offset": 4,
+          "complexity": 1,
+          "endline": 54,
+          "lineno": 51,
+          "name": "closure",
+          "rank": "A",
+          "type": "function"
+        }
+      ],
+      "col_offset": 0,
+      "complexity": 1,
+      "endline": 56,
+      "lineno": 45,
+      "name": "outer",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [
+        {
+          "closures": [],
+          "col_offset": 8,
+          "complexity": 2,
+          "endline": 53,
+          "lineno": 52,
+          "name": "deeper",
+          "rank": "A",
+          "type": "function"
+        }
+      ],
+      "col_offset": 4,
+      "complexity": 1,
+      "endline": 54,
+      "lineno": 51,
+      "name": "outer.closure",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 1,
+      "endline": 40,
+      "lineno": 38,
+      "name": "ends_with_concatenated_fstrings",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [
+        {
+          "closures": [],
+          "col_offset": 4,
+          "complexity": 1,
+          "endline": 24,
+          "lineno": 23,
+          "name": "inner",
+          "rank": "A",
+          "type": "function"
+        },
+        {
+          "closures": [],
+          "col_offset": 4,
+          "complexity": 2,
+          "endline": 29,
+          "lineno": 27,
+          "name": "last",
+          "rank": "A",
+          "type": "function"
+        }
+      ],
+      "col_offset": 0,
+      "complexity": 1,
+      "endline": 20,
+      "lineno": 20,
+      "name": "ends_with_nested_def",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 4,
+      "complexity": 1,
+      "endline": 24,
+      "lineno": 23,
+      "name": "ends_with_nested_def.inner",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 1,
+      "endline": 11,
+      "lineno": 9,
+      "name": "decorated",
+      "rank": "A",
+      "type": "function"
+    }
+  ],
+  "tests/fixtures/strings.py": [
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 2,
+      "endline": 18,
+      "lineno": 15,
+      "name": "nested_spec_and_conversion",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 1,
+      "endline": 30,
+      "lineno": 27,
+      "name": "escaped_newline_piece",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 1,
+      "endline": 24,
+      "lineno": 21,
+      "name": "template_strings",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 1,
+      "endline": 12,
+      "lineno": 10,
+      "name": "empty_format_spec",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 1,
+      "endline": 6,
+      "lineno": 4,
+      "name": "empty_piece_starts_the_run",
+      "rank": "A",
+      "type": "function"
+    }
+  ],
+  "tests/fixtures/syntax_error.py": {
+    "error": "<error>"
+  },
+  "tests/fixtures/tabs.py": [
+    {
+      "col_offset": 0,
+      "complexity": 4,
+      "endline": 32,
+      "lineno": 20,
+      "methods": [
+        {
+          "classname": "C",
+          "closures": [],
+          "col_offset": 1,
+          "complexity": 3,
+          "endline": 27,
+          "lineno": 21,
+          "name": "m",
+          "rank": "A",
+          "type": "method"
+        },
+        {
+          "classname": "C",
+          "closures": [],
+          "col_offset": 1,
+          "complexity": 2,
+          "endline": 32,
+          "lineno": 30,
+          "name": "n",
+          "rank": "A",
+          "type": "method"
+        }
+      ],
+      "name": "C",
+      "rank": "A",
+      "type": "class"
+    },
+    {
+      "classname": "C",
+      "closures": [],
+      "col_offset": 1,
+      "complexity": 3,
+      "endline": 27,
+      "lineno": 21,
+      "name": "m",
+      "rank": "A",
+      "type": "method"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 3,
+      "endline": 17,
+      "lineno": 12,
+      "name": "one_level_spelled_two_ways",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "closures": [],
+      "col_offset": 0,
+      "complexity": 3,
+      "endline": 9,
+      "lineno": 4,
+      "name": "tabs",
+      "rank": "A",
+      "type": "function"
+    },
+    {
+      "classname": "C",
+      "closures": [],
+      "col_offset": 1,
+      "complexity": 2,
+      "endline": 32,
+      "lineno": 30,
+      "name": "n",
+      "rank": "A",
+      "type": "method"
+    }
+  ]
+}

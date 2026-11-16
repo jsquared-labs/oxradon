@@ -1,0 +1,6622 @@
+[
+[
+"",
+[]
+],
+[
+"\n",
+[
+""
+]
+],
+[
+"a\r\nb\n\rc\r",
+[
+"a",
+"b",
+"",
+"c"
+]
+],
+[
+"x\n",
+[
+"x"
+]
+],
+[
+" a \u001f\u001c b\u0085c\u2028d\u2029e\u000bf\fg ",
+[
+"a",
+"b",
+"c",
+"d",
+"e",
+"f",
+"g"
+]
+],
+[
+"\u00a0\u3000x\u200b\ufeff",
+[
+"x\u200b\ufeff"
+]
+],
+[
+"\t\"\"\"# not a comment\"\"\"\n\n    r\"\"\"  text\n\"\"\"\ndef f'''{a;b}''' rt'\\\"' b\";;\"\nif (x,\n y) \nclass C: pass \"\\N{DASH}a\\\"\" 0777 \"\"\"\\n \"\"\"\n\tu'''x y''' {} : \n\telse: ; \"\"\"\\\"\"\"\"\n\"\"\"\\\"\f\"\"\" if x: t'' b\"\"\" ;\\n\"\"\"\nf'ax y{x:{y}}' #\n\tfoo\n\tlambda\n",
+[
+"\"\"\"# not a comment\"\"\"",
+"",
+"r\"\"\"  text",
+"\"\"\"",
+"def f'''{a;b}''' rt'\\\"' b\";;\"",
+"if (x,",
+"y)",
+"class C: pass \"\\N{DASH}a\\\"\" 0777 \"\"\"\\n \"\"\"",
+"u'''x y''' {} :",
+"else: ; \"\"\"\\\"\"\"\"",
+"\"\"\"\\\"",
+"\"\"\" if x: t'' b\"\"\" ;\\n\"\"\"",
+"f'ax y{x:{y}}' #",
+"foo",
+"lambda"
+]
+],
+[
+" \n     \f    f'{x:{y}}{x}' x b'''''' \nb'''{{\u00e9''' [x] \nu\"\\n\" {a: b} \n\trb'''\u00e9:''' <>\n1_000 \u20ac t\"\"\":{x!s:>10}\"\"\" \u20ac\nclass C: pass\n\t{} \u20ac () x\f    != \u20ac -> \n",
+[
+"",
+"",
+"f'{x:{y}}{x}' x b''''''",
+"b'''{{\u00e9''' [x]",
+"u\"\\n\" {a: b}",
+"rb'''\u00e9:''' <>",
+"1_000 \u20ac t\"\"\":{x!s:>10}\"\"\" \u20ac",
+"class C: pass",
+"{} \u20ac () x",
+"!= \u20ac ->"
+]
+],
+[
+"     \nelse: rt'''{x=}{x:{y}}'''\n\tfor i in x: pass \nlambda f''''''\n\tb'''# not a comment\n  text'''\n\tlambda [x]\f\f>>= x else #\nelse b'' **= foo \r\n",
+[
+"",
+"else: rt'''{x=}{x:{y}}'''",
+"for i in x: pass",
+"lambda f''''''",
+"b'''# not a comment",
+"text'''",
+"lambda [x]",
+"",
+">>= x else #",
+"else b'' **= foo"
+]
+],
+[
+"\t \npass lambda 0x1f ",
+[
+"",
+"pass lambda 0x1f"
+]
+],
+[
+"\tuf\"{(x)}\" try: 1/0\u001f  \f\f \fif\u3000     \n@ \t\n",
+[
+"uf\"{(x)}\" try: 1/0",
+"",
+"",
+"if",
+"@"
+]
+],
+[
+"class C: pass \n+ def f(): ub\"#\" rt\"\n{{x}}{\" [x]  \f\n pass  \n    \n\u2029 pass 1.e5 \u00e9uf'''{}a{x\n:>3''' () \u001c\u001e Tr''''''#x = 1; y = 2  \n    \nf(x)[0]  \r\nif ... ... # c def y \nlambda # [ \t\n:[x]1e5 t\"\\N{DASH}{\"ub'''\\\"''' } \f",
+[
+"class C: pass",
+"+ def f(): ub\"#\" rt\"",
+"{{x}}{\" [x]",
+"",
+"pass",
+"",
+"",
+"pass 1.e5 \u00e9uf'''{}a{x",
+":>3''' ()",
+"",
+"Tr''''''#x = 1; y = 2",
+"",
+"f(x)[0]",
+"if ... ... # c def y",
+"lambda # [",
+":[x]1e5 t\"\\N{DASH}{\"ub'''\\\"''' }"
+]
+],
+[
+" \f@ \u0085 \fif x:  \f\n  \n    class C: pass def f():  \nfoo \ufeff u\"\\N{DASH}x y\" 1e+ 0b101 ",
+[
+"",
+"@",
+"",
+"if x:",
+"",
+"",
+"class C: pass def f():",
+"foo \ufeff u\"\\N{DASH}x y\" 1e+ 0b101"
+]
+],
+[
+"    t\"\"\"#\"\"\"@ x\u00a0y 1.5j \t\n \f...     \u0085",
+[
+"t\"\"\"#\"\"\"@ x\u00a0y 1.5j",
+"",
+"..."
+]
+],
+[
+"\twhile 1: break; x b'''}}\\\"'''\n\tfor i in x: pass for i in x: pass if x = 1; y = 2\n'''''' # a: b; c if x:\n\t\"\"\"  text\"\"\"\n\tr\"\"\"# not a comment\"\"\"\n    f'''''' **= {} {a: b} \n\t# b'''''' \nf'' \"\"\"\"\"\" \n    .5\n\tr\"\"\"\"\"\"\n\"\"\"\"\"\" (x,\n y)\nfoo else: 1 # 'x\n",
+[
+"while 1: break; x b'''}}\\\"'''",
+"for i in x: pass for i in x: pass if x = 1; y = 2",
+"'''''' # a: b; c if x:",
+"\"\"\"  text\"\"\"",
+"r\"\"\"# not a comment\"\"\"",
+"f'''''' **= {} {a: b}",
+"# b''''''",
+"f'' \"\"\"\"\"\"",
+".5",
+"r\"\"\"\"\"\"",
+"\"\"\"\"\"\" (x,",
+"y)",
+"foo else: 1 # 'x"
+]
+],
+[
+"f(x)[0] {} -> foo \n\t\f: pass\n# # =\f",
+[
+"f(x)[0] {} -> foo",
+"",
+": pass",
+"# # ="
+]
+],
+[
+"\t# \npass [1:2] if x: \n    r\"x y;\" for i in x: pass\n",
+[
+"#",
+"pass [1:2] if x:",
+"r\"x y;\" for i in x: pass"
+]
+],
+[
+"    b\"\"\"\n  text\"\"\"\n\t0x1f 1e5 y\n\tfor i in x: pass rb'' if x:\n\telse b\":\" f\"\"\"{x=}\\n{x=}\"\"\" '''\u00e9\u00e9'''\n\n    \"\"\"}}:\"\"\"\n0 ->\r\n\tfor i in x: pass\n",
+[
+"b\"\"\"",
+"text\"\"\"",
+"0x1f 1e5 y",
+"for i in x: pass rb'' if x:",
+"else b\":\" f\"\"\"{x=}\\n{x=}\"\"\" '''\u00e9\u00e9'''",
+"",
+"\"\"\"}}:\"\"\"",
+"0 ->",
+"for i in x: pass"
+]
+],
+[
+"while 1: break; x x ) \n \f~(x,\n y) defTr\"\\nx y\" foo \nx\u00a0y 1e5 rt'' == \t\u2028! else:r\"\"\"\u00e9\n'\"\"\"\nfor i in x: pass  \u2028ur\";\" while 1: break; x r'' ; \u20ac \u0001 \t\n    \\f(x)[0]ub\"\"\"\\N\"\"\" , \f\f \f1e-3 b\"\"\"\u00e9x y\"\"\" \t\n",
+[
+"while 1: break; x x )",
+"",
+"~(x,",
+"y) defTr\"\\nx y\" foo",
+"x\u00a0y 1e5 rt'' ==",
+"! else:r\"\"\"\u00e9",
+"'\"\"\"",
+"for i in x: pass",
+"ur\";\" while 1: break; x r'' ; \u20ac \u0001",
+"\\f(x)[0]ub\"\"\"\\N\"\"\" ,",
+"",
+"",
+"1e-3 b\"\"\"\u00e9x y\"\"\""
+]
+],
+[
+"\t**= u\"\"\"\nx y\"\"\"\nelse: '''\\N{DASH};''' \n\n\n\n    : 1e5 \u00e9 try: 1/0 \r\n\t42 for i in x: pass a1\f\n    \na1 .5 \f",
+[
+"**= u\"\"\"",
+"x y\"\"\"",
+"else: '''\\N{DASH};'''",
+"",
+"",
+"",
+": 1e5 \u00e9 try: 1/0",
+"42 for i in x: pass a1",
+"",
+"",
+"a1 .5"
+]
+],
+[
+"f'''\f{x!r}'''\n    0x1f\ndef f(): f\"\"\"{a;b}\\\"\"\"\"\n\"\"\"\"\"\"\n1e5 f'{(x)}'\r\nf\"\" {}\n    x = 1; y = 2 for i in x: pass -> 1j\r\n    ! : # 'x\ny\n    f\"\"\"\"\"\"\n\t_\n",
+[
+"f'''",
+"{x!r}'''",
+"0x1f",
+"def f(): f\"\"\"{a;b}\\\"\"\"\"",
+"\"\"\"\"\"\"",
+"1e5 f'{(x)}'",
+"f\"\" {}",
+"x = 1; y = 2 for i in x: pass -> 1j",
+"! : # 'x",
+"y",
+"f\"\"\"\"\"\"",
+"_"
+]
+],
+[
+"bt\"\n'\n =` pass     \n",
+[
+"bt\"",
+"'",
+"=` pass"
+]
+],
+[
+"{ \f if x: else: r\"\"}}{{\" := \u000b\t\u2028\tx \u00e9 \n\t\n",
+[
+"{",
+"if x: else: r\"\"}}{{\" :=",
+"",
+"x \u00e9",
+""
+]
+],
+[
+":\n    r''''''\n    \"\"\"x: y; z\n  text\"\"\"\n''''''\n\tb\"\"\"x: y; z\"\"\"\nx = 1; y = 2 \"\u00e9\\'\u00e9\" rf\"\"\"{x=} \"\"\"\nt'''{f'{y}'}{x!s:>10}{x:=5}''' \n\tr\"\"\"x: y; z\"\"\"\n<> \r\nu\"\"\"a\"\"\" \"\"\"\"\"\" .5 u'\\N{DASH}'\n0777 !=\n\t# 'x # a: b; c f\"{x!s:>10}{f'{y}'}\" lambda\r\n",
+[
+":",
+"r''''''",
+"\"\"\"x: y; z",
+"text\"\"\"",
+"''''''",
+"b\"\"\"x: y; z\"\"\"",
+"x = 1; y = 2 \"\u00e9\\'\u00e9\" rf\"\"\"{x=} \"\"\"",
+"t'''{f'{y}'}{x!s:>10}{x:=5}'''",
+"r\"\"\"x: y; z\"\"\"",
+"<>",
+"u\"\"\"a\"\"\" \"\"\"\"\"\" .5 u'\\N{DASH}'",
+"0777 !=",
+"# 'x # a: b; c f\"{x!s:>10}{f'{y}'}\" lambda"
+]
+],
+[
+"t\"\"f'{{x}}{{x}'\u00a0  \f\n     \u20291e-3 \t\u2029 \f~ '''\\{\n\n \t\n $ \t\n'''a\\'''' ub\"\"\"\\N\\n\\\"\"\"\"a1 \u2029\\ f'''x y''' (1.5j \ufeff  \f\u2029 \fx \u00e9 \\ 1e5\ufeff def f():  \f\r\n00 = { 00 \u007f     ",
+[
+"t\"\"f'{{x}}{{x}'",
+"",
+"",
+"1e-3",
+"",
+"~ '''\\{",
+"",
+"",
+"$",
+"'''a\\'''' ub\"\"\"\\N\\n\\\"\"\"\"a1",
+"\\ f'''x y''' (1.5j \ufeff",
+"",
+"",
+"x \u00e9 \\ 1e5\ufeff def f():",
+"",
+"00 = { 00 \u007f"
+]
+],
+[
+"\n",
+[
+""
+]
+],
+[
+" while 1: break; x \n    # ur'\\Nx y' def f(): f'''x y{x!}'''\n\tclass \ufeff y :bf'''{'a'}{x\n:>3}:''' ",
+[
+"while 1: break; x",
+"# ur'\\Nx y' def f(): f'''x y{x!}'''",
+"class \ufeff y :bf'''{'a'}{x",
+":>3}:'''"
+]
+],
+[
+"\t# 'x r\"\"\"x y\"\"\" \n\t'''# not a comment'''\n    foo 1j rt\"{x:>{w}}\" ()\n42 **= f\"\"\"\"\"\"\n",
+[
+"# 'x r\"\"\"x y\"\"\"",
+"'''# not a comment'''",
+"foo 1j rt\"{x:>{w}}\" ()",
+"42 **= f\"\"\"\"\"\""
+]
+],
+[
+"    x = 1; y = 2 00 \u2028 y if\n    ->0x_1 \n! # 'x \ufeff  \f\nuf\"\"\"\\N{DASH}{lambda: 1}\"\"\"if x: \u000b + \t\n\tFr'' y ? f\"\"\" \"\"\" } \n\t\n\t(x,\n y) \"\"\"\"\"\" 0x_1 [1:2] 1.5j  \n \ffor i in x: pass def bt''0o7 lambda ;\nelsefoo {}# c \u20ac{a: b}  \n\tt\"{'a'\" 0 \u00e9 rb\"a\" 0x1forub\";\\n\"  \f\u2029    ! # \\ \u0085 \\ foo     ",
+[
+"x = 1; y = 2 00",
+"y if",
+"->0x_1",
+"! # 'x \ufeff",
+"",
+"uf\"\"\"\\N{DASH}{lambda: 1}\"\"\"if x:",
+"+",
+"Fr'' y ? f\"\"\" \"\"\" }",
+"",
+"(x,",
+"y) \"\"\"\"\"\" 0x_1 [1:2] 1.5j",
+"",
+"for i in x: pass def bt''0o7 lambda ;",
+"elsefoo {}# c \u20ac{a: b}",
+"t\"{'a'\" 0 \u00e9 rb\"a\" 0x1forub\";\\n\"",
+"",
+"! # \\",
+"\\ foo"
+]
+],
+[
+"\t \nx rf\"{x:{y}}\" else\r\n    def f(): def f():\n \f    pass for i in x: pass **= rt'' \f    f'''# not a comment'''\n",
+[
+"",
+"x rf\"{x:{y}}\" else",
+"def f(): def f():",
+"",
+"pass for i in x: pass **= rt''",
+"f'''# not a comment'''"
+]
+],
+[
+" _ if x:u'' uf'' [ 1e  \nu\"\"\"a}}\"\"\"\r\n\t; \u00e9 else: while 1: break; x uf\"{x:}}}{\" def \n{ u\"\"\"x y\"\"\"@ _ @ \n        \u2029 \fx\u00a0ylambda # \\  \f\nur'''''' \u20ac classtry: 1/0  \f\n\tU'a\\\"\\N{DASH}' \\ 0b2 r'\":#' \t",
+[
+"_ if x:u'' uf'' [ 1e",
+"u\"\"\"a}}\"\"\"",
+"; \u00e9 else: while 1: break; x uf\"{x:}}}{\" def",
+"{ u\"\"\"x y\"\"\"@ _ @",
+"",
+"",
+"x\u00a0ylambda # \\",
+"",
+"ur'''''' \u20ac classtry: 1/0",
+"",
+"U'a\\\"\\N{DASH}' \\ 0b2 r'\":#'"
+]
+],
+[
+"'''  text'''\n\n\t>>= x b\"\"\"\"\"\" if x: \nclass C: pass r'{{a\\'' u''\n\tr\"\"\"\n  text\"\"\"\n\t# c 42 '''#a''' \n",
+[
+"'''  text'''",
+"",
+">>= x b\"\"\"\"\"\" if x:",
+"class C: pass r'{{a\\'' u''",
+"r\"\"\"",
+"text\"\"\"",
+"# c 42 '''#a'''"
+]
+],
+[
+"` {a: b}if x: \u000b\n \f\t\n\tt''''{x = '''  \f\r f(x)[0] ft''''''' ) # \\ def f(): \n",
+[
+"` {a: b}if x:",
+"",
+"",
+"",
+"t''''{x = '''",
+"",
+"f(x)[0] ft''''''' ) # \\ def f():"
+]
+],
+[
+"\t\"\" else: \n\tb'''''' rf'''{x}{x!r}''' foo \n    \u00e9 .5 \u00e9\n-> y x = 1; y = 2\nb\"\"\"\"\"\"\n    f\"\"\"{x}\"\"\" \n# a: b; c\n",
+[
+"\"\" else:",
+"b'''''' rf'''{x}{x!r}''' foo",
+"\u00e9 .5 \u00e9",
+"-> y x = 1; y = 2",
+"b\"\"\"\"\"\"",
+"f\"\"\"{x}\"\"\"",
+"# a: b; c"
+]
+],
+[
+"if if x: {a: b}\n\t\n\f    \r\n    \"\"\"# not a comment\n# not a comment\"\"\"\n<> _ rt'''{x}''' x \n    1e5 ; 0777 **=\n\tf\"\"\"{lambda: 1}\"\"\" \n\trb'\\N{DASH}\\\"' # 'x\fb\"\"\"x: y; z\"\"\"\n\tu\"\"\"\\n\u00e9\n\"\"\" ... 1j \nwhile 1: break; x # a: b; c f(x)[0] try: 1/0\n",
+[
+"if if x: {a: b}",
+"",
+"",
+"",
+"\"\"\"# not a comment",
+"# not a comment\"\"\"",
+"<> _ rt'''{x}''' x",
+"1e5 ; 0777 **=",
+"f\"\"\"{lambda: 1}\"\"\"",
+"rb'\\N{DASH}\\\"' # 'x",
+"b\"\"\"x: y; z\"\"\"",
+"u\"\"\"\\n\u00e9",
+"\"\"\" ... 1j",
+"while 1: break; x # a: b; c f(x)[0] try: 1/0"
+]
+],
+[
+"\tclass C: pass f\"\"\"{f'{y}'}{x:>{w}}{x:{y}}\"\"\" \u00e9 if\n    x = 1; y = 2 1_000 ''' \\\"''' else\nu\"a\" f(x)[0] \n\t1j a1 : def\f    42 r'\\\"x y' # a: b; c \n",
+[
+"class C: pass f\"\"\"{f'{y}'}{x:>{w}}{x:{y}}\"\"\" \u00e9 if",
+"x = 1; y = 2 1_000 ''' \\\"''' else",
+"u\"a\" f(x)[0]",
+"1j a1 : def",
+"42 r'\\\"x y' # a: b; c"
+]
+],
+[
+"\t0 x \n\t() # f\"\" 0 \f\t.5 t'''{lambda: 1}{f'{y}'}'''\f",
+[
+"0 x",
+"() # f\"\" 0",
+".5 t'''{lambda: 1}{f'{y}'}'''"
+]
+],
+[
+"    \n    try: 1/0\n    # else:\r\n\tf\"\"\"\"\"\" u'\\\"{{ '\n\t \nif x: : \nlambda rt\" {(x)}\\'\"\nif \u20ac\n{} # c : +\n",
+[
+"",
+"try: 1/0",
+"# else:",
+"f\"\"\"\"\"\" u'\\\"{{ '",
+"",
+"if x: :",
+"lambda rt\" {(x)}\\'\"",
+"if \u20ac",
+"{} # c : +"
+]
+],
+[
+"\t\n\"\"\"a\"\"\" y u\"\"\"\\n{{\"\"\" # a: b; c\n\u00e9 .5 # a: b; c {}\n'}}\\''\n\t''':\fa''' pass t\"\"\"\n\"\"\" ==\f\"\"\"##;\"\"\" : .5 0\r\n\f\t \n\t1_000 else pass def\n<> ;\n    \n\t'''''' _ \"\"\"\"\"\" ...\r\n",
+[
+"",
+"\"\"\"a\"\"\" y u\"\"\"\\n{{\"\"\" # a: b; c",
+"\u00e9 .5 # a: b; c {}",
+"'}}\\''",
+"''':",
+"a''' pass t\"\"\"",
+"\"\"\" ==",
+"\"\"\"##;\"\"\" : .5 0",
+"",
+"",
+"1_000 else pass def",
+"<> ;",
+"",
+"'''''' _ \"\"\"\"\"\" ..."
+]
+],
+[
+"\t\n[ x = 1; y = 2 0b101 lambda\u2029 \n{ try: 1/0[1:2]# c ur\"\"\"\\\n\"\\\"\"\"x = 1; y = 2 \r\n\tif x: uf\"\"\"\n{x:%Y-%m}\"\"\" pass \\uf\"\"\"{x!}\n{x:{}\"\"\" ur\":}#\"  \f\n) for i in x: pass \n\n \f \u2028_ :.:( Tr\"\" \t\n \f# a: b; c\ufeff... t'''\\N\\\n{'''  \f\nur\"\" ] <> try: 1/0 bt''':{x:}a''' if \u001c    \\      \f",
+[
+"",
+"[ x = 1; y = 2 0b101 lambda",
+"",
+"{ try: 1/0[1:2]# c ur\"\"\"\\",
+"\"\\\"\"\"x = 1; y = 2",
+"if x: uf\"\"\"",
+"{x:%Y-%m}\"\"\" pass \\uf\"\"\"{x!}",
+"{x:{}\"\"\" ur\":}#\"",
+"",
+") for i in x: pass",
+"",
+"",
+"",
+"_ :.:( Tr\"\"",
+"",
+"# a: b; c\ufeff... t'''\\N\\",
+"{'''",
+"",
+"ur\"\" ] <> try: 1/0 bt''':{x:}a''' if",
+"\\"
+]
+],
+[
+"0x1f foo **= [x]\n    f(x)[0] # a: b; c \f\t\n\t# c if x:\n<> 0\n",
+[
+"0x1f foo **= [x]",
+"f(x)[0] # a: b; c",
+"",
+"# c if x:",
+"<> 0"
+]
+],
+[
+"    foo # a: b; c \n    _ try: 1/0 !\r\n-> # c '''\\\" :'''\r\n    1e5 '\\'a;'\n    \n# c u'''''' 1if\n    (x,\n y) foo \n    ; \"#\"\n    \"\"\"\f{{\"\"\"\n[1:2] t\"\"\"{x:=5}\"\"\" \u00e9 \n",
+[
+"foo # a: b; c",
+"_ try: 1/0 !",
+"-> # c '''\\\" :'''",
+"1e5 '\\'a;'",
+"",
+"# c u'''''' 1if",
+"(x,",
+"y) foo",
+"; \"#\"",
+"\"\"\"",
+"{{\"\"\"",
+"[1:2] t\"\"\"{x:=5}\"\"\" \u00e9"
+]
+],
+[
+"    '' f'''''' 0x1f rt''\n\tx a1\n\trb'{{{{' () def 0x1f\n\t# c rt\"{x=}\" r''''''\n\n",
+[
+"'' f'''''' 0x1f rt''",
+"x a1",
+"rb'{{{{' () def 0x1f",
+"# c rt\"{x=}\" r''''''",
+""
+]
+],
+[
+"# c\n    ''''''\fa1 \u00e9\nif x: (x,\n y) '\u00e9a'\n",
+[
+"# c",
+"''''''",
+"a1 \u00e9",
+"if x: (x,",
+"y) '\u00e9a'"
+]
+],
+[
+"\t\n    r'''a\\\n:''' rb'''\\N''' ub'\"}}' \u001d : \u000b    if= : (+  \n\tur\"\"\" \f\\\n \n \fif x: [ _ \f\n \f'\\N{DASH}\n') \u0085for i in x: pass \t\n\t\u0085",
+[
+"",
+"r'''a\\",
+":''' rb'''\\N''' ub'\"}}'",
+":",
+"if= : (+",
+"ur\"\"\"",
+"\\",
+"",
+"",
+"if x: [ _",
+"",
+"",
+"'\\N{DASH}",
+"')",
+"for i in x: pass",
+""
+]
+],
+[
+"0x1f >>= (x,\n y) \n\t# a: b; c \"\"\"\\N{DASH}:\u00e9\"\"\" ; \nlambda u'''\n}}''' class C: pass \n\tdef\nb\"\"\"\"\"\"\n    def 0 else f'{(x)}'\f\"a{{\"\n",
+[
+"0x1f >>= (x,",
+"y)",
+"# a: b; c \"\"\"\\N{DASH}:\u00e9\"\"\" ;",
+"lambda u'''",
+"}}''' class C: pass",
+"def",
+"b\"\"\"\"\"\"",
+"def 0 else f'{(x)}'",
+"\"a{{\""
+]
+],
+[
+"\\ :=  \f\n    if -> \n\telse: ... # c\n\tb\"\n\\N{DASH};\"; 1_ ub\"a\" \t\n \f\\ ) ,x\u00a0y \"\\\"\\\n\"     \u0085    r'''x y''' {.5 Br'\f}}#' \f\n\t$rb\"\"\"}}\\\n\"\"\"\"r\"\"\"\"\"\" ~\t\n    for i in x: pass a1 while 1: break; x 1e rt\"\"\"{x=\n{x}}\"\"\" \u001c  \f\t!= \\ x\u00a0y \t\f",
+[
+"\\ :=",
+"",
+"if ->",
+"else: ... # c",
+"b\"",
+"\\N{DASH};\"; 1_ ub\"a\"",
+"",
+"\\ ) ,x\u00a0y \"\\\"\\",
+"\"",
+"r'''x y''' {.5 Br'",
+"}}#'",
+"",
+"$rb\"\"\"}}\\",
+"\"\"\"\"r\"\"\"\"\"\" ~",
+"for i in x: pass a1 while 1: break; x 1e rt\"\"\"{x=",
+"{x}}\"\"\"",
+"",
+"!= \\ x\u00a0y"
+]
+],
+[
+"\t\u00e9 else ft\"\"\"\"\"\"\\  if x: ub'\u00e9\"'  \f\n \f[ \n \f>>= Br''''''     \n! [# a: b; c if x: ur'x y'  \n\u00a0 r\"\"x = 1; y = 2{ uf\"\"\"{{\\n\"\"\" >>=  \f\n    try: 1/0 \u20ac @.5 \u00e9  \n \\x else ?0o9\nb'''''' \"\\\\n\\\"  \f\n \frb\"\\\f\"0o-> \u00e9 \u2028 # \\     \n{} y + \u001e ] \t\n",
+[
+"\u00e9 else ft\"\"\"\"\"\"\\  if x: ub'\u00e9\"'",
+"",
+"",
+"[",
+"",
+">>= Br''''''",
+"! [# a: b; c if x: ur'x y'",
+"r\"\"x = 1; y = 2{ uf\"\"\"{{\\n\"\"\" >>=",
+"",
+"try: 1/0 \u20ac @.5 \u00e9",
+"\\x else ?0o9",
+"b'''''' \"\\\\n\\\"",
+"",
+"",
+"rb\"\\",
+"\"0o-> \u00e9",
+"# \\",
+"{} y +",
+"]"
+]
+],
+[
+"y rb'x y' while 1: break; x _\r\n \n    '''\n''' = \n \n\tt'x yaa' rt\"\"\"{x:%Y-%m}\"\"\"\nlambda () \r\n\t\n",
+[
+"y rb'x y' while 1: break; x _",
+"",
+"'''",
+"''' =",
+"",
+"t'x yaa' rt\"\"\"{x:%Y-%m}\"\"\"",
+"lambda ()",
+""
+]
+],
+[
+" \n    \f\ufeff [x] \\bf\"\"\"\"\"\" :( \n    \n1j     \nTr'''\n''' .    \r\n \t\n",
+[
+"",
+"",
+"\ufeff [x] \\bf\"\"\"\"\"\" :(",
+"",
+"1j",
+"Tr'''",
+"''' .",
+""
+]
+],
+[
+"    lambda [x] \r\n.5 1if\n\n# a: b; c != rt'''{x!r}{lambda: 1}a''' for i in x: pass\n    \n# 'x pass [x]\n    '''x: y; z'''\n: b''';\f:'''\n",
+[
+"lambda [x]",
+".5 1if",
+"",
+"# a: b; c != rt'''{x!r}{lambda: 1}a''' for i in x: pass",
+"",
+"# 'x pass [x]",
+"'''x: y; z'''",
+": b''';",
+":'''"
+]
+],
+[
+"    : \u00e9 uf\"\"\"{x!r}{x=1j x\u00a0y \u2029 \n",
+[
+": \u00e9 uf\"\"\"{x!r}{x=1j x\u00a0y",
+""
+]
+],
+[
+"if x: if \felse 0x1f +\nt'''{x:>{w}} '''\n\t\n\t'''\nx: y; z'''\na1\n\t42 # a: b; c -> rt\"\" \n== pass !\n\t \n",
+[
+"if x: if",
+"else 0x1f +",
+"t'''{x:>{w}} '''",
+"",
+"'''",
+"x: y; z'''",
+"a1",
+"42 # a: b; c -> rt\"\"",
+"== pass !",
+""
+]
+],
+[
+"     \f\u000b0o9rt\"\"\"\n{x = \\\"\"\"\"\u00e9 ; }  \n\tx\u00a0y\n \n",
+[
+"",
+"",
+"0o9rt\"\"\"",
+"{x = \\\"\"\"\"\u00e9 ; }",
+"x\u00a0y",
+""
+]
+],
+[
+"\t# a: b; c foo t\"\"\"{x!r}{x:%Y-%m}{x:>{w}}\"\"\" # c\n\"\"\"\n\f}}\"\"\" \r\n\t; {a: b}\n",
+[
+"# a: b; c foo t\"\"\"{x!r}{x:%Y-%m}{x:>{w}}\"\"\" # c",
+"\"\"\"",
+"",
+"}}\"\"\"",
+"; {a: b}"
+]
+],
+[
+" Fr\"\"\"{x=}{x!r}\"\"\" 0 u\"\\n}#\" \n\t\n\"\"\"\\\\\"\"\" ` , \\ \\ \"\n\" \n\t\u001c U\"\" def a1 rb'''\f #''' @ \n \f\\ U\"\"\"\\N{DASH}\\N#\"\"\" [ \t\n",
+[
+"Fr\"\"\"{x=}{x!r}\"\"\" 0 u\"\\n}#\"",
+"",
+"\"\"\"\\\\\"\"\" ` , \\ \\ \"",
+"\"",
+"",
+"U\"\" def a1 rb'''",
+"#''' @",
+"",
+"\\ U\"\"\"\\N{DASH}\\N#\"\"\" ["
+]
+],
+[
+"\n\t>>=<> \"\" ;+  \f\u2028() r'''\\}}}'''# a: b; c \u001d class }  \f\nelse: u\"; \" ft''''''\n    \u0000 else# if x:1_e2 (x,\n y) \t\u0085# 'x \t\u001c? y \fclass C: pass ur'}}' !\t\n\t{a: b} :=\u2029\tFr\"\"\"{{x}}\"\"\"() yf(x)[0] \n",
+[
+"",
+">>=<> \"\" ;+",
+"",
+"() r'''\\}}}'''# a: b; c",
+"class }",
+"",
+"else: u\"; \" ft''''''",
+"\u0000 else# if x:1_e2 (x,",
+"y)",
+"# 'x",
+"? y",
+"class C: pass ur'}}' !",
+"{a: b} :=",
+"Fr\"\"\"{{x}}\"\"\"() yf(x)[0]"
+]
+],
+[
+"else # c y     \u2028 \f] foo rf'{x:=5}\\\\N{DASH}' rf\"\"\"{{lambda: 1{\"\"\"1if rf\"a{'a'}'\"\n\t.  \f\n \f.5 \t\n    class:= try: 1/0 \n\u0001 class 1__0     \n ft\"\"\"{x=}{lambda: 1}\"\"\" \u20ac ():for i in x: pass\n {if x:1. \t\nuf'' rt'' ''':\\''''\"\" \f\n\telse:{ def f(): \r",
+[
+"else # c y",
+"",
+"] foo rf'{x:=5}\\\\N{DASH}' rf\"\"\"{{lambda: 1{\"\"\"1if rf\"a{'a'}'\"",
+".",
+"",
+"",
+".5",
+"class:= try: 1/0",
+"\u0001 class 1__0",
+"ft\"\"\"{x=}{lambda: 1}\"\"\" \u20ac ():for i in x: pass",
+"{if x:1.",
+"uf'' rt'' ''':\\''''\"\"",
+"",
+"else:{ def f():"
+]
+],
+[
+"f(x)[0] rf\"{x!r}{f'{y}'}\" a1 1_000 \n'''''' # c\r\n",
+[
+"f(x)[0] rf\"{x!r}{f'{y}'}\" a1 1_000",
+"'''''' # c"
+]
+],
+[
+"r\"\"\"# not a comment\"\"\"\n    : >>= rb\"\"\":#\"\"\" ()\n",
+[
+"r\"\"\"# not a comment\"\"\"",
+": >>= rb\"\"\":#\"\"\" ()"
+]
+],
+[
+" _!= bf\"\"\"{x:=5\\N{x!s:>10}\"\"\" \u001e     \u001c\u00e9 bf\"\"\"{}\"\"\"[x] 1e-3 \f\u001c\tif x: f\"\"\"{{\f;\"\"\" lambda     \n \u20ac \\x== # 'x 0x1f \n \u00e9while 1: break; x {}  \f\ndef f():+\t\u0085 1_000>>= f\"\"\"{{x}}\"\"\" \ufeff ; <> \n    \r\n",
+[
+"_!= bf\"\"\"{x:=5\\N{x!s:>10}\"\"\"",
+"",
+"\u00e9 bf\"\"\"{}\"\"\"[x] 1e-3",
+"",
+"if x: f\"\"\"{{",
+";\"\"\" lambda",
+"\u20ac \\x== # 'x 0x1f",
+"\u00e9while 1: break; x {}",
+"",
+"def f():+",
+"1_000>>= f\"\"\"{{x}}\"\"\" \ufeff ; <>",
+""
+]
+],
+[
+"r\"\"\"  text\"\"\"\nclass C: pass # 'x\nfor i in x: pass f\"\"\"x y\"\"\" # a: b; c -> \r\n",
+[
+"r\"\"\"  text\"\"\"",
+"class C: pass # 'x",
+"for i in x: pass f\"\"\"x y\"\"\" # a: b; c ->"
+]
+],
+[
+" \ffor i in x: passuf'''\n ''' \u001c else\t\n \f[x] \u0085    else classb'''''' ` class C: pass \f\u001c \f\u2028 # \\ \\\t\n \f\u007f \n \f\n''':x y'''  \f\n    # c -> b'''\n\\n''' (x,\n y) ... \t\u001clambda \n \fy Tr\"{x}{x!s:>10}\"     \n    \t",
+[
+"",
+"for i in x: passuf'''",
+"'''",
+"else",
+"",
+"[x]",
+"else classb'''''' ` class C: pass",
+"",
+"",
+"",
+"# \\ \\",
+"",
+"\u007f",
+"",
+"",
+"''':x y'''",
+"",
+"# c -> b'''",
+"\\n''' (x,",
+"y) ...",
+"lambda",
+"",
+"y Tr\"{x}{x!s:>10}\"",
+""
+]
+],
+[
+"b'''x: y; z'''\n(x,\n y) if try: 1/0 # c\r\n",
+[
+"b'''x: y; z'''",
+"(x,",
+"y) if try: 1/0 # c"
+]
+],
+[
+"rf'''{x:>{w}}\n:''' rt'a' # a: b; c # a: b; c\n\t\u00e9 [1:2] \"ax y\\'\"\n!= \"\"\"}}#\"\"\" \n\n    try: 1/0 rb'''''' : \n\t()\n== : \n",
+[
+"rf'''{x:>{w}}",
+":''' rt'a' # a: b; c # a: b; c",
+"\u00e9 [1:2] \"ax y\\'\"",
+"!= \"\"\"}}#\"\"\"",
+"",
+"try: 1/0 rb'''''' :",
+"()",
+"== :"
+]
+],
+[
+"\trf\"\"\"{\"\"\"1e5 {a: b} == \"}};}\" u'#'  \f\n\t\f",
+[
+"rf\"\"\"{\"\"\"1e5 {a: b} == \"}};}\" u'#'",
+"",
+""
+]
+],
+[
+"try: 1/0 pass\n\n# a1 := lambda \n\f# a: b; c # 'x \"}}\"\n    # c () \ndef f(): r'''#'''\r\n    \n",
+[
+"try: 1/0 pass",
+"",
+"# a1 := lambda",
+"",
+"# a: b; c # 'x \"}}\"",
+"# c ()",
+"def f(): r'''#'''",
+""
+]
+],
+[
+"b'' \u20ac\n\t[x] : f\"\"\"a{a;b}\"\"\"\n",
+[
+"b'' \u20ac",
+"[x] : f\"\"\"a{a;b}\"\"\""
+]
+],
+[
+"uf\"\"\"\\\"a\"\"\" \n \f \ufeff\"\"\"{\"\"\" y1\n\n\n \f1e5 [x]\u001ebt''';''' try: 1/0# c \r\n \f\n\telse: -> f'\\' u\"\"  \r\n\tbf'{x:>{w}}\f' 0x1for \n",
+[
+"uf\"\"\"\\\"a\"\"\"",
+"",
+"\ufeff\"\"\"{\"\"\" y1",
+"",
+"",
+"",
+"1e5 [x]",
+"bt''';''' try: 1/0# c",
+"",
+"",
+"else: -> f'\\' u\"\"",
+"bf'{x:>{w}}",
+"' 0x1for"
+]
+],
+[
+"\t\\ # 'x if rf\"{x = }\\\"\" ft'#{(x)' \n \u20ac ~ y '\\\"\"' f\"\n\f{x!r}\"\u0001\t\n\t\n    y a1{ f'''{x:=5\\N\n''' else: \r \f1.e5 1e5  \r\tU'\u00e9\\'\n' := pass **=     \n; \f\n    rb\"\"\"{{\\'\"\"\" \u20ac ] \u001c+ \\\u3000 x = 1; y = 2 \u0000 _ \n    else \t\n    f(x)[0] \r\n",
+[
+"\\ # 'x if rf\"{x = }\\\"\" ft'#{(x)'",
+"\u20ac ~ y '\\\"\"' f\"",
+"",
+"{x!r}\"\u0001",
+"",
+"y a1{ f'''{x:=5\\N",
+"''' else:",
+"",
+"1.e5 1e5",
+"U'\u00e9\\'",
+"' := pass **=",
+";",
+"",
+"rb\"\"\"{{\\'\"\"\" \u20ac ]",
+"+ \\\u3000 x = 1; y = 2 \u0000 _",
+"else",
+"f(x)[0]"
+]
+],
+[
+" () x\u00a0y \\xelse:~ \t\n{'''''' \u2028    \n    x\u00a0y 00 bf''... \u20ac\\  \f\r\n\t. Fr\"\"\"\\N{a;b}\"\"\" #(x,\n y) \u2029",
+[
+"() x\u00a0y \\xelse:~",
+"{''''''",
+"",
+"x\u00a0y 00 bf''... \u20ac\\",
+"",
+". Fr\"\"\"\\N{a;b}\"\"\" #(x,",
+"y)"
+]
+],
+[
+"\tu'''a'''\n    [x] try: 1/0\n",
+[
+"u'''a'''",
+"[x] try: 1/0"
+]
+],
+[
+" \felse{} \u20ac  \n 1_e2 -> \nclass C: pass t'''{x\n:>3}{x:{}#''' \f\u2028 \f\ufeff else ub'''\\\u00e9x y''' # a: b; c _ \n\ty ] elselambda =     \u2029passbf\"\\{{\"\" f(x)[0] # 'x = \n \f# a: b; c \n \f, != \n\t:r\"}} x y\" \u2028",
+[
+"",
+"else{} \u20ac",
+"1_e2 ->",
+"class C: pass t'''{x",
+":>3}{x:{}#'''",
+"",
+"",
+"\ufeff else ub'''\\\u00e9x y''' # a: b; c _",
+"y ] elselambda =",
+"passbf\"\\{{\"\" f(x)[0] # 'x =",
+"",
+"# a: b; c",
+"",
+", !=",
+":r\"}} x y\""
+]
+],
+[
+"\r\n \fr'' _ (x,\n y) +0b101 a1 \n \f\u000b -> def f(): \u00e9 ur\"\" ->     ",
+[
+"",
+"",
+"r'' _ (x,",
+"y) +0b101 a1",
+"",
+"",
+"-> def f(): \u00e9 ur\"\" ->"
+]
+],
+[
+"if _\ntry: 1/0 f\"\" \n    {a: b} _ r\"\"\"{{\n\\N{DASH}\"\"\" b'#;'\n    **= # c\n# 1 [x]\n    \n\tf(x)[0] f\"\"\"#\n\"\"\" 1\n\"\"\"{{\f\"\"\" rf\"\"\"{x!s:>10}{x!s:>10}{x!r}\"\"\"\n\t[1:2] \frf';ax y' rt\"{a;b}\" :\n    0x1f '''\\N{DASH}\u00e9'''\n",
+[
+"if _",
+"try: 1/0 f\"\"",
+"{a: b} _ r\"\"\"{{",
+"\\N{DASH}\"\"\" b'#;'",
+"**= # c",
+"# 1 [x]",
+"",
+"f(x)[0] f\"\"\"#",
+"\"\"\" 1",
+"\"\"\"{{",
+"\"\"\" rf\"\"\"{x!s:>10}{x!s:>10}{x!r}\"\"\"",
+"[1:2]",
+"rf';ax y' rt\"{a;b}\" :",
+"0x1f '''\\N{DASH}\u00e9'''"
+]
+],
+[
+"\n",
+[
+""
+]
+],
+[
+"    bf'''\\N\\\"\\'''' \n : class C: pass xfor i in x: pass \t\n\n",
+[
+"bf'''\\N\\\"\\''''",
+": class C: pass xfor i in x: pass",
+""
+]
+],
+[
+"\t\r\n...\fr\"\"\"\"\"\" if :\n\nb'''''' >>= >>= x\n    \"\"\"\"\"\" rf'' else pass\n{a: b}\nt'' \n    \n\"\"\"\"\"\"\n\t1_000\n",
+[
+"",
+"...",
+"r\"\"\"\"\"\" if :",
+"",
+"b'''''' >>= >>= x",
+"\"\"\"\"\"\" rf'' else pass",
+"{a: b}",
+"t''",
+"",
+"\"\"\"\"\"\"",
+"1_000"
+]
+],
+[
+"0o9 \\ x = 1; y = 2 : \n\t:= else x [1:2]     \r \f\na1 if x: \n \f0x_1 while 1: break; x    \n \fx = 1; y = 2 ft'{'a'{x}' \f\n \f0x1for # : 0x def f(): x\u00a0y\r\n    0b101 bf\"{x\n:>3}{x:}{x = \" y  \f\n\t# a: b; c 0x1f [ U'''''' def :  \f\rx = 1; y = 2\u001c",
+[
+"0o9 \\ x = 1; y = 2 :",
+":= else x [1:2]",
+"",
+"",
+"a1 if x:",
+"",
+"0x_1 while 1: break; x",
+"",
+"x = 1; y = 2 ft'{'a'{x}'",
+"",
+"",
+"0x1for # : 0x def f(): x\u00a0y",
+"0b101 bf\"{x",
+":>3}{x:}{x = \" y",
+"",
+"# a: b; c 0x1f [ U'''''' def :",
+"",
+"x = 1; y = 2"
+]
+],
+[
+"**=# c\n# c while 1: break; x x = 1; y = 2 42 @ \nclass C: pass lambda + ''';\\'''' # \t\n\t] =<> rf\"\"\u001d     \u2028 \fif x:Tr'{lambda: 1}\\'{x:\n'rt\"\"\"'{x}}{x:\n}\"\"\"bf\"\"\"{{\\\"{x:}\"\"\" \n    ~ \r\n",
+[
+"**=# c",
+"# c while 1: break; x x = 1; y = 2 42 @",
+"class C: pass lambda + ''';\\'''' #",
+"] =<> rf\"\"",
+"",
+"",
+"if x:Tr'{lambda: 1}\\'{x:",
+"'rt\"\"\"'{x}}{x:",
+"}\"\"\"bf\"\"\"{{\\\"{x:}\"\"\"",
+"~"
+]
+],
+[
+"    f\"{}\"\"}\\'\n\" ()for i in x: pass Tr'''{x:''' ''''''     \n    a1 \u20ac t'''''' # U\"}};\" f\"{x\n:>3}{x}\"     \f \u0000 for i in x: pass  \f\n    '\\N{DASH}\\N'() 0x1f while 1: break; x b\"\" >>=     \u2028  \n \f-> ! ] \"}}\\\"\"  \n \fbf\"{x:=5\" # \\pass ft\"\"\"\"\"\" ) \n x = 1; y = 2 \t\n != \n",
+[
+"f\"{}\"\"}\\'",
+"\" ()for i in x: pass Tr'''{x:''' ''''''",
+"a1 \u20ac t'''''' # U\"}};\" f\"{x",
+":>3}{x}\"",
+"\u0000 for i in x: pass",
+"",
+"'\\N{DASH}\\N'() 0x1f while 1: break; x b\"\" >>=",
+"",
+"",
+"-> ! ] \"}}\\\"\"",
+"",
+"bf\"{x:=5\" # \\pass ft\"\"\"\"\"\" )",
+"x = 1; y = 2",
+"!="
+]
+],
+[
+"u''y : # a: b; c \t\nub\"\"f(x)[0] {a: b}  \f\n:  \f\frf'{a;b}{x}}{'     \nx = 1; y = 2 \u2028 `\n \f\n} ] Tr'\\Na{(x)}'U\"\"\"}}\\N{DASH}\"\"\":= \nif0x_1\u000b",
+[
+"u''y : # a: b; c",
+"ub\"\"f(x)[0] {a: b}",
+"",
+":",
+"",
+"rf'{a;b}{x}}{'",
+"x = 1; y = 2",
+"`",
+"",
+"",
+"} ] Tr'\\Na{(x)}'U\"\"\"}}\\N{DASH}\"\"\":=",
+"if0x_1"
+]
+],
+[
+"\t'\\'{{a' f(x)[0] 1 \n \n\t\u00e9 # >>=\r\nu''' x y''' foo try: 1/0 \u00e9 \n\f",
+[
+"'\\'{{a' f(x)[0] 1",
+"",
+"\u00e9 # >>=",
+"u''' x y''' foo try: 1/0 \u00e9",
+""
+]
+],
+[
+"\t# \\ x if x: [ ft'a{x{x!}' \n",
+[
+"# \\ x if x: [ ft'a{x{x!}'"
+]
+],
+[
+"# b\"\u00e9\"\n\t\n\t; if\n\t'' + \n''''''\n    else: 0\n\n    .5\n",
+[
+"# b\"\u00e9\"",
+"",
+"; if",
+"'' +",
+"''''''",
+"else: 0",
+"",
+".5"
+]
+],
+[
+"# c 0x_1 ~ )\u0085",
+[
+"# c 0x_1 ~ )"
+]
+],
+[
+"[x] if else \n    f(x)[0] + u'a'\n",
+[
+"[x] if else",
+"f(x)[0] + u'a'"
+]
+],
+[
+" \f...\\  00 [x] \t\r\nif x:f'\f\\\n#' else: def f(): Br\"\" ? \n\t'''\n{\\\n''' + \"{\\N{DASH}\": f\"{}{x = }\" \u001c \f\r\t# 'x;  \n f'''{{x}\\'''':=!() x \t\n    } ]  \f!= if x: ur'\f\\\"'  \u001c!=\r\u00e9 : ~  \n u'\u00e9' for i in x: pass bf'''{x}}{x:{y}}\\N{DASH}'''()(x,\n y)  \f\n",
+[
+"",
+"...\\  00 [x]",
+"if x:f'",
+"\\",
+"#' else: def f(): Br\"\" ?",
+"'''",
+"{\\",
+"''' + \"{\\N{DASH}\": f\"{}{x = }\"",
+"",
+"",
+"# 'x;",
+"f'''{{x}\\'''':=!() x",
+"} ]",
+"!= if x: ur'",
+"\\\"'",
+"!=",
+"\u00e9 : ~",
+"u'\u00e9' for i in x: pass bf'''{x}}{x:{y}}\\N{DASH}'''()(x,",
+"y)",
+""
+]
+],
+[
+"t'' def while 1: break; x ft'''\\';''' \n(0 else()\f\tif x:     \n \f\t\n \f\r",
+[
+"t'' def while 1: break; x ft'''\\';'''",
+"(0 else()",
+"if x:",
+"",
+"",
+"",
+""
+]
+],
+[
+"\tf\"\"\"{a;b}\"\"\" \n\tb'''  text\n# not a comment'''\n\tf'''  text'''\n\t: foo\n# a: b; c if 0\f\"\"\"\"\"\"\n: != lambda \n    t'{x}' else: ==\f'''#''' 42 # a: b; c\n    [1:2] u\"\"\"\\n\"\"\"\f    \u00e9 r'''''' rb'' if x:\n    lambda\n",
+[
+"f\"\"\"{a;b}\"\"\"",
+"b'''  text",
+"# not a comment'''",
+"f'''  text'''",
+": foo",
+"# a: b; c if 0",
+"\"\"\"\"\"\"",
+": != lambda",
+"t'{x}' else: ==",
+"'''#''' 42 # a: b; c",
+"[1:2] u\"\"\"\\n\"\"\"",
+"\u00e9 r'''''' rb'' if x:",
+"lambda"
+]
+],
+[
+" \fif x:\n \n \u00e9 [1:2]if# \\ \t\n# 'xwhile 1: break; x x = 1; y = 2     \n    u'''''' 0o7 for i in x: passt'' \n # a: b; c \u20ac-> pass \t\u000b\u001f \u20ac \r\nbt'''''' if x: ( \u001c1.5j  \n 1. ; x\u00a0y{}     \n\t0b101 rt\"\\n\"x\u00a0y\t\n\t(x,\n y) \r\n",
+[
+"",
+"if x:",
+"",
+"\u00e9 [1:2]if# \\",
+"# 'xwhile 1: break; x x = 1; y = 2",
+"u'''''' 0o7 for i in x: passt''",
+"# a: b; c \u20ac-> pass",
+"\u20ac",
+"bt'''''' if x: (",
+"1.5j",
+"1. ; x\u00a0y{}",
+"0b101 rt\"\\n\"x\u00a0y",
+"(x,",
+"y)"
+]
+],
+[
+"\t{a: b}for i in x: pass  \f    =U'''a{{'''{} ` ->\u0000  \n() [x] # a: b; c **= # 0x \t\n \f\t\n \felse \ufeff r''':{{{''' \t  \f\n\t\t\n \u001c    1.5j \u2029 \u0000 1.5j ( else:  ",
+[
+"{a: b}for i in x: pass",
+"=U'''a{{'''{} ` ->\u0000",
+"() [x] # a: b; c **= # 0x",
+"",
+"",
+"",
+"else \ufeff r''':{{{'''",
+"",
+"",
+"",
+"1.5j",
+"\u0000 1.5j ( else:"
+]
+],
+[
+"    {a: b}\n",
+[
+"{a: b}"
+]
+],
+[
+"-> \r\nclass \f\n \f? u'''\";''' f'' ? \"\"\"\\\f\"\"\"rb'''\\\"\\N{DASH}\f''' \f \f    \n",
+[
+"->",
+"class",
+"",
+"",
+"? u'''\";''' f'' ? \"\"\"\\",
+"\"\"\"rb'''\\\"\\N{DASH}",
+"'''",
+"",
+""
+]
+],
+[
+" # c.  \f\u2028",
+[
+"# c.",
+""
+]
+],
+[
+"\t>>= .5 try: 1/0 def f():\n\t0 rf'\u00e9{x:%Y-%m}:' a1\n\t1j 42 \u00e9 == \r\n",
+[
+">>= .5 try: 1/0 def f():",
+"0 rf'\u00e9{x:%Y-%m}:' a1",
+"1j 42 \u00e9 =="
+]
+],
+[
+"!=pass x\u00a0yx \t\n    ft'{f'{x}'\\\"'# c     \n \ftry: 1/0 try: 1/01__0x\u00a0y     \fU\"\"\"a\"\"\" : \u001c    : ub\"\"1e+ \n \u00a0 x\u00a0y ; Br\"\" while 1: break; x  \n    $ [1:2] ] ... 1j \t\n\ufeff for i in x: pass \u20ac foo if x:x     \n",
+[
+"!=pass x\u00a0yx",
+"ft'{f'{x}'\\\"'# c",
+"",
+"try: 1/0 try: 1/01__0x\u00a0y",
+"U\"\"\"a\"\"\" :",
+": ub\"\"1e+",
+"x\u00a0y ; Br\"\" while 1: break; x",
+"$ [1:2] ] ... 1j",
+"\ufeff for i in x: pass \u20ac foo if x:x"
+]
+],
+[
+"1_000 else: b'a' u''' '''\r\n\t\"a\\na\" t'' {a: b}\r\n{a: b} else: \n    u'''##''' \u20ac f(x)[0] \"x y \\n\"\n",
+[
+"1_000 else: b'a' u''' '''",
+"\"a\\na\" t'' {a: b}",
+"{a: b} else:",
+"u'''##''' \u20ac f(x)[0] \"x y \\n\""
+]
+],
+[
+"\t \n':\u00e9' x = 1; y = 2 if #\n    for i in x: pass r\"\"\":\n\"\"\" \n_ pass \f",
+[
+"",
+"':\u00e9' x = 1; y = 2 if #",
+"for i in x: pass r\"\"\":",
+"\"\"\"",
+"_ pass"
+]
+],
+[
+" ? # c? \u20ac  \f\r\t\r\n \f{a: b}  \f\n    _     \n \n() def f(): 1.5j \nur'' if !def f(): == =     \nf\"\"# 'x # c  \f\r\t\u00e9 **= \n\u0085 passelse  \n 1. 1if y \u00e9  \n",
+[
+"? # c? \u20ac",
+"",
+"",
+"",
+"{a: b}",
+"",
+"_",
+"",
+"() def f(): 1.5j",
+"ur'' if !def f(): == =",
+"f\"\"# 'x # c",
+"",
+"\u00e9 **=",
+"",
+"passelse",
+"1. 1if y \u00e9"
+]
+],
+[
+" \f\ufeff  ",
+[
+"",
+"\ufeff"
+]
+],
+[
+"\u00e9\n\tr\"\u00e9\\'\\'\" def f(): x t\"\"\"\"\"\" \n\tr''''''\n     \n\tfoo class C: pass # 'x \n    r''''''\n\tt'a#\\N{DASH}' f'\u00e9' rt'''a\\\"''' y\n    f'''{(x)}\\\"{[1:2]}''' : \u20ac 0\nclass C: pass 0 f\";\u00e9 \" else\n\t**= a1 if \n",
+[
+"\u00e9",
+"r\"\u00e9\\'\\'\" def f(): x t\"\"\"\"\"\"",
+"r''''''",
+"",
+"foo class C: pass # 'x",
+"r''''''",
+"t'a#\\N{DASH}' f'\u00e9' rt'''a\\\"''' y",
+"f'''{(x)}\\\"{[1:2]}''' : \u20ac 0",
+"class C: pass 0 f\";\u00e9 \" else",
+"**= a1 if"
+]
+],
+[
+"# bf\"\"\"{x = }{x!r}\"\"\" \u2029... a1 (x,\n y) 1. 0x1for\n [ + \t\u2028 \f!= try: 1/0 \\  \u001c\u0000 if y for i in x: pass Tr'\\N{'a'}'\t\n\t(x,\n y)rf\"\"\"\n\\\"\"\"\" lambda \u00e9_ \n\tft'{}' f\"'{x!}{(x)}\" # 'x Br\"\\n\\'\"-> \n        \nub''''\\N\\\n''' , rb' \u00e9' else:  \u001cFr\"\"\"{{x}}{x!s:>10\"\"\"# 'x class C: pass \n Br'\n' for i in x: pass () u\"\"\"\"\"\" } \u000b",
+[
+"# bf\"\"\"{x = }{x!r}\"\"\"",
+"... a1 (x,",
+"y) 1. 0x1for",
+"[ +",
+"",
+"!= try: 1/0 \\",
+"\u0000 if y for i in x: pass Tr'\\N{'a'}'",
+"(x,",
+"y)rf\"\"\"",
+"\\\"\"\"\" lambda \u00e9_",
+"ft'{}' f\"'{x!}{(x)}\" # 'x Br\"\\n\\'\"->",
+"",
+"ub''''\\N\\",
+"''' , rb' \u00e9' else:",
+"Fr\"\"\"{{x}}{x!s:>10\"\"\"# 'x class C: pass",
+"Br'",
+"' for i in x: pass () u\"\"\"\"\"\" }"
+]
+],
+[
+"0777 :=\n     \n    0x1f\n    1if\n    != = else: y\n    \u20ac class C: pass def \r\n    \n    # c \n\f",
+[
+"0777 :=",
+"",
+"0x1f",
+"1if",
+"!= = else: y",
+"\u20ac class C: pass def",
+"",
+"# c",
+""
+]
+],
+[
+"\tlambda u'''''' 0 1if\r\n    ()\n0 .5 {a: b} rf'a{x=}\\\"' \r\n\u20ac for i in x: pass \"a\u00e9\" class C: pass \n\nf(x)[0]\n",
+[
+"lambda u'''''' 0 1if",
+"()",
+"0 .5 {a: b} rf'a{x=}\\\"'",
+"\u20ac for i in x: pass \"a\u00e9\" class C: pass",
+"",
+"f(x)[0]"
+]
+],
+[
+"    0 + \n",
+[
+"0 +"
+]
+],
+[
+"else x = 1; y = 2\n\t''''''\n    b''''''\n\tfoo u\"\"\"\"\"\"\nb''''''\n     \f\tf(x)[0] # c else (x,\n y)\n",
+[
+"else x = 1; y = 2",
+"''''''",
+"b''''''",
+"foo u\"\"\"\"\"\"",
+"b''''''",
+"",
+"f(x)[0] # c else (x,",
+"y)"
+]
+],
+[
+"1 \"aa\" ! _ \f\r\n    f'''{x=}{x=} ''' x **=\n",
+[
+"1 \"aa\" ! _",
+"",
+"f'''{x=}{x=} ''' x **="
+]
+],
+[
+"    b\"a\\'\" \"\u00e9\"\n",
+[
+"b\"a\\'\" \"\u00e9\""
+]
+],
+[
+"    \"\"\"\fa}}\"\"\" pass {a: b} \f    # \n",
+[
+"\"\"\"",
+"a}}\"\"\" pass {a: b}",
+"#"
+]
+],
+[
+" \f1e5 def f(): class C: pass {}\n    1_000 \n",
+[
+"",
+"1e5 def f(): class C: pass {}",
+"1_000"
+]
+],
+[
+"rt\"\\n\" [x] \u20ac \nrf\"{x:%Y-%m}\" class C: pass \n\t\"x y\" while 1: break; x f\"x y\" else\n\tfoo t\"\"\"{x!s:>10}}}{x:>{w}}\"\"\" x \"\"\"\\\"\\'\"\"\"\r\nx foo pass\n\n[x] a1 # a: b; c\n[x] \nif\n\tf'''  text\n# not a comment'''\n",
+[
+"rt\"\\n\" [x] \u20ac",
+"rf\"{x:%Y-%m}\" class C: pass",
+"\"x y\" while 1: break; x f\"x y\" else",
+"foo t\"\"\"{x!s:>10}}}{x:>{w}}\"\"\" x \"\"\"\\\"\\'\"\"\"",
+"x foo pass",
+"",
+"[x] a1 # a: b; c",
+"[x]",
+"if",
+"f'''  text",
+"# not a comment'''"
+]
+],
+[
+"    x = 1; y = 2 = for i in x: pass \ff'''# not a comment\n# not a comment'''\n\t# a: b; c \n    1j :\f \r\n    [1:2] r'''x y''' \n",
+[
+"x = 1; y = 2 = for i in x: pass",
+"f'''# not a comment",
+"# not a comment'''",
+"# a: b; c",
+"1j :",
+"",
+"[1:2] r'''x y'''"
+]
+],
+[
+"    {a: b} y x = 1; y = 2 #\n\ta1 while 1: break; x := f'''\n;a''' \ndef f(): #\n[1:2] .5 \"\"\":\"\"\" a1\n",
+[
+"{a: b} y x = 1; y = 2 #",
+"a1 while 1: break; x := f'''",
+";a'''",
+"def f(): #",
+"[1:2] .5 \"\"\":\"\"\" a1"
+]
+],
+[
+" rb\"{{x y \u20ac     \n    \t\nu'''\u00e9x y ''' # a: b; c else:bt\"\"\"{x!r}\"\"\" 1_ 0x \n     \nbt'''''':= t''''''' u\"\"\"\"\"\" rb'''''' \f\n [1:2]1.5j \t\u2028 \fTr'''\\}}{x = }''' +( foo \f\n 1.def f():~ def\n",
+[
+"rb\"{{x y \u20ac",
+"",
+"u'''\u00e9x y ''' # a: b; c else:bt\"\"\"{x!r}\"\"\" 1_ 0x",
+"",
+"bt'''''':= t''''''' u\"\"\"\"\"\" rb''''''",
+"",
+"[1:2]1.5j",
+"",
+"Tr'''\\}}{x = }''' +( foo",
+"",
+"1.def f():~ def"
+]
+],
+[
+"b\"a\" : foo y \n\"\"\"  text\"\"\"\n!= (x,\n y) = = \n",
+[
+"b\"a\" : foo y",
+"\"\"\"  text\"\"\"",
+"!= (x,",
+"y) = ="
+]
+],
+[
+"    \n\tpass b\"a\"\n\tif -> [1:2] 0777\n'''\fx y''' y '}}\u00e9' (x,\n y)\n# c\n    try: 1/0 + foo\n    # a: b; c def\n",
+[
+"",
+"pass b\"a\"",
+"if -> [1:2] 0777",
+"'''",
+"x y''' y '}}\u00e9' (x,",
+"y)",
+"# c",
+"try: 1/0 + foo",
+"# a: b; c def"
+]
+],
+[
+"\t \n\f\t\"\" **= \n    #\f''''''\nlambda \f",
+[
+"",
+"",
+"\"\" **=",
+"#",
+"''''''",
+"lambda"
+]
+],
+[
+"t\"{x}\" **= \nr\"\"\"\"\"\"\n \n[1:2] r\"\\\":\\N{DASH}\" x \f",
+[
+"t\"{x}\" **=",
+"r\"\"\"\"\"\"",
+"",
+"[1:2] r\"\\\":\\N{DASH}\" x"
+]
+],
+[
+"a1 \n: if x: \n\ta1 lambda y \u00e9\nif x: () \nf(x)[0] \u20ac u'a:x y' [x] \nr\"\"\"# not a comment\"\"\"\na1 t\"\"\"\"\"\"\n",
+[
+"a1",
+": if x:",
+"a1 lambda y \u00e9",
+"if x: ()",
+"f(x)[0] \u20ac u'a:x y' [x]",
+"r\"\"\"# not a comment\"\"\"",
+"a1 t\"\"\"\"\"\""
+]
+],
+[
+"foo\n    rf'a'\n\t(x,\n y) >>= rf'{x:{y}}{x:%Y-%m}{x!r}'\r\nf'' :\npass b\"\"\"\"\"\"\n# a: b; c if rb'{{ ' \f\trf' '\n    def\n",
+[
+"foo",
+"rf'a'",
+"(x,",
+"y) >>= rf'{x:{y}}{x:%Y-%m}{x!r}'",
+"f'' :",
+"pass b\"\"\"\"\"\"",
+"# a: b; c if rb'{{ '",
+"rf' '",
+"def"
+]
+],
+[
+"bt'\\N{DASH}{x:{y}}' 1e5} \u2029 x if x:    \n1e+ ( \u00e9 \u001f \u0001 @ \n\tfoo  \n# 'xif 0b2 \n\u2028    \n:Br'''x y;{{''' .5 \n{ \u000b f'{lambda: 1}}};'\t\n[1:2] # 'xb'''\\\"x yx y ) def f(): @ \f\nelse \\ [ \t\n \fx = 1; y = 2 U\"}}\u00e9\" uf'\\{x:\n}{x=     ",
+[
+"bt'\\N{DASH}{x:{y}}' 1e5}",
+"x if x:",
+"1e+ ( \u00e9 \u001f \u0001 @",
+"foo",
+"# 'xif 0b2",
+"",
+"",
+":Br'''x y;{{''' .5",
+"{",
+"f'{lambda: 1}}};'",
+"[1:2] # 'xb'''\\\"x yx y ) def f(): @",
+"",
+"else \\ [",
+"",
+"x = 1; y = 2 U\"}}\u00e9\" uf'\\{x:",
+"}{x="
+]
+],
+[
+"    f\"\"\" \"\"\" (x,\n y)\r\nelse: \n    lambda else rb\"\"\"x y\\\"\"\"\" <> \nx x \u00e9 \r\n    lambda <> 1if\f    r\"\"\"\u00e9\\\"\"\"\" pass (x,\n y) \n    0x1f \"\"\"\u00e9;\"\"\" # c {}\n    {} for i in x: pass\nr\"\"\"  text\"\"\"\n**=\f    != def def if\n",
+[
+"f\"\"\" \"\"\" (x,",
+"y)",
+"else:",
+"lambda else rb\"\"\"x y\\\"\"\"\" <>",
+"x x \u00e9",
+"lambda <> 1if",
+"r\"\"\"\u00e9\\\"\"\"\" pass (x,",
+"y)",
+"0x1f \"\"\"\u00e9;\"\"\" # c {}",
+"{} for i in x: pass",
+"r\"\"\"  text\"\"\"",
+"**=",
+"!= def def if"
+]
+],
+[
+"[  \f\n    class a1 [1:2] def \u000b == iftry: 1/0 t'{x:=5}\\' (x,\n y)pass ",
+[
+"[",
+"",
+"class a1 [1:2] def",
+"== iftry: 1/0 t'{x:=5}\\' (x,",
+"y)pass"
+]
+],
+[
+"    {\u20ac t\"{x:}\\N{DASH}\" '''\u00e9\"''' \t\n1.e5 ub'\"\"' <> # a: b; c 1. +  \f\n\tif 1_e2 \t\u001c \fx\u00a0y1.e5 \\ ft\"{[1:2]}{x\n:>3}\" \u000b    x\u00a0y \u20ac  \n \f\u0000 class C: pass \n    r\"\"\"\"\"\" while 1: break; x f(x)[0] \\ \\ ''';a'''  \f\n \fuf'{\\N' pass1e+ f'{f'{x}'}{x=}' rb\"\"\"#:#\"\"\" rb'}}\\N{DASH}' \n{a: b}Fr\"{x:{y:{z}}}\\n\" !=while 1: break; x  \f\u2028",
+[
+"{\u20ac t\"{x:}\\N{DASH}\" '''\u00e9\"'''",
+"1.e5 ub'\"\"' <> # a: b; c 1. +",
+"",
+"if 1_e2",
+"",
+"x\u00a0y1.e5 \\ ft\"{[1:2]}{x",
+":>3}\"",
+"x\u00a0y \u20ac",
+"",
+"\u0000 class C: pass",
+"r\"\"\"\"\"\" while 1: break; x f(x)[0] \\ \\ ''';a'''",
+"",
+"",
+"uf'{\\N' pass1e+ f'{f'{x}'}{x=}' rb\"\"\"#:#\"\"\" rb'}}\\N{DASH}'",
+"{a: b}Fr\"{x:{y:{z}}}\\n\" !=while 1: break; x",
+""
+]
+],
+[
+";\n\t'''\\N{DASH}\\'\\N{DASH}''' rf'''\u00e9''' # **=\n    := x = 1; y = 2 u\"\"\" \"\"\" else \n'''  text\n  text'''\nif rt\"\"\"{{\n#\"\"\" rb\"a{{\u00e9\"\n    == # 'x class C: pass \n\t \n'''x y:''' # a: b; c\n\trt'a' foo b\"ax y\\'\"\nf\"\"\"x: y; z\"\"\"\n",
+[
+";",
+"'''\\N{DASH}\\'\\N{DASH}''' rf'''\u00e9''' # **=",
+":= x = 1; y = 2 u\"\"\" \"\"\" else",
+"'''  text",
+"text'''",
+"if rt\"\"\"{{",
+"#\"\"\" rb\"a{{\u00e9\"",
+"== # 'x class C: pass",
+"",
+"'''x y:''' # a: b; c",
+"rt'a' foo b\"ax y\\'\"",
+"f\"\"\"x: y; z\"\"\""
+]
+],
+[
+"\tx ==\n    x = y b\"\"\n\t1j \nu''' '''\nf\"\"\"\\N{DASH}\u00e9{lambda: 1}\"\"\" -> def f(): _\n    y\nelse:\n    try: 1/0\n    # c ;\ndef rb\"\"\"\"\"\"\n\"\"\"  text\"\"\"\n    <> _ ; ==\n",
+[
+"x ==",
+"x = y b\"\"",
+"1j",
+"u''' '''",
+"f\"\"\"\\N{DASH}\u00e9{lambda: 1}\"\"\" -> def f(): _",
+"y",
+"else:",
+"try: 1/0",
+"# c ;",
+"def rb\"\"\"\"\"\"",
+"\"\"\"  text\"\"\"",
+"<> _ ; =="
+]
+],
+[
+"1 x = 1; y = 2 0777 \nt'''\f;''' b\"\"\"#\"\"\" # a: b; c :\n    \u00e9\n    y x a1 x \r\n\"\" # a: b; c\r\n    '''\n  text'''\n \n",
+[
+"1 x = 1; y = 2 0777",
+"t'''",
+";''' b\"\"\"#\"\"\" # a: b; c :",
+"\u00e9",
+"y x a1 x",
+"\"\" # a: b; c",
+"'''",
+"text'''",
+""
+]
+],
+[
+"\t1j == 0b2 {  \u001c",
+[
+"1j == 0b2 {"
+]
+],
+[
+" 00foo\u00e9 1.5j() try: 1/0 \n \n    := \r\n, class } rt'' \n \f, Tr\"\"\"{x:{y:{z}}}{x:{y}\"\"\" pass _ {",
+[
+"00foo\u00e9 1.5j() try: 1/0",
+"",
+":=",
+", class } rt''",
+"",
+", Tr\"\"\"{x:{y:{z}}}{x:{y}\"\"\" pass _ {"
+]
+],
+[
+"\n''':\\\"\n''' 42 def\n>>= b'''{{''' f\"\u00e9{x:%Y-%m}{x:{y}}\"\fx r'' u\"\"\"#\"\"\"\f42 1e5 f\"\"\"{x:{y}}\\N{DASH}x y\"\"\"\n\t# : >>=\n",
+[
+"",
+"''':\\\"",
+"''' 42 def",
+">>= b'''{{''' f\"\u00e9{x:%Y-%m}{x:{y}}\"",
+"x r'' u\"\"\"#\"\"\"",
+"42 1e5 f\"\"\"{x:{y}}\\N{DASH}x y\"\"\"",
+"# : >>="
+]
+],
+[
+"def f(): \"\"\";\"\"\" \n\t# a: b; c (x,\n y) [1:2]\n    >>= _\n \f# a: b; c\r\n\t# 'x 1_000 y\fwhile 1: break; x # c # a: b; c _\n\t'''''' \u20ac class C: pass\n    \u20ac 1if def f(): [1:2] \r\n\tb\"\"\"# not a comment\"\"\"\n    1 r\" \"\n",
+[
+"def f(): \"\"\";\"\"\"",
+"# a: b; c (x,",
+"y) [1:2]",
+">>= _",
+"",
+"# a: b; c",
+"# 'x 1_000 y",
+"while 1: break; x # c # a: b; c _",
+"'''''' \u20ac class C: pass",
+"\u20ac 1if def f(): [1:2]",
+"b\"\"\"# not a comment\"\"\"",
+"1 r\" \""
+]
+],
+[
+"\n\nr\"\"\"# not a comment\"\"\"\nf'{(x)}{x}' try: 1/0 \f' a' b'a;' \u20ac a1\r\n! ... rt'#' !=\n    # \n",
+[
+"",
+"",
+"r\"\"\"# not a comment\"\"\"",
+"f'{(x)}{x}' try: 1/0",
+"' a' b'a;' \u20ac a1",
+"! ... rt'#' !=",
+"#"
+]
+],
+[
+"    \u3000  \f\r  \f\u0085    bt'''{{{a;b''' 0    \n =     \u000bFr\"\"\"{x:\n\"\"\" rt\"\"\"a\"\"\" 3.14_15 u\"\"\"\f\\\"\"\"\" def 42\r \fdef f(): Br\"\\\";\\n\" : \t\n \n f\"\"\"\"\"\" $ \n\t3.14_15 try: 1/0     \n",
+[
+"",
+"",
+"",
+"",
+"bt'''{{{a;b''' 0",
+"=",
+"Fr\"\"\"{x:",
+"\"\"\" rt\"\"\"a\"\"\" 3.14_15 u\"\"\"",
+"\\\"\"\"\" def 42",
+"",
+"def f(): Br\"\\\";\\n\" :",
+"",
+"f\"\"\"\"\"\" $",
+"3.14_15 try: 1/0"
+]
+],
+[
+"    # c foo foo # 'x\n    _ x\n",
+[
+"# c foo foo # 'x",
+"_ x"
+]
+],
+[
+" # c { [1:2]... rt'' 0o9  \f\n\t#b'\"{' foo\u00e9b\"\"\"\"\"\"\" 1__0 \t\n \f; \u0000 . \\  \f\n\tt'x y\\N{DASH}' if bf\"\"\"{x:=5}{x:{y:{z}}} \"\"\" \n\tpass def f():  \frb'''::\\'''$ \t\u000b    \ufeff() 01e+ def \n\t\n\t\u001c    class C: pass a1  \n \f:=1_else # a: b; c\u00e9 ub\"\\\n \"     \n",
+[
+"# c { [1:2]... rt'' 0o9",
+"",
+"#b'\"{' foo\u00e9b\"\"\"\"\"\"\" 1__0",
+"",
+"; \u0000 . \\",
+"",
+"t'x y\\N{DASH}' if bf\"\"\"{x:=5}{x:{y:{z}}} \"\"\"",
+"pass def f():",
+"rb'''::\\'''$",
+"\ufeff() 01e+ def",
+"",
+"",
+"class C: pass a1",
+"",
+":=1_else # a: b; c\u00e9 ub\"\\",
+"\""
+]
+],
+[
+"\t\n[x] : t\"\"\"\\'{x!r}\"\"\" try: 1/0\n\n# a: b; c\n1e5 -> # !=\n\n\t\"\\'\\n\" f\"\"\"{f'{y}'}{f'{y}'}\u00e9\"\"\" # 'x\n.5 \"\"\"a\\'\f\"\"\" b'''a''' : \nclass C: pass\n",
+[
+"",
+"[x] : t\"\"\"\\'{x!r}\"\"\" try: 1/0",
+"",
+"# a: b; c",
+"1e5 -> # !=",
+"",
+"\"\\'\\n\" f\"\"\"{f'{y}'}{f'{y}'}\u00e9\"\"\" # 'x",
+".5 \"\"\"a\\'",
+"\"\"\" b'''a''' :",
+"class C: pass"
+]
+],
+[
+"42 foo b'' '#\\n' \n",
+[
+"42 foo b'' '#\\n'"
+]
+],
+[
+"\t\"\"\"# not a comment\"\"\"\n    \n# a: b; c [x] [1:2] \n    lambda ! : :\n    {a: b}\n\n\tx = 1; y = 2\n\t\n'''x: y; z\nx: y; z'''\n",
+[
+"\"\"\"# not a comment\"\"\"",
+"",
+"# a: b; c [x] [1:2]",
+"lambda ! : :",
+"{a: b}",
+"",
+"x = 1; y = 2",
+"",
+"'''x: y; z",
+"x: y; z'''"
+]
+],
+[
+"\t+ b\"\"\": \"\"\" t'' def f():\nf\"\"\"  text\n\"\"\"\n    = try: 1/0\na1 \n\t# c 1 != 0777 \nelse .5 \u00e9 :=\f",
+[
+"+ b\"\"\": \"\"\" t'' def f():",
+"f\"\"\"  text",
+"\"\"\"",
+"= try: 1/0",
+"a1",
+"# c 1 != 0777",
+"else .5 \u00e9 :="
+]
+],
+[
+"     \n  \n : >>= U\"\"\"\"\"\"} \\uf\"\"\"\u00e9\"\"\" ",
+[
+"",
+"",
+": >>= U\"\"\"\"\"\"} \\uf\"\"\"\u00e9\"\"\""
+]
+],
+[
+"x\u00a0y def f():...\n\t\"\"\"\f\\n'\"\"\" { {a: b} # c ~;  \f\r\n else  \f\n    \r\n\\x\n",
+[
+"x\u00a0y def f():...",
+"\"\"\"",
+"\\n'\"\"\" { {a: b} # c ~;",
+"",
+"else",
+"",
+"",
+"\\x"
+]
+],
+[
+"f''''''\nx = 1; y = 2 \"{{\\\"\\\"\" y \n\nx = 1; y = 2 \u00e9 # c\felse _ !\n{a: b} \n",
+[
+"f''''''",
+"x = 1; y = 2 \"{{\\\"\\\"\" y",
+"",
+"x = 1; y = 2 \u00e9 # c",
+"else _ !",
+"{a: b}"
+]
+],
+[
+"    #\n \f\trb\"\"\"\"\"\"\r\n\nfoo\n-> while 1: break; x \n    f'{x!s:>10}a{f'{y}'}' {a: b} if x:\n",
+[
+"#",
+"",
+"rb\"\"\"\"\"\"",
+"",
+"foo",
+"-> while 1: break; x",
+"f'{x!s:>10}a{f'{y}'}' {a: b} if x:"
+]
+],
+[
+"else: \n0x1f 42 def rb\"\"\"\\n\"\"\"\n     \n\t42\n\t\r\nrt\"\"\n# 'x f\"\"\"\"\"\" else rt\"{x!r}\" \n\tf'''\f''' {} u\"\"\"\"\"\" \n",
+[
+"else:",
+"0x1f 42 def rb\"\"\"\\n\"\"\"",
+"",
+"42",
+"",
+"rt\"\"",
+"# 'x f\"\"\"\"\"\" else rt\"{x!r}\"",
+"f'''",
+"''' {} u\"\"\"\"\"\""
+]
+],
+[
+"if x:; bf'''''' $  \n(x,\n y) \t\n\t \n class := Fr\"\"\"\"\"\" for i in x: pass     \f",
+[
+"if x:; bf'''''' $",
+"(x,",
+"y)",
+"",
+"class := Fr\"\"\"\"\"\" for i in x: pass"
+]
+],
+[
+"    f\"\"\"{{{(x)}{lambda: 1}\"\"\" a1 if #\r\n    rf'{x:%Y-%m}x yx y' else\nb\"\"\"\"\"\" _ try: 1/0 \n# a: b; c _ t\"{[1:2]}\\N{DASH}a\"\f    else: else +\n    \n",
+[
+"f\"\"\"{{{(x)}{lambda: 1}\"\"\" a1 if #",
+"rf'{x:%Y-%m}x yx y' else",
+"b\"\"\"\"\"\" _ try: 1/0",
+"# a: b; c _ t\"{[1:2]}\\N{DASH}a\"",
+"else: else +",
+""
+]
+],
+[
+": if f\"\"\"\"\"\" \t\u001c    0o9 # c 0b101 \t\r\n;\n\t{} try: 1/0 pass \ufeff \n;  \f\n\ta1 pass f\"\"\"\"\"\" r\"\"\"a\\N\\\"\"\" \t\n \f\n \f\n \fwhile 1: break; x lambda ? if x: \n    f(x)[0] -> x = 1; y = 2  \n \fx\u00a0y . \n    for i in x: pass# c , def f(): \n",
+[
+": if f\"\"\"\"\"\"",
+"0o9 # c 0b101",
+";",
+"{} try: 1/0 pass \ufeff",
+";",
+"",
+"a1 pass f\"\"\"\"\"\" r\"\"\"a\\N\\\"\"\"",
+"",
+"",
+"",
+"",
+"",
+"while 1: break; x lambda ? if x:",
+"f(x)[0] -> x = 1; y = 2",
+"",
+"x\u00a0y .",
+"for i in x: pass# c , def f():"
+]
+],
+[
+"    -> rt\"{x=}\" \u007f ub\"\"\"\\\"\\{\"\"\"foo \\     \n try: 1/0 Tr'''\\N{x:%Y-%m}''' f(x)[0] ft'{{{x}}{x:%Y-%m y . \u2029@ if \f\n \f\n\trb\"\"# 1j #'' }    \n\tuf\"\"\";#\\'\"\"\"lambda x = 1; y = 2  \f\n",
+[
+"-> rt\"{x=}\" \u007f ub\"\"\"\\\"\\{\"\"\"foo \\",
+"try: 1/0 Tr'''\\N{x:%Y-%m}''' f(x)[0] ft'{{{x}}{x:%Y-%m y .",
+"@ if",
+"",
+"",
+"",
+"rb\"\"# 1j #'' }",
+"uf\"\"\";#\\'\"\"\"lambda x = 1; y = 2",
+""
+]
+],
+[
+";\n    rt'''''' 42 def f():\r\n\t\n    f'''# not a comment'''\n: # a: b; c # c ;\nr''';\n''' + \u20ac # a: b; c\n\u20ac\n\t# c def 0777\n",
+[
+";",
+"rt'''''' 42 def f():",
+"",
+"f'''# not a comment'''",
+": # a: b; c # c ;",
+"r''';",
+"''' + \u20ac # a: b; c",
+"\u20ac",
+"# c def 0777"
+]
+],
+[
+"r'''\nx: y; z'''\n\t# \"\\\"\" [1:2] \";\\n\"\n    ; rt\"{x:=5}{x=}\" ; {}\n",
+[
+"r'''",
+"x: y; z'''",
+"# \"\\\"\" [1:2] \";\\n\"",
+"; rt\"{x:=5}{x=}\" ; {}"
+]
+],
+[
+"u\"\"\"}}#}\"\"\" [x] Fr\"\"\"{lambda: 1}\"\"\"if     \n try: 1/0 '' =# \\\t\nclass class C: pass yif \\x \n : :  \f\n\u001d 0o rb''''''     \ndef f(): .5 \r    [1:2] \n.\t\n    >>=  \f\r",
+[
+"u\"\"\"}}#}\"\"\" [x] Fr\"\"\"{lambda: 1}\"\"\"if",
+"try: 1/0 '' =# \\",
+"class class C: pass yif \\x",
+": :",
+"",
+"",
+"0o rb''''''",
+"def f(): .5",
+"[1:2]",
+".",
+">>=",
+""
+]
+],
+[
+"\f    r\"\"\"\\N{DASH}:\"\"\" >>= \n    \n\n",
+[
+"",
+"r\"\"\"\\N{DASH}:\"\"\" >>=",
+"",
+""
+]
+],
+[
+"b\"\" b'''\\\"#''' \n    \r\n\nif f(x)[0] rt'''{x:>{w}}{x:%Y-%m}{[1:2]}''' while 1: break; x\n \r\nx = 1; y = 2 # rt\"\"\":\"\"\" \n",
+[
+"b\"\" b'''\\\"#'''",
+"",
+"",
+"if f(x)[0] rt'''{x:>{w}}{x:%Y-%m}{[1:2]}''' while 1: break; x",
+"",
+"x = 1; y = 2 # rt\"\"\":\"\"\""
+]
+],
+[
+"    \" a\\\"\" \"\"\"\"\"\" f\"\"\"{(x)}{lambda: 1}}}\"\"\" ... \f42\n\t1 f'}}{x:=5};' try: 1/0 r'''\\';\\n''' \n",
+[
+"\" a\\\"\" \"\"\"\"\"\" f\"\"\"{(x)}{lambda: 1}}}\"\"\" ...",
+"42",
+"1 f'}}{x:=5};' try: 1/0 r'''\\';\\n'''"
+]
+],
+[
+"f'{[1:2]}' 0x1f <> rt'''a#'''\n    != else: t'''{a;b}''' \n\t \n    [1:2]\r\n{a: b} rf\"\"\"\\' {lambda: 1}\"\"\"\n{a: b} y\n\t\r\n; f\"\"\"{a;b}\"\"\" f'''''' '{{'\n\tlambda \n\tdef f(): try: 1/0 \nelse \n    := \u00e9 pass y\r\n",
+[
+"f'{[1:2]}' 0x1f <> rt'''a#'''",
+"!= else: t'''{a;b}'''",
+"",
+"[1:2]",
+"{a: b} rf\"\"\"\\' {lambda: 1}\"\"\"",
+"{a: b} y",
+"",
+"; f\"\"\"{a;b}\"\"\" f'''''' '{{'",
+"lambda",
+"def f(): try: 1/0",
+"else",
+":= \u00e9 pass y"
+]
+],
+[
+"    class C: pass + if '''#'''\n    f'' x = 1; y = 2 \n\t\n\t\r\nf'''x: y; z\n'''\n\t[1:2] f(x)[0] a1 \n    \n \n\tb';'\nb\"\"\"  text\n  text\"\"\"\nb\"\"\"\"\"\"\nx = 1; y = 2\n",
+[
+"class C: pass + if '''#'''",
+"f'' x = 1; y = 2",
+"",
+"",
+"f'''x: y; z",
+"'''",
+"[1:2] f(x)[0] a1",
+"",
+"",
+"b';'",
+"b\"\"\"  text",
+"text\"\"\"",
+"b\"\"\"\"\"\"",
+"x = 1; y = 2"
+]
+],
+[
+".5\n    f\"\"\"\"\"\"\n\t\"\"\"x: y; z\"\"\"\n\t() **= f\"}}\" \"\"\"\\N{DASH}:;\"\"\" \fr''''''\n\twhile 1: break; x\n    rb\"\\N{DASH}\" \"\"\"\\';\"\"\" \"\"\"\"\"\"\n() [x]\n",
+[
+".5",
+"f\"\"\"\"\"\"",
+"\"\"\"x: y; z\"\"\"",
+"() **= f\"}}\" \"\"\"\\N{DASH}:;\"\"\"",
+"r''''''",
+"while 1: break; x",
+"rb\"\\N{DASH}\" \"\"\"\\';\"\"\" \"\"\"\"\"\"",
+"() [x]"
+]
+],
+[
+"     \n",
+[
+""
+]
+],
+[
+"b''''''\n \n    if # c [x] x = 1; y = 2\n\tclass C: pass else \nr\"a\\N{DASH}\\N{DASH}\" for i in x: pass \nb\"\"\"# not a comment\nx: y; z\"\"\"\n",
+[
+"b''''''",
+"",
+"if # c [x] x = 1; y = 2",
+"class C: pass else",
+"r\"a\\N{DASH}\\N{DASH}\" for i in x: pass",
+"b\"\"\"# not a comment",
+"x: y; z\"\"\""
+]
+],
+[
+"    \t\r\tclass = ( ->#     \nU'' class \f\nTr'' \n",
+[
+"",
+"class = ( ->#",
+"U'' class",
+"",
+"Tr''"
+]
+],
+[
+"    [x] pass ? bt'''{x:>{w}}{a;b{x:{'''  \f\u2029 \fbf'''{(x)}'''? _ \\x pass \t\n \f\n**= \u2029  \f\u2029",
+[
+"[x] pass ? bt'''{x:>{w}}{a;b{x:{'''",
+"",
+"",
+"bf'''{(x)}'''? _ \\x pass",
+"",
+"",
+"**=",
+"",
+""
+]
+],
+[
+"1 rf\"\\':\" lambda # \f",
+[
+"1 rf\"\\':\" lambda #"
+]
+],
+[
+"\t<> rf'' t'{x=}'\n\nb\"\"\"\"\"\"\n\t<> y x = 1; y = 2 ; \n\t\n\t'''''' if f'''''' u\"{{}}\"\nfor i in x: pass rf\"\"\":{a;b}\"\"\" for i in x: pass # a: b; c\nf(x)[0] rf'\\\"' x\n",
+[
+"<> rf'' t'{x=}'",
+"",
+"b\"\"\"\"\"\"",
+"<> y x = 1; y = 2 ;",
+"",
+"'''''' if f'''''' u\"{{}}\"",
+"for i in x: pass rf\"\"\":{a;b}\"\"\" for i in x: pass # a: b; c",
+"f(x)[0] rf'\\\"' x"
+]
+],
+[
+"    if x: # x = 1; y = 2\n:= t\"#{x}{lambda: 1}\" f''' a}}''' \u20ac\n \nif x: \n\tpass f\"\"\"{x}{x!s:>10}{x:=5}\"\"\" \n\trb'\\N{DASH}' else: a1\n\tf\"\"\"\"\"\"\n",
+[
+"if x: # x = 1; y = 2",
+":= t\"#{x}{lambda: 1}\" f''' a}}''' \u20ac",
+"",
+"if x:",
+"pass f\"\"\"{x}{x!s:>10}{x:=5}\"\"\"",
+"rb'\\N{DASH}' else: a1",
+"f\"\"\"\"\"\""
+]
+],
+[
+"\t(x,\n y)  \f\n    \n\t1.5j [1:2] ~ \t\n foo : \u007f Tr'{x:}'  \n    while 1: break; x class \u00e9 Tr'''{x:%Y-%m}{x\n:>3}{x}}''' lambdax = 1; y = 2 \nif :\r\n \fur'''\\N{DASH}\f}'''1e-3 \fTr\"\"\"{x:>{w}}\"\"\" \u00a0 ... [ \n \ff\"\\n\\'\\\" classft\" {x # c\n}\" # c \n class r\"\"\"''\"\"\"  \f\nur\"\"\"'\\N\\N\"\"\" # a: b; c  \f\u2029\t\ufeff    \n",
+[
+"(x,",
+"y)",
+"",
+"",
+"1.5j [1:2] ~",
+"foo : \u007f Tr'{x:}'",
+"while 1: break; x class \u00e9 Tr'''{x:%Y-%m}{x",
+":>3}{x}}''' lambdax = 1; y = 2",
+"if :",
+"",
+"ur'''\\N{DASH}",
+"}'''1e-3",
+"Tr\"\"\"{x:>{w}}\"\"\" \u00a0 ... [",
+"",
+"f\"\\n\\'\\\" classft\" {x # c",
+"}\" # c",
+"class r\"\"\"''\"\"\"",
+"",
+"ur\"\"\"'\\N\\N\"\"\" # a: b; c",
+"",
+"\ufeff"
+]
+],
+[
+"\tx = 1; y = 2 { ->for i in x: pass if x:  \f\n1__0 for i in x: pass  \nrf'''{x = }\\N'''' (\u0085 def f(): f'''}''' def \n    uf\"\\\n:\f\" uf\"\"\"{x = }{}\"\"\" 1e+ \f\nclass 1if : # 'x @=  \f\n0x1f <> =    \n    : 00 \f ` x = 1; y = 2 Br'''\\n{{\\n'''     \n>>= {else:  \n \f\nfor i in x: pass lambda \u001c # a: b; c ;  \n \f1y f(x)[0] pass \f\n\t else: else \u000b",
+[
+"x = 1; y = 2 { ->for i in x: pass if x:",
+"",
+"1__0 for i in x: pass",
+"rf'''{x = }\\N'''' (",
+"def f(): f'''}''' def",
+"uf\"\\",
+":",
+"\" uf\"\"\"{x = }{}\"\"\" 1e+",
+"",
+"class 1if : # 'x @=",
+"",
+"0x1f <> =",
+": 00",
+"` x = 1; y = 2 Br'''\\n{{\\n'''",
+">>= {else:",
+"",
+"",
+"for i in x: pass lambda",
+"# a: b; c ;",
+"",
+"1y f(x)[0] pass",
+"",
+"else: else"
+]
+],
+[
+"\t'''# not a comment'''\n    _ f\"{x:=5}\"\n\n\ty\n    b''''''\n\u00e9 r\"\" '''''' if \r\nclass C: pass \"a \" \u20ac ; \ny if x: \n",
+[
+"'''# not a comment'''",
+"_ f\"{x:=5}\"",
+"",
+"y",
+"b''''''",
+"\u00e9 r\"\" '''''' if",
+"class C: pass \"a \" \u20ac ;",
+"y if x:"
+]
+],
+[
+"... 1 := f'}}'\n",
+[
+"... 1 := f'}}'"
+]
+],
+[
+"    f(x)[0] [1:2] _ _\r\n",
+[
+"f(x)[0] [1:2] _ _"
+]
+],
+[
+"\telse: \r\n[1:2]\n",
+[
+"else:",
+"[1:2]"
+]
+],
+[
+"\tlambda foo <> if x:\n    # c def def\nfoo a1\n\r\n{a: b} '{{'\na1\n1if\f==\n0 # c for i in x: pass else\nrf\"\" lambda\n",
+[
+"lambda foo <> if x:",
+"# c def def",
+"foo a1",
+"",
+"{a: b} '{{'",
+"a1",
+"1if",
+"==",
+"0 # c for i in x: pass else",
+"rf\"\" lambda"
+]
+],
+[
+" \f\t\r    \n \f# a: b; c ! \f",
+[
+"",
+"",
+"",
+"",
+"# a: b; c !"
+]
+],
+[
+"(x,\n y) 0777\f    [1:2] pass \u00e9\n# c\n    f(x)[0] # u'''\fx y'''\f    \n\t\nelse: ! ''\n",
+[
+"(x,",
+"y) 0777",
+"[1:2] pass \u00e9",
+"# c",
+"f(x)[0] # u'''",
+"x y'''",
+"",
+"",
+"else: ! ''"
+]
+],
+[
+"{ ` , \"\"\"; # 'x\n\t(x,\n y): \n: \n# rf\"{x:{}{x}}\"    \n \f0b2x\u00a0y lambda x\u00a0y\\ \f1e-3 class C: pass class \f\n a1defelse: \n\ufeff 1j \u007f t'''{'a'}{x:\n{[1:2]''' class C: pass  \f\nfoo rf''''''[x] ?  \f\u2029 \f\n",
+[
+"{ ` , \"\"\"; # 'x",
+"(x,",
+"y):",
+":",
+"# rf\"{x:{}{x}}\"",
+"",
+"0b2x\u00a0y lambda x\u00a0y\\",
+"1e-3 class C: pass class",
+"",
+"a1defelse:",
+"\ufeff 1j \u007f t'''{'a'}{x:",
+"{[1:2]''' class C: pass",
+"",
+"foo rf''''''[x] ?",
+"",
+"",
+""
+]
+],
+[
+"Tr'{x!}\f' 1.= class     \u2028    0x_1\n    while 1: break; x else: def f():u'''''' \nelse \f\n",
+[
+"Tr'{x!}",
+"' 1.= class",
+"0x_1",
+"while 1: break; x else: def f():u''''''",
+"else",
+""
+]
+],
+[
+"\nf\"\"\"\"\"\" # a: b; c def f():\nfor i in x: pass 1if != .5\npass \r\nf'''\f\n{[1:2]}''' _ \n    f''''''\nf'{x}{x:{y}}{x!r}' t\"\"\"\"\"\"\r\n\telse b'''#\na''' ->\n\trf\"\"\"{a;b};{x}\"\"\" >>= ...\ft\"\"\"{{\f{(x)}\"\"\" 42 >>= foo\n    class C: pass ' \\\"a' rf'''''' f'\u00e9{a;b}x y'\n\tt'' \u00e9 \"\"\"a\\N{DASH}#\"\"\" rb\"x y{{\" \f",
+[
+"",
+"f\"\"\"\"\"\" # a: b; c def f():",
+"for i in x: pass 1if != .5",
+"pass",
+"f'''",
+"",
+"{[1:2]}''' _",
+"f''''''",
+"f'{x}{x:{y}}{x!r}' t\"\"\"\"\"\"",
+"else b'''#",
+"a''' ->",
+"rf\"\"\"{a;b};{x}\"\"\" >>= ...",
+"t\"\"\"{{",
+"{(x)}\"\"\" 42 >>= foo",
+"class C: pass ' \\\"a' rf'''''' f'\u00e9{a;b}x y'",
+"t'' \u00e9 \"\"\"a\\N{DASH}#\"\"\" rb\"x y{{\""
+]
+],
+[
+"# 'x rt\"\"\"{a;b}\\\"\"\"\" # c ''\r\n \ny\r\n    f'{a;b}a{{'\n     \f\tf\"\"\"{x:%Y-%m}\f\"\"\" ! t'{x}#'\n    class C: pass lambda ! # a: b; c\nt'''\u00e9 x y'''\n    \n",
+[
+"# 'x rt\"\"\"{a;b}\\\"\"\"\" # c ''",
+"",
+"y",
+"f'{a;b}a{{'",
+"",
+"f\"\"\"{x:%Y-%m}",
+"\"\"\" ! t'{x}#'",
+"class C: pass lambda ! # a: b; c",
+"t'''\u00e9 x y'''",
+""
+]
+],
+[
+"    '''\\\n''' # c { \t\nif x: 42 #def f():( \t\n    ft'''''' r\"\f}}a\" rf'{(x)\\'\n # ?  \f\nif# a: b; c pass if x = 1; y = 2     \nb''{ ] 1_e2 \u00e9 f(x)[0] \t\n`     \r\nbf'''\\\" {}''' \f \t\n# \\a1-> \n\tpass \u20ac (x,\n y) class C: passbt'}}{x=}{x:{y}}' ur\"\"  ",
+[
+"'''\\",
+"''' # c {",
+"if x: 42 #def f():(",
+"ft'''''' r\"",
+"}}a\" rf'{(x)\\'",
+"# ?",
+"",
+"if# a: b; c pass if x = 1; y = 2",
+"b''{ ] 1_e2 \u00e9 f(x)[0]",
+"`",
+"bf'''\\\" {}'''",
+"",
+"# \\a1->",
+"pass \u20ac (x,",
+"y) class C: passbt'}}{x=}{x:{y}}' ur\"\""
+]
+],
+[
+"    else f'''''' while 1: break; x \f",
+[
+"else f'''''' while 1: break; x"
+]
+],
+[
+"rt\"\\'{a;b}\" def f(): 0 def f(): \n_ # 'x >>=\n     \nf'{lambda: 1}{x:=5}' '''\u00e9\\\"\\\"''' \n0\r\n",
+[
+"rt\"\\'{a;b}\" def f(): 0 def f():",
+"_ # 'x >>=",
+"",
+"f'{lambda: 1}{x:=5}' '''\u00e9\\\"\\\"'''",
+"0"
+]
+],
+[
+"\t[foo  \n\t) b'''\";''' ; : \t\n\t== \t\u2028    Fr'{' $\n0b2[ f'''x y{[1:2]}''' <> \u000b .     \u2028 \fdef f(): {}while 1: break; x\n    # a: b; c if00 # \\ if x: \f\n    0b2 \u001c\t{a: b} \t\r",
+[
+"[foo",
+") b'''\";''' ; :",
+"==",
+"Fr'{' $",
+"0b2[ f'''x y{[1:2]}''' <>",
+".",
+"",
+"def f(): {}while 1: break; x",
+"# a: b; c if00 # \\ if x:",
+"",
+"0b2",
+"{a: b}"
+]
+],
+[
+" \f\\  \"\"\"\"\"\" \t\n? if class C: pass# def \n",
+[
+"",
+"\\  \"\"\"\"\"\"",
+"? if class C: pass# def"
+]
+],
+[
+"\n \frb\"\"class C: pass \u2029x = 1; y = 2 else: (x,\n y) 1e\u20actry: 1/0\t\n    \n\t\n # c ! \t\u0085 \f0b2 f'' x = 1; y = 2 \n    class C: pass 0o7 \t\f",
+[
+"",
+"",
+"rb\"\"class C: pass",
+"x = 1; y = 2 else: (x,",
+"y) 1e\u20actry: 1/0",
+"",
+"",
+"# c !",
+"",
+"0b2 f'' x = 1; y = 2",
+"class C: pass 0o7"
+]
+],
+[
+">>= # 'x\r\n\tx = 1; y = 2 '''''' b\"\\'\" r\"\"\"{{ \"\"\"\n(x,\n y) 1e5 \u20ac 1if \n42 f\"\"\"x y{x:>{w}}{x:{y}}\"\"\" :\r\n'''\\\"''' u'''#'''\nrf'''{x=}{[1:2]}''' # c # a: b; c \n\t'\\\" '\n1j 1j a1 \n\t\r\n",
+[
+">>= # 'x",
+"x = 1; y = 2 '''''' b\"\\'\" r\"\"\"{{ \"\"\"",
+"(x,",
+"y) 1e5 \u20ac 1if",
+"42 f\"\"\"x y{x:>{w}}{x:{y}}\"\"\" :",
+"'''\\\"''' u'''#'''",
+"rf'''{x=}{[1:2]}''' # c # a: b; c",
+"'\\\" '",
+"1j 1j a1",
+""
+]
+],
+[
+"\t \f'''\\'\\\"''' \f\tfoo f\"{x:=5}\" ==\n \nclass C: pass b'' : \n    () def f(): rb\";#}}\" class C: pass\r\n\t\u00e9 \n",
+[
+"",
+"'''\\'\\\"'''",
+"foo f\"{x:=5}\" ==",
+"",
+"class C: pass b'' :",
+"() def f(): rb\";#}}\" class C: pass",
+"\u00e9"
+]
+],
+[
+"    -> for i in x: pass f\"\"\"{x}{x:%Y-%m}\"\"\" lambda\n\t# a: b; c \"\"\"\nx y\"\"\" \nf(x)[0] 0\n: a1 # a: b; c \f    foo \n\tfoo class C: pass # a: b; c \n**= ... 1j \n\t: == # 'x \n",
+[
+"-> for i in x: pass f\"\"\"{x}{x:%Y-%m}\"\"\" lambda",
+"# a: b; c \"\"\"",
+"x y\"\"\"",
+"f(x)[0] 0",
+": a1 # a: b; c",
+"foo",
+"foo class C: pass # a: b; c",
+"**= ... 1j",
+": == # 'x"
+]
+],
+[
+"f\"\"\"}}a\"\"\" f\"\"\"{[1:2]}{{{\"\"\" b\"\\'\" \n else ~ # 'x x = 1; y = 2 Br\"\u00e9\" \"}\n#\" \n\t\u20ac def f(): lambda  ",
+[
+"f\"\"\"}}a\"\"\" f\"\"\"{[1:2]}{{{\"\"\" b\"\\'\"",
+"else ~ # 'x x = 1; y = 2 Br\"\u00e9\" \"}",
+"#\"",
+"\u20ac def f(): lambda"
+]
+],
+[
+" \n\ty [1:2] x = 1; y = 2\f",
+[
+"",
+"y [1:2] x = 1; y = 2"
+]
+],
+[
+"f'''{x}{lambda: 1}:''' lambda \n\trf'{{{x=}#' _ := for i in x: pass \nu\"  \\N{DASH}\"\n0x1f r'{{ }}'\n \r\na1 \f    1_000 \n# a: b; c \"a\\n\\n\" if x: 1if\n\t0777\n[x] if 1e5 y\n    r'''{{\\\"\\n''' else: 42\f",
+[
+"f'''{x}{lambda: 1}:''' lambda",
+"rf'{{{x=}#' _ := for i in x: pass",
+"u\"  \\N{DASH}\"",
+"0x1f r'{{ }}'",
+"",
+"a1",
+"1_000",
+"# a: b; c \"a\\n\\n\" if x: 1if",
+"0777",
+"[x] if 1e5 y",
+"r'''{{\\\"\\n''' else: 42"
+]
+],
+[
+"rf\"{x!s:>10}\" [1:2] \n",
+[
+"rf\"{x!s:>10}\" [1:2]"
+]
+],
+[
+"\\ a1 else: def f(): \nBr\"\"\"\"\"\"{ Fr\"\"\"\n    \u001c\f 1eelse: lambda \n'''\\}{{'''rt\"\"\"\n class C: pass\nrt'''{x!s:>10}{x:>{w}}\" rt\"\" \\!= ] \t\u0085 \f\n\\ 1_e2 , x\u00a0y '\"'  \f\n\tb'''\n\u00e9'''' for i in x: pass for i in x: pass  \n    42 _ $ ur\"\\N{DASH}\"\"\"\"\"\"\" \t\r",
+[
+"\\ a1 else: def f():",
+"Br\"\"\"\"\"\"{ Fr\"\"\"",
+"",
+"",
+"1eelse: lambda",
+"'''\\}{{'''rt\"\"\"",
+"class C: pass",
+"rt'''{x!s:>10}{x:>{w}}\" rt\"\" \\!= ]",
+"",
+"",
+"\\ 1_e2 , x\u00a0y '\"'",
+"",
+"b'''",
+"\u00e9'''' for i in x: pass for i in x: pass",
+"42 _ $ ur\"\\N{DASH}\"\"\"\"\"\"\""
+]
+],
+[
+" \nelse foo \nrt'\\N{DASH}'\n\u20ac # 'x\n     \r\n",
+[
+"",
+"else foo",
+"rt'\\N{DASH}'",
+"\u20ac # 'x",
+""
+]
+],
+[
+"# 'x1e \ufeff foo #class     \ntry: 1/0 \u000b \nwhile 1: break; x0 def f(): \t\n    \\''''''-> 0x1for while 1: break; x )\n# c x = 1; y = 2 f\"\"\"\"\"\" else } ()  \f",
+[
+"# 'x1e \ufeff foo #class",
+"try: 1/0",
+"",
+"while 1: break; x0 def f():",
+"\\''''''-> 0x1for while 1: break; x )",
+"# c x = 1; y = 2 f\"\"\"\"\"\" else } ()"
+]
+],
+[
+"\t1if pass 1 if\n[1:2] \u20ac \n    u\"\"\"a:\"\"\" rf\"\"\"a\"\"\" a1 \nclass C: pass\n    # c \u00e9\f\t; [x] # 'x \u00e9\f",
+[
+"1if pass 1 if",
+"[1:2] \u20ac",
+"u\"\"\"a:\"\"\" rf\"\"\"a\"\"\" a1",
+"class C: pass",
+"# c \u00e9",
+"; [x] # 'x \u00e9"
+]
+],
+[
+"    uf\"'\" ) (\u20ac passx \n\trb\"{{\f\\\n\" ; ur\"\"\"}'\"\"\" rb\"\" \u0001     \n \fa1 class ] f\"\"\"\"\"\" \\  \t\f \fclass C: pass r\"\u00e9\u00e9\"a1 class ",
+[
+"uf\"'\" ) (\u20ac passx",
+"rb\"{{",
+"\\",
+"\" ; ur\"\"\"}'\"\"\" rb\"\" \u0001",
+"",
+"a1 class ] f\"\"\"\"\"\" \\",
+"",
+"class C: pass r\"\u00e9\u00e9\"a1 class"
+]
+],
+[
+"x = 1; y = 2 class C: pass b''\n    {a: b} 0 {a: b} ->\f\t:= rb'''{{''' \u00e9\n\tf\"\"\"x: y; z\n  text\"\"\"\n\telse # c f'{x=}{x!s:>10}\\N{DASH}' b''' \u00e9'''\n    while 1: break; x : rb\"\"\";a\\N{DASH}\"\"\" f'{x:>{w}}a\\N{DASH}'\nu'''a\\\"\u00e9''' >>= \nif class C: pass # c try: 1/0 \n\t\"\"\"  text\"\"\"\n",
+[
+"x = 1; y = 2 class C: pass b''",
+"{a: b} 0 {a: b} ->",
+":= rb'''{{''' \u00e9",
+"f\"\"\"x: y; z",
+"text\"\"\"",
+"else # c f'{x=}{x!s:>10}\\N{DASH}' b''' \u00e9'''",
+"while 1: break; x : rb\"\"\";a\\N{DASH}\"\"\" f'{x:>{w}}a\\N{DASH}'",
+"u'''a\\\"\u00e9''' >>=",
+"if class C: pass # c try: 1/0",
+"\"\"\"  text\"\"\""
+]
+],
+[
+" 1jrf'\\n\\N{DASH}' \n\t\n    1.5j [     \n0777 for i in x: pass def    \nclass C: pass0x_1 y \rbt'''''' else: try: 1/0 [ \\x\n; # \t",
+[
+"1jrf'\\n\\N{DASH}'",
+"",
+"1.5j [",
+"0777 for i in x: pass def",
+"class C: pass0x_1 y",
+"bt'''''' else: try: 1/0 [ \\x",
+"; #"
+]
+],
+[
+"\t\n    _x '\u00e9x y' \t\r\n    lambda def     \n \ffoo Tr'''{(x)\\''''  \n\tFr''':{x}''' \n**= y Tr\"{{{{x}}\" rb\"\u00e9\\\"\" x = 1; y = 2 def f():     \f    ? \u00a0 \n# {a: b} # a: b; c? \t\n\u001e class while 1: break; x\n \n,\n \n",
+[
+"",
+"_x '\u00e9x y'",
+"lambda def",
+"",
+"foo Tr'''{(x)\\''''",
+"Fr''':{x}'''",
+"**= y Tr\"{{{{x}}\" rb\"\u00e9\\\"\" x = 1; y = 2 def f():",
+"?",
+"# {a: b} # a: b; c?",
+"",
+"class while 1: break; x",
+"",
+",",
+""
+]
+],
+[
+"if x: if x:for i in x: pass ; ft'{' class C: pass\t\n (x,\n y) if x: 1e-3 \n    ( {} **=     \n\tU\"\"\"\\\"\"\"\" x  \f\n\trt\"\"\"\"\"\" ; rt\"\"\"{x:%Y-%m}{}\"\"\" \u3000]\t     \n\t\u007f \ufeff \t\n\t    ",
+[
+"if x: if x:for i in x: pass ; ft'{' class C: pass",
+"(x,",
+"y) if x: 1e-3",
+"( {} **=",
+"U\"\"\"\\\"\"\"\" x",
+"",
+"rt\"\"\"\"\"\" ; rt\"\"\"{x:%Y-%m}{}\"\"\" \u3000]",
+"\u007f \ufeff",
+""
+]
+],
+[
+"b''''''\n\tt'''{x!s:>10}''' >>= [x] f\"\"\n    while 1: break; x # c\n\trf'''{a;b}''' :\f    \n**= 42 ;\r\nrb' {{'\n\t'a ' ! [1:2]\n1_000 + x = 1; y = 2 () \f",
+[
+"b''''''",
+"t'''{x!s:>10}''' >>= [x] f\"\"",
+"while 1: break; x # c",
+"rf'''{a;b}''' :",
+"",
+"**= 42 ;",
+"rb' {{'",
+"'a ' ! [1:2]",
+"1_000 + x = 1; y = 2 ()"
+]
+],
+[
+"\tb''''''\n0x1f y rt\"\"\"{lambda: 1}}}{x:%Y-%m}\"\"\" \n\tb'''x: y; z'''\n\n\t'''x y''' 1 ''\nlambda : ... !=\n'''\\n''' f'{x:{y}}{a;b}' \"\"\"\f  \"\"\"\n    b\"\"\"\"\"\"\npass : != \nelse >>=\r\n(x,\n y)\n\tpass 1e5 # c \n",
+[
+"b''''''",
+"0x1f y rt\"\"\"{lambda: 1}}}{x:%Y-%m}\"\"\"",
+"b'''x: y; z'''",
+"",
+"'''x y''' 1 ''",
+"lambda : ... !=",
+"'''\\n''' f'{x:{y}}{a;b}' \"\"\"",
+"\"\"\"",
+"b\"\"\"\"\"\"",
+"pass : !=",
+"else >>=",
+"(x,",
+"y)",
+"pass 1e5 # c"
+]
+],
+[
+"\trb'{{' \n\t\u00e9 \u00e9 (x,\n y) b''''''\n",
+[
+"rb'{{'",
+"\u00e9 \u00e9 (x,",
+"y) b''''''"
+]
+],
+[
+"U'' try: 1/0 pass 1__0",
+[
+"U'' try: 1/0 pass 1__0"
+]
+],
+[
+"\t'''\\\"a'''\n    \n\t\n\n    \n+ else 1if\r\n    b\"\"\"# not a comment\"\"\"\n()\n\t'''  text'''\n",
+[
+"'''\\\"a'''",
+"",
+"",
+"",
+"",
+"+ else 1if",
+"b\"\"\"# not a comment\"\"\"",
+"()",
+"'''  text'''"
+]
+],
+[
+"; + while 1: break; x \n\tb'''\\n\\'''' f'''{f'{y}'}#{a;b}''' 1\n'''\\'''' def \n",
+[
+"; + while 1: break; x",
+"b'''\\n\\'''' f'''{f'{y}'}#{a;b}''' 1",
+"'''\\'''' def"
+]
+],
+[
+"\u001c \f \u000b \"\" else $ \na1 x bf\"'}}{x:}\"if\u00e9 x\u00a0y  \f\n0xuf\"\"\"{x # c\n}}{x!r\"\"\" 0b101 def f(): \n lambda 1j b\"\"\"\"\\\\\"\"\"  \f\u001c\tuf'''{x:\n}'''<> $ \\  \n U''';''' rf\"\\\"     \n \fif \u001c\t.Br\":'\" r\"#\"ft'' \u2028\t \f\n \\# 'x else: # a: b; c rf\"\" {a: b}     \u2029",
+[
+"",
+"",
+"",
+"\"\" else $",
+"a1 x bf\"'}}{x:}\"if\u00e9 x\u00a0y",
+"",
+"0xuf\"\"\"{x # c",
+"}}{x!r\"\"\" 0b101 def f():",
+"lambda 1j b\"\"\"\"\\\\\"\"\"",
+"",
+"uf'''{x:",
+"}'''<> $ \\",
+"U''';''' rf\"\\\"",
+"",
+"if",
+".Br\":'\" r\"#\"ft''",
+"",
+"",
+"\\# 'x else: # a: b; c rf\"\" {a: b}"
+]
+],
+[
+" \fft'{[1:2]{{{x!r}')def f(): class := \u000bf\"{x:{y:{z}}}\" if x: \ufeffdef <> class C: pass  ",
+[
+"",
+"ft'{[1:2]{{{x!r}')def f(): class :=",
+"f\"{x:{y:{z}}}\" if x: \ufeffdef <> class C: pass"
+]
+],
+[
+"\t. Tr\"\"\"\n\"\"\" \n \ft'{x:%Y-%m\\\"\\N else:     \n    ur\"\\n\" '''\\N{DASH}'''\u000b    {while 1: break; x x\u00a0y ; : else:\n \fclass C: pass) for i in x: pass Br'''\\'\\''' } \t\nif x: f(x)[0] u\"\n\\n\" b\"\"\"\u00e9:\\\"\"\" a1 \f\u001c... class C: passbt\"{{\\N{x=\" uf';' bt\"\"\"\"\"\" \u001f \u2029\t\n    ft\"\"\"\"\"\"0o9 !=# \\  \n[     \n",
+[
+". Tr\"\"\"",
+"\"\"\"",
+"",
+"t'{x:%Y-%m\\\"\\N else:",
+"ur\"\\n\" '''\\N{DASH}'''",
+"{while 1: break; x x\u00a0y ; : else:",
+"",
+"class C: pass) for i in x: pass Br'''\\'\\''' }",
+"if x: f(x)[0] u\"",
+"\\n\" b\"\"\"\u00e9:\\\"\"\" a1",
+"",
+"... class C: passbt\"{{\\N{x=\" uf';' bt\"\"\"\"\"\"",
+"",
+"ft\"\"\"\"\"\"0o9 !=# \\",
+"["
+]
+],
+[
+"\tub\"}a\\\"\n( 1_e2 [ \"\"\";\\\n\na1     \r\n_{} \\  uf\"{x:%Y-%m}x y\" rf\"{a;b{x:{x:{y}}\"\n\u20ac 0 [\r\n )  \f\n",
+[
+"ub\"}a\\\"",
+"( 1_e2 [ \"\"\";\\",
+"",
+"a1",
+"_{} \\  uf\"{x:%Y-%m}x y\" rf\"{a;b{x:{x:{y}}\"",
+"\u20ac 0 [",
+")",
+""
+]
+],
+[
+"x = 1; y = 2 <> class # }    \f. class x# 'xuf'{a;b' \n () u\"\"\u00e9U''''''-> class \u2028\tx\u00a0y \r\t\n1__0 for i in x: pass _ # a: b; c ... == \n\tf(x)[0]f(x)[0] pass 1. \t\nbt\"\"\" \\';\"\"\" def f(): U\"\"\"\"\"\" $ lambda \n= \n    \u2029<> 0x1f else: if x:  \f\n",
+[
+"x = 1; y = 2 <> class # }",
+". class x# 'xuf'{a;b'",
+"() u\"\"\u00e9U''''''-> class",
+"x\u00a0y",
+"",
+"1__0 for i in x: pass _ # a: b; c ... ==",
+"f(x)[0]f(x)[0] pass 1.",
+"bt\"\"\" \\';\"\"\" def f(): U\"\"\"\"\"\" $ lambda",
+"=",
+"",
+"<> 0x1f else: if x:",
+""
+]
+],
+[
+"0777 a1 \f    \"\"\"#\"\"\" while 1: break; x 1if \fif \na1\n",
+[
+"0777 a1",
+"\"\"\"#\"\"\" while 1: break; x 1if",
+"if",
+"a1"
+]
+],
+[
+"$ \t\n \f\t\n\r\n\t'''''' r''':#;''' 42 \n<> \"\"\" \\\f\"\"\"else: f\"\"\"\\'{}\\'\"\"\" U\"\\\"     \u0085f\"{x # c\n}\" `rb\"\"1_000 rf'''{x:%Y-%m}\\''' u\"\\n\"  \u0085    +\t\n \f \n",
+[
+"$",
+"",
+"",
+"",
+"'''''' r''':#;''' 42",
+"<> \"\"\" \\",
+"\"\"\"else: f\"\"\"\\'{}\\'\"\"\" U\"\\\"",
+"f\"{x # c",
+"}\" `rb\"\"1_000 rf'''{x:%Y-%m}\\''' u\"\\n\"",
+"+",
+"",
+""
+]
+],
+[
+"1j\n\t \n    rt'''{x}a\\\"''' else\n... foo -> 0777 \n\trt'' 0x1f\n{a: b} class C: pass 1 # a: b; c\n\t\"\"\"\n  text\"\"\"\n\n\r\n \f\n\"\\N{DASH}\" \"\" # a: b; c\n",
+[
+"1j",
+"",
+"rt'''{x}a\\\"''' else",
+"... foo -> 0777",
+"rt'' 0x1f",
+"{a: b} class C: pass 1 # a: b; c",
+"\"\"\"",
+"text\"\"\"",
+"",
+"",
+"",
+"",
+"\"\\N{DASH}\" \"\" # a: b; c"
+]
+],
+[
+"! f'\\n{x:{y}}' != # a: b; c\r\n\t\n(x,\n y) for i in x: pass t'' x = 1; y = 2 \npass \"\u00e9\" \ft'''''' f(x)[0]\n'''''' if def '' \n\t:=\r\n\t \r\n",
+[
+"! f'\\n{x:{y}}' != # a: b; c",
+"",
+"(x,",
+"y) for i in x: pass t'' x = 1; y = 2",
+"pass \"\u00e9\"",
+"t'''''' f(x)[0]",
+"'''''' if def ''",
+":=",
+""
+]
+],
+[
+" [ ft\"{}}\"_ x  \u0085~    \n \fif bf''' \ufeff (x,\n y) ] \\  \n",
+[
+"[ ft\"{}}\"_ x",
+"~",
+"",
+"if bf''' \ufeff (x,",
+"y) ] \\"
+]
+],
+[
+"x\u00a0y \f\nelsex = 1; y = 2 :  \f\n\t1__0 b\"\\N{DASH}#\" '''\\'a''' try: 1/0$ \\ \u000b\t\n1e \u000b    \u000bur\"\"\"\"\"\" u'''#\nx y''' : class C: pass [ rt\"\\\"\" \nu'}}\\N{DASH}' 1_ 0x1for \n try: 1/0 ) -> :\t\n[ else \u001d \u0085 ",
+[
+"x\u00a0y",
+"",
+"elsex = 1; y = 2 :",
+"",
+"1__0 b\"\\N{DASH}#\" '''\\'a''' try: 1/0$ \\",
+"",
+"1e",
+"",
+"ur\"\"\"\"\"\" u'''#",
+"x y''' : class C: pass [ rt\"\\\"\"",
+"u'}}\\N{DASH}' 1_ 0x1for",
+"try: 1/0 ) -> :",
+"[ else",
+"",
+""
+]
+],
+[
+"\tx [1:2]\n\t\"\"\"\n# not a comment\"\"\"\n    [1:2]\n0 else: \":\" x \n    \fdef _ \u00e9 \f\t \n    if 1_000 \n\trf'{[1:2]}' a1 x = 1; y = 2\n\"\"\"\"\"\" # a: b; c while 1: break; x u\"\"\"\\N{DASH}\f:\"\"\"\npass \n\t\u20ac\n",
+[
+"x [1:2]",
+"\"\"\"",
+"# not a comment\"\"\"",
+"[1:2]",
+"0 else: \":\" x",
+"",
+"def _ \u00e9",
+"",
+"if 1_000",
+"rf'{[1:2]}' a1 x = 1; y = 2",
+"\"\"\"\"\"\" # a: b; c while 1: break; x u\"\"\"\\N{DASH}",
+":\"\"\"",
+"pass",
+"\u20ac"
+]
+],
+[
+" \f\t\n\na1 ( t\"\"\"{x!s:>10}{{x}}{x:%Y-%m}\"\"\"  \n\t\"\\n\\N\"\n\t(x,\n y) 1e5 else: rf'''{x!s:>10}{{'''for i in x: pass \r\t\t\n1_000 for i in x: pass \f\nb\"\"\"x y'\"\"\"\"\\ else: \n",
+[
+"",
+"",
+"",
+"a1 ( t\"\"\"{x!s:>10}{{x}}{x:%Y-%m}\"\"\"",
+"\"\\n\\N\"",
+"(x,",
+"y) 1e5 else: rf'''{x!s:>10}{{'''for i in x: pass",
+"",
+"1_000 for i in x: pass",
+"",
+"b\"\"\"x y'\"\"\"\"\\ else:"
+]
+],
+[
+"\t0x_1 Fr\"{x:{y}\n\"  \n    lambda } \u20ac \u00e9 rt''''''U\"\"\"\"\"\" \r\n    \f     \n\t    \n\t# c >>= = ur'\f' a1 rb'''}\n  \f\u000b{a: b} t'#{x:=5}{x # c\n}'u'#' while 1: break; x \u2029    else: \"\"\"\"\"\")  \f\n}#; {a: b} \ufeff\nTr'x y{x={f'{x}'}' Br\"\"\";\"\"\"f'\\N{DASH}{{{lambda: 1}' lambda1. \n if x:#() \n \u20ac b'{'{ \\x     \nrf' } ' class C: pass ur\"\"\"\"\"\" a1 \f\r\n",
+[
+"0x_1 Fr\"{x:{y}",
+"\"",
+"lambda } \u20ac \u00e9 rt''''''U\"\"\"\"\"\"",
+"",
+"",
+"",
+"# c >>= = ur'",
+"' a1 rb'''}",
+"",
+"",
+"{a: b} t'#{x:=5}{x # c",
+"}'u'#' while 1: break; x",
+"else: \"\"\"\"\"\")",
+"",
+"}#; {a: b} \ufeff",
+"Tr'x y{x={f'{x}'}' Br\"\"\";\"\"\"f'\\N{DASH}{{{lambda: 1}' lambda1.",
+"if x:#()",
+"\u20ac b'{'{ \\x",
+"rf' } ' class C: pass ur\"\"\"\"\"\" a1",
+""
+]
+],
+[
+"    try: 1/0 def f(): \n    lambda \n\t\r\n    f'''x: y; z\n# not a comment'''\n\t\u00e9 \n",
+[
+"try: 1/0 def f():",
+"lambda",
+"",
+"f'''x: y; z",
+"# not a comment'''",
+"\u00e9"
+]
+],
+[
+"lambda # c if\n42 rb'''\u00e9 ''' \n\t_ !\n",
+[
+"lambda # c if",
+"42 rb'''\u00e9 '''",
+"_ !"
+]
+],
+[
+"\tf'{{' 1if\n    0x1f def\n\"\"\"\"\"\"\n1\n    ; foo 1_000\n\t\r\n\t\n    \f    b'''\\n\f'''\nf\"\"\"{x!r}\"\"\" [1:2] lambda\nr\"\"\"  text\n  text\"\"\"\n",
+[
+"f'{{' 1if",
+"0x1f def",
+"\"\"\"\"\"\"",
+"1",
+"; foo 1_000",
+"",
+"",
+"",
+"b'''\\n",
+"'''",
+"f\"\"\"{x!r}\"\"\" [1:2] lambda",
+"r\"\"\"  text",
+"text\"\"\""
+]
+],
+[
+" \f \n\tx\u00a0y+x f\"\" != [1:2]    \u0085y rt\"\"\"\"\"\" class # \n0x1for # !\n lambda  \n[x] if x:  \n \f\n",
+[
+"",
+"",
+"x\u00a0y+x f\"\" != [1:2]",
+"y rt\"\"\"\"\"\" class #",
+"0x1for # !",
+"lambda",
+"[x] if x:",
+"",
+""
+]
+],
+[
+" \f    \n \fclass r'''\u00e9\u00e9#'''while 1: break; x0o9 y \n\u20ac \u000b  \n# rt\"\"\t\n    if foo else: while 1: break; x1.e5 \u2029",
+[
+"",
+"",
+"",
+"class r'''\u00e9\u00e9#'''while 1: break; x0o9 y",
+"\u20ac",
+"",
+"# rt\"\"",
+"if foo else: while 1: break; x1.e5"
+]
+],
+[
+"\t0777\nrf\"{x:>{w}}{{\u00e9\" else: 0x1f <>\n\tb\"\"\"\"\"\"\n.5 x \n",
+[
+"0777",
+"rf\"{x:>{w}}{{\u00e9\" else: 0x1f <>",
+"b\"\"\"\"\"\"",
+".5 x"
+]
+],
+[
+"\tb\"\"\"\"\"\"\n    f'''{lambda: 1}{a;b}''' 1j [x]\f    f''''''\n() 0x1f 0x1f # a: b; c\n    (x,\n y) rt'{x:=5}}}{a;b}' try: 1/0\flambda \"\"\"a\\n\"\"\" \n\u20ac # f\"\"\"#{x!r}\"\"\" ''': '''\nx ; pass x\f\tf\"{x:%Y-%m}\"\r\n    '' if def\n\t# a: b; c ''':\\n''' 1j\n",
+[
+"b\"\"\"\"\"\"",
+"f'''{lambda: 1}{a;b}''' 1j [x]",
+"f''''''",
+"() 0x1f 0x1f # a: b; c",
+"(x,",
+"y) rt'{x:=5}}}{a;b}' try: 1/0",
+"lambda \"\"\"a\\n\"\"\"",
+"\u20ac # f\"\"\"#{x!r}\"\"\" ''': '''",
+"x ; pass x",
+"f\"{x:%Y-%m}\"",
+"'' if def",
+"# a: b; c ''':\\n''' 1j"
+]
+],
+[
+" \f[ [x] Br\"\f\\\"\\N{DASH}\" >>= }  \n \f$==0b2 \n\u00e9 {} x = 1; y = 2x \f \f# a: b; c Br':}}' != .5\n \fFr'''{x:{x:\n}\f'''     \u001c \t\n# { while 1: break; x r''':\\\n\\'''' .    \u000b    \t\rb'''\"\\N'     \ntry: 1/0 t'''\\n''' ! ... \u001c \ff'{[1:2]}\n'  ",
+[
+"",
+"[ [x] Br\"",
+"\\\"\\N{DASH}\" >>= }",
+"",
+"$==0b2",
+"\u00e9 {} x = 1; y = 2x",
+"",
+"# a: b; c Br':}}' != .5",
+"",
+"Fr'''{x:{x:",
+"}",
+"'''",
+"",
+"# { while 1: break; x r''':\\",
+"\\'''' .",
+"",
+"b'''\"\\N'",
+"try: 1/0 t'''\\n''' ! ...",
+"",
+"f'{[1:2]}",
+"'"
+]
+],
+[
+"    [ \n \f\n",
+[
+"[",
+"",
+""
+]
+],
+[
+"{a: b} if ... **=\nr''''''\n \n\t'''a''' 42 \"\"\":x y\"\"\" rt\"\"\":\"\"\" \n    r''''''\nrt''';}}''' # else:\n    0 else \u20ac [1:2] \n",
+[
+"{a: b} if ... **=",
+"r''''''",
+"",
+"'''a''' 42 \"\"\":x y\"\"\" rt\"\"\":\"\"\"",
+"r''''''",
+"rt''';}}''' # else:",
+"0 else \u20ac [1:2]"
+]
+],
+[
+"\n\t\"\"\"\"\"\"\n1if x = 1; y = 2 ==\n    \"\"\"\"\"\" u\"a\"\n\n    f''''''\nrt'''''' f\"\" 0777 else: \ft'{x=}{x:=5}#' b'''\\N{DASH}\\n''' \f",
+[
+"",
+"\"\"\"\"\"\"",
+"1if x = 1; y = 2 ==",
+"\"\"\"\"\"\" u\"a\"",
+"",
+"f''''''",
+"rt'''''' f\"\" 0777 else:",
+"t'{x=}{x:=5}#' b'''\\N{DASH}\\n'''"
+]
+],
+[
+"r\"x y\\N{DASH}\u00e9\" # a: b; c while 1: break; x # a: b; c \n\"\"\n_\nf(x)[0] y u\"a\" pass \n# a: b; c\n\f",
+[
+"r\"x y\\N{DASH}\u00e9\" # a: b; c while 1: break; x # a: b; c",
+"\"\"",
+"_",
+"f(x)[0] y u\"a\" pass",
+"# a: b; c",
+""
+]
+],
+[
+"x + '''\\\"''' 0x1for     \n    else: Tr'''\\N' \u3000 lambda \ufeff     \n",
+[
+"x + '''\\\"''' 0x1for",
+"else: Tr'''\\N' \u3000 lambda \ufeff"
+]
+],
+[
+" \f) \n f'''{x # c\n}{x:>{w}}\n \u000b \f\u0085\n",
+[
+"",
+")",
+"f'''{x # c",
+"}{x:>{w}}",
+"",
+"",
+"",
+""
+]
+],
+[
+"ub'''#''' rf\"\"\"{[1:2]\\N{DASH}\"\"\" \n     \n \f\\r\"\" $ 0b101 <> \t\r\tif _42 ;class 0o7  \n . ... try: 1/0\n$ f(x)[0]    \n _ 1e 1.e5_ rb'''\\n\\\n'''' \n    (x,\n y)\ufeffub'\u00e9\u00e9{{  \f\r",
+[
+"ub'''#''' rf\"\"\"{[1:2]\\N{DASH}\"\"\"",
+"",
+"",
+"\\r\"\" $ 0b101 <>",
+"if _42 ;class 0o7",
+". ... try: 1/0",
+"$ f(x)[0]",
+"_ 1e 1.e5_ rb'''\\n\\",
+"''''",
+"(x,",
+"y)\ufeffub'\u00e9\u00e9{{",
+""
+]
+],
+[
+"\tr\"\"\"  text\n# not a comment\"\"\"\n\trf'''\u00e9{{''' rf\"{x=}a\" if x: else: \n'}}:' x \u20ac {a: b}\n    u\"aaa\" _ >>= **=\f: def f():\f\t= pass else:\r\n\t1\n",
+[
+"r\"\"\"  text",
+"# not a comment\"\"\"",
+"rf'''\u00e9{{''' rf\"{x=}a\" if x: else:",
+"'}}:' x \u20ac {a: b}",
+"u\"aaa\" _ >>= **=",
+": def f():",
+"= pass else:",
+"1"
+]
+],
+[
+"\n\t\u00e9 \n0777 x for i in x: pass\f\tf'''{x=}{x:=5}'''\n:\nif x: else:\n    \n    1if : class C: pass\n    \"\"\"# not a comment\n\"\"\"\n",
+[
+"",
+"\u00e9",
+"0777 x for i in x: pass",
+"f'''{x=}{x:=5}'''",
+":",
+"if x: else:",
+"",
+"1if : class C: pass",
+"\"\"\"# not a comment",
+"\"\"\""
+]
+],
+[
+"1if b\"\\\";\\\"\" {}\n; try: 1/0 if x: else: \n    :=\n",
+[
+"1if b\"\\\";\\\"\" {}",
+"; try: 1/0 if x: else:",
+":="
+]
+],
+[
+"\t# 'x\nrt';{f'{y}'}{lambda: 1}'\n\t>>=\n    x = 1; y = 2 {} def f(): \n0777 rb'''''' () rt'{x=}{x!s:>10}' \f# 'x \"\"\"\\N{DASH}\\N{DASH}#\"\"\" 0\n \n\ttry: 1/0 :\nf'''{a;b}\\N{DASH}\n'''\r\n",
+[
+"# 'x",
+"rt';{f'{y}'}{lambda: 1}'",
+">>=",
+"x = 1; y = 2 {} def f():",
+"0777 rb'''''' () rt'{x=}{x!s:>10}'",
+"# 'x \"\"\"\\N{DASH}\\N{DASH}#\"\"\" 0",
+"",
+"try: 1/0 :",
+"f'''{a;b}\\N{DASH}",
+"'''"
+]
+],
+[
+"\"aa\\n\"\n    if else: rt\"\"\"#{x!s:>10}\"\"\"\n\f1if def\r\n\t[x]\ndef class C: pass u'''\n;a''' _\n**= 42 u'''\n''' :=\nf\"\"\"# not a comment\nx: y; z\"\"\"\n\t42 # c def f(): \n    [x]\n",
+[
+"\"aa\\n\"",
+"if else: rt\"\"\"#{x!s:>10}\"\"\"",
+"",
+"1if def",
+"[x]",
+"def class C: pass u'''",
+";a''' _",
+"**= 42 u'''",
+"''' :=",
+"f\"\"\"# not a comment",
+"x: y; z\"\"\"",
+"42 # c def f():",
+"[x]"
+]
+],
+[
+" \f\n    1. f\"\" \n    b\"{{\" a1 {a: b} 0777y \n\nft\"\"\"\" u\"\"\"\"\"\" ft\"\" for i in x: pass ;try: 1/0 \t\n    a1 \u20ac def while 1: break; x \n\tf'{x:\n}{x\n:>3}\\'' \u2028lambda ur\"\"\"\"\"\" for i in x: pass else: {\\   \u2029x foo } ifa1 [ \f",
+[
+"",
+"",
+"1. f\"\"",
+"b\"{{\" a1 {a: b} 0777y",
+"",
+"ft\"\"\"\" u\"\"\"\"\"\" ft\"\" for i in x: pass ;try: 1/0",
+"a1 \u20ac def while 1: break; x",
+"f'{x:",
+"}{x",
+":>3}\\''",
+"lambda ur\"\"\"\"\"\" for i in x: pass else: {\\",
+"x foo } ifa1 ["
+]
+],
+[
+"uf\"\"\"{x:>{w}}\"\"\" ",
+[
+"uf\"\"\"{x:>{w}}\"\"\""
+]
+],
+[
+"f(x)[0] t''':''' f'''x y{[1:2]}{{''' \\  try: 1/0 f'' \u001c0x\t\n\ta1 # [ {class C: pass u\"{ {{\"  \f\n \f<> b\"\" !=  \f\u000b\t.  \n ] \"\"\"a\"\"\" + class C: pass :  \f\ny [x]  \f\u2028\t{} \\ \\  {a: b} \t\u2028",
+[
+"f(x)[0] t''':''' f'''x y{[1:2]}{{''' \\  try: 1/0 f''",
+"0x",
+"a1 # [ {class C: pass u\"{ {{\"",
+"",
+"",
+"<> b\"\" !=",
+"",
+".",
+"] \"\"\"a\"\"\" + class C: pass :",
+"",
+"y [x]",
+"",
+"{} \\ \\  {a: b}"
+]
+],
+[
+"\n; def f(): \n\trf'' (x,\n y) lambda \r\n\ty 1e5 [x]\nf(x)[0] for i in x: pass rt\"a\" lambda\r\nf\"#\" lambda \n",
+[
+"",
+"; def f():",
+"rf'' (x,",
+"y) lambda",
+"y 1e5 [x]",
+"f(x)[0] for i in x: pass rt\"a\" lambda",
+"f\"#\" lambda"
+]
+],
+[
+"\t# 'x foo foo 1\r\n    ''''''\n\tu'''''' + \n>>=\n",
+[
+"# 'x foo foo 1",
+"''''''",
+"u'''''' +",
+">>="
+]
+],
+[
+" \f\n \n    ( ; \n \n",
+[
+"",
+"",
+"",
+"( ;",
+""
+]
+],
+[
+"r'''x: y; z'''\n{a: b} !\n\r\n    \u00e9 pass # 'x u'''\\N{DASH}{{''' \n",
+[
+"r'''x: y; z'''",
+"{a: b} !",
+"",
+"\u00e9 pass # 'x u'''\\N{DASH}{{'''"
+]
+],
+[
+"t\"\"\"\"\"\" else:\nt\"\"\"{x:{y}}{(x)}\\\"\"\"\" [1:2] \n    \n",
+[
+"t\"\"\"\"\"\" else:",
+"t\"\"\"{x:{y}}{(x)}\\\"\"\"\" [1:2]",
+""
+]
+],
+[
+"0x_1\t\nclass C: pass  \n \fBr\"\"\";\"\"\" 1e+ ) x     \nx ur\"\"\"\\N\"\"\" 0b2 \\ x\u00a0y  \f\n\t42 \f\n    \nFr\"\n\"{x:{y}\"# 'x () ] ] class C: pass\n \n    ; a1 \u20ac 42\u00a0\t\n",
+[
+"0x_1",
+"class C: pass",
+"",
+"Br\"\"\";\"\"\" 1e+ ) x",
+"x ur\"\"\"\\N\"\"\" 0b2 \\ x\u00a0y",
+"",
+"42",
+"",
+"",
+"Fr\"",
+"\"{x:{y}\"# 'x () ] ] class C: pass",
+"",
+"; a1 \u20ac 42"
+]
+],
+[
+"f'''{x}'''\n    \n\nf\"\"\"\"\"\"\n\t\u00e9 # c 0 try: 1/0\n",
+[
+"f'''{x}'''",
+"",
+"",
+"f\"\"\"\"\"\"",
+"\u00e9 # c 0 try: 1/0"
+]
+],
+[
+" !=    \nwhile 1: break; x     \n+class f';\u00e9\\n'-> [x] while 1: break; x \n \f\n\twhile 1: break; x1.5j rt\"\"\" \"\"\" rb\"}}\"\" class C: pass==  \f\u0085while 1: break; x ur\"\"-> Fr\"\n\nrf\"{x:{}{x = }\" . -># c     \n \u2029    , x try: 1/0 \t\n[1:2]Br'''\\n\u00e9\\\n''' bt\"    \n",
+[
+"!=",
+"while 1: break; x",
+"+class f';\u00e9\\n'-> [x] while 1: break; x",
+"",
+"",
+"while 1: break; x1.5j rt\"\"\" \"\"\" rb\"}}\"\" class C: pass==",
+"",
+"while 1: break; x ur\"\"-> Fr\"",
+"",
+"rf\"{x:{}{x = }\" . -># c",
+"",
+", x try: 1/0",
+"[1:2]Br'''\\n\u00e9\\",
+"''' bt\""
+]
+],
+[
+": for i in x: pass\nelse: rt\"\"\"\\N{DASH}{x!s:>10}\"\"\" 0777\r\n# a: b; c : if x: \"a{{\"\nr\"\"\"# not a comment\n\"\"\"\n# pass f''''''\n\tt'' f(x)[0] u'''\\';''' else:\f\t# c _ def f(): \r\nf\"\"\"# not a comment\"\"\"\n\t+\n    1j {} [x] # 'x\n_ a1 '''\\\"a\u00e9''' \r\n",
+[
+": for i in x: pass",
+"else: rt\"\"\"\\N{DASH}{x!s:>10}\"\"\" 0777",
+"# a: b; c : if x: \"a{{\"",
+"r\"\"\"# not a comment",
+"\"\"\"",
+"# pass f''''''",
+"t'' f(x)[0] u'''\\';''' else:",
+"# c _ def f():",
+"f\"\"\"# not a comment\"\"\"",
+"+",
+"1j {} [x] # 'x",
+"_ a1 '''\\\"a\u00e9'''"
+]
+],
+[
+"foo if \n: ... \u00e9 f\"{x:%Y-%m}{x:=5}}}\" \n     \n(x,\n y) {} \n    f\"\"\"\\'\"\"\" f\"\"\"}}\"\"\" := # a: b; c\n    rt\"\"\"\"\"\" b'' class C: pass \"x y\"\r\n    f\"{a;b}\"\n\t\u00e9 () # 'x # 'x\r\n    r'''x: y; z\n# not a comment'''\n",
+[
+"foo if",
+": ... \u00e9 f\"{x:%Y-%m}{x:=5}}}\"",
+"",
+"(x,",
+"y) {}",
+"f\"\"\"\\'\"\"\" f\"\"\"}}\"\"\" := # a: b; c",
+"rt\"\"\"\"\"\" b'' class C: pass \"x y\"",
+"f\"{a;b}\"",
+"\u00e9 () # 'x # 'x",
+"r'''x: y; z",
+"# not a comment'''"
+]
+],
+[
+"\nfoo := foo r\"x ya\"\n() r\"#\" \n\tx = 1; y = 2 _ ''''''\f_ \nb':{{#' rt\"{x:%Y-%m}\"\n# 'x\nf(x)[0] 1if \n",
+[
+"",
+"foo := foo r\"x ya\"",
+"() r\"#\"",
+"x = 1; y = 2 _ ''''''",
+"_",
+"b':{{#' rt\"{x:%Y-%m}\"",
+"# 'x",
+"f(x)[0] 1if"
+]
+],
+[
+"0777 def f(): foo \"\"\"\f}}\"\"\"\f\r\n",
+[
+"0777 def f(): foo \"\"\"",
+"}}\"\"\"",
+""
+]
+],
+[
+"\f# a: b; c\n    # 1 \nrt\"\"\"\\\"\"\"\" t\"\"\"\n{[1:2]}{x:%Y-%m}\"\"\" : u'' \nrt'{x:{y}}{a;b}' else:\n    _ rf'a' f(x)[0] \n    rb'#\\n' \n1e5\n    f\"\"\" \"\"\" pass\r\n",
+[
+"",
+"# a: b; c",
+"# 1",
+"rt\"\"\"\\\"\"\"\" t\"\"\"",
+"{[1:2]}{x:%Y-%m}\"\"\" : u''",
+"rt'{x:{y}}{a;b}' else:",
+"_ rf'a' f(x)[0]",
+"rb'#\\n'",
+"1e5",
+"f\"\"\" \"\"\" pass"
+]
+],
+[
+"\tfor i in x: pass\n",
+[
+"for i in x: pass"
+]
+],
+[
+" 1__0 \n\tft\"\"\"{x:{{}\"\"\" class     \u001c=>>= f'\u00e9a' \n) \u00e9 \n; (\u20ac\n 1j \u0085\\      \n\tu\"\\\n\\N\" rb'''''' ( \u00e9    \n\"'\" def f():    \n]\t",
+[
+"1__0",
+"ft\"\"\"{x:{{}\"\"\" class",
+"=>>= f'\u00e9a'",
+") \u00e9",
+"; (\u20ac",
+"1j",
+"\\",
+"u\"\\",
+"\\N\" rb'''''' ( \u00e9",
+"\"'\" def f():",
+"]"
+]
+],
+[
+"\t[x] # 'x :  \n` Tr\"\"\"\"\"\" foo \\ try: 1/0 \ufeff \n ->\ufeff for i in x: pass!= \nur\"x y\" x = 1; y = 2 \t\n    U\"\"\"\n\\n}}\"\"\" #\n\t''''''u\"\"\n    1if }\"\"\"#a{{\"\"\" {  \f\n \ffor i in x: pass 1e+ 1_e2 u'''\f'''while 1: break; x  \n if x: uf\"{lambda: 1}\" 1e+ x\u00a0y \\  \u000b    \n",
+[
+"[x] # 'x :",
+"` Tr\"\"\"\"\"\" foo \\ try: 1/0 \ufeff",
+"->\ufeff for i in x: pass!=",
+"ur\"x y\" x = 1; y = 2",
+"U\"\"\"",
+"\\n}}\"\"\" #",
+"''''''u\"\"",
+"1if }\"\"\"#a{{\"\"\" {",
+"",
+"",
+"for i in x: pass 1e+ 1_e2 u'''",
+"'''while 1: break; x",
+"if x: uf\"{lambda: 1}\" 1e+ x\u00a0y \\",
+""
+]
+],
+[
+"1e5\nelse:\n{} {} 0\r\n    \"\"\"\"\"\"\n[1:2] lambda # a: b; c\nelse: 0x1f ;\n    def\ny # \u20ac :\nb\"\"\";#}}\"\"\" 42 **=\n    f'{lambda: 1}' 1_000 f\"\"\"\"\"\" {a: b}\nif 0777 y\n\t\n",
+[
+"1e5",
+"else:",
+"{} {} 0",
+"\"\"\"\"\"\"",
+"[1:2] lambda # a: b; c",
+"else: 0x1f ;",
+"def",
+"y # \u20ac :",
+"b\"\"\";#}}\"\"\" 42 **=",
+"f'{lambda: 1}' 1_000 f\"\"\"\"\"\" {a: b}",
+"if 0777 y",
+""
+]
+],
+[
+"\n \f0x_1 ) ur''{a: b}\ufeff ? \t\n ( ft'' \u00001j else if \n else: f\"\"\"{x:{y:{z}}}{x:{y}}}}\"\"\" #    \n-> >>= f\"\"\"}}{x!r\"\"\" for i in x: passTr'''\\N{x\n:>3}{x\n:>3}''' ur\"\"\":\"\"\" \n",
+[
+"",
+"",
+"0x_1 ) ur''{a: b}\ufeff ?",
+"( ft'' \u00001j else if",
+"else: f\"\"\"{x:{y:{z}}}{x:{y}}}}\"\"\" #",
+"-> >>= f\"\"\"}}{x!r\"\"\" for i in x: passTr'''\\N{x",
+":>3}{x",
+":>3}''' ur\"\"\":\"\"\""
+]
+],
+[
+"    else pass \n1if def f():\r\n+ for i in x: pass {a: b} \n_ if t\"\"\"{x:=5}a\"\"\" {}\nclass C: pass [x] \"\\na\\'\"\n    >>=\nwhile 1: break; x # 'x x \n\t# c\n",
+[
+"else pass",
+"1if def f():",
+"+ for i in x: pass {a: b}",
+"_ if t\"\"\"{x:=5}a\"\"\" {}",
+"class C: pass [x] \"\\na\\'\"",
+">>=",
+"while 1: break; x # 'x x",
+"# c"
+]
+],
+[
+"    # 'x Br\"\"\"\"\"\"b\";\" try: 1/0 class     \n",
+[
+"# 'x Br\"\"\"\"\"\"b\";\" try: 1/0 class"
+]
+],
+[
+"class C: pass try: 1/0if  \f\n(x,\n y) rb\"\\N{DASH}'\\N } \n    [1:2] {} ]if x: a1 y \nur'''#\\\"\u00e9'''00 ! { try: 1/0 ()\n    try: 1/0 for i in x: pass \u001d 1e5? \t\n0o7 def f():  \f\n    \u000bx\u00a0yif ? # c 1_ )    \n    class = ub\"\"\"\\\\n\"\"\"    \n",
+[
+"class C: pass try: 1/0if",
+"",
+"(x,",
+"y) rb\"\\N{DASH}'\\N }",
+"[1:2] {} ]if x: a1 y",
+"ur'''#\\\"\u00e9'''00 ! { try: 1/0 ()",
+"try: 1/0 for i in x: pass",
+"1e5?",
+"0o7 def f():",
+"",
+"",
+"x\u00a0yif ? # c 1_ )",
+"class = ub\"\"\"\\\\n\"\"\""
+]
+],
+[
+" \f1e-3 \u000b ub\"\"\"\\\n\"\"\" def b'x y\\n'  \n\tfoo \t\f  \nx = 1; y = 2 {}\t\u000b else 1_000 ( @ a1\r\t    \u000b0o \n \f== : \nrb\"\"\"{#\"\"\"Fr'\f 'u''' \n' if 1e+1_ \n    else:1_000 for i in x: passb'''x y''' \n",
+[
+"",
+"1e-3",
+"ub\"\"\"\\",
+"\"\"\" def b'x y\\n'",
+"foo",
+"",
+"x = 1; y = 2 {}",
+"else 1_000 ( @ a1",
+"",
+"0o",
+"",
+"== :",
+"rb\"\"\"{#\"\"\"Fr'",
+"'u'''",
+"' if 1e+1_",
+"else:1_000 for i in x: passb'''x y'''"
+]
+],
+[
+"\nrb'a' t'''{x}{[1:2]}''' for i in x: pass (x,\n y)\f    else: if .5\n    t\"\"\"{x:%Y-%m}{x:=5};\"\"\"\n\nf(x)[0] [x] ()\f\t_\n    \n \n\nr\"\"\"\"\"\" r\"a\" # a: b; c ()\n\t1_000 lambda f\"\"\"{x:=5}\"\"\" \n",
+[
+"",
+"rb'a' t'''{x}{[1:2]}''' for i in x: pass (x,",
+"y)",
+"else: if .5",
+"t\"\"\"{x:%Y-%m}{x:=5};\"\"\"",
+"",
+"f(x)[0] [x] ()",
+"_",
+"",
+"",
+"",
+"r\"\"\"\"\"\" r\"a\" # a: b; c ()",
+"1_000 lambda f\"\"\"{x:=5}\"\"\""
+]
+],
+[
+"    lambda 1if 1j pass\n\f:= f(x)[0]\n    .5 [x]\r\n",
+[
+"lambda 1if 1j pass",
+"",
+":= f(x)[0]",
+".5 [x]"
+]
+],
+[
+"\t1.5j \\'{\u00e9'  \f\n \f\n[1:2]-> (x,\n y) 0xur'''x y ''' 0b101    \nelse:_ \\  \n",
+[
+"1.5j \\'{\u00e9'",
+"",
+"",
+"",
+"[1:2]-> (x,",
+"y) 0xur'''x y ''' 0b101",
+"else:_ \\"
+]
+],
+[
+"\t\r\nfoo 42 0 \nr\"\"\"\u00e9\f\\N{DASH}\"\"\"\n\trb''\n",
+[
+"",
+"foo 42 0",
+"r\"\"\"\u00e9",
+"\\N{DASH}\"\"\"",
+"rb''"
+]
+],
+[
+"r\"\"\"{{{{\"\"\" rb\"\"\"\\n\u00e9\"\"\"\n\t \n\ny def f():\n; r\"\"\"{{:\"\"\" \f    == u'' 1_000\n\t\"}}\" b\"a\" [1:2] \n\n    t'\u00e9{x:%Y-%m}{a;b}' 1_000 x = 1; y = 2 u\"{{\\N{DASH}\" \n    _ 1_000 rf\"\\n{a;b}\" {}\n",
+[
+"r\"\"\"{{{{\"\"\" rb\"\"\"\\n\u00e9\"\"\"",
+"",
+"",
+"y def f():",
+"; r\"\"\"{{:\"\"\"",
+"== u'' 1_000",
+"\"}}\" b\"a\" [1:2]",
+"",
+"t'\u00e9{x:%Y-%m}{a;b}' 1_000 x = 1; y = 2 u\"{{\\N{DASH}\"",
+"_ 1_000 rf\"\\n{a;b}\" {}"
+]
+],
+[
+"'''# not a comment\nx: y; z'''\n \n    foo\n    1j\n1if 1e5 [x] \n\ta1 {} {}\r\nt\":\"\ndef = +\n",
+[
+"'''# not a comment",
+"x: y; z'''",
+"",
+"foo",
+"1j",
+"1if 1e5 [x]",
+"a1 {} {}",
+"t\":\"",
+"def = +"
+]
+],
+[
+"\tb\"\"\":#{{\"\"\"\n    \"\"\"\n{{\"\"\" ; '''''' +\nx = 1; y = 2 ()\n \n    1 0777 x = 1; y = 2 f\"\"\"{{{a;b}a\"\"\"\r\n",
+[
+"b\"\"\":#{{\"\"\"",
+"\"\"\"",
+"{{\"\"\" ; '''''' +",
+"x = 1; y = 2 ()",
+"",
+"1 0777 x = 1; y = 2 f\"\"\"{{{a;b}a\"\"\""
+]
+],
+[
+"    f'' : def \n\t\n\t\n; {a: b}\r\n",
+[
+"f'' : def",
+"",
+"",
+"; {a: b}"
+]
+],
+[
+"t'' \u00e9 f(x)[0] !=\n\t\r\n# 'x f(x)[0] \n",
+[
+"t'' \u00e9 f(x)[0] !=",
+"",
+"# 'x f(x)[0]"
+]
+],
+[
+" \fuf\"\" U'#\\';' pass Tr\"\"\"{{\"\"\" } = \r\nbf'{}\\'\n \u001du''' \"'''x  \r \f\n\n    ! ~     \n\"\" f\"{x\n:>3}\" { \t\n @class# c # \\ x \npass \"\"\"}\"\"\" \n",
+[
+"",
+"uf\"\" U'#\\';' pass Tr\"\"\"{{\"\"\" } =",
+"bf'{}\\'",
+"",
+"u''' \"'''x",
+"",
+"",
+"",
+"! ~",
+"\"\" f\"{x",
+":>3}\" {",
+"@class# c # \\ x",
+"pass \"\"\"}\"\"\""
+]
+],
+[
+"-> \n\t: \u00e9 rf\"\"\"{x}x y\"\"\" ''':'''\nb'''\\n:'''\n\t\nfor i in x: pass rb'''\\N{DASH}\\\"''' pass\r\n    \u00e9\nf\"\"\"\n\"\"\"\n-> def rb\"\"\":\"\"\" \r\n",
+[
+"->",
+": \u00e9 rf\"\"\"{x}x y\"\"\" ''':'''",
+"b'''\\n:'''",
+"",
+"for i in x: pass rb'''\\N{DASH}\\\"''' pass",
+"\u00e9",
+"f\"\"\"",
+"\"\"\"",
+"-> def rb\"\"\":\"\"\""
+]
+],
+[
+": r'{{' '\u00e9' +\nclass C: pass f(x)[0] {a: b}\n",
+[
+": r'{{' '\u00e9' +",
+"class C: pass f(x)[0] {a: b}"
+]
+],
+[
+"\t: t\"\"\"{x}{x:%Y-%m}{x:>{w}}\"\"\" y [x] \n\f\tu\"\"\"\"\"\" else # 'x : \n    1e5 \ffoo\n",
+[
+": t\"\"\"{x}{x:%Y-%m}{x:>{w}}\"\"\" y [x]",
+"",
+"u\"\"\"\"\"\" else # 'x :",
+"1e5",
+"foo"
+]
+],
+[
+"rb\"\"\"x y\\N{DASH}\n\"\"\" 1\n\t<> .5 pass\n\n\tf\"\"\"x: y; z\"\"\"\n\t# \r\nf\"\"\"\\\"{x!s:>10}\\\"\"\"\" a1\nrb\":\" foo lambda ':'\n\t0777 [x] foo lambda \frb\"\"\" \"\"\" try: 1/0\n",
+[
+"rb\"\"\"x y\\N{DASH}",
+"\"\"\" 1",
+"<> .5 pass",
+"",
+"f\"\"\"x: y; z\"\"\"",
+"#",
+"f\"\"\"\\\"{x!s:>10}\\\"\"\"\" a1",
+"rb\":\" foo lambda ':'",
+"0777 [x] foo lambda",
+"rb\"\"\" \"\"\" try: 1/0"
+]
+],
+[
+" \f?rt'\"\\'{x!s:>10}'  \n f(x)[0]class \n \f[ if f\"\"\"{x:\\N\"\"\"f''''''     \n rf\"\"\"\u00e9\"\"\"    \n else:\u00e9x {a: b} Fr'''\\\n\\N''' u';' \nrb\"\"\n\" lambda \f\r    pass \\  -> uf\"{lambda: 1}{x:{y:{z}}}\" 1. \"\"\"{\"\\\"\"\" \r\n    := + bf''''\n{x:{y}}''' 1.5j 0o9\u2028\t! for i in x: pass rb'{{' \ufeff \n    \t\n",
+[
+"",
+"?rt'\"\\'{x!s:>10}'",
+"f(x)[0]class",
+"",
+"[ if f\"\"\"{x:\\N\"\"\"f''''''",
+"rf\"\"\"\u00e9\"\"\"",
+"else:\u00e9x {a: b} Fr'''\\",
+"\\N''' u';'",
+"rb\"\"",
+"\" lambda",
+"",
+"pass \\  -> uf\"{lambda: 1}{x:{y:{z}}}\" 1. \"\"\"{\"\\\"\"\"",
+":= + bf''''",
+"{x:{y}}''' 1.5j 0o9",
+"! for i in x: pass rb'{{' \ufeff",
+""
+]
+],
+[
+"\twhile 1: break; x [1:2]\n\tf'''# not a comment\nx: y; z'''\n<> foo\n\n    \n# a: b; c lambda 1e5\n    x = 1; y = 2 {a: b} f'{x=}{x:=5}'\n",
+[
+"while 1: break; x [1:2]",
+"f'''# not a comment",
+"x: y; z'''",
+"<> foo",
+"",
+"",
+"# a: b; c lambda 1e5",
+"x = 1; y = 2 {a: b} f'{x=}{x:=5}'"
+]
+],
+[
+" \f1_000 \r <> ub\"\"\"'\"\"\" \n\ufeff a1u\"\"\"}\"\"\"     \n\t\n +1.e5 rf\"\"\"\\N\\N{DASH}\"\"\" \n \f0o9 \n0x_1     \u0085:= \n    lambda1__0 \u2028x\u00a0y a1 >>= \n<> #rf\"\"\"{{x}}\"\"\"else: a1 U\"\" \r\t() class C: passdef:    \u2028t\"\"\"\"\"\"b\"\"\";}\"\"\" 1.e5 \n",
+[
+"",
+"1_000",
+"<> ub\"\"\"'\"\"\"",
+"\ufeff a1u\"\"\"}\"\"\"",
+"",
+"+1.e5 rf\"\"\"\\N\\N{DASH}\"\"\"",
+"",
+"0o9",
+"0x_1",
+":=",
+"lambda1__0",
+"x\u00a0y a1 >>=",
+"<> #rf\"\"\"{{x}}\"\"\"else: a1 U\"\"",
+"() class C: passdef:",
+"t\"\"\"\"\"\"b\"\"\";}\"\"\" 1.e5"
+]
+],
+[
+" \f{pass uf\"\"\"{a;b}{x!r\n\"\"\" ] \u00e9  \f\ndef f(): r\"\f}\" \u0001  \n",
+[
+"",
+"{pass uf\"\"\"{a;b}{x!r",
+"\"\"\" ] \u00e9",
+"",
+"def f(): r\"",
+"}\" \u0001"
+]
+],
+[
+"    f\":\\N{DASH}\\'\" r'''\\N{DASH}\u00e9''' else:\n\t\r\n(x,\n y) a1\nf\"\" \n\t\n\ndef f(): else: if <> \n",
+[
+"f\":\\N{DASH}\\'\" r'''\\N{DASH}\u00e9''' else:",
+"",
+"(x,",
+"y) a1",
+"f\"\"",
+"",
+"",
+"def f(): else: if <>"
+]
+],
+[
+"\tf''''''\n# '#;' \n \n.5 f\"\"\"{x!s:>10}a{x}\"\"\" \"\"\"}}\\\"\\N{DASH}\"\"\" while 1: break; x\n\t() ! rf\"\"\"\"\"\" 1e5 \r\n\t\n",
+[
+"f''''''",
+"# '#;'",
+"",
+".5 f\"\"\"{x!s:>10}a{x}\"\"\" \"\"\"}}\\\"\\N{DASH}\"\"\" while 1: break; x",
+"() ! rf\"\"\"\"\"\" 1e5",
+""
+]
+],
+[
+"def f(): if x: :\nrf\"\u00e9\" = t\"\"\"\"\"\"\n\trt'{x:%Y-%m}{[1:2]}' rf\"\u00e9a\" a1 [1:2]\nf'{x}a{x:%Y-%m}'\n!= def : {}\n\tu''''''\n# c x = 1; y = 2 def\n    (x,\n y)\n    >>= t\"{{\"\n    1if _ \"\"\"\n\"\"\" '' \n",
+[
+"def f(): if x: :",
+"rf\"\u00e9\" = t\"\"\"\"\"\"",
+"rt'{x:%Y-%m}{[1:2]}' rf\"\u00e9a\" a1 [1:2]",
+"f'{x}a{x:%Y-%m}'",
+"!= def : {}",
+"u''''''",
+"# c x = 1; y = 2 def",
+"(x,",
+"y)",
+">>= t\"{{\"",
+"1if _ \"\"\"",
+"\"\"\" ''"
+]
+],
+[
+"\t'''a}}''' # a: b; c \\f\"\"\"\"\"\"  \nfoo \\ \n [1:2] def     \n \fx = 1; y = 20o \n \f? u'}}'1e-3 1e # \\ if \n\t->class C: passbt'{x:\n}x y{lambda: 1}' = [1:2] >>=     \n1_000 \u3000 ! r\"\"\"\\\n\"\"\"1_ Tr'''\\n\\''' \n",
+[
+"'''a}}''' # a: b; c \\f\"\"\"\"\"\"",
+"foo \\",
+"[1:2] def",
+"",
+"x = 1; y = 20o",
+"",
+"? u'}}'1e-3 1e # \\ if",
+"->class C: passbt'{x:",
+"}x y{lambda: 1}' = [1:2] >>=",
+"1_000 \u3000 ! r\"\"\"\\",
+"\"\"\"1_ Tr'''\\n\\'''"
+]
+],
+[
+"rb\"a\\n\" x f'''{x:=5}{x=}{x!s:>10}'''\nb'''}}}};''' else: ;\n\trb\"\"\"\\'{{a\"\"\" + := \n    # c # 'x ' \\\"\\N{DASH}' \f    f\"{f'{y}'}{x}\\n\" () r\"\" b'''''' \n\trt'\\n' try: 1/0\n\n    u\"\" **= rf'}}}}}}' \fpass [x]\n    # c\n\t\n",
+[
+"rb\"a\\n\" x f'''{x:=5}{x=}{x!s:>10}'''",
+"b'''}}}};''' else: ;",
+"rb\"\"\"\\'{{a\"\"\" + :=",
+"# c # 'x ' \\\"\\N{DASH}'",
+"f\"{f'{y}'}{x}\\n\" () r\"\" b''''''",
+"rt'\\n' try: 1/0",
+"",
+"u\"\" **= rf'}}}}}}'",
+"pass [x]",
+"# c",
+""
+]
+],
+[
+">>= '''\u00e9''' # c # 'x \f\n\t\n",
+[
+">>= '''\u00e9''' # c # 'x",
+"",
+""
+]
+],
+[
+" \nr'' def f():\n: x = 1; y = 2 \n\n    := \"\"\"\"\"\" u\"\"\"a\"\"\" ()\nf''''''\n    r'''  text\nx: y; z'''\n\t# 'x pass\n\tf\"\"\"\"\"\" _ ';x y' for i in x: pass \f    rt'' f'''\\N{DASH}#''' <> 1e5\n",
+[
+"",
+"r'' def f():",
+": x = 1; y = 2",
+"",
+":= \"\"\"\"\"\" u\"\"\"a\"\"\" ()",
+"f''''''",
+"r'''  text",
+"x: y; z'''",
+"# 'x pass",
+"f\"\"\"\"\"\" _ ';x y' for i in x: pass",
+"rt'' f'''\\N{DASH}#''' <> 1e5"
+]
+],
+[
+"    x = 1; y = 2 t\"\" ; f'''{x:%Y-%m}{x:=5}'''\n\n    1j\r\nf\"a\" # c # 'x\n    # a: b; c\r\n    {a: b} rt\"\"\"\n\"\"\" [x] f'{a;b}{[1:2]}{(x)}'\nt\"\" {} pass class C: pass \n\t**= y else\r\n>>= if x:\n \n",
+[
+"x = 1; y = 2 t\"\" ; f'''{x:%Y-%m}{x:=5}'''",
+"",
+"1j",
+"f\"a\" # c # 'x",
+"# a: b; c",
+"{a: b} rt\"\"\"",
+"\"\"\" [x] f'{a;b}{[1:2]}{(x)}'",
+"t\"\" {} pass class C: pass",
+"**= y else",
+">>= if x:",
+""
+]
+],
+[
+"    {} : else \n    .5 pass **= \u00e9\f\"\"\"\"\"\"\n\t\u20ac # 'x def\n    while 1: break; x \n\t \r\n",
+[
+"{} : else",
+".5 pass **= \u00e9",
+"\"\"\"\"\"\"",
+"\u20ac # 'x def",
+"while 1: break; x",
+""
+]
+],
+[
+"if 42 u\"\"\"ax y\"\"\" [1:2]\fwhile 1: break; x [x] \n    0x1f \"{{\" x = 1; y = 2 =\n\"\"\r\n    if x: b'''}}\\N{DASH}\f'''\n\t \n\f\t== t'{x=}'\ff\"\"\"# not a comment\"\"\"\nelse: \u00e9\n    x := # c\n\ty # 'x\n",
+[
+"if 42 u\"\"\"ax y\"\"\" [1:2]",
+"while 1: break; x [x]",
+"0x1f \"{{\" x = 1; y = 2 =",
+"\"\"",
+"if x: b'''}}\\N{DASH}",
+"'''",
+"",
+"",
+"== t'{x=}'",
+"f\"\"\"# not a comment\"\"\"",
+"else: \u00e9",
+"x := # c",
+"y # 'x"
+]
+],
+[
+"    y t\"{x:=5}{a;b}\"; 0x_1 \n    # a: b; c 1_{} 0o \nelse: # c\u007f{} Br'''\\\n ''' \f\nBr'''\\\"\\N\\N''' # \\ \"\\N\f\" \nelse: u'''\\N''' 0o \n\t\u00e9 \u00e9 while 1: break; x  \fuf\"\"\"#\"\"\"\n\u00e9 Br\"\\'\" # c .5 if  \u001c",
+[
+"y t\"{x:=5}{a;b}\"; 0x_1",
+"# a: b; c 1_{} 0o",
+"else: # c\u007f{} Br'''\\",
+"'''",
+"",
+"Br'''\\\"\\N\\N''' # \\ \"\\N",
+"\"",
+"else: u'''\\N''' 0o",
+"\u00e9 \u00e9 while 1: break; x",
+"uf\"\"\"#\"\"\"",
+"\u00e9 Br\"\\'\" # c .5 if"
+]
+],
+[
+"\t\"\"\" \"\"\" rt'''}}{x:=5}'''\ndef pass \u00e9 _ \n",
+[
+"\"\"\" \"\"\" rt'''}}{x:=5}'''",
+"def pass \u00e9 _"
+]
+],
+[
+" class C: pass\t\n \fifr'' = \n",
+[
+"class C: pass",
+"",
+"ifr'' ="
+]
+],
+[
+"\t    \n    -> ur'''} {''' \ufeffif x: \n rb\"\"\"\\N\\\"\"\"\" f(x)[0] == f'''{[1:2]}'''->     \n# a1 ] [     \n    \"\" f(x)[0] #     \n",
+[
+"",
+"-> ur'''} {''' \ufeffif x:",
+"rb\"\"\"\\N\\\"\"\"\" f(x)[0] == f'''{[1:2]}'''->",
+"# a1 ] [",
+"\"\" f(x)[0] #"
+]
+],
+[
+"class C: pass 1.ub'{' rt'''{ ''' foo class  \n$ 0x_1 ( pass Br'''\\N\fa'''  \f\n    ft\"\"\"\\\n\"\"\" while 1: break; x ( if x:    \r\t1.e5\u0000 U\"x y\"{(x,\n y) \n }... \"\"\"a}}}}\"\"\"\u2029",
+[
+"class C: pass 1.ub'{' rt'''{ ''' foo class",
+"$ 0x_1 ( pass Br'''\\N",
+"a'''",
+"",
+"ft\"\"\"\\",
+"\"\"\" while 1: break; x ( if x:",
+"1.e5\u0000 U\"x y\"{(x,",
+"y)",
+"}... \"\"\"a}}}}\"\"\""
+]
+],
+[
+"\t \n    :=\nfor i in x: pass \u00e9 rb''''''\n \nwhile 1: break; x rf'''a''' class C: pass r''''''\nrb'''x y''' rf'' u'''\u00e9\\\"'''\n    b':#'\n\twhile 1: break; x\n    [x] rt'}}{x!s:>10}' y def f():\n    for i in x: pass while 1: break; x {}\nf(x)[0] y : else\n# 'x \r\n",
+[
+"",
+":=",
+"for i in x: pass \u00e9 rb''''''",
+"",
+"while 1: break; x rf'''a''' class C: pass r''''''",
+"rb'''x y''' rf'' u'''\u00e9\\\"'''",
+"b':#'",
+"while 1: break; x",
+"[x] rt'}}{x!s:>10}' y def f():",
+"for i in x: pass while 1: break; x {}",
+"f(x)[0] y : else",
+"# 'x"
+]
+],
+[
+" class C: pass 3.14_15 0o7ur''''\\N{DASH} \\x\\x\n \fx\u00a0y \ufeff bt'{x}{{x}}{x:{}' Tr\"{x:%Y-%m}\"[1:2]     \ndef ` # a: b; c def f(): \n@ # ]\ufeff ;     \n \f# c# a: b; c _# \n    \n\tclass # \\ x 00 def \ufeff \n    \u00e9 Tr'''{x:\n}{x:=5}{x!s:>10}''' \n\\x ; x 42 \ufeffub'#:\\'' \n42~\n    Fr\"{f'{x}'}\" y >>= class C: pass \n     \n",
+[
+"class C: pass 3.14_15 0o7ur''''\\N{DASH} \\x\\x",
+"",
+"x\u00a0y \ufeff bt'{x}{{x}}{x:{}' Tr\"{x:%Y-%m}\"[1:2]",
+"def ` # a: b; c def f():",
+"@ # ]\ufeff ;",
+"",
+"# c# a: b; c _#",
+"",
+"class # \\ x 00 def \ufeff",
+"\u00e9 Tr'''{x:",
+"}{x:=5}{x!s:>10}'''",
+"\\x ; x 42 \ufeffub'#:\\''",
+"42~",
+"Fr\"{f'{x}'}\" y >>= class C: pass",
+""
+]
+],
+[
+"f\"{lambda: 1}\" foo (x,\n y) t'''{{\\n{x:>{w}}''' \r\n    # c if x: else: \n\t''''''\n    ; ; \n\t\n== 1_000 != .5\nr\"\"\"\"\"\"\n     \nf\"\"\"\"\"\"\n; x != # c \n",
+[
+"f\"{lambda: 1}\" foo (x,",
+"y) t'''{{\\n{x:>{w}}'''",
+"# c if x: else:",
+"''''''",
+"; ;",
+"",
+"== 1_000 != .5",
+"r\"\"\"\"\"\"",
+"",
+"f\"\"\"\"\"\"",
+"; x != # c"
+]
+],
+[
+" rf\"{x:{y:{z}}}{x\n:>3}\" ; \n    # \u20ac ft'{x = }' x = 1; y = 2 rf\"\"\"{[1:2]}\"\"\" \t\n \ntry: 1/0 \t\n \t\n    f\"\n\" \u001d \ufeff , \\ \t\n    \u20291_e2. [     \n     \n:  \n\t\"\u00e9\" #  \n\t\nclass ur'a' , foo 0x1f _ \u000b",
+[
+"rf\"{x:{y:{z}}}{x",
+":>3}\" ;",
+"# \u20ac ft'{x = }' x = 1; y = 2 rf\"\"\"{[1:2]}\"\"\"",
+"",
+"try: 1/0",
+"",
+"f\"",
+"\"",
+"\ufeff , \\",
+"",
+"1_e2. [",
+"",
+":",
+"\"\u00e9\" #",
+"",
+"class ur'a' , foo 0x1f _"
+]
+],
+[
+" (x,\n y) x \t\n\u00e9 1__0 \u000b'''x y''''# \\ x\u00a0y while 1: break; x pass \f\u000b    lambda Br\"\\n\n\"\t\n y # 0777     \r \f\nelse: 0b2 \u0085 1e ()\\ # a: b; cdef \ndef f(): )# # a: b; c    \u000b    . \u20ac \n \fr\"\\N\\N\"\u20ac + ]) Fr'{x:{}{x:%Y-%m}{x:' \n",
+[
+"(x,",
+"y) x",
+"\u00e9 1__0",
+"'''x y''''# \\ x\u00a0y while 1: break; x pass",
+"",
+"lambda Br\"\\n",
+"\"",
+"y # 0777",
+"",
+"",
+"else: 0b2",
+"1e ()\\ # a: b; cdef",
+"def f(): )# # a: b; c",
+". \u20ac",
+"",
+"r\"\\N\\N\"\u20ac + ]) Fr'{x:{}{x:%Y-%m}{x:'"
+]
+],
+[
+"f'' \nt'''{'''== #if t\"{\" \t\n",
+[
+"f''",
+"t'''{'''== #if t\"{\""
+]
+],
+[
+"_ \r\nclass C: pass# c ft'' if     \u001c_ + foofor i in x: pass () ur'' \n\tTr\"\"\"{x:>{w}}\"\"\" while 1: break; x ] t'''\\n ''' else else\n\t~ @try: 1/0ub''''''  \n    \f \f\ndef f(): \ufeff , \n",
+[
+"_",
+"class C: pass# c ft'' if",
+"_ + foofor i in x: pass () ur''",
+"Tr\"\"\"{x:>{w}}\"\"\" while 1: break; x ] t'''\\n ''' else else",
+"~ @try: 1/0ub''''''",
+"",
+"",
+"",
+"def f(): \ufeff ,"
+]
+],
+[
+" \f\t\n\twhile 1: break; xrt\"{x=}{x}}\" class C: pass \u20ac Tr\"\" {a: b}  \f\n : ub'''\\n''' \n foo \t\u001c \f    \u001c    f'\\n{x!r}' ub'' $:\u2028    ` u'''\\\nx y # \\\u2029\u20ac x = 1; y = 2\u0085",
+[
+"",
+"",
+"while 1: break; xrt\"{x=}{x}}\" class C: pass \u20ac Tr\"\" {a: b}",
+"",
+": ub'''\\n'''",
+"foo",
+"",
+"",
+"f'\\n{x!r}' ub'' $:",
+"` u'''\\",
+"x y # \\",
+"\u20ac x = 1; y = 2"
+]
+],
+[
+"\t[1:2] \"\"\"x y\"\"\" #\n    \n\t{} (x,\n y)\n\telse: class C: pass foo\n    ; (x,\n y)\n",
+[
+"[1:2] \"\"\"x y\"\"\" #",
+"",
+"{} (x,",
+"y)",
+"else: class C: pass foo",
+"; (x,",
+"y)"
+]
+],
+[
+"f(x)[0] \n1__0 \u20ac     ",
+[
+"f(x)[0]",
+"1__0 \u20ac"
+]
+],
+[
+"try: 1/0 **=\n**= '''#\\N{DASH}x y''' 'a\\''\r\n    while 1: break; x \u00e9 + class C: pass \r\n \n0x1f _ \nb\"{{\" x pass\n\tb'''  text\nx: y; z'''\n\t\n\t \n''''''\n",
+[
+"try: 1/0 **=",
+"**= '''#\\N{DASH}x y''' 'a\\''",
+"while 1: break; x \u00e9 + class C: pass",
+"",
+"0x1f _",
+"b\"{{\" x pass",
+"b'''  text",
+"x: y; z'''",
+"",
+"",
+"''''''"
+]
+],
+[
+"for i in x: pass -><> if x: \u000b\trf'{x}{'a'}'1_000class C: passf(x)[0]\\ 1e     \n[1:2]  \f\u0085",
+[
+"for i in x: pass -><> if x:",
+"rf'{x}{'a'}'1_000class C: passf(x)[0]\\ 1e",
+"[1:2]",
+""
+]
+],
+[
+" \u2029",
+[
+""
+]
+],
+[
+":= rt\"\" if x: # 'x\n\tf\"\"\"x: y; z\"\"\"\n \n: y '''\\\"''' \"\"\":\"\"\"\n:\n    >>= rb\"\"\"\f\n\"\"\" try: 1/0 :=\n",
+[
+":= rt\"\" if x: # 'x",
+"f\"\"\"x: y; z\"\"\"",
+"",
+": y '''\\\"''' \"\"\":\"\"\"",
+":",
+">>= rb\"\"\"",
+"",
+"\"\"\" try: 1/0 :="
+]
+],
+[
+"b\"\"\"\n  text\"\"\"\n    r'''# not a comment'''\n    b'}}#' _ try: 1/0\n    \"\"\"\"\"\"\nlambda b'''''' for i in x: pass \n    b'''\n'''\n",
+[
+"b\"\"\"",
+"text\"\"\"",
+"r'''# not a comment'''",
+"b'}}#' _ try: 1/0",
+"\"\"\"\"\"\"",
+"lambda b'''''' for i in x: pass",
+"b'''",
+"'''"
+]
+],
+[
+"\"\"\"\"\"\" \t\n\tFr\"\"\"\"\"\" ! \\rb\"\\N{DASH}\" :else:  \n\"\"\"\\n\\\n}}\"\"\" \u000b f'\\\n{[1:2]}{x:=5}' **= \u000b \f:= [1:2] }for i in x: pass, \n",
+[
+"\"\"\"\"\"\"",
+"Fr\"\"\"\"\"\" ! \\rb\"\\N{DASH}\" :else:",
+"\"\"\"\\n\\",
+"}}\"\"\"",
+"f'\\",
+"{[1:2]}{x:=5}' **=",
+"",
+":= [1:2] }for i in x: pass,"
+]
+],
+[
+"... rb''uf\"\"\"\"\"\" {a: b} f(x)[0]f\"\"\"\n \n    (x,\n y) ( { Fr'\u00e9{'a'}' def\n    def f():1e-3    \n \t\nelse  \f\n: rt\"\\N{DASH}x y}}\"x\u00a0y\n\n <>\ufeff rb\"\"\"{{\\\"\\N{DASH}\"\"\" # c # c    \u001ct\"\"\" \"\"\" U'''\\\"' ''' Br'#'' \\x \n# c->if x: else: else \ndef f():-> foo\n",
+[
+"... rb''uf\"\"\"\"\"\" {a: b} f(x)[0]f\"\"\"",
+"",
+"(x,",
+"y) ( { Fr'\u00e9{'a'}' def",
+"def f():1e-3",
+"",
+"else",
+"",
+": rt\"\\N{DASH}x y}}\"x\u00a0y",
+"",
+"<>\ufeff rb\"\"\"{{\\\"\\N{DASH}\"\"\" # c # c",
+"t\"\"\" \"\"\" U'''\\\"' ''' Br'#'' \\x",
+"# c->if x: else: else",
+"def f():-> foo"
+]
+],
+[
+"     \f\u2028uf\"\"\"{x:{x!r\"\"\"lambda x = 1; y = 2 \u0001 class @ \n \f\n\t!try: 1/0[1:2] \t\n\ufefffoo \nx = 1; y = 2 _ft\"{x}\"Fr\"#{x!r}\" Fr\"\"\"{x:{y:{z}}} {x!r}\"\"\"  \u001c\u000b\t\"\\\"\" \f\n foo } x [1:2] 1_e2 \t\n 0777  \u001c\t# 'x\nb\"\"\"{{#\"\"\" bf\"\" '''\u00e9{ ub\"\"\" f\"\"\"\n{x:%Y-%m\"\"\" \\  \f\n",
+[
+"",
+"",
+"uf\"\"\"{x:{x!r\"\"\"lambda x = 1; y = 2 \u0001 class @",
+"",
+"",
+"!try: 1/0[1:2]",
+"\ufefffoo",
+"x = 1; y = 2 _ft\"{x}\"Fr\"#{x!r}\" Fr\"\"\"{x:{y:{z}}} {x!r}\"\"\"",
+"",
+"\"\\\"\"",
+"",
+"foo } x [1:2] 1_e2",
+"0777",
+"# 'x",
+"b\"\"\"{{#\"\"\" bf\"\" '''\u00e9{ ub\"\"\" f\"\"\"",
+"{x:%Y-%m\"\"\" \\",
+""
+]
+],
+[
+"# a: b; c 1e5\n: r\"\" \n\nclass C: pass rt\"\" 1if \n0777 1_000\f\t'''''' else: \n\t';' u''':\\\"\\'''' foo\f'''''' lambda\r\n:\n= foo ...\f",
+[
+"# a: b; c 1e5",
+": r\"\"",
+"",
+"class C: pass rt\"\" 1if",
+"0777 1_000",
+"'''''' else:",
+"';' u''':\\\"\\'''' foo",
+"'''''' lambda",
+":",
+"= foo ..."
+]
+],
+[
+"    rb\"\" != (x,\n y) != \t\u0085[ else: if x:def f(): \nf(x)[0] if ->else \t\u2028 \f\n\t{ \u00e9 } bt\"{}{{x}}\"x = 1; y = 2  \f\n rf'''{x:%Y-%m}{x:=5{x:%Y-%m}\n    \n \fclass C: pass t'::{x:}' \f# a: b; c while 1: break; xdef$ @ f\"{x}{x!}\"\ny \u001f     \n\t{} b'''} \"''' () pass { class C: pass  \f\n",
+[
+"rb\"\" != (x,",
+"y) !=",
+"[ else: if x:def f():",
+"f(x)[0] if ->else",
+"",
+"",
+"{ \u00e9 } bt\"{}{{x}}\"x = 1; y = 2",
+"",
+"rf'''{x:%Y-%m}{x:=5{x:%Y-%m}",
+"",
+"",
+"class C: pass t'::{x:}'",
+"# a: b; c while 1: break; xdef$ @ f\"{x}{x!}\"",
+"y",
+"{} b'''} \"''' () pass { class C: pass",
+""
+]
+],
+[
+"\t \n    class C: pass := pass\r\n    r''''''\n\"\" t'{{'\n# 'x pass \f\ta1 if ! class C: pass \f\tf''''''\nt'''#''' f(x)[0]\n",
+[
+"",
+"class C: pass := pass",
+"r''''''",
+"\"\" t'{{'",
+"# 'x pass",
+"a1 if ! class C: pass",
+"f''''''",
+"t'''#''' f(x)[0]"
+]
+],
+[
+"f'''{lambda: 1}\\N{DASH}{x:>{w}}''' = try: 1/0 ->\f",
+[
+"f'''{lambda: 1}\\N{DASH}{x:>{w}}''' = try: 1/0 ->"
+]
+],
+[
+"    = f'''{[1:2]}{x:{y}}{[1:2]}''' \u20ac x = 1; y = 2\n    \ntry: 1/0 \n    != >>=\n\t\n\nb\"\"\"\"\"\" # def class C: pass \n",
+[
+"= f'''{[1:2]}{x:{y}}{[1:2]}''' \u20ac x = 1; y = 2",
+"",
+"try: 1/0",
+"!= >>=",
+"",
+"",
+"b\"\"\"\"\"\" # def class C: pass"
+]
+],
+[
+"\tx = 1; y = 2  \n bf\"{x:\n}'\\N{DASH}\" \n: if x: Tr\"{x:=5}\"-> uf'x y{{x y' _ \n 1_ x = 1; y = 2ur';' ft\"\"\"\"\"\" 0o9 \n\tfor i in x: pass \u20ac\ufeff \u001c\trf'''{x:>{w}{x:>{w}}{{' ? :=if x:{a: b}{} \n \ffor i in x: pass     \nU'''\\n\f\\\n'''while 1: break; x {} u'\f'     \n{ # f'\\\n{x}{x:=5'\n",
+[
+"x = 1; y = 2",
+"bf\"{x:",
+"}'\\N{DASH}\"",
+": if x: Tr\"{x:=5}\"-> uf'x y{{x y' _",
+"1_ x = 1; y = 2ur';' ft\"\"\"\"\"\" 0o9",
+"for i in x: pass \u20ac\ufeff",
+"rf'''{x:>{w}{x:>{w}}{{' ? :=if x:{a: b}{}",
+"",
+"for i in x: pass",
+"U'''\\n",
+"\\",
+"'''while 1: break; x {} u'",
+"'",
+"{ # f'\\",
+"{x}{x:=5'"
+]
+],
+[
+"\n\t# 'x b\"\u00e9a\" \r\n\n    y :=\f    # c lambda f(x)[0] else:\n    \n\tfoo 1j \u20ac\n    1e5 r''''''\n\trt'''\\n{x:>{w}}#''' x == x = 1; y = 2\n \n    {} rb'''\\n\\N{DASH}\f'''\n42 f(x)[0] \"\\'\" \n",
+[
+"",
+"# 'x b\"\u00e9a\"",
+"",
+"y :=",
+"# c lambda f(x)[0] else:",
+"",
+"foo 1j \u20ac",
+"1e5 r''''''",
+"rt'''\\n{x:>{w}}#''' x == x = 1; y = 2",
+"",
+"{} rb'''\\n\\N{DASH}",
+"'''",
+"42 f(x)[0] \"\\'\""
+]
+],
+[
+"    0777 f\"{a;b}  \" r\"\"\"\"\"\" ''';{{{{''' \r\n# c class C: pass \f\trf\"{x}\" {} \npass \ndef 42\r\n\tf'{{{a;b}\\N{DASH}'\n{}\ff'''{x:{y}}{x=}x y''' t'''{a;b}'''\n42 1j try: 1/0 ;\f    rf\"\"\":{x:>{w}}\"\"\"\n \n \n",
+[
+"0777 f\"{a;b}  \" r\"\"\"\"\"\" ''';{{{{'''",
+"# c class C: pass",
+"rf\"{x}\" {}",
+"pass",
+"def 42",
+"f'{{{a;b}\\N{DASH}'",
+"{}",
+"f'''{x:{y}}{x=}x y''' t'''{a;b}'''",
+"42 1j try: 1/0 ;",
+"rf\"\"\":{x:>{w}}\"\"\"",
+"",
+""
+]
+],
+[
+"\n",
+[
+""
+]
+],
+[
+"    r'#\\'#' # a: b; c <> u\"\"\"\"\"\" \n\t0 0 \nrf\"\"\"{x=}\"\"\" # def f():\n\n    # c\nelse:\f\t \n\u00e9\f\t+ 42 ''''''\n    \"#}}\" else: # \n",
+[
+"r'#\\'#' # a: b; c <> u\"\"\"\"\"\"",
+"0 0",
+"rf\"\"\"{x=}\"\"\" # def f():",
+"",
+"# c",
+"else:",
+"",
+"\u00e9",
+"+ 42 ''''''",
+"\"#}}\" else: #"
+]
+],
+[
+"\t**=    \n \f!= # a: b; c pass 0o9 {}  \f\rbf'''''' uf'' \n\t\nif x: if if x:\\ ( # 'x     \nf'\\\n}}\\'' x\u00a0y \n    Fr'''{{x}'''  \f\u000b \f\n    \\Tr'#{'a'}a' 1e '''x y\\\n''' \n try: 1/0  \f\u2028\n",
+[
+"**=",
+"",
+"!= # a: b; c pass 0o9 {}",
+"",
+"bf'''''' uf''",
+"",
+"if x: if if x:\\ ( # 'x",
+"f'\\",
+"}}\\'' x\u00a0y",
+"Fr'''{{x}'''",
+"",
+"",
+"",
+"\\Tr'#{'a'}a' 1e '''x y\\",
+"'''",
+"try: 1/0",
+"",
+""
+]
+],
+[
+"\t\n \frt\"\"\"\"\"\"x\u00a0y ] 1. \n1e5 class C: pass ''':\\N{DASH}\\N''' \n\t` \u000b 1j {} 1j def f():    \n  \f\n]  \f\n[x] \u20ac >>= t\"\"\"\n\"{lambda: 1\"\"\" \t\nt'''\\N{x:>{w}}'''  \f\u0085",
+[
+"",
+"",
+"rt\"\"\"\"\"\"x\u00a0y ] 1.",
+"1e5 class C: pass ''':\\N{DASH}\\N'''",
+"`",
+"1j {} 1j def f():",
+"",
+"",
+"]",
+"",
+"[x] \u20ac >>= t\"\"\"",
+"\"{lambda: 1\"\"\"",
+"t'''\\N{x:>{w}}'''",
+""
+]
+],
+[
+"\t\"\"\"\"\"\" .5\n",
+[
+"\"\"\"\"\"\" .5"
+]
+],
+[
+"\n    :=if x: \"\"\"\u00e9{{\"\"\" @ 0b101\n\tur\"\\N\"\"\\  \u2028@ \ufeff    \n1e-3 { else: \t\n\\x # cy 1_e2 rt'''\\{x:>{w}}}'''->\r` else try: 1/0 \n -> y \n",
+[
+"",
+":=if x: \"\"\"\u00e9{{\"\"\" @ 0b101",
+"ur\"\\N\"\"\\",
+"@ \ufeff",
+"1e-3 { else:",
+"\\x # cy 1_e2 rt'''\\{x:>{w}}}'''->",
+"` else try: 1/0",
+"-> y"
+]
+],
+[
+"{a: b}42 lambda x\u00a0y'''\f\"\f''' 1.e5  \f\n~ t'''{lambda: 1}''' @ 1__0U'\\Na\\N' while 1: break; x  \f\u001ct\"a{f'{x}'x y\" {a: b} 0b101    \n; <> #if \n\tr'}:a' # 1if a1 1e-31.5j \t\n \f1. \n} class C: pass 1.Br'''; }}'''  \f\f\tbf'{{'a'}' try: 1/0 ur\" ;\\\n\" ur'''a''' \n; rf'''}{x = }''' for i in x: pass \t\n\u001c \\  \n\r\n[f\"\"\"{(x)}{x!}\"\"\" bt'''{x!}'''ub''':\u00e9;''' \u0085",
+[
+"{a: b}42 lambda x\u00a0y'''",
+"\"",
+"''' 1.e5",
+"",
+"~ t'''{lambda: 1}''' @ 1__0U'\\Na\\N' while 1: break; x",
+"",
+"t\"a{f'{x}'x y\" {a: b} 0b101",
+"; <> #if",
+"r'}:a' # 1if a1 1e-31.5j",
+"",
+"1.",
+"} class C: pass 1.Br'''; }}'''",
+"",
+"bf'{{'a'}' try: 1/0 ur\" ;\\",
+"\" ur'''a'''",
+"; rf'''}{x = }''' for i in x: pass",
+"",
+"\\",
+"",
+"[f\"\"\"{(x)}{x!}\"\"\" bt'''{x!}'''ub''':\u00e9;'''"
+]
+],
+[
+"try: 1/0 >>= r'''\\'x y\\N{DASH}''' f\"\\n:\"\n    :\r\n<> {} r\"\"\"\"\"\" !\r\n\tb'''\\'''' f'''x y'''\n",
+[
+"try: 1/0 >>= r'''\\'x y\\N{DASH}''' f\"\\n:\"",
+":",
+"<> {} r\"\"\"\"\"\" !",
+"b'''\\'''' f'''x y'''"
+]
+],
+[
+"\t\u00e9 x {} rt'\\n' \n[x]\n    a1\n     \n\t# a: b; c f\"{(x)}\"\nf\"\" [x] \n",
+[
+"\u00e9 x {} rt'\\n'",
+"[x]",
+"a1",
+"",
+"# a: b; c f\"{(x)}\"",
+"f\"\" [x]"
+]
+],
+[
+"0oclass # \\ { 1.e5\f",
+[
+"0oclass # \\ { 1.e5"
+]
+],
+[
+"\t\n\u20ac \r\nf\"\"\"\"\"\" u\"\"\"\u00e9\f\"\"\" 0x1f \n",
+[
+"",
+"\u20ac",
+"f\"\"\"\"\"\" u\"\"\"\u00e9",
+"\"\"\" 0x1f"
+]
+],
+[
+"    \n    1if class C: pass rf\"\" {}\n\f",
+[
+"",
+"1if class C: pass rf\"\" {}",
+""
+]
+],
+[
+"b'''\u00e9''' rf'{{'\n\tfoo x = 1; y = 2 '# ' f''\nrb':{{ ' 42\n\tf\"\"\"x: y; z\n# not a comment\"\"\"\nclass C: pass x = 1; y = 2 pass\n",
+[
+"b'''\u00e9''' rf'{{'",
+"foo x = 1; y = 2 '# ' f''",
+"rb':{{ ' 42",
+"f\"\"\"x: y; z",
+"# not a comment\"\"\"",
+"class C: pass x = 1; y = 2 pass"
+]
+],
+[
+"\n{a: b} f'''''' x = 1; y = 2 \nrb\"\" if t\"a}}\" def f(): \n'''''' 42\n",
+[
+"",
+"{a: b} f'''''' x = 1; y = 2",
+"rb\"\" if t\"a}}\" def f():",
+"'''''' 42"
+]
+],
+[
+"\"\"\"\"\"\"\n    \";#;\" .5 # \n; \"{{\u00e9a\"\n-> if 42 else\nt'' r\"\"\"x y;\"\"\" +\nr':x y\\N{DASH}' \r\n\tx r'''\\n\u00e9''' : \n\tr'''# not a comment'''\n",
+[
+"\"\"\"\"\"\"",
+"\";#;\" .5 #",
+"; \"{{\u00e9a\"",
+"-> if 42 else",
+"t'' r\"\"\"x y;\"\"\" +",
+"r':x y\\N{DASH}'",
+"x r'''\\n\u00e9''' :",
+"r'''# not a comment'''"
+]
+],
+[
+"    0 t\"\"\"{x}\\'a\"\"\"\n",
+[
+"0 t\"\"\"{x}\\'a\"\"\""
+]
+],
+[
+"rt\"{x:=5}\" ; def \n",
+[
+"rt\"{x:=5}\" ; def"
+]
+],
+[
+"rt'{x:{y}}:{x!r}' + rb'a' \n; # \u20ac # 'x\nf\"{x:{y}}{x!r}\" if x: f\"\"\"#{f'{y}'}\"\"\" \frt\"a{x:>{w}}{a;b}\" .5 \nf'\u00e9{x:%Y-%m}\u00e9'\n0 rf\"\"\":{f'{y}'}\\n\"\"\" if ()\n:= _ :=\n",
+[
+"rt'{x:{y}}:{x!r}' + rb'a'",
+"; # \u20ac # 'x",
+"f\"{x:{y}}{x!r}\" if x: f\"\"\"#{f'{y}'}\"\"\"",
+"rt\"a{x:>{w}}{a;b}\" .5",
+"f'\u00e9{x:%Y-%m}\u00e9'",
+"0 rf\"\"\":{f'{y}'}\\n\"\"\" if ()",
+":= _ :="
+]
+],
+[
+"\t\n    #()\t\n[for i in x: pass.5 } } for i in x: pass \n \fpass-> ft'{x}}}}'\u20ac\t\n {a: b}\u001d defwhile 1: break; x\ufeff pass \nf\"\"\"{x:{}{x:=5{x:{y:{z}}\"\"\" \u000b a1 a1 [\n \f3.14_15 , #0x1for    \n! , \n\t; x = 1; y = 2 \\  rf'#\\N{DASH}'  \f\n",
+[
+"",
+"#()",
+"[for i in x: pass.5 } } for i in x: pass",
+"",
+"pass-> ft'{x}}}}'\u20ac",
+"{a: b}",
+"defwhile 1: break; x\ufeff pass",
+"f\"\"\"{x:{}{x:=5{x:{y:{z}}\"\"\"",
+"a1 a1 [",
+"",
+"3.14_15 , #0x1for",
+"! ,",
+"; x = 1; y = 2 \\  rf'#\\N{DASH}'",
+""
+]
+],
+[
+"\telse f(x)[0]\nr\"\"\"\"\"\" rb\":}}\\N{DASH}\"\nrt'''\\\"{x=}{x:>{w}}''' t'''\f{a;b}''' \n \n    r\"\"\"  text\"\"\"\n    b'''\n# not a comment'''\n+ '' foo\n",
+[
+"else f(x)[0]",
+"r\"\"\"\"\"\" rb\":}}\\N{DASH}\"",
+"rt'''\\\"{x=}{x:>{w}}''' t'''",
+"{a;b}'''",
+"",
+"r\"\"\"  text\"\"\"",
+"b'''",
+"# not a comment'''",
+"+ '' foo"
+]
+],
+[
+"[[ y  \f\n[; {->y else  \n",
+[
+"[[ y",
+"",
+"[; {->y else"
+]
+],
+[
+"    # c :\n\tdef f(): 1 def 0x1f\n    \n\t()\n-> 0x1f 1 ;\f\tf''''''\n",
+[
+"# c :",
+"def f(): 1 def 0x1f",
+"",
+"()",
+"-> 0x1f 1 ;",
+"f''''''"
+]
+],
+[
+"    () passu'''\\nx y''' (\t\u000b    ( + x\u00a0y     \r    bt\"\" **= \t\n\t; if x: r\"\f}}\\N{DASH}\" \ufeff foo \rx = 1; y = 2 f'''''' x = 1; y = 2 \u0000\n\u001c    class C: pass ; ~ {}def f():  \f\f0 1e-3 \\ ub'''\n'''  \r\n    fooelse lambda class C: pass pass \t\u0085 \f\n    ur'\u00e9\"#'def  \f",
+[
+"() passu'''\\nx y''' (",
+"( + x\u00a0y",
+"bt\"\" **=",
+"; if x: r\"",
+"}}\\N{DASH}\" \ufeff foo",
+"x = 1; y = 2 f'''''' x = 1; y = 2 \u0000",
+"",
+"class C: pass ; ~ {}def f():",
+"",
+"0 1e-3 \\ ub'''",
+"'''",
+"fooelse lambda class C: pass pass",
+"",
+"",
+"ur'\u00e9\"#'def"
+]
+],
+[
+"-> ] ; for i in x: pass  \f\n:\ufeff\n    f\"\" def \\ \"\" f(x)[0] while 1: break; x  \u001c# while 1: break; x while 1: break; x \n{ ur\"\"\t\n\tpass \\  00  \f\n\n \ffor i in x: pass \u000b \nrf\"\"\"{x # c\n}{{x!}\"\"\" a1 0x1f \t\nf\"\"\"{x:{y}}{[1:2]\"\"\" \\ \t\r \f\t\n",
+[
+"-> ] ; for i in x: pass",
+"",
+":\ufeff",
+"f\"\" def \\ \"\" f(x)[0] while 1: break; x",
+"# while 1: break; x while 1: break; x",
+"{ ur\"\"",
+"pass \\  00",
+"",
+"",
+"",
+"for i in x: pass",
+"",
+"rf\"\"\"{x # c",
+"}{{x!}\"\"\" a1 0x1f",
+"f\"\"\"{x:{y}}{[1:2]\"\"\" \\",
+"",
+""
+]
+],
+[
+"\tb\"a\\N{DASH}\" [1:2] >>= rt'{x:{y}}'\r\n: f\"{x!r}\" \n",
+[
+"b\"a\\N{DASH}\" [1:2] >>= rt'{x:{y}}'",
+": f\"{x!r}\""
+]
+],
+[
+"    \u00e9 != @ Br\"\"\"}}\"\"\"== [\n 0b2 def f(): \u20ac ` f''' {a;b''' ",
+[
+"\u00e9 != @ Br\"\"\"}}\"\"\"== [",
+"0b2 def f(): \u20ac ` f''' {a;b'''"
+]
+],
+[
+" ",
+[
+""
+]
+],
+[
+"1_000 rf'''{x:=5}{x}''' .5\nf''''''\n'''{{}}}}''' x = 1; y = 2\n    r\"\"\"\"\"\" '' \nx\n\t\u20ac ()\n",
+[
+"1_000 rf'''{x:=5}{x}''' .5",
+"f''''''",
+"'''{{}}}}''' x = 1; y = 2",
+"r\"\"\"\"\"\" ''",
+"x",
+"\u20ac ()"
+]
+],
+[
+"    (x,\n y) $ [ bf'''{x:}\f{x!}''' t'\n # \\     \n \f\u2028    \n {0x1flambda \n \t\n",
+[
+"(x,",
+"y) $ [ bf'''{x:}",
+"{x!}''' t'",
+"# \\",
+"",
+"",
+"",
+"{0x1flambda",
+""
+]
+],
+[
+"    f\"\"\"\"\"\"\ny 1if if \n\tu'''\u00e9'''\n... \n\n     \n\"\"\"# not a comment\n\"\"\"\n\t# a: b; c a1 \f.5 '''\u00e9#'''\f",
+[
+"f\"\"\"\"\"\"",
+"y 1if if",
+"u'''\u00e9'''",
+"...",
+"",
+"",
+"\"\"\"# not a comment",
+"\"\"\"",
+"# a: b; c a1",
+".5 '''\u00e9#'''"
+]
+],
+[
+"r'''\n'''\n\t: f(x)[0] == rt\"\"\"\"\"\"\n1_000 def f():\n",
+[
+"r'''",
+"'''",
+": f(x)[0] == rt\"\"\"\"\"\"",
+"1_000 def f():"
+]
+],
+[
+"\tlambda (x,\n y)\nrb\";a:\" \"\"\"\\N{DASH}\"\"\" [x] !=\n\t\n\tb'''  text\n'''\n",
+[
+"lambda (x,",
+"y)",
+"rb\";a:\" \"\"\"\\N{DASH}\"\"\" [x] !=",
+"",
+"b'''  text",
+"'''"
+]
+],
+[
+"a1 \u00e9 def f(): 1_000\n: rf'' ; \ndef\n\t# a: b; c try: 1/0 b'\\n' \n",
+[
+"a1 \u00e9 def f(): 1_000",
+": rf'' ;",
+"def",
+"# a: b; c try: 1/0 b'\\n'"
+]
+],
+[
+"; .5 'a\\\"\\\"'\r\nfoo {} \n\tr'''# not a comment'''\n    else: \"\"\"\f\"\"\" while 1: break; x \u20ac\nx = 1; y = 2 pass 1if class C: pass\nif pass \n    ... ; \u20ac \u00e9 \f",
+[
+"; .5 'a\\\"\\\"'",
+"foo {}",
+"r'''# not a comment'''",
+"else: \"\"\"",
+"\"\"\" while 1: break; x \u20ac",
+"x = 1; y = 2 pass 1if class C: pass",
+"if pass",
+"... ; \u20ac \u00e9"
+]
+],
+[
+"} >>=     \n",
+[
+"} >>="
+]
+],
+[
+"() a1 lambda y\f_ lambda () f''\n",
+[
+"() a1 lambda y",
+"_ lambda () f''"
+]
+],
+[
+"t\"{a;b}\" for i in x: pass y :\n",
+[
+"t\"{a;b}\" for i in x: pass y :"
+]
+],
+[
+"try: 1/0 ur'\\Nx y' {} 1_e2 42  \f\n[x] ->}     \n    ~ yu'x y#\f' 0o \t\n\ttry: 1/0 \f\n    () , \f\n \f)':'if x:\\ \f\tdef f():x ] \u20ac x  \n",
+[
+"try: 1/0 ur'\\Nx y' {} 1_e2 42",
+"",
+"[x] ->}",
+"~ yu'x y#",
+"' 0o",
+"try: 1/0",
+"",
+"() ,",
+"",
+"",
+")':'if x:\\",
+"def f():x ] \u20ac x"
+]
+],
+[
+"    : '''\n{{''' if\n    pass t'''\\N{DASH}{f'{y}'}''' rt'\\\"{{{x:{y}}'\n{a: b} f'\\n' rf\"\"\"\"\"\" {a: b}\n\u00e9 foo\n\t\fa1\n\tb'''x: y; z\n# not a comment'''\n    while 1: break; x \"\"\"\"\"\"\nf\"\"\"\"\"\"\nf'''x y''' u\"\\N{DASH}\" r'\\n' {a: b}\f \n",
+[
+": '''",
+"{{''' if",
+"pass t'''\\N{DASH}{f'{y}'}''' rt'\\\"{{{x:{y}}'",
+"{a: b} f'\\n' rf\"\"\"\"\"\" {a: b}",
+"\u00e9 foo",
+"",
+"a1",
+"b'''x: y; z",
+"# not a comment'''",
+"while 1: break; x \"\"\"\"\"\"",
+"f\"\"\"\"\"\"",
+"f'''x y''' u\"\\N{DASH}\" r'\\n' {a: b}",
+""
+]
+],
+[
+"a1['''\\\"{{\f'''     \n: \t\u001c\n while 1: break; xu'}\\'\"'     \r     \n\tclass C: pass  \ny \f\nif x: _def f(): \f\felse a1 { rf\"{x=}{f'{x}'}\\\" \u00e9 [x]  \f\ndef  \f\f",
+[
+"a1['''\\\"{{",
+"'''",
+":",
+"",
+"while 1: break; xu'}\\'\"'",
+"",
+"class C: pass",
+"y",
+"",
+"if x: _def f():",
+"",
+"else a1 { rf\"{x=}{f'{x}'}\\\" \u00e9 [x]",
+"",
+"def",
+""
+]
+],
+[
+" 1_e2 defdef ub\"\"\"\\'\"\"\" \n",
+[
+"1_e2 defdef ub\"\"\"\\'\"\"\""
+]
+],
+[
+" \nuf\"\"\"{x:}{x!r}\"\"\" pass'' 3.14_15 1.5j \ntry: 1/0 Fr\"\\n\\N{DASH}{f'{x}'\" 1if  \f\f\t\u001c >>= \"}}\f:\" >>= ) \n[x] U\"\"\"\\\n#\"\"\"1.5j ] [ x\u00a0y  \f\n \u001d  \r\n: # a: b; c \u001c \\ \f\n",
+[
+"",
+"uf\"\"\"{x:}{x!r}\"\"\" pass'' 3.14_15 1.5j",
+"try: 1/0 Fr\"\\n\\N{DASH}{f'{x}'\" 1if",
+"",
+"",
+">>= \"}}",
+":\" >>= )",
+"[x] U\"\"\"\\",
+"#\"\"\"1.5j ] [ x\u00a0y",
+"",
+"",
+"",
+": # a: b; c",
+"\\",
+""
+]
+],
+[
+"\t\u20ac\n\t1 1 else\n0777\n\tif x\n\n\t{a: b} \u00e9 \r\n\t.5 t\"\"\" \f\"\"\"\n->\n",
+[
+"\u20ac",
+"1 1 else",
+"0777",
+"if x",
+"",
+"{a: b} \u00e9",
+".5 t\"\"\"",
+"\"\"\"",
+"->"
+]
+],
+[
+"    = x 1if\n\nf'''{lambda: 1}''' \u20ac \ftry: 1/0\r\n\"}}\" while 1: break; x ; class C: pass\n'''  text'''\n'\\n' a1 y rf\"\"\"{{\"\"\"\n",
+[
+"= x 1if",
+"",
+"f'''{lambda: 1}''' \u20ac",
+"try: 1/0",
+"\"}}\" while 1: break; x ; class C: pass",
+"'''  text'''",
+"'\\n' a1 y rf\"\"\"{{\"\"\""
+]
+],
+[
+"    # c\n",
+[
+"# c"
+]
+],
+[
+"  \f\n    # \\ Fr\"\"\"{{{}\"\"\"     \n \fwhile 1: break; xBr\"\\'\\N}}\" def f(): :lambda \n x\u00a0yr'\\'' a1 t'''\\\n''' x = 1; y = 2 x = 1; y = 2     \r\n",
+[
+"",
+"",
+"# \\ Fr\"\"\"{{{}\"\"\"",
+"",
+"while 1: break; xBr\"\\'\\N}}\" def f(): :lambda",
+"x\u00a0yr'\\'' a1 t'''\\",
+"''' x = 1; y = 2 x = 1; y = 2"
+]
+],
+[
+"    f(x)[0] t\"{x:{y}}{a;b}\" -> try: 1/0\n\tr'''x: y; z'''\n\t'''}}}};''' :\n    \n    b''''''\n\"\" r'a'\n",
+[
+"f(x)[0] t\"{x:{y}}{a;b}\" -> try: 1/0",
+"r'''x: y; z'''",
+"'''}}}};''' :",
+"",
+"b''''''",
+"\"\" r'a'"
+]
+],
+[
+"    \n    f\"\"\"  text\n  text\"\"\"\n\t[1:2] >>= .5 u'''\f#''' \r\n\t{}\n\t \n",
+[
+"",
+"f\"\"\"  text",
+"text\"\"\"",
+"[1:2] >>= .5 u'''",
+"#'''",
+"{}",
+""
+]
+],
+[
+"\t.5 ; u'''#''' while 1: break; x\n{a: b} else : rb\"\"\"}}a\"\"\"\n",
+[
+".5 ; u'''#''' while 1: break; x",
+"{a: b} else : rb\"\"\"}}a\"\"\""
+]
+],
+[
+" \fclass C: pass \ufeff for i in x: pass  \u202942# {}bf\"\\N\" if x: bf'{x!s:>10}{x:{y:{z}}'  \r\n \n \f\n\t0b2 ; 0b101 Br\"\"\"x y\\\n\"\"\" y lambda  \u2029# 'x {} 0b2 if x: bt':' \n",
+[
+"",
+"class C: pass \ufeff for i in x: pass",
+"42# {}bf\"\\N\" if x: bf'{x!s:>10}{x:{y:{z}}'",
+"",
+"",
+"",
+"0b2 ; 0b101 Br\"\"\"x y\\",
+"\"\"\" y lambda",
+"# 'x {} 0b2 if x: bt':'"
+]
+],
+[
+" \f= =  \n \f    ",
+[
+"",
+"= =",
+"",
+""
+]
+],
+[
+"f''''''\n \f#\n    else: >>=\n",
+[
+"f''''''",
+"",
+"#",
+"else: >>="
+]
+],
+[
+"    while 1: break; x) a1 # a: b; c \t\n for i in x: passft'{(x)}{(x){x:\n}' \"\\a\\'\" **=t'{x}' ",
+[
+"while 1: break; x) a1 # a: b; c",
+"for i in x: passft'{(x)}{(x){x:",
+"}' \"\\a\\'\" **=t'{x}'"
+]
+],
+[
+"a1 ;  \n\\ f\"{lambda: 1}{'a'\" 1_ \n",
+[
+"a1 ;",
+"\\ f\"{lambda: 1}{'a'\" 1_"
+]
+],
+[
+"== \n\n\t'''\nx: y; z'''\n\t() f(x)[0] 0x1f \n    b\"\"\"# not a comment\n# not a comment\"\"\"\n# c while 1: break; x\r\n    try: 1/0 {} 0x1f \n\tf\"{x=}{x!s:>10}\" else:\n\n    ... 1e5 u'''{{''' x = 1; y = 2\f\t+ # 'x def [x]\n",
+[
+"==",
+"",
+"'''",
+"x: y; z'''",
+"() f(x)[0] 0x1f",
+"b\"\"\"# not a comment",
+"# not a comment\"\"\"",
+"# c while 1: break; x",
+"try: 1/0 {} 0x1f",
+"f\"{x=}{x!s:>10}\" else:",
+"",
+"... 1e5 u'''{{''' x = 1; y = 2",
+"+ # 'x def [x]"
+]
+],
+[
+" \f<> \u3000 _ <>U\"a':\" = \n\t\t \f\n\t \f\nclass C: pass:= \f\u0085 \f} x = 1; y = 2 0x \n\"\"\"\\\"x y;\" \u001d } ft\"\" \\x \r {} : (->U\"\"\"\"\"\" \u008542 ( \\if x: b\"}\" x = 1; y = 2  \f\u2028 \f.def f(): [ \r\n",
+[
+"",
+"<> \u3000 _ <>U\"a':\" =",
+"",
+"",
+"",
+"",
+"class C: pass:=",
+"",
+"",
+"} x = 1; y = 2 0x",
+"\"\"\"\\\"x y;\"",
+"} ft\"\" \\x",
+"{} : (->U\"\"\"\"\"\"",
+"42 ( \\if x: b\"}\" x = 1; y = 2",
+"",
+"",
+".def f(): ["
+]
+],
+[
+"\t42 if x: a1 f(x)[0]\n{a: b} [1:2] 1e5 else\n\tdef [x]\n\t# 'x != class C: pass \n",
+[
+"42 if x: a1 f(x)[0]",
+"{a: b} [1:2] 1e5 else",
+"def [x]",
+"# 'x != class C: pass"
+]
+],
+[
+"bf'''{[1:2]}a''' x = 1; y = 2 ] rb'''#\f'''t\"\"\"\"\"\"  \f\u2029\t\n class C: pass \r\"\u00e9\\' \" @ Tr\"{{x}\" rf\"\"\"\\n;\"\"\" \u000b \fur'\\\n\\}}'\u001cclass C: pass \n",
+[
+"bf'''{[1:2]}a''' x = 1; y = 2 ] rb'''#",
+"'''t\"\"\"\"\"\"",
+"",
+"",
+"class C: pass",
+"\"\u00e9\\' \" @ Tr\"{{x}\" rf\"\"\"\\n;\"\"\"",
+"",
+"ur'\\",
+"\\}}'",
+"class C: pass"
+]
+],
+[
+"\ta1\n\t# a: b; c x {a: b}\n\t \n    42 \f    : # 'x \n\t0x1f \u20ac x\nb'''  text'''\na1 ()\n! else () t'''{lambda: 1}{x}'''\n    : 42 lambda \n\t.5 lambda -> \n",
+[
+"a1",
+"# a: b; c x {a: b}",
+"",
+"42",
+": # 'x",
+"0x1f \u20ac x",
+"b'''  text'''",
+"a1 ()",
+"! else () t'''{lambda: 1}{x}'''",
+": 42 lambda",
+".5 lambda ->"
+]
+],
+[
+"    else:\n# c x = 1; y = 2 y b'''\n'''\n\n\tdef f():\n    'x y' \n    \u20ac r\"\"\"\\'\u00e9}}\"\"\" + f'''{x!r}:}}'''\fy ... f\"{a;b}{f'{y}'}a\" \nu\"# \\N{DASH}\" 1if foo\n; 0 pass\n",
+[
+"else:",
+"# c x = 1; y = 2 y b'''",
+"'''",
+"",
+"def f():",
+"'x y'",
+"\u20ac r\"\"\"\\'\u00e9}}\"\"\" + f'''{x!r}:}}'''",
+"y ... f\"{a;b}{f'{y}'}a\"",
+"u\"# \\N{DASH}\" 1if foo",
+"; 0 pass"
+]
+],
+[
+"\tTr\"\" \u000b\u001d:= a1#  \nrb'''\\\\'\\n'''f'' \n\u00e9 1e+rt\"\\{x:{}{x:{y:{z}}}\" $ {a: b} \t\r",
+[
+"Tr\"\"",
+"",
+":= a1#",
+"rb'''\\\\'\\n'''f''",
+"\u00e9 1e+rt\"\\{x:{}{x:{y:{z}}}\" $ {a: b}"
+]
+],
+[
+"    if x: _\nx = 1; y = 2 # \\ t'{x:%Y-%m}'def f(): \\  \n    # a: b; c _ t\"\"\"}{x!}\"\"\" ur\"\\n\" passelse:     \n \f( \nwhile 1: break; x\u001d 00 [1:2] \u001c \fuf\"\"\"\"\"\"  \f\n \f \n \ffor i in x: pass ~ Tr'{[1:2]}#\n'!= b\"\"\"\"\"\"\t\n",
+[
+"if x: _",
+"x = 1; y = 2 # \\ t'{x:%Y-%m}'def f(): \\",
+"# a: b; c _ t\"\"\"}{x!}\"\"\" ur\"\\n\" passelse:",
+"",
+"(",
+"while 1: break; x",
+"00 [1:2]",
+"",
+"uf\"\"\"\"\"\"",
+"",
+"",
+"",
+"",
+"for i in x: pass ~ Tr'{[1:2]}#",
+"'!= b\"\"\"\"\"\""
+]
+],
+[
+"\nu\"\"\"\\n\"\"\" \n \frf'''\f{x = }\\\"''' if x: # \n\tfor i in x: passf'''{(x)''' ] +  \u0085        \nx = 1; y = 2  \f\nub\"\" class C: pass != \n",
+[
+"",
+"u\"\"\"\\n\"\"\"",
+"",
+"rf'''",
+"{x = }\\\"''' if x: #",
+"for i in x: passf'''{(x)''' ] +",
+"",
+"x = 1; y = 2",
+"",
+"ub\"\" class C: pass !="
+]
+],
+[
+"\tf'{lambda: 1}{(x)}{x:{y}}' def f(): else:\nb' x y' -> \nf''''''\n    0777 f(x)[0] t'{x:{y}}'\ny b'x y{{' rt'''{x!r}#''' def f():\n    (x,\n y) <> {} +\f",
+[
+"f'{lambda: 1}{(x)}{x:{y}}' def f(): else:",
+"b' x y' ->",
+"f''''''",
+"0777 f(x)[0] t'{x:{y}}'",
+"y b'x y{{' rt'''{x!r}#''' def f():",
+"(x,",
+"y) <> {} +"
+]
+],
+[
+"0 if x: {} 0b2 uf\"\n{\\N\" x\n",
+[
+"0 if x: {} 0b2 uf\"",
+"{\\N\" x"
+]
+],
+[
+"        \n ) 1if<> '''\\\n''' {a: b} ur'''''' \u2029\u00e9 0 while 1: break; x **= \t\f    \nft\"\" x = 1; y = 2[x][ }?\n",
+[
+"",
+") 1if<> '''\\",
+"''' {a: b} ur''''''",
+"\u00e9 0 while 1: break; x **=",
+"",
+"ft\"\" x = 1; y = 2[x][ }?"
+]
+],
+[
+"    \nwhile 1: break; x # a: b; c  \f\r\n    (x,\n y) u'''{{{'''  \f\n \f    \u2028\tbf\"{x}{x = \" else: 1.e5 a1 a1== \t\n1_e2 class3.14_15 \fbt'''a''' ft\"\"\"\n{x:{y}}\"\"\" foo $ \n    lambda ~ 1if ,) \u2029    bt'''a{x:%Y-%m''' \n\\ ur\"\"\"\f\u00e9\"\"\" 1.e5  \f\n \f\"\"\"\\\"\"\"\" # a: b; c + #3.14_151 \r@ )     ",
+[
+"",
+"while 1: break; x # a: b; c",
+"",
+"(x,",
+"y) u'''{{{'''",
+"",
+"",
+"",
+"bf\"{x}{x = \" else: 1.e5 a1 a1==",
+"1_e2 class3.14_15",
+"bt'''a''' ft\"\"\"",
+"{x:{y}}\"\"\" foo $",
+"lambda ~ 1if ,)",
+"bt'''a{x:%Y-%m'''",
+"\\ ur\"\"\"",
+"\u00e9\"\"\" 1.e5",
+"",
+"",
+"\"\"\"\\\"\"\"\" # a: b; c + #3.14_151",
+"@ )"
+]
+],
+[
+"== 0\n",
+[
+"== 0"
+]
+],
+[
+"\t\nrf\"{x!r}a}}\" [x] ':'\n[x]\n",
+[
+"",
+"rf\"{x!r}a}}\" [x] ':'",
+"[x]"
+]
+],
+[
+"    for i in x: pass lambda\n42 # c\nr\"\"\"#x y\\N{DASH}\"\"\" # a: b; c x = 1; y = 2 !=\n\n[x] rf\"\"\"\"\"\"\n''':'''\n\t\n",
+[
+"for i in x: pass lambda",
+"42 # c",
+"r\"\"\"#x y\\N{DASH}\"\"\" # a: b; c x = 1; y = 2 !=",
+"",
+"[x] rf\"\"\"\"\"\"",
+"''':'''",
+""
+]
+],
+[
+"#\nfor i in x: pass pass \n    ->\n    \ndef f():\r\n\tif \"a\" # while 1: break; x\n \n# 'x \n... t'''{x:{y}}{f'{y}'}{x!s:>10}'''\n\u20ac if 0 x = 1; y = 2 \n# 'x\n[x] \n",
+[
+"#",
+"for i in x: pass pass",
+"->",
+"",
+"def f():",
+"if \"a\" # while 1: break; x",
+"",
+"# 'x",
+"... t'''{x:{y}}{f'{y}'}{x!s:>10}'''",
+"\u20ac if 0 x = 1; y = 2",
+"# 'x",
+"[x]"
+]
+],
+[
+";\n    rf'''{(x)}''' rt'a{x:%Y-%m}a'\ndef f(): 42 if x: \n\"a;\" r''\n\t(x,\n y) \nfoo [1:2] : \f\u00e9 42\n    {} _ # [x]\nif \n",
+[
+";",
+"rf'''{(x)}''' rt'a{x:%Y-%m}a'",
+"def f(): 42 if x:",
+"\"a;\" r''",
+"(x,",
+"y)",
+"foo [1:2] :",
+"\u00e9 42",
+"{} _ # [x]",
+"if"
+]
+],
+[
+"else: f'''{x:{x = }''' '''a'''\u20ac \u2028",
+[
+"else: f'''{x:{x = }''' '''a'''\u20ac"
+]
+],
+[
+"     \nrb'''a''' >>= x = 1; y = 2\f \nf''':'''\r\n0x1f\n\tb''''''\nrb'''\n'''\n    \n\t-> **= _ \n0 f\"\" ! \nx = 1; y = 2 else\r\n# a: b; c\n",
+[
+"",
+"rb'''a''' >>= x = 1; y = 2",
+"",
+"f''':'''",
+"0x1f",
+"b''''''",
+"rb'''",
+"'''",
+"",
+"-> **= _",
+"0 f\"\" !",
+"x = 1; y = 2 else",
+"# a: b; c"
+]
+],
+[
+" \f\u20ac 00 \f\n 1    \r\n# pass rb\"\"\"'\\\"\"\"\" \t\n",
+[
+"",
+"\u20ac 00",
+"",
+"1",
+"# pass rb\"\"\"'\\\"\"\"\""
+]
+],
+[
+" \n\tu\"\"\"\\'\f\"\"\" f(x)[0] -> [1:2] \n\n",
+[
+"",
+"u\"\"\"\\'",
+"\"\"\" f(x)[0] -> [1:2]",
+""
+]
+],
+[
+"\t; def f'''''' class C: pass \n\t\n    t\"\"\"\\'{x!s:>10}\"\"\" \nb''''''\n",
+[
+"; def f'''''' class C: pass",
+"",
+"t\"\"\"\\'{x!s:>10}\"\"\"",
+"b''''''"
+]
+],
+[
+"lambda { # a: b; c~ 0o y \n    rf'''{(x)}{{x}}\"''' pass} x = 1; y = 2  \n    \\  @\u000b    x\"\" for i in x: passub'\\n' # \\ try: 1/0 \n\ta1f\"#{a;b}\f\"    \n",
+[
+"lambda { # a: b; c~ 0o y",
+"rf'''{(x)}{{x}}\"''' pass} x = 1; y = 2",
+"\\  @",
+"x\"\" for i in x: passub'\\n' # \\ try: 1/0",
+"a1f\"#{a;b}",
+"\""
+]
+],
+[
+"\n    \r\n",
+[
+"",
+""
+]
+],
+[
+"ub\"\"\"\u00e9a;\"\"\" xu\"\"1j\n\t\u007f: ` Fr\"\"     \n \ff\"\"\"\"\"\" \f\u001c    \u2029 \n\tdef ur\"\"\"a:\"\"\"     \n\fr\"\\n\" \\x [rb\"\"\"#\\\n\n\"\"\"{} # a: b; c \t\u001c \f\f\t\r\n \f@ \\ class\"\u00e9\\'\"\"\"\"\\n\"\"\" for i in x: pass  \n    +>>= .5 u\"\"\t\n",
+[
+"ub\"\"\"\u00e9a;\"\"\" xu\"\"1j",
+"\u007f: ` Fr\"\"",
+"",
+"f\"\"\"\"\"\"",
+"",
+"",
+"",
+"def ur\"\"\"a:\"\"\"",
+"",
+"r\"\\n\" \\x [rb\"\"\"#\\",
+"",
+"\"\"\"{} # a: b; c",
+"",
+"",
+"",
+"",
+"@ \\ class\"\u00e9\\'\"\"\"\"\\n\"\"\" for i in x: pass",
+"+>>= .5 u\"\""
+]
+],
+[
+"\u20ac\n\t42 42 ->\n# 'x\n# c r\"x y{{\\n\" _ =\n\u00e9 1 \n\t\u20ac if # c \nf'''a''' \f... t'{a;b}{x:{y}}{x:{y}}'\n",
+[
+"\u20ac",
+"42 42 ->",
+"# 'x",
+"# c r\"x y{{\\n\" _ =",
+"\u00e9 1",
+"\u20ac if # c",
+"f'''a'''",
+"... t'{a;b}{x:{y}}{x:{y}}'"
+]
+],
+[
+"# \\1e-3 while 1: break; x x = 1; y = 2\t\r\trf\"\"\"{x!r{}\"\"\"# a: b; c\n #foo else: class C: pass  \n    # 0o7 [1:2] \n  \f\ny1_ class -> \f\u000b1.5j\npassbt'''{x:>{w}}''' : ~ rb'\\'' def f(): \u0085\t$ x ub\"\"\"{ \"\"\"0o     \n # \\ else:y     ",
+[
+"# \\1e-3 while 1: break; x x = 1; y = 2",
+"rf\"\"\"{x!r{}\"\"\"# a: b; c",
+"#foo else: class C: pass",
+"# 0o7 [1:2]",
+"",
+"",
+"y1_ class ->",
+"",
+"1.5j",
+"passbt'''{x:>{w}}''' : ~ rb'\\'' def f():",
+"$ x ub\"\"\"{ \"\"\"0o",
+"# \\ else:y"
+]
+],
+[
+"    [x] 1_000 while 1: break; x r' :\u00e9' \n== rb\"\"\"a\"\"\" 1if for i in x: pass \f\"\"\":}}\n\"\"\" def y \n\ty 0777 lambda\nrb'\\n:\\'' ''';##''' else \nif {a: b} rf'##{[1:2]}' \f    \":\" pass \nf\"{{\" lambda ! r\"\"\"\u00e9\\'\\N{DASH}\"\"\"\r\nif lambda\nrt''\r\nt'{x:>{w}};{x!s:>10}' {a: b} \nb'''''' ==\n",
+[
+"[x] 1_000 while 1: break; x r' :\u00e9'",
+"== rb\"\"\"a\"\"\" 1if for i in x: pass",
+"\"\"\":}}",
+"\"\"\" def y",
+"y 0777 lambda",
+"rb'\\n:\\'' ''';##''' else",
+"if {a: b} rf'##{[1:2]}'",
+"\":\" pass",
+"f\"{{\" lambda ! r\"\"\"\u00e9\\'\\N{DASH}\"\"\"",
+"if lambda",
+"rt''",
+"t'{x:>{w}};{x!s:>10}' {a: b}",
+"b'''''' =="
+]
+],
+[
+" \r\n    try: 1/0 () x \n",
+[
+"",
+"try: 1/0 () x"
+]
+],
+[
+" \r    {a: b} 42 \n \f3.14_15 \n \n\t! ... 1e-3class\u000bx\u00a0y     \n  \f\u2028    : if x: class u'' {a: b} bf\"\\'{\n\" \n\f \u3000 x = 1; y = 2  \u00851e-3 \f\n",
+[
+"",
+"{a: b} 42",
+"",
+"3.14_15",
+"",
+"! ... 1e-3class",
+"x\u00a0y",
+"",
+"",
+": if x: class u'' {a: b} bf\"\\'{",
+"\"",
+"",
+"x = 1; y = 2",
+"1e-3",
+""
+]
+],
+[
+"r''''''\f\tb\"}}\" else \"\"\"\\'\"\"\"\n    try: 1/0 y x = 1; y = 2\n\tb''''''\n    def {} # c # 'x\n",
+[
+"r''''''",
+"b\"}}\" else \"\"\"\\'\"\"\"",
+"try: 1/0 y x = 1; y = 2",
+"b''''''",
+"def {} # c # 'x"
+]
+],
+[
+"ur'\\n{' \\u\"\"\"\\N\"\"\"  \f\f\tbt\"\"\"{x:{}{x:{y:{z}}}{f'{x}'\"\"\" x} \n \ndef f(): a1 \f\nbt'''''' 0o = \t\n    , if x: ] ] bt'{(x){x!}{x}' \t\nx \u0000  \f\n \f\u0085\t[x] else: x = 1; y = 2 f(x)[0]f\"{(x)}\" )  \f\fBr''':'''  \f\nu\" \f\" \\ \\  \n \f\n",
+[
+"ur'\\n{' \\u\"\"\"\\N\"\"\"",
+"",
+"bt\"\"\"{x:{}{x:{y:{z}}}{f'{x}'\"\"\" x}",
+"",
+"def f(): a1",
+"",
+"bt'''''' 0o =",
+", if x: ] ] bt'{(x){x!}{x}'",
+"x \u0000",
+"",
+"",
+"",
+"[x] else: x = 1; y = 2 f(x)[0]f\"{(x)}\" )",
+"",
+"Br''':'''",
+"",
+"u\"",
+"\" \\ \\",
+"",
+""
+]
+],
+[
+"    b\"}}aa\" 1j\nfor i in x: pass 0x1f != \n\t: () u\"\"\"\\N{DASH}{{a\"\"\" \n",
+[
+"b\"}}aa\" 1j",
+"for i in x: pass 0x1f !=",
+": () u\"\"\"\\N{DASH}{{a\"\"\""
+]
+],
+[
+"    '\\\"\u00e9\\n' # a: b; c 42\n    f\"\"\"\"\"\"\n    if x: f\"{x:%Y-%m}{x:>{w}}\" # 'x (x,\n y) \n() rb\"\"\"}}\n\f\"\"\"\n    == == {} \n    \nr\"\"\"  text\"\"\"\n    lambda f(x)[0] {} #\n_ y ! # 'x \n",
+[
+"'\\\"\u00e9\\n' # a: b; c 42",
+"f\"\"\"\"\"\"",
+"if x: f\"{x:%Y-%m}{x:>{w}}\" # 'x (x,",
+"y)",
+"() rb\"\"\"}}",
+"",
+"\"\"\"",
+"== == {}",
+"",
+"r\"\"\"  text\"\"\"",
+"lambda f(x)[0] {} #",
+"_ y ! # 'x"
+]
+],
+[
+" \f42 try: 1/0 if Fr''''''\u20ac \n\trb'}}# f(x)[0] 42_  \n",
+[
+"",
+"42 try: 1/0 if Fr''''''\u20ac",
+"rb'}}# f(x)[0] 42_"
+]
+],
+[
+"    else: # c\nrb'x y \u00e9' a1 _ else\r\n\u20ac\r\n\t\r\n\tb''''''\n\telse: rb'''\\N{DASH}\f''' x = 1; y = 2\n\f    else: f(x)[0] '''\\N{DASH}'''\nx r\"\" try: 1/0 1j\n    x = 1; y = 2 \n    y b''';''' -> #\n\t \n",
+[
+"else: # c",
+"rb'x y \u00e9' a1 _ else",
+"\u20ac",
+"",
+"b''''''",
+"else: rb'''\\N{DASH}",
+"''' x = 1; y = 2",
+"",
+"else: f(x)[0] '''\\N{DASH}'''",
+"x r\"\" try: 1/0 1j",
+"x = 1; y = 2",
+"y b''';''' -> #",
+""
+]
+],
+[
+"x ':' 42 \n= if x:\n\tr\";\\n\"\n\" \" lambda\n\n    x = 1; y = 2 '#\\N{DASH}' rt''\r\nf\"\u00e9\" # 'x \n    ''''''\nf\"\"\"  text\"\"\"\nelse: 0777 \n",
+[
+"x ':' 42",
+"= if x:",
+"r\";\\n\"",
+"\" \" lambda",
+"",
+"x = 1; y = 2 '#\\N{DASH}' rt''",
+"f\"\u00e9\" # 'x",
+"''''''",
+"f\"\"\"  text\"\"\"",
+"else: 0777"
+]
+],
+[
+"    \r\n",
+[
+""
+]
+],
+[
+" \n1jfor i in x: pass [x]42 . f\"\"\"{x}'\"\"\" \nclass     \u000b<> 1e+ \u001cFr\"\"\"{a;b}{[1:2]}\"\"\"\u00e9for i in x: pass \u2029class\n    # c == x\u00a0y }lambda \u00e9 \u2029;  \f\r\nf'''{lambda: 1}''''foo# c 1_e2'\\\\N{DASH}+  \f\r\n\t1jFr\"\"\"{}\\'{x!r}\"\"\" b'};a' \u000b",
+[
+"",
+"1jfor i in x: pass [x]42 . f\"\"\"{x}'\"\"\"",
+"class",
+"<> 1e+",
+"Fr\"\"\"{a;b}{[1:2]}\"\"\"\u00e9for i in x: pass",
+"class",
+"# c == x\u00a0y }lambda \u00e9",
+";",
+"",
+"f'''{lambda: 1}''''foo# c 1_e2'\\\\N{DASH}+",
+"",
+"1jFr\"\"\"{}\\'{x!r}\"\"\" b'};a'"
+]
+],
+[
+"\tt\"\"\"\u00e9{[1:2]}x y\"\"\" _ ; class C: pass \nrt'''''' if x: rf'''}}{x=}{[1:2]}''' # 'x \n    -> lambda '''\\\"x y''' # c\n\t+ \"\" else \n\t\npass\nb\"\"\":\\\"\"\"\" + {} f\"{{{x:{y}}{x:{y}}\"\n",
+[
+"t\"\"\"\u00e9{[1:2]}x y\"\"\" _ ; class C: pass",
+"rt'''''' if x: rf'''}}{x=}{[1:2]}''' # 'x",
+"-> lambda '''\\\"x y''' # c",
+"+ \"\" else",
+"",
+"pass",
+"b\"\"\":\\\"\"\"\" + {} f\"{{{x:{y}}{x:{y}}\""
+]
+],
+[
+"x class C: pass \n\t+ x = 1; y = 2\n\t \r\nf(x)[0] () t\"\"\"\"\"\" \r\n\tu''';\\n''' # c {a: b}\n\tf\"\"\"x: y; z\nx: y; z\"\"\"\n",
+[
+"x class C: pass",
+"+ x = 1; y = 2",
+"",
+"f(x)[0] () t\"\"\"\"\"\"",
+"u''';\\n''' # c {a: b}",
+"f\"\"\"x: y; z",
+"x: y; z\"\"\""
+]
+],
+[
+"    rt''':{{a''' x = 1; y = 2 x\nb\"\"\"\nx: y; z\"\"\"\n\"\\N{DASH}\\nx y\"\n    f(x)[0] {} _\n# #\nrb\"{{\" def \nf'{f'{y}'}\u00e9'\n-> # 'x def f(): b''''''\n",
+[
+"rt''':{{a''' x = 1; y = 2 x",
+"b\"\"\"",
+"x: y; z\"\"\"",
+"\"\\N{DASH}\\nx y\"",
+"f(x)[0] {} _",
+"# #",
+"rb\"{{\" def",
+"f'{f'{y}'}\u00e9'",
+"-> # 'x def f(): b''''''"
+]
+],
+[
+"\tdef f(): # 'x Fr'' \u00e9 **= [1:2]\f\t",
+[
+"def f(): # 'x Fr'' \u00e9 **= [1:2]",
+""
+]
+],
+[
+"\t\n\t: # def _\n \n: 0 ->\n'''# ''' def y : \n# f(x)[0]\n\t= == \u20ac .5\n    != a1\n",
+[
+"",
+": # def _",
+"",
+": 0 ->",
+"'''# ''' def y :",
+"# f(x)[0]",
+"= == \u20ac .5",
+"!= a1"
+]
+],
+[
+"\ufeff for i in x: passf'''{x:}''' try: 1/0 \u20ac  \f\n\t, ub'\\\f\n'  \nTr'{x:\n}' class C: pass !     \n# \\ 1if    \u000b",
+[
+"\ufeff for i in x: passf'''{x:}''' try: 1/0 \u20ac",
+"",
+", ub'\\",
+"",
+"'",
+"Tr'{x:",
+"}' class C: pass !",
+"# \\ 1if"
+]
+],
+[
+"\tu\"\"\"x y \u00e9\"\"\" y class C: pass (x,\n y) \n    f(x)[0]\nelse:\n\tdef \u20ac rb'' \n",
+[
+"u\"\"\"x y \u00e9\"\"\" y class C: pass (x,",
+"y)",
+"f(x)[0]",
+"else:",
+"def \u20ac rb''"
+]
+],
+[
+"\t# 'x \n\t'''  text\n  text'''\n\t\nfoo\n1e5 else: pass {a: b}\n\tr\"\"\"\"\"\"\n(x,\n y) while 1: break; x\n; 42 x = 1; y = 2 a1\ff\"\\N{DASH}{x:{y}}\"\n",
+[
+"# 'x",
+"'''  text",
+"text'''",
+"",
+"foo",
+"1e5 else: pass {a: b}",
+"r\"\"\"\"\"\"",
+"(x,",
+"y) while 1: break; x",
+"; 42 x = 1; y = 2 a1",
+"f\"\\N{DASH}{x:{y}}\""
+]
+],
+[
+"    _ ()\n_ ==\n\t<> _ \r\n# \";\" f(x)[0] def\n",
+[
+"_ ()",
+"_ ==",
+"<> _",
+"# \";\" f(x)[0] def"
+]
+],
+[
+"    # **= \u001c \f== while 1: break; x }#  ",
+[
+"# **=",
+"",
+"== while 1: break; x }#"
+]
+],
+[
+"\"}}}}\n\n class C: pass \r    }def \u00e9 ",
+[
+"\"}}}}",
+"",
+"class C: pass",
+"}def \u00e9"
+]
+],
+[
+"u'''{{''' 1if 1e5 \n    \"\"\"\"\"\"\n\t\n:\n\n    else: # a: b; c\n \r\n\tr\"\\n\" t\"\"\"\"\"\" if !\nelse: \r\n'a\\n' ()\n    b\"\"\"\"\"\"\n",
+[
+"u'''{{''' 1if 1e5",
+"\"\"\"\"\"\"",
+"",
+":",
+"",
+"else: # a: b; c",
+"",
+"r\"\\n\" t\"\"\"\"\"\" if !",
+"else:",
+"'a\\n' ()",
+"b\"\"\"\"\"\""
+]
+],
+[
+"\t0 0x1f [x] u'''\\N{DASH}}}'''\n\t(x,\n y) try: 1/0 \"a\\N{DASH}:\" \n# c\n\t{a: b} class C: pass\n1e5 for i in x: pass 1e5 \n",
+[
+"0 0x1f [x] u'''\\N{DASH}}}'''",
+"(x,",
+"y) try: 1/0 \"a\\N{DASH}:\"",
+"# c",
+"{a: b} class C: pass",
+"1e5 for i in x: pass 1e5"
+]
+],
+[
+"    def u'''''' 0x1f` _     \n\u20ac U'''\\':\u00e9''' try: 1/0 for i in x: pass \n",
+[
+"def u'''''' 0x1f` _",
+"\u20ac U'''\\':\u00e9''' try: 1/0 for i in x: pass"
+]
+],
+[
+"\t>>=  \f\n x = 1; y = 2 : def f(): ~ if x: foo \npass bt\"\"\"\\N {x:>{w}\"\"\"} \\x ; rf\"#\\\"  \f\n: Fr''else: \"\\N{DASH}#\" \r\n\ttry: 1/0>>= t\"\"\"{\"\"\"  \f\n=`    \n-> ft''';{x:{y:{z}}}{x:>{w}}''' pass uf''''''  \u2028",
+[
+">>=",
+"",
+"x = 1; y = 2 : def f(): ~ if x: foo",
+"pass bt\"\"\"\\N {x:>{w}\"\"\"} \\x ; rf\"#\\\"",
+"",
+": Fr''else: \"\\N{DASH}#\"",
+"try: 1/0>>= t\"\"\"{\"\"\"",
+"",
+"=`",
+"-> ft''';{x:{y:{z}}}{x:>{w}}''' pass uf''''''"
+]
+],
+[
+" \f    \n\t` \n \fBr\"\\\n\nx y\" def Tr'''\f\\{[1:2]''' \n\t\u000b@else: x\u00a0y Br'''{{\\n''' \u2029\t{} f(x)[0] \t\n\tif if( **= 0b2 @    \u000b \fFr''':\"{x = ''' }else:t'''{x = }{}''' ub'''\f'''  \f\n\u00a0 \t\n-> ( if 42(x,\n y)     \n# 'x # a: b; c... \n\t\u20ac\u00e9_ try: 1/0 # \\     \n",
+[
+"",
+"",
+"`",
+"",
+"Br\"\\",
+"",
+"x y\" def Tr'''",
+"\\{[1:2]'''",
+"",
+"@else: x\u00a0y Br'''{{\\n'''",
+"{} f(x)[0]",
+"if if( **= 0b2 @",
+"",
+"Fr''':\"{x = ''' }else:t'''{x = }{}''' ub'''",
+"'''",
+"",
+"",
+"-> ( if 42(x,",
+"y)",
+"# 'x # a: b; c...",
+"\u20ac\u00e9_ try: 1/0 # \\"
+]
+],
+[
+" \f{... \u001d uf'''x y{\u00e9''' } \n    ) := \t\u2029     \n\n\tx = 1; y = 2 \\  \n \u0085 !b\"\"\"\u00e9\f\"\"\" foo else \u000b    if \u20ac [ 1.\n",
+[
+"",
+"{...",
+"uf'''x y{\u00e9''' }",
+") :=",
+"",
+"",
+"x = 1; y = 2 \\",
+"",
+"!b\"\"\"\u00e9",
+"\"\"\" foo else",
+"if \u20ac [ 1."
+]
+],
+[
+"\u00a0 := class C: pass $\n[ class C: pass \"\"\"'\\n\"\"\" ,  \f\n",
+[
+":= class C: pass $",
+"[ class C: pass \"\"\"'\\n\"\"\" ,",
+""
+]
+],
+[
+" \n\tdef f(): if b'''##'''\n\f",
+[
+"",
+"def f(): if b'''##'''",
+""
+]
+],
+[
+" class C: pass else:!= 1_e2\n\n \n \f\u001d else:\r\n# [x] def f():\u20acU'''\\N\"''' '\\\n}}'  \n\t \n\t\n \f( \ufeff else: = \u001e  \f\r \f3.14_15 for i in x: pass ",
+[
+"class C: pass else:!= 1_e2",
+"",
+"",
+"",
+"",
+"else:",
+"# [x] def f():\u20acU'''\\N\"''' '\\",
+"}}'",
+"",
+"",
+"",
+"( \ufeff else: =",
+"",
+"",
+"",
+"3.14_15 for i in x: pass"
+]
+],
+[
+"\tr\"}}\u00e9\" # a: b; c {}\n",
+[
+"r\"}}\u00e9\" # a: b; c {}"
+]
+],
+[
+" for i in x: pass ~ .5 =\na1  \f\u000b",
+[
+"for i in x: pass ~ .5 =",
+"a1",
+""
+]
+],
+[
+"\tf'''# not a comment\n'''\n\t\n    1_000 \f\tx = 1; y = 2 \ndef f():\n= # \u20ac def f(): \n     \n     \n    rt'{x:%Y-%m}' foo \u00e9 (x,\n y)\n>>= \u00e9\n",
+[
+"f'''# not a comment",
+"'''",
+"",
+"1_000",
+"x = 1; y = 2",
+"def f():",
+"= # \u20ac def f():",
+"",
+"",
+"rt'{x:%Y-%m}' foo \u00e9 (x,",
+"y)",
+">>= \u00e9"
+]
+],
+[
+"    \n# a: b; c \"a;\" :\n[x] + rf\"\" \"\"\"a\"\"\"\n\n",
+[
+"",
+"# a: b; c \"a;\" :",
+"[x] + rf\"\" \"\"\"a\"\"\"",
+""
+]
+],
+[
+"lambda f'''{f'{x}'{x:{}a''' \n",
+[
+"lambda f'''{f'{x}'{x:{}a'''"
+]
+],
+[
+" >>= Tr\"{a;b}\"== else \\  \n \f->  \f\u000bf''''''' _ \ufeff # c     \n",
+[
+">>= Tr\"{a;b}\"== else \\",
+"",
+"->",
+"",
+"f''''''' _ \ufeff # c"
+]
+],
+[
+"''''''\ndef y '{{\\na' u'''\\\"a\\N{DASH}''' \n    \nu\"\"\"\\N{DASH}}}\\'\"\"\" ; def x\r\n    def f(): [1:2] 42 ''''''\n",
+[
+"''''''",
+"def y '{{\\na' u'''\\\"a\\N{DASH}'''",
+"",
+"u\"\"\"\\N{DASH}}}\\'\"\"\" ; def x",
+"def f(): [1:2] 42 ''''''"
+]
+],
+[
+"    0x1f # 'x rt'{x:>{w}}' '''#\n\u00e9'''\n    + if x: \fb\"\"\"x: y; z\"\"\"\n\tx rb''':''' !=\n    = f':' def \nfor i in x: pass\nfor i in x: pass # 0777 {a: b}\n\tfor i in x: pass b'''{{'''\n\n    \"\"\":\\'\"\"\" if t\"\u00e9{f'{y}'}{[1:2]}\" def\nfoo def\n\t.5 # for i in x: pass r\"\"\"{{\"\"\"\n",
+[
+"0x1f # 'x rt'{x:>{w}}' '''#",
+"\u00e9'''",
+"+ if x:",
+"b\"\"\"x: y; z\"\"\"",
+"x rb''':''' !=",
+"= f':' def",
+"for i in x: pass",
+"for i in x: pass # 0777 {a: b}",
+"for i in x: pass b'''{{'''",
+"",
+"\"\"\":\\'\"\"\" if t\"\u00e9{f'{y}'}{[1:2]}\" def",
+"foo def",
+".5 # for i in x: pass r\"\"\"{{\"\"\""
+]
+],
+[
+"f''''''\n\n\tr\"\"\"  text\"\"\"\nf''\n1if 1 ; \n",
+[
+"f''''''",
+"",
+"r\"\"\"  text\"\"\"",
+"f''",
+"1if 1 ;"
+]
+],
+[
+"\trt\"\"\"\"\"\"\n    # b\"\\'\\'\" f'\u00e9a'\n    a1 \u00e9 # c u'''\\\"\\''''\n\f    :\n",
+[
+"rt\"\"\"\"\"\"",
+"# b\"\\'\\'\" f'\u00e9a'",
+"a1 \u00e9 # c u'''\\\"\\''''",
+"",
+":"
+]
+],
+[
+"!= x\f \r\n    # a: b; c t\"\"\"{(x)}x y\"\"\" (x,\n y) \n    **= a1\r\n",
+[
+"!= x",
+"",
+"# a: b; c t\"\"\"{(x)}x y\"\"\" (x,",
+"y)",
+"**= a1"
+]
+],
+[
+"_ def f():\n\ttry: 1/0 \n1if else # a: b; c\n     \f\t1e5 \n[1:2] ;\n\t; u\"{{{{;\" \n",
+[
+"_ def f():",
+"try: 1/0",
+"1if else # a: b; c",
+"",
+"1e5",
+"[1:2] ;",
+"; u\"{{{{;\""
+]
+],
+[
+"(x,\n y)\n\t1e5\n    1if 1if (x,\n y)\n    if x: lambda else: # c \n\tr\"\\\"\" t\"{x}{f'{y}'}\" 1if '\\''\n\t_ t\"\"\"\n\\'\"\"\" f'x y\u00e9{x:%Y-%m}' 42\f",
+[
+"(x,",
+"y)",
+"1e5",
+"1if 1if (x,",
+"y)",
+"if x: lambda else: # c",
+"r\"\\\"\" t\"{x}{f'{y}'}\" 1if '\\''",
+"_ t\"\"\"",
+"\\'\"\"\" f'x y\u00e9{x:%Y-%m}' 42"
+]
+],
+[
+"(x,\n y) >>= f\"{x!r}{[1:2]}a\" <> \n    rb'''a#a''' ; rf\"\"\"\\'{x:=5}\\n\"\"\" f'{x:{y}}'\ndef f(): pass _ [1:2]\nfoo\n\n\t \n    t\"\"\";\"\"\" {a: b}\f\ta1 \n'''''' \nf(x)[0] \r\n \n\t\n",
+[
+"(x,",
+"y) >>= f\"{x!r}{[1:2]}a\" <>",
+"rb'''a#a''' ; rf\"\"\"\\'{x:=5}\\n\"\"\" f'{x:{y}}'",
+"def f(): pass _ [1:2]",
+"foo",
+"",
+"",
+"t\"\"\";\"\"\" {a: b}",
+"a1",
+"''''''",
+"f(x)[0]",
+"",
+""
+]
+],
+[
+" 0x r\"\"\"\"\"\" def f(): # \\'\"\\N{DASH}\n' \u001d     \u2029elseelse: if x: x = 1; y = 2 ! x \t\n    \f\t'''\\'\"\u00e9''' class C: pass\\ rb\"}x y\" a1 \ny  \f\n",
+[
+"0x r\"\"\"\"\"\" def f(): # \\'\"\\N{DASH}",
+"'",
+"",
+"elseelse: if x: x = 1; y = 2 ! x",
+"",
+"'''\\'\"\u00e9''' class C: pass\\ rb\"}x y\" a1",
+"y",
+""
+]
+],
+[
+"\t# \\def f(): else: if\u001cf\"\"\" ->else <> x = 1; y = 2 \u2029\t\n \f[x] if\n    \u20ac \t\n    0x \u2029\t:=y \u2028x = 1; y = 2     \nif  \f\n\t<> \u00e9 }rt'''{lambda: 1\\{(x)''' \f    ) '\\\n' (x,\n y)    \n; = 1e U'' # \\ } \t\n",
+[
+"# \\def f(): else: if",
+"f\"\"\" ->else <> x = 1; y = 2",
+"",
+"",
+"[x] if",
+"\u20ac",
+"0x",
+":=y",
+"x = 1; y = 2",
+"if",
+"",
+"<> \u00e9 }rt'''{lambda: 1\\{(x)'''",
+") '\\",
+"' (x,",
+"y)",
+"; = 1e U'' # \\ }"
+]
+],
+[
+":...\r    lambda \u00e9 1e500 \n bt\"\" class \u001f uf\"\"  \nlambda x = 1; y = 2 ur\"\"\"\\\n\"\"\" [ \\ (  \f\n\tpass  \f\n\t\nrt\" 1if \t\n",
+[
+":...",
+"lambda \u00e9 1e500",
+"bt\"\" class \u001f uf\"\"",
+"lambda x = 1; y = 2 ur\"\"\"\\",
+"\"\"\" [ \\ (",
+"",
+"pass",
+"",
+"",
+"rt\" 1if"
+]
+],
+[
+"    '''''' def f():\nf'''{a;b}\n\\N{DASH}''' 42 \"\"\"x y\"\"\" rb\"\"\"\n\"\"\" \r\n",
+[
+"'''''' def f():",
+"f'''{a;b}",
+"\\N{DASH}''' 42 \"\"\"x y\"\"\" rb\"\"\"",
+"\"\"\""
+]
+],
+[
+"\tf(x)[0] \n",
+[
+"f(x)[0]"
+]
+],
+[
+"1_000 ...\n**=\n    \n    # 'x f\"\"\n",
+[
+"1_000 ...",
+"**=",
+"",
+"# 'x f\"\""
+]
+],
+[
+"rb':#' \u007f     \n\u20ac = uf'''{x:\n}''' \u001f <> 1e5 \t\n1. # c_\n    else: @ rf\"\"\"\\{x\n:>3}\"\"\" r' '  \n\telse:x = 1; y = 2 a1 \ndef f(): \n\\x .5if \\ ur\"\"\"'}}\"\"\"     \n \f() Br'\\'}}' ft''''''  \nx\u00a0y f\"{x:%Y-%m}{x!s:>10}\" def f(): \\  def 42 \n \ft'{x:>{w}}{x\n:>3}}'[x]else:\n    1e+ def f(): ? \n: 0o pass 1if  \f\u2029",
+[
+"rb':#' \u007f",
+"\u20ac = uf'''{x:",
+"}''' \u001f <> 1e5",
+"1. # c_",
+"else: @ rf\"\"\"\\{x",
+":>3}\"\"\" r' '",
+"else:x = 1; y = 2 a1",
+"def f():",
+"\\x .5if \\ ur\"\"\"'}}\"\"\"",
+"",
+"() Br'\\'}}' ft''''''",
+"x\u00a0y f\"{x:%Y-%m}{x!s:>10}\" def f(): \\  def 42",
+"",
+"t'{x:>{w}}{x",
+":>3}}'[x]else:",
+"1e+ def f(): ?",
+": 0o pass 1if",
+""
+]
+],
+[
+"bt' {x:%Y-%m '1__00b101 [    \n\tlambda lambda for i in x: passclass C: pass class Br''' ''' \f\n \felse:~rt\"\\{x}}{x:{y}}\"     \n",
+[
+"bt' {x:%Y-%m '1__00b101 [",
+"lambda lambda for i in x: passclass C: pass class Br''' '''",
+"",
+"",
+"else:~rt\"\\{x}}{x:{y}}\""
+]
+],
+[
+" \f1e+ \t\n \f ? \n else: rt\"\"\"}{}\"\"\"_\u0085:[1:2] [ \u001f ) \n ... \n\tx x\u00a0y bt\"\"\"{x:{y:{z}}}\"\"\" f'''{x\n:>3}' \n",
+[
+"",
+"1e+",
+"",
+"?",
+"else: rt\"\"\"}{}\"\"\"_",
+":[1:2] [ \u001f )",
+"...",
+"x x\u00a0y bt\"\"\"{x:{y:{z}}}\"\"\" f'''{x",
+":>3}'"
+]
+],
+[
+" -> else  \f\u001c$} \" \u00e9\" \\\u000b[x] ? r\"\"\"{{{{\n\" ; rt\"\"     \u001c 0o -> a1 , != \"{{:\"  \nb\"\n\" } <> 1  \n \f. \f\n\tft'''}#\u00e9''' \\x uf\"\" \u000bdef. ub\"\") \"\f}}\" \n",
+[
+"-> else",
+"",
+"$} \" \u00e9\" \\",
+"[x] ? r\"\"\"{{{{",
+"\" ; rt\"\"",
+"0o -> a1 , != \"{{:\"",
+"b\"",
+"\" } <> 1",
+"",
+".",
+"",
+"ft'''}#\u00e9''' \\x uf\"\"",
+"def. ub\"\") \"",
+"}}\""
+]
+],
+[
+"\t ,     \nrt\"{{x}}\\n{x\n:>3\" \t\n\\r\"\"\"\\' \"\"\" class else bf\"\"\"\"\"\"",
+[
+",",
+"rt\"{{x}}\\n{x",
+":>3\"",
+"\\r\"\"\"\\' \"\"\" class else bf\"\"\"\"\"\""
+]
+],
+[
+"    .5 rf\"{{\" \n\u20ac while 1: break; x # c \n\tb'''\n# not a comment'''\n() rb\"x y\" >>= {a: b} \n    b'' \nt\"\"\"#\"\"\"\n",
+[
+".5 rf\"{{\"",
+"\u20ac while 1: break; x # c",
+"b'''",
+"# not a comment'''",
+"() rb\"x y\" >>= {a: b}",
+"b''",
+"t\"\"\"#\"\"\""
+]
+],
+[
+"\t! \frf'' \n    ;\n1if [x] a1 \nx = 1; y = 2 b\"a\"\n\tfoo \n\t\nr'''  text\n# not a comment'''\nif rf\"\u00e9\" rf\"{x:{y}}\" # 'x \n",
+[
+"!",
+"rf''",
+";",
+"1if [x] a1",
+"x = 1; y = 2 b\"a\"",
+"foo",
+"",
+"r'''  text",
+"# not a comment'''",
+"if rf\"\u00e9\" rf\"{x:{y}}\" # 'x"
+]
+],
+[
+"\t# \\ rf'''\\{x!r}''' ; \u00a0 ub'\n\\''    \n    bf\"{(x){[1:2]}\"  \n if .5 \u0085, \ufeff 1j class C: pass == 0x1for  \f\n\tub'a\\N{DASH}' def x\n\t# \\ 0x1for# 'x \n    else: else: u'{{ ' if x: \f",
+[
+"# \\ rf'''\\{x!r}''' ; \u00a0 ub'",
+"\\''",
+"bf\"{(x){[1:2]}\"",
+"if .5",
+", \ufeff 1j class C: pass == 0x1for",
+"",
+"ub'a\\N{DASH}' def x",
+"# \\ 0x1for# 'x",
+"else: else: u'{{ ' if x:"
+]
+],
+[
+"ifTr'{x\n:>3}{x:{x:{}' rf'''{f'{x}'}''' ub\"\"\"\\N{DASH}\"\"\"t\"{{x}}{x:%Y-%m{{\" \f\u2029. !     \n-> 0b2  \f\n \f\u0001 \u0085 ur\"\u00e9\"\n \f$try: 1/0! 0x1for  \n\tbf\"\" t\"{x # c\n}{x:{y:{z}}\" def; '\\N{DASH}' \n    0     \n    1_ ] 1_ \u00a0 ; \f\n",
+[
+"ifTr'{x",
+":>3}{x:{x:{}' rf'''{f'{x}'}''' ub\"\"\"\\N{DASH}\"\"\"t\"{{x}}{x:%Y-%m{{\"",
+"",
+". !",
+"-> 0b2",
+"",
+"",
+"\u0001",
+"ur\"\u00e9\"",
+"",
+"$try: 1/0! 0x1for",
+"bf\"\" t\"{x # c",
+"}{x:{y:{z}}\" def; '\\N{DASH}'",
+"0",
+"1_ ] 1_ \u00a0 ;",
+""
+]
+],
+[
+"\t== r'''{{''' 0x1f if x:\ff(x)[0] # 'x\n\tu\"\"\"\u00e9:\"\"\" y else: rb''''''\n\n",
+[
+"== r'''{{''' 0x1f if x:",
+"f(x)[0] # 'x",
+"u\"\"\"\u00e9:\"\"\" y else: rb''''''",
+""
+]
+],
+[
+" \f] def ...$  \n class C: pass class 0x_1 def \t\n ~ y\n    while 1: break; x \n \f`\t\u001cuf'''{{{''' {} \n",
+[
+"",
+"] def ...$",
+"class C: pass class 0x_1 def",
+"~ y",
+"while 1: break; x",
+"",
+"`",
+"uf'''{{{''' {}"
+]
+],
+[
+"\telse \nbt\"{lambda: 1}\"Tr\"{x:>{w}}\" ur'''''' \t\n",
+[
+"else",
+"bt\"{lambda: 1}\"Tr\"{x:>{w}}\" ur''''''"
+]
+],
+[
+"\t\n     \n\tb\"\"\"# not a comment\"\"\"\n    f'{x!r}' := try: 1/0 \u00e9\n\trb\"\\N{DASH}\\N{DASH}{{\" f(x)[0] class C: pass 1if\n>>= 'x y' 1j\n",
+[
+"",
+"",
+"b\"\"\"# not a comment\"\"\"",
+"f'{x!r}' := try: 1/0 \u00e9",
+"rb\"\\N{DASH}\\N{DASH}{{\" f(x)[0] class C: pass 1if",
+">>= 'x y' 1j"
+]
+],
+[
+"b'''# not a comment'''\n\t\n    x rt'''{x:=5}a ''' 0x1f \r\n\n\t \f    rt\"{x!s:>10}}}}}\" : \"\"\"\n\"\"\" **=\n\tif x: \f",
+[
+"b'''# not a comment'''",
+"",
+"x rt'''{x:=5}a ''' 0x1f",
+"",
+"",
+"rt\"{x!s:>10}}}}}\" : \"\"\"",
+"\"\"\" **=",
+"if x:"
+]
+],
+[
+"\u007felse     \n lambda # crb\"\"\" \"\\'\"\"\" # \\Tr\"\"\"a{lambda: 1}{x:}\"\"\" \n\"\"f(x)[0] \u00e9 \\ Fr'{x:}\\\" '  \u2029 \\x \f {a: b}foo\"\f\"rt'{f'{x}'}\\N{x:\n'f\"\"\"\"\"\" \n ... class 0x x = 1; y = 2 \n y ( b\"\"\"\"\"\" (# c else  \f\n",
+[
+"\u007felse",
+"lambda # crb\"\"\" \"\\'\"\"\" # \\Tr\"\"\"a{lambda: 1}{x:}\"\"\"",
+"\"\"f(x)[0] \u00e9 \\ Fr'{x:}\\\" '",
+"\\x",
+"{a: b}foo\"",
+"\"rt'{f'{x}'}\\N{x:",
+"'f\"\"\"\"\"\"",
+"... class 0x x = 1; y = 2",
+"y ( b\"\"\"\"\"\" (# c else",
+""
+]
+],
+[
+"# 'x 0 #\n",
+[
+"# 'x 0 #"
+]
+],
+[
+"t\"{x:%Y-%m}}}\" \u00e9 ()\n \n\n== foo # 'x lambda\f    pass \n\t'''x y\\N{DASH}''' :\f{} 1e5 ;\f",
+[
+"t\"{x:%Y-%m}}}\" \u00e9 ()",
+"",
+"",
+"== foo # 'x lambda",
+"pass",
+"'''x y\\N{DASH}''' :",
+"{} 1e5 ;"
+]
+],
+[
+"\t\":#\" \n\f\t \n    _ 0777 f'{[1:2]}ax y' a1\n\nr\"\"\"\na\"\"\"\n \f    [x] else: if \nfoo (x,\n y) :=\nb'x ya{{'\n\n\t== <> b''':a'''\n",
+[
+"\":#\"",
+"",
+"",
+"_ 0777 f'{[1:2]}ax y' a1",
+"",
+"r\"\"\"",
+"a\"\"\"",
+"",
+"[x] else: if",
+"foo (x,",
+"y) :=",
+"b'x ya{{'",
+"",
+"== <> b''':a'''"
+]
+],
+[
+" \n",
+[
+""
+]
+],
+[
+"r\"\"\"\"\"\"\n:= ()\n\tr''''''\n(x,\n y) f''' #{(x)}''' \n    r'''x: y; z'''\n.5 \n    \r\n    # c **= y \u00e9 \n    f'''# not a comment\nx: y; z'''\n",
+[
+"r\"\"\"\"\"\"",
+":= ()",
+"r''''''",
+"(x,",
+"y) f''' #{(x)}'''",
+"r'''x: y; z'''",
+".5",
+"",
+"# c **= y \u00e9",
+"f'''# not a comment",
+"x: y; z'''"
+]
+],
+[
+"r'\\n' \u00e9 \n\telse:\n\telse\n    \n    b\"\"\"\n\\'\\N{DASH}\"\"\" # 'x \u20ac\nwhile 1: break; x # 'x r\"\"\"\u00e9{{\"\"\" \"{{\"\nrt\"\"\"\"\"\" _ \u20ac 1e5 \nx\n\r\n    # 'x [x] 0 ''':'''\n",
+[
+"r'\\n' \u00e9",
+"else:",
+"else",
+"",
+"b\"\"\"",
+"\\'\\N{DASH}\"\"\" # 'x \u20ac",
+"while 1: break; x # 'x r\"\"\"\u00e9{{\"\"\" \"{{\"",
+"rt\"\"\"\"\"\" _ \u20ac 1e5",
+"x",
+"",
+"# 'x [x] 0 ''':'''"
+]
+],
+[
+"\tb'''a''' if\r\n    () f'''{x:%Y-%m}{{'''\n\tx : ... ()\r\n",
+[
+"b'''a''' if",
+"() f'''{x:%Y-%m}{{'''",
+"x : ... ()"
+]
+],
+[
+"b''''''\n\f    if x: a1 \n\t{a: b} \n    ; \u00e9 0x1f 1\f    [x] ()\n{} for i in x: pass \n\n",
+[
+"b''''''",
+"",
+"if x: a1",
+"{a: b}",
+"; \u00e9 0x1f 1",
+"[x] ()",
+"{} for i in x: pass",
+""
+]
+],
+[
+"    \n: 0777 {a: b}\n    : <> \r\n\tx = 1; y = 2 '''\\\"\f'''\n    class C: pass\nlambda 0x1f try: 1/0\n",
+[
+"",
+": 0777 {a: b}",
+": <>",
+"x = 1; y = 2 '''\\\"",
+"'''",
+"class C: pass",
+"lambda 0x1f try: 1/0"
+]
+],
+[
+"foo \"\\n\" ! <>\f    # a: b; c >>= '''x y''' ;\r\n0x1f '''''' 42\n    r\"\"\"\"\"\" (x,\n y) 0777 \n    \r\n\tu\":;\" 42 f'''{x:{y}}{x:=5}x y'''\r\n1_000 if '' f''\n'' '' a1 f'''{x}{x!s:>10}'''\n\tr'a:' \n",
+[
+"foo \"\\n\" ! <>",
+"# a: b; c >>= '''x y''' ;",
+"0x1f '''''' 42",
+"r\"\"\"\"\"\" (x,",
+"y) 0777",
+"",
+"u\":;\" 42 f'''{x:{y}}{x:=5}x y'''",
+"1_000 if '' f''",
+"'' '' a1 f'''{x}{x!s:>10}'''",
+"r'a:'"
+]
+],
+[
+" \n\t1e5 ! rf\"\"\"{a;b}{x:>{w}}\"\"\" \n    # f\"\" else:\n'''''' \n    b'''\\N{DASH}''' rb'''{{:a'''\n\n\tdef \r\n",
+[
+"",
+"1e5 ! rf\"\"\"{a;b}{x:>{w}}\"\"\"",
+"# f\"\" else:",
+"''''''",
+"b'''\\N{DASH}''' rb'''{{:a'''",
+"",
+"def"
+]
+],
+[
+"# c\n'\\\"}}' f'' \nb'''\n  text'''\n    t\"\"\" {{\"\"\"\n",
+[
+"# c",
+"'\\\"}}' f''",
+"b'''",
+"text'''",
+"t\"\"\" {{\"\"\""
+]
+],
+[
+" \n    # c def u\"\" \r\n\"\\nx y\" f\"\"\"{x:>{w}}\"\"\" \"\\N{DASH}\\\" \" \n\t:\n    0\nwhile 1: break; x else\n \n\t1e5\n",
+[
+"",
+"# c def u\"\"",
+"\"\\nx y\" f\"\"\"{x:>{w}}\"\"\" \"\\N{DASH}\\\" \"",
+":",
+"0",
+"while 1: break; x else",
+"",
+"1e5"
+]
+],
+[
+" class C: pass bt\"{x # c\n}\" := \u001c\n    ft\"{lambda: 1}{x:\n}{x = }\"-> # \\ lambda 3.14_15 \n\tx = 1; y = 2 ) f\"{f'{x}'{{x}}\\n\" [1:2]  \f\n\t \n \ffoo \u000b U\"{#'\"if x: \u0000 ft\"\"{x}\"  \f\ry} while 1: break; x:= \n# \\  \f\nclass \t\n \f; if x: \n,     \n",
+[
+"class C: pass bt\"{x # c",
+"}\" :=",
+"",
+"ft\"{lambda: 1}{x:",
+"}{x = }\"-> # \\ lambda 3.14_15",
+"x = 1; y = 2 ) f\"{f'{x}'{{x}}\\n\" [1:2]",
+"",
+"",
+"",
+"foo",
+"U\"{#'\"if x: \u0000 ft\"\"{x}\"",
+"",
+"y} while 1: break; x:=",
+"# \\",
+"",
+"class",
+"",
+"; if x:",
+","
+]
+],
+[
+"\tur'\\\"' class \n    \n<> [1:2] \t\n \f\ufeff , \f\t; <> uf'''{x:=5}}\u00e9''' Fr\"\"# \\  \n\t \f\u001c1_000 **= .5 f\"\n\\n{[1:2]}\" \t\n",
+[
+"ur'\\\"' class",
+"",
+"<> [1:2]",
+"",
+"\ufeff ,",
+"; <> uf'''{x:=5}}\u00e9''' Fr\"\"# \\",
+"",
+"",
+"1_000 **= .5 f\"",
+"\\n{[1:2]}\""
+]
+],
+[
+"\tdef f(): rb''\f\t\u00e9 : # 'x y\n\t# x = 1; y = 2\r\n\t\"\"\"\\\"#\"\"\" #\n     \n\fclass C: pass\n    x u'' if x: \"\"\"\"\"\"\n\t\"\"\"\"\"\"\n\t\u20ac\n",
+[
+"def f(): rb''",
+"\u00e9 : # 'x y",
+"# x = 1; y = 2",
+"\"\"\"\\\"#\"\"\" #",
+"",
+"",
+"class C: pass",
+"x u'' if x: \"\"\"\"\"\"",
+"\"\"\"\"\"\"",
+"\u20ac"
+]
+],
+[
+"    \"}}\\N{DASH}\" :\nf'' pass \r\n    rb\";\" () \"\u00e9a\\N{DASH}\" #\n\tdef f():\fwhile 1: break; x 1j\n\twhile 1: break; x a1 {a: b}\n \n\tr'''# not a comment\n  text'''\nfoo\n",
+[
+"\"}}\\N{DASH}\" :",
+"f'' pass",
+"rb\";\" () \"\u00e9a\\N{DASH}\" #",
+"def f():",
+"while 1: break; x 1j",
+"while 1: break; x a1 {a: b}",
+"",
+"r'''# not a comment",
+"text'''",
+"foo"
+]
+],
+[
+"    \u00e9 \nf'##{x=}' 0\n1_000 f''''''\n    \"\"\"#\"\"\"\r\n",
+[
+"\u00e9",
+"f'##{x=}' 0",
+"1_000 f''''''",
+"\"\"\"#\"\"\""
+]
+],
+[
+"\tf'''# not a comment'''\n() 1 1 \n\t!= 0 () b'\\\"a#'\n\t\n\trt\"a{x!s:>10}\"\n!= # c \r\n",
+[
+"f'''# not a comment'''",
+"() 1 1",
+"!= 0 () b'\\\"a#'",
+"",
+"rt\"a{x!s:>10}\"",
+"!= # c"
+]
+],
+[
+"( <>1!= \u0001 \u001d    \u001c    f\"x ya\" x\u00a0y .Tr\"\"  \ntry: 1/0 rf\"a{{\" \u2028 <> while 1: break; x bt\"\"\"{x:>{w}\"\\\n\"\"\"? \n #try: 1/0 \t\n\tft'{x}{x}}{f'{x}'}'1.5j ; \u20ac \\  ==  \f\n        \u2028\n \fwhile 1: break; x[ \\ def f(): passBr''  \f\n ] \t\u000b) y 1__0 # a: b; c\ufeff     \n",
+[
+"( <>1!= \u0001",
+"",
+"f\"x ya\" x\u00a0y .Tr\"\"",
+"try: 1/0 rf\"a{{\"",
+"<> while 1: break; x bt\"\"\"{x:>{w}\"\\",
+"\"\"\"?",
+"#try: 1/0",
+"ft'{x}{x}}{f'{x}'}'1.5j ; \u20ac \\  ==",
+"",
+"",
+"",
+"",
+"while 1: break; x[ \\ def f(): passBr''",
+"",
+"]",
+") y 1__0 # a: b; c\ufeff"
+]
+],
+[
+"! @     \n\t \f\n \f0 if{}     \n \fbf\"{x:=5}{x:=5}{(x)}\"Br'''''' 1if x\u00a0y x\u00a0y \n\t0o] \n \r     \n\tx class C: passt'''\n{x:{}''' ! -> \\x\u2028    {}x try: 1/0 \u007f  \f\u0085Br\"\"\"\"\"\" [ else :  \n",
+[
+"! @",
+"",
+"",
+"",
+"0 if{}",
+"",
+"bf\"{x:=5}{x:=5}{(x)}\"Br'''''' 1if x\u00a0y x\u00a0y",
+"0o]",
+"",
+"",
+"x class C: passt'''",
+"{x:{}''' ! -> \\x",
+"{}x try: 1/0 \u007f",
+"",
+"Br\"\"\"\"\"\" [ else :"
+]
+],
+[
+"while 1: break; x \r\n\tb\"\"\"# not a comment\n\"\"\"\nu\"\"\"\u00e9\\'\f\"\"\"\n0777 pass x = 1; y = 2 [1:2] \n\t: # 'x\r\nr''''''\n\t\n",
+[
+"while 1: break; x",
+"b\"\"\"# not a comment",
+"\"\"\"",
+"u\"\"\"\u00e9\\'",
+"\"\"\"",
+"0777 pass x = 1; y = 2 [1:2]",
+": # 'x",
+"r''''''",
+""
+]
+],
+[
+"    \n",
+[
+""
+]
+],
+[
+"[x] ==\n    # a: b; c for i in x: pass = f\":\" \n\" :\" f\"\\'{x!r}{x!s:>10}\" for i in x: pass\n\nf(x)[0] -> a1 0x1f\n\r\n\n",
+[
+"[x] ==",
+"# a: b; c for i in x: pass = f\":\"",
+"\" :\" f\"\\'{x!r}{x!s:>10}\" for i in x: pass",
+"",
+"f(x)[0] -> a1 0x1f",
+"",
+""
+]
+],
+[
+"    + _\n\t# a: b; c {} ! \f    \n\t# a: b; c \n    lambda {a: b} rf'''a;{[1:2]}'''\n\tb\"\"\"# not a comment\n\"\"\"\nt'{x:%Y-%m}{x}'\n\n\telse pass for i in x: pass \f    try: 1/0 :=\n    try: 1/0 x rt'' \n",
+[
+"+ _",
+"# a: b; c {} !",
+"",
+"# a: b; c",
+"lambda {a: b} rf'''a;{[1:2]}'''",
+"b\"\"\"# not a comment",
+"\"\"\"",
+"t'{x:%Y-%m}{x}'",
+"",
+"else pass for i in x: pass",
+"try: 1/0 :=",
+"try: 1/0 x rt''"
+]
+],
+[
+"def f(): x = 1; y = 2 + x = 1; y = 2\n     \n\tu'''\f{{}}''' \r\n1e5 # \n    :\r\ndef # a: b; c\n",
+[
+"def f(): x = 1; y = 2 + x = 1; y = 2",
+"",
+"u'''",
+"{{}}'''",
+"1e5 #",
+":",
+"def # a: b; c"
+]
+],
+[
+"\t.5 f'''}}{x!s:>10}''' \n\f    >>= # **=\n\t'''\n'''\n",
+[
+".5 f'''}}{x!s:>10}'''",
+"",
+">>= # **=",
+"'''",
+"'''"
+]
+],
+[
+" bt\"\"\"\"\"\"ub'\\N{DASH}' ]foodef 1j  \n\u20ac 00def f(): x if x: \u0085\tuf\"\"\"}}\\\"\"\"\" \f\"\"\"'\"\"\" \\ \n",
+[
+"bt\"\"\"\"\"\"ub'\\N{DASH}' ]foodef 1j",
+"\u20ac 00def f(): x if x:",
+"uf\"\"\"}}\\\"\"\"\"",
+"\"\"\"'\"\"\" \\"
+]
+],
+[
+"    if x: -> \u20ac <>\n    42 >>= for i in x: pass ''''''\n",
+[
+"if x: -> \u20ac <>",
+"42 >>= for i in x: pass ''''''"
+]
+],
+[
+"bf\"\"{x:%Y-%m}\nwhile 1: break; x _ Tr\"\"\"\"\"\"= {} \nbf\"\"\" {x = }:\"\"\"<>U\"\"\"{#\\n\"\"\" \\ while 1: break; x     \u000bdef f():if x: \u0085def \u00e9 \f\n \f{a: b} \n\tb\"\"\"\\\n\n\"\"\"if x: ==class ",
+[
+"bf\"\"{x:%Y-%m}",
+"while 1: break; x _ Tr\"\"\"\"\"\"= {}",
+"bf\"\"\" {x = }:\"\"\"<>U\"\"\"{#\\n\"\"\" \\ while 1: break; x",
+"def f():if x:",
+"def \u00e9",
+"",
+"",
+"{a: b}",
+"b\"\"\"\\",
+"",
+"\"\"\"if x: ==class"
+]
+],
+[
+"\n\t! '''}}x y\n''' 0x1f # c\n    () # c f(x)[0] :\n''';''' \u00e9\n    + 1 \n\t \n",
+[
+"",
+"! '''}}x y",
+"''' 0x1f # c",
+"() # c f(x)[0] :",
+"''';''' \u00e9",
+"+ 1",
+""
+]
+],
+[
+"\t.5 try: 1/0 1j\n    0 \u20ac\nf'''# not a comment'''\n[x]\n    : \";\u00e9\" 0x1f :\n    r\"\"\"\"\"\"\n\tfoo\n\t\n    1if f(x)[0] # >>=\nr\"\"\"  text\"\"\"\n",
+[
+".5 try: 1/0 1j",
+"0 \u20ac",
+"f'''# not a comment'''",
+"[x]",
+": \";\u00e9\" 0x1f :",
+"r\"\"\"\"\"\"",
+"foo",
+"",
+"1if f(x)[0] # >>=",
+"r\"\"\"  text\"\"\""
+]
+],
+[
+"Fr'''\n''' = \t\r",
+[
+"Fr'''",
+"''' ="
+]
+]
+]

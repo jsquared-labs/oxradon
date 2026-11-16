@@ -1,0 +1,157 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  # release.yml runs these tests on the release commit before it builds anything.
+  workflow_call:
+    inputs:
+      release:
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+# A called workflow sees its caller's `github.workflow`, so a release's tests get their own
+# group, and are never cancelled by a later push.
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ !inputs.release }}
+
+env:
+  CARGO_TERM_COLOR: always
+  RUSTFLAGS: -D warnings
+  RUSTDOCFLAGS: -D warnings
+
+jobs:
+  test:
+    name: test (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, ubuntu-24.04-arm]
+    steps:
+      - uses: actions/checkout@v7
+      - run: rustup toolchain install stable --profile minimal --component clippy,rustfmt
+      - run: rustup default stable
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo test --no-fail-fast
+      - run: cargo clippy --all-targets
+      - run: cargo fmt --check
+      - run: cargo doc --no-deps
+
+  # macOS minutes count ten times in a private repository, so there this job runs only when the
+  # workflow is started by hand. In a public repository it runs on every push. A release always
+  # runs it.
+  test-macos:
+    name: test (macos-latest)
+    if: inputs.release || github.event_name == 'workflow_dispatch' || !github.event.repository.private
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: rustup toolchain install stable --profile minimal --component clippy,rustfmt
+      - run: rustup default stable
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo test --no-fail-fast
+      - run: cargo clippy --all-targets
+      - run: cargo fmt --check
+      - run: cargo doc --no-deps
+
+  msrv:
+    name: test (Rust 1.97)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: rustup toolchain install 1.97 --profile minimal
+      - run: rustup default 1.97
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo test --no-fail-fast
+
+  # The real comparison: radon 6.0.1 on CPython 3.14 against oxradon, on the corpus that
+  # CONTRIBUTING.md describes. Every script exits non-zero on a difference.
+  #
+  # radon is slow (its `raw` and `mi` take hours here over several flag sets), so this job runs
+  # only when this workflow is started by hand (not when a release calls it; the release report
+  # names the last green parity run instead), and radon's outputs are kept between runs: radon,
+  # the corpus and the Python version are pinned, so its answers do not change. Every
+  # comparison runs even after an earlier one fails, so one run shows all the differences.
+  parity:
+    name: parity with radon (Linux)
+    if: github.event_name == 'workflow_dispatch' && !inputs.release
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v7
+      - run: rustup toolchain install stable --profile minimal
+      - run: rustup default stable
+      - uses: Swatinem/rust-cache@v2
+      - uses: actions/setup-python@v7
+        id: python
+        with:
+          python-version: "3.14.10"
+      - name: Restore radon's saved outputs
+        uses: actions/cache/restore@v6
+        with:
+          path: ${{ runner.temp }}/radon-cache
+          key: radon-6.0.1-py${{ steps.python.outputs.python-version }}-${{ hashFiles('scripts/corpus-requirements.txt') }}
+      - uses: astral-sh/setup-uv@v10.3.3
+
+      - name: Install radon and the corpus
+        run: |
+          python -m venv "$RUNNER_TEMP/oracle"
+          "$RUNNER_TEMP/oracle/bin/pip" install radon==6.0.1
+          uv venv --python 3.14.10 "$RUNNER_TEMP/corpus"
+          uv pip install --python "$RUNNER_TEMP/corpus/bin/python" -r scripts/corpus-requirements.txt
+          {
+            echo "PYTHON=$RUNNER_TEMP/oracle/bin/python"
+            echo "RADON=$RUNNER_TEMP/oracle/bin/radon"
+            echo "OXRADON=$GITHUB_WORKSPACE/target/release/oxradon"
+            echo "STDLIB=$("$RUNNER_TEMP/oracle/bin/python" -c 'import sysconfig; print(sysconfig.get_path("stdlib"))')"
+            echo "THIRD_PARTY=$("$RUNNER_TEMP/corpus/bin/python" -c 'import sysconfig; print(sysconfig.get_path("purelib"))')"
+            echo "RADON_CACHE=$RUNNER_TEMP/radon-cache"
+          } >> "$GITHUB_ENV"
+
+      - run: cargo build --release
+
+      - name: Configuration files
+        if: ${{ !cancelled() }}
+        run: '"$PYTHON" -I scripts/diff_config.py "$RADON" "$OXRADON"'
+      - name: Generated tokenizer cases
+        if: ${{ !cancelled() }}
+        run: '"$PYTHON" -I scripts/fuzz_raw.py "$RADON" "$OXRADON" 20000 1'
+      - name: String concatenations
+        if: ${{ !cancelled() }}
+        run: '"$PYTHON" scripts/fuzz_strings.py "$RADON" "$OXRADON"'
+      - name: Acceptance
+        if: ${{ !cancelled() }}
+        run: '"$PYTHON" -I scripts/check_acceptance.py "$OXRADON"'
+      - name: Identifiers
+        if: ${{ !cancelled() }}
+        run: '"$PYTHON" -I scripts/check_identifiers.py "$OXRADON"'
+      - name: Lexer
+        if: ${{ !cancelled() }}
+        run: '"$PYTHON" -I scripts/check_lexer.py "$RADON" "$OXRADON"'
+      - name: mi
+        if: ${{ !cancelled() }}
+        run: '"$PYTHON" -I scripts/diff_mi.py "$RADON" "$OXRADON" "$STDLIB" "$THIRD_PARTY"'
+      - name: cc
+        if: ${{ !cancelled() }}
+        run: |
+          "$PYTHON" scripts/diff_cc.py "$RADON" "$OXRADON" "$STDLIB" "$THIRD_PARTY"
+          "$PYTHON" scripts/diff_cc.py "$RADON" "$OXRADON" "$STDLIB"
+      - name: hal
+        if: ${{ !cancelled() }}
+        run: '"$PYTHON" scripts/diff_hal.py "$RADON" "$OXRADON" "$STDLIB" "$THIRD_PARTY"'
+      - name: raw
+        if: ${{ !cancelled() }}
+        run: '"$PYTHON" -I scripts/diff_raw.py "$RADON" "$OXRADON" "$STDLIB" "$THIRD_PARTY"'
+      # Saved even when a comparison fails, so a rerun does not pay for radon again.
+      - name: Save radon's outputs
+        if: always()
+        uses: actions/cache/save@v6
+        with:
+          path: ${{ runner.temp }}/radon-cache
+          key: radon-6.0.1-py${{ steps.python.outputs.python-version }}-${{ hashFiles('scripts/corpus-requirements.txt') }}

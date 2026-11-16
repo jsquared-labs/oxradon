@@ -1,0 +1,80 @@
+tests/fixtures/raw/percent.py
+    LOC: 8
+    LLOC: 1
+    SLOC: 1
+    Comments: 1
+    Single comments: 1
+    Multi: 0
+    Blank: 6
+    - Comment Stats
+        (C % L): 12%
+        (C % S): 100%
+        (C + M % L): 12%
+tests/fixtures/raw/logical.py
+    LOC: 22
+    LLOC: 42
+    SLOC: 22
+    Comments: 2
+    Single comments: 0
+    Multi: 0
+    Blank: 0
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 9%
+        (C + M % L): 9%
+tests/fixtures/raw/unterminated.py
+    ERROR: SyntaxError at line: 3
+tests/fixtures/raw/split_string.py
+    ERROR: SyntaxError at line: 2
+tests/fixtures/raw/fstrings.py
+    LOC: 13
+    LLOC: 13
+    SLOC: 13
+    Comments: 1
+    Single comments: 0
+    Multi: 0
+    Blank: 0
+    - Comment Stats
+        (C % L): 8%
+        (C % S): 8%
+        (C + M % L): 8%
+tests/fixtures/raw/docstrings.py
+    LOC: 19
+    LLOC: 13
+    SLOC: 7
+    Comments: 1
+    Single comments: 3
+    Multi: 8
+    Blank: 1
+    - Comment Stats
+        (C % L): 5%
+        (C % S): 14%
+        (C + M % L): 47%
+tests/fixtures/raw/lines.py
+    LOC: 22
+    LLOC: 9
+    SLOC: 14
+    Comments: 3
+    Single comments: 2
+    Multi: 0
+    Blank: 6
+    - Comment Stats
+        (C % L): 14%
+        (C % S): 21%
+        (C + M % L): 14%
+tests/fixtures/raw/cr.py
+    LOC: 8
+    LLOC: 3
+    SLOC: 3
+    Comments: 1
+    Single comments: 1
+    Multi: 2
+    Blank: 2
+    - Comment Stats
+        (C % L): 12%
+        (C % S): 33%
+        (C + M % L): 38%
+tests/fixtures/raw/errors.py
+    ERROR: SyntaxError at line: 1
+tests/fixtures/raw/field_bracket.py
+    ERROR: SyntaxError at line: 4

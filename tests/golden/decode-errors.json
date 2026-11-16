@@ -1,0 +1,7652 @@
+[
+[
+"utf-8",
+"",
+null
+],
+[
+"utf-8-sig",
+"",
+null
+],
+[
+"ascii",
+"",
+null
+],
+[
+"cp1252",
+"",
+null
+],
+[
+"latin-1",
+"",
+null
+],
+[
+"utf-8",
+"ef",
+"'utf-8' codec can't decode byte 0xef in position 0: unexpected end of data"
+],
+[
+"utf-8-sig",
+"ef",
+null
+],
+[
+"ascii",
+"ef",
+"'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"ef",
+null
+],
+[
+"latin-1",
+"ef",
+null
+],
+[
+"utf-8",
+"efbb",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"utf-8-sig",
+"efbb",
+null
+],
+[
+"ascii",
+"efbb",
+"'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"efbb",
+null
+],
+[
+"latin-1",
+"efbb",
+null
+],
+[
+"utf-8",
+"efbbbf",
+null
+],
+[
+"utf-8-sig",
+"efbbbf",
+null
+],
+[
+"ascii",
+"efbbbf",
+"'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"efbbbf",
+null
+],
+[
+"latin-1",
+"efbbbf",
+null
+],
+[
+"utf-8",
+"efbb78",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"efbb78",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"ascii",
+"efbb78",
+"'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"efbb78",
+null
+],
+[
+"latin-1",
+"efbb78",
+null
+],
+[
+"utf-8",
+"efbf",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"utf-8-sig",
+"efbf",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"ascii",
+"efbf",
+"'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"efbf",
+null
+],
+[
+"latin-1",
+"efbf",
+null
+],
+[
+"latin-1",
+"f09f",
+null
+],
+[
+"utf-8-sig",
+"e282ac",
+null
+],
+[
+"utf-8-sig",
+"6193e080930d0af09f9880",
+"'utf-8' codec can't decode byte 0x93 in position 1: invalid start byte"
+],
+[
+"latin-1",
+"e2f49080809d81",
+null
+],
+[
+"latin-1",
+"9deda080618061",
+null
+],
+[
+"latin-1",
+"c0afe282",
+null
+],
+[
+"ascii",
+"81c3a9c3a98d",
+"'ascii' codec can't decode byte 0x81 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"9d8d930a",
+"'ascii' codec can't decode byte 0x9d in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"93ff",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"efbbbfe29d",
+"'utf-8' codec can't decode bytes in position 3-4: unexpected end of data"
+],
+[
+"cp1252",
+"c3a961",
+null
+],
+[
+"utf-8-sig",
+"f09f988080",
+"'utf-8' codec can't decode byte 0x80 in position 4: invalid start byte"
+],
+[
+"ascii",
+"c0afe282ac",
+"'ascii' codec can't decode byte 0xc0 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"80e26161",
+"'ascii' codec can't decode byte 0x80 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"eda080818081eda080",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"6181e080f09f9880e28293",
+"'utf-8' codec can't decode byte 0x81 in position 1: invalid start byte"
+],
+[
+"latin-1",
+"80f4908080",
+null
+],
+[
+"latin-1",
+"93",
+null
+],
+[
+"latin-1",
+"efbbbff09ff09f9880",
+null
+],
+[
+"ascii",
+"f09f9de261",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"9d93ff",
+"'charmap' codec can't decode byte 0x9d in position 0: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"e282ac61efbbbf",
+null
+],
+[
+"utf-8-sig",
+"f09f98809df09f98806181",
+"'utf-8' codec can't decode byte 0x9d in position 4: invalid start byte"
+],
+[
+"ascii",
+"9393e080c3a9e2",
+"'ascii' codec can't decode byte 0x93 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"e2e282c3a9",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"eda08080f09fe080",
+null
+],
+[
+"ascii",
+"f49080808d800d0af4908080f4908080",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"f4908080eda08080f09f9880e282ac",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"61e2ff",
+"'utf-8' codec can't decode byte 0xe2 in position 1: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"f09feda0808df490808093eda080",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"latin-1",
+"eda080e282acc0af",
+null
+],
+[
+"ascii",
+"ff0aeda080",
+"'ascii' codec can't decode byte 0xff in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"81e28281",
+"'ascii' codec can't decode byte 0x81 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"0ac3a9ff",
+null
+],
+[
+"latin-1",
+"819d",
+null
+],
+[
+"utf-8-sig",
+"f09f8defbbbfc3a9",
+"'utf-8' codec can't decode bytes in position 0-2: invalid continuation byte"
+],
+[
+"utf-8",
+"eda080",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"eda0809d",
+null
+],
+[
+"ascii",
+"808d9361",
+"'ascii' codec can't decode byte 0x80 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"f09f61",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"0a8de080",
+"'utf-8' codec can't decode byte 0x8d in position 1: invalid start byte"
+],
+[
+"cp1252",
+"f09feda080",
+null
+],
+[
+"utf-8",
+"e2",
+"'utf-8' codec can't decode byte 0xe2 in position 0: unexpected end of data"
+],
+[
+"utf-8-sig",
+"61e080",
+"'utf-8' codec can't decode byte 0xe0 in position 1: invalid continuation byte"
+],
+[
+"utf-8",
+"e2e2c3a90a",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"e282",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"61c0af9dc0aff4908080",
+"'utf-8' codec can't decode byte 0xc0 in position 1: invalid start byte"
+],
+[
+"ascii",
+"61",
+null
+],
+[
+"utf-8-sig",
+"ffffeda0800d0a",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"latin-1",
+"f09f9880e282ac80e282ac",
+null
+],
+[
+"cp1252",
+"618d",
+"'charmap' codec can't decode byte 0x8d in position 1: character maps to <undefined>"
+],
+[
+"utf-8",
+"f490808061",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"eda080e28261",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"f490808080f09f988080ffe2",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"93",
+null
+],
+[
+"ascii",
+"9dff0af09f9880",
+"'ascii' codec can't decode byte 0x9d in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"e080",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"c3a981",
+"'utf-8' codec can't decode byte 0x81 in position 2: invalid start byte"
+],
+[
+"ascii",
+"efbbbfe080f09f8193",
+"'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"9de080",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"ascii",
+"0d0ae282ace282aceda080f4908080",
+"'ascii' codec can't decode byte 0xe2 in position 2: ordinal not in range(128)"
+],
+[
+"ascii",
+"c0af",
+"'ascii' codec can't decode byte 0xc0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"e080f09f9d",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"e282c0afe2e080",
+null
+],
+[
+"cp1252",
+"c3a9",
+null
+],
+[
+"utf-8-sig",
+"e282ac9d8d8dc0afe282",
+"'utf-8' codec can't decode byte 0x9d in position 3: invalid start byte"
+],
+[
+"utf-8",
+"e282ac0ae282ac",
+null
+],
+[
+"utf-8-sig",
+"8d",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"930d0ae080",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"f09f9880efbbbfeda080",
+"'utf-8' codec can't decode byte 0xed in position 7: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"8dc0aff49080808081",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"utf-8",
+"efbbbfe08061",
+"'utf-8' codec can't decode byte 0xe0 in position 3: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"8d8080",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"latin-1",
+"0a9d8181ff9d",
+null
+],
+[
+"utf-8-sig",
+"f4908080f09f9880ff",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"efbbbf",
+null
+],
+[
+"latin-1",
+"e282ac0ac3a9808de080",
+null
+],
+[
+"latin-1",
+"ff",
+null
+],
+[
+"utf-8-sig",
+"8de282ac",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"latin-1",
+"e282acc3a9938d93",
+null
+],
+[
+"cp1252",
+"9d93efbbbfe0808d0a",
+"'charmap' codec can't decode byte 0x9d in position 0: character maps to <undefined>"
+],
+[
+"latin-1",
+"f09f988093f09f",
+null
+],
+[
+"cp1252",
+"0ac3a98d0d0a",
+"'charmap' codec can't decode byte 0x8d in position 3: character maps to <undefined>"
+],
+[
+"ascii",
+"8dc0aff09f9880",
+"'ascii' codec can't decode byte 0x8d in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"eda080fff09f98800d0a81efbbbf",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"9dc3a90af09f9880ffeda080",
+"'charmap' codec can't decode byte 0x9d in position 0: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"80e08061",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"ascii",
+"0ae282ac",
+"'ascii' codec can't decode byte 0xe2 in position 1: ordinal not in range(128)"
+],
+[
+"utf-8",
+"80e2",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"ffeda0809d80",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"cp1252",
+"61",
+null
+],
+[
+"ascii",
+"8df4908080e2",
+"'ascii' codec can't decode byte 0x8d in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"c3a9e28281c0af",
+"'charmap' codec can't decode byte 0x81 in position 4: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"9d",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"cp1252",
+"8061c0af0af09f9d",
+"'charmap' codec can't decode byte 0x9d in position 7: character maps to <undefined>"
+],
+[
+"cp1252",
+"0d0a",
+null
+],
+[
+"cp1252",
+"e0800a80f09fe282f4908080",
+"'charmap' codec can't decode byte 0x90 in position 9: character maps to <undefined>"
+],
+[
+"latin-1",
+"e26193f4908080618d",
+null
+],
+[
+"ascii",
+"93",
+"'ascii' codec can't decode byte 0x93 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"8d",
+"'ascii' codec can't decode byte 0x8d in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"f49080808df09ff09f9880",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"ff",
+null
+],
+[
+"ascii",
+"e282acc0afe282",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"f09fe2806180",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"cp1252",
+"eda080",
+null
+],
+[
+"utf-8",
+"0d0ac3a9eda080eda080c0afc0af",
+"'utf-8' codec can't decode byte 0xed in position 4: invalid continuation byte"
+],
+[
+"ascii",
+"8080618d",
+"'ascii' codec can't decode byte 0x80 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"8d81e282f4908080eda080",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"cp1252",
+"c0afe2e2f09f",
+null
+],
+[
+"latin-1",
+"0ac0af61",
+null
+],
+[
+"cp1252",
+"f09f98808df09f",
+"'charmap' codec can't decode byte 0x8d in position 4: character maps to <undefined>"
+],
+[
+"latin-1",
+"f09f9880e282ace080810a8d",
+null
+],
+[
+"cp1252",
+"eda080",
+null
+],
+[
+"latin-1",
+"61f09ff09f9880e2",
+null
+],
+[
+"cp1252",
+"81",
+"'charmap' codec can't decode byte 0x81 in position 0: character maps to <undefined>"
+],
+[
+"ascii",
+"eda080e282ac",
+"'ascii' codec can't decode byte 0xed in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"618dffc3a9800d0a",
+"'utf-8' codec can't decode byte 0x8d in position 1: invalid start byte"
+],
+[
+"latin-1",
+"efbbbf80e282ace0809df09f",
+null
+],
+[
+"utf-8",
+"e282ac0aefbbbfe2f09f9880",
+"'utf-8' codec can't decode byte 0xe2 in position 7: invalid continuation byte"
+],
+[
+"utf-8",
+"f09f9df09fefbbbff09f988081",
+"'utf-8' codec can't decode bytes in position 0-2: invalid continuation byte"
+],
+[
+"utf-8",
+"c3a9ff",
+"'utf-8' codec can't decode byte 0xff in position 2: invalid start byte"
+],
+[
+"utf-8",
+"e2c3a9e2829dc0af",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"ff",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"e080e0808df09f93",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"eda0808de282",
+null
+],
+[
+"ascii",
+"61f09f9880",
+"'ascii' codec can't decode byte 0xf0 in position 1: ordinal not in range(128)"
+],
+[
+"ascii",
+"eda08080f09f9880810a",
+"'ascii' codec can't decode byte 0xed in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"e080f490808080e080",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"93",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"latin-1",
+"f09f",
+null
+],
+[
+"utf-8-sig",
+"c3a9f09f9880f09f",
+"'utf-8' codec can't decode bytes in position 6-7: unexpected end of data"
+],
+[
+"cp1252",
+"8de282ac",
+"'charmap' codec can't decode byte 0x8d in position 0: character maps to <undefined>"
+],
+[
+"ascii",
+"81",
+"'ascii' codec can't decode byte 0x81 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"8d9d",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"cp1252",
+"efbbbfc3a9",
+null
+],
+[
+"cp1252",
+"c3a98d93e080f09f",
+"'charmap' codec can't decode byte 0x8d in position 2: character maps to <undefined>"
+],
+[
+"latin-1",
+"eda0809d9d8d80",
+null
+],
+[
+"utf-8",
+"e282ace080c0afe282",
+"'utf-8' codec can't decode byte 0xe0 in position 3: invalid continuation byte"
+],
+[
+"ascii",
+"c0af0d0aeda080e29381",
+"'ascii' codec can't decode byte 0xc0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"81c3a9e080",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"efbbbfe280",
+null
+],
+[
+"cp1252",
+"61",
+null
+],
+[
+"utf-8",
+"93ff",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"ascii",
+"e282efbbbfc3a9c3a9eda080",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"610d0a810d0a",
+"'utf-8' codec can't decode byte 0x81 in position 3: invalid start byte"
+],
+[
+"ascii",
+"ffefbbbfc0afc3a9e080c3a9",
+"'ascii' codec can't decode byte 0xff in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"9d",
+null
+],
+[
+"cp1252",
+"ffc0af9d8d0a80",
+"'charmap' codec can't decode byte 0x9d in position 3: character maps to <undefined>"
+],
+[
+"latin-1",
+"e2e0800d0aff80e282",
+null
+],
+[
+"ascii",
+"e28d80e2",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"e080c3a9e28dff93",
+"'ascii' codec can't decode byte 0xe0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"efbbbf",
+null
+],
+[
+"cp1252",
+"8080e282f09f",
+null
+],
+[
+"ascii",
+"8d9df09ff4908080",
+"'ascii' codec can't decode byte 0x8d in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"efbbbff09fc3a993e0800a",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"cp1252",
+"f09fe28dc3a9e282ac",
+"'charmap' codec can't decode byte 0x8d in position 3: character maps to <undefined>"
+],
+[
+"utf-8",
+"e282",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"cp1252",
+"f09f98800d0a80e282eda08093",
+null
+],
+[
+"latin-1",
+"f09f9880efbbbff490808061efbbbf",
+null
+],
+[
+"latin-1",
+"6181",
+null
+],
+[
+"cp1252",
+"f4908080",
+"'charmap' codec can't decode byte 0x90 in position 1: character maps to <undefined>"
+],
+[
+"latin-1",
+"80e2",
+null
+],
+[
+"latin-1",
+"61",
+null
+],
+[
+"cp1252",
+"f4908080e282e080",
+"'charmap' codec can't decode byte 0x90 in position 1: character maps to <undefined>"
+],
+[
+"utf-8",
+"c3a90a",
+null
+],
+[
+"ascii",
+"e2ff",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"eda080f09f0aff",
+null
+],
+[
+"cp1252",
+"ffe261",
+null
+],
+[
+"utf-8",
+"c3a90a0d0a",
+null
+],
+[
+"utf-8",
+"f4908080939d",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"61f09f9880",
+null
+],
+[
+"latin-1",
+"81e08061e080",
+null
+],
+[
+"ascii",
+"f4908080c3a90d0ac0af81f09f",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"61",
+null
+],
+[
+"latin-1",
+"9de2f09f",
+null
+],
+[
+"cp1252",
+"938de282ac61619d",
+"'charmap' codec can't decode byte 0x8d in position 1: character maps to <undefined>"
+],
+[
+"latin-1",
+"f09f988061eda080",
+null
+],
+[
+"utf-8-sig",
+"fff09f8d",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"latin-1",
+"c0afffc0afe282ac",
+null
+],
+[
+"utf-8",
+"8161",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"efbbbff09f9880e282e282ac0a",
+null
+],
+[
+"cp1252",
+"ff",
+null
+],
+[
+"ascii",
+"f09f",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"eda080",
+null
+],
+[
+"ascii",
+"9de2f09f988061ff61",
+"'ascii' codec can't decode byte 0x9d in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"e282e280",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"93",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"ascii",
+"c0afe282ac",
+"'ascii' codec can't decode byte 0xc0 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"e282f4908080",
+"'charmap' codec can't decode byte 0x90 in position 3: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"ff80efbbbf93",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"ascii",
+"80e2e282ac61",
+"'ascii' codec can't decode byte 0x80 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"61e29de282ac",
+null
+],
+[
+"ascii",
+"c3a9f09f9880e282e282ac0a",
+"'ascii' codec can't decode byte 0xc3 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"f4908080f09f",
+null
+],
+[
+"utf-8",
+"e08061e282ac",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"8193e080c0afff",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"e28293808080",
+"'utf-8' codec can't decode byte 0x80 in position 3: invalid start byte"
+],
+[
+"ascii",
+"e282ac",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"efbbbf",
+null
+],
+[
+"latin-1",
+"0ae080eda08081",
+null
+],
+[
+"utf-8-sig",
+"80",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"c3a9eda080c3a9e282ff",
+"'utf-8' codec can't decode byte 0xed in position 2: invalid continuation byte"
+],
+[
+"latin-1",
+"ff",
+null
+],
+[
+"utf-8-sig",
+"81e2820ae282ac93efbbbf",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"f09fe2826193fff09f",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"e08081e282efbbbf0d0af09f",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"f4908080",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"e2820d0a93e2",
+null
+],
+[
+"utf-8",
+"f09f98809d9d",
+"'utf-8' codec can't decode byte 0x9d in position 4: invalid start byte"
+],
+[
+"cp1252",
+"e080e2e080f4908080efbbbf",
+"'charmap' codec can't decode byte 0x90 in position 6: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"0ac0af8d",
+"'utf-8' codec can't decode byte 0xc0 in position 1: invalid start byte"
+],
+[
+"ascii",
+"9df4908080e2",
+"'ascii' codec can't decode byte 0x9d in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"e28280f4908080",
+"'utf-8' codec can't decode byte 0xf4 in position 3: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"610d0aeda080f4908080",
+"'utf-8' codec can't decode byte 0xed in position 3: invalid continuation byte"
+],
+[
+"latin-1",
+"c3a9e2828d",
+null
+],
+[
+"utf-8-sig",
+"c3a99d",
+"'utf-8' codec can't decode byte 0x9d in position 2: invalid start byte"
+],
+[
+"utf-8-sig",
+"9d",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"cp1252",
+"eda08080efbbbfeda08061",
+null
+],
+[
+"cp1252",
+"f09fff",
+null
+],
+[
+"cp1252",
+"f09f9880e282acc0af",
+null
+],
+[
+"utf-8",
+"f490808081",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"eda080c0af0d0a",
+null
+],
+[
+"cp1252",
+"610a",
+null
+],
+[
+"utf-8",
+"c3a9f09f98808d",
+"'utf-8' codec can't decode byte 0x8d in position 6: invalid start byte"
+],
+[
+"utf-8-sig",
+"ffc3a9c0af810d0a0a",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"cp1252",
+"c0af",
+null
+],
+[
+"cp1252",
+"9dff8d",
+"'charmap' codec can't decode byte 0x9d in position 0: character maps to <undefined>"
+],
+[
+"latin-1",
+"8de2eda080e282",
+null
+],
+[
+"latin-1",
+"93",
+null
+],
+[
+"latin-1",
+"80ff61",
+null
+],
+[
+"utf-8-sig",
+"f4908080e2e282ac",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"e280c3a9",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8",
+"e080f4908080e282acefbbbf",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"eda0800d0a8d",
+null
+],
+[
+"latin-1",
+"ffe080e080c0afeda080",
+null
+],
+[
+"utf-8",
+"eda0809361ff",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"ff9df09f",
+"'ascii' codec can't decode byte 0xff in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"eda080c3a98d80",
+"'charmap' codec can't decode byte 0x8d in position 5: character maps to <undefined>"
+],
+[
+"utf-8",
+"c0aff49080808df09f9880eda080",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"latin-1",
+"e282ac",
+null
+],
+[
+"latin-1",
+"efbbbf",
+null
+],
+[
+"utf-8-sig",
+"f09f8d810a",
+null
+],
+[
+"latin-1",
+"81f09ff09f9880eda080e282ac",
+null
+],
+[
+"latin-1",
+"9defbbbfc3a9",
+null
+],
+[
+"latin-1",
+"c0afe080e282619d",
+null
+],
+[
+"utf-8-sig",
+"e20d0a81eda0800a",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"0a93f09f9880fff4908080e282ac",
+"'charmap' codec can't decode byte 0x90 in position 8: character maps to <undefined>"
+],
+[
+"latin-1",
+"f09f",
+null
+],
+[
+"utf-8-sig",
+"9380ffc0afc0aff09f",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"81f49080808d9defbbbf",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"ascii",
+"0af09fc3a9",
+"'ascii' codec can't decode byte 0xf0 in position 1: ordinal not in range(128)"
+],
+[
+"latin-1",
+"9361e282",
+null
+],
+[
+"utf-8",
+"e2",
+"'utf-8' codec can't decode byte 0xe2 in position 0: unexpected end of data"
+],
+[
+"utf-8-sig",
+"c3a90a0a",
+null
+],
+[
+"ascii",
+"f4908080c3a9eda080eda080",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"0a9de2",
+null
+],
+[
+"utf-8-sig",
+"e080e2eda080",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"f09f98800a618d",
+"'utf-8' codec can't decode byte 0x8d in position 6: invalid start byte"
+],
+[
+"utf-8",
+"e282f09f9880810a61e282",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"latin-1",
+"8dc3a9",
+null
+],
+[
+"latin-1",
+"efbbbf",
+null
+],
+[
+"cp1252",
+"eda080c0af0d0ae2",
+null
+],
+[
+"cp1252",
+"ffc3a9eda080ffefbbbfefbbbf",
+null
+],
+[
+"ascii",
+"9d",
+"'ascii' codec can't decode byte 0x9d in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"e28261eda080",
+null
+],
+[
+"cp1252",
+"ffc3a961f09f988081",
+"'charmap' codec can't decode byte 0x81 in position 8: character maps to <undefined>"
+],
+[
+"latin-1",
+"9defbbbfe2828dff",
+null
+],
+[
+"utf-8-sig",
+"efbbbfe282f4908080eda0800a",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8",
+"0d0ac0afff8d0a61",
+"'utf-8' codec can't decode byte 0xc0 in position 2: invalid start byte"
+],
+[
+"latin-1",
+"61f4908080e282ac0d0ae080",
+null
+],
+[
+"utf-8",
+"eda0808de282acf09f98800d0aefbbbf",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"0a",
+null
+],
+[
+"utf-8",
+"8df4908080e282acefbbbf81c0af",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"cp1252",
+"e282",
+null
+],
+[
+"ascii",
+"eda0808193",
+"'ascii' codec can't decode byte 0xed in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"8d8093ff8d",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"ascii",
+"eda0809df09ff09f",
+"'ascii' codec can't decode byte 0xed in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"f09f0a",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"e0809381",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"c0afe08081f490808081f09f",
+"'ascii' codec can't decode byte 0xc0 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"93f09f",
+null
+],
+[
+"ascii",
+"0d0ae080ffe080",
+"'ascii' codec can't decode byte 0xe0 in position 2: ordinal not in range(128)"
+],
+[
+"cp1252",
+"c3a9c0af",
+null
+],
+[
+"utf-8-sig",
+"e282ac8d8080e2efbbbf",
+"'utf-8' codec can't decode byte 0x8d in position 3: invalid start byte"
+],
+[
+"utf-8",
+"efbbbf818defbbbf",
+"'utf-8' codec can't decode byte 0x81 in position 3: invalid start byte"
+],
+[
+"utf-8",
+"0d0a8deda080",
+"'utf-8' codec can't decode byte 0x8d in position 2: invalid start byte"
+],
+[
+"cp1252",
+"81e08080e282f09f",
+"'charmap' codec can't decode byte 0x81 in position 0: character maps to <undefined>"
+],
+[
+"ascii",
+"f09f",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"c0afeda080e080eda080",
+null
+],
+[
+"latin-1",
+"e28261",
+null
+],
+[
+"utf-8-sig",
+"0d0a",
+null
+],
+[
+"utf-8-sig",
+"e2e28281",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"f4908080",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"c0af0a0d0a",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"latin-1",
+"8de282e080",
+null
+],
+[
+"utf-8",
+"80eda0809d",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"80f09fff",
+null
+],
+[
+"utf-8-sig",
+"80",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"e29d0d0ae0800a93",
+"'charmap' codec can't decode byte 0x9d in position 1: character maps to <undefined>"
+],
+[
+"latin-1",
+"e080c3a9",
+null
+],
+[
+"latin-1",
+"61e2c3a9ff80",
+null
+],
+[
+"cp1252",
+"e20d0a8de282ac61ff",
+"'charmap' codec can't decode byte 0x8d in position 3: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"f09f9880610a81",
+"'utf-8' codec can't decode byte 0x81 in position 6: invalid start byte"
+],
+[
+"cp1252",
+"f09f9880e282aceda08093",
+null
+],
+[
+"utf-8-sig",
+"f4908080e282c0af93",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"e280e080",
+null
+],
+[
+"cp1252",
+"c0afc3a9e28d",
+"'charmap' codec can't decode byte 0x8d in position 5: character maps to <undefined>"
+],
+[
+"utf-8",
+"e2f490808080",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"81e2c0afe282",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"938093",
+null
+],
+[
+"ascii",
+"0d0a0d0ac0afc3a9",
+"'ascii' codec can't decode byte 0xc0 in position 4: ordinal not in range(128)"
+],
+[
+"utf-8",
+"f09f9880c0af0ae080",
+"'utf-8' codec can't decode byte 0xc0 in position 4: invalid start byte"
+],
+[
+"cp1252",
+"0d0ac3a9",
+null
+],
+[
+"ascii",
+"e2eda08081efbbbf",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"e282e282ace2f09fc0af",
+null
+],
+[
+"ascii",
+"80",
+"'ascii' codec can't decode byte 0x80 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"f4908080",
+"'charmap' codec can't decode byte 0x90 in position 1: character maps to <undefined>"
+],
+[
+"latin-1",
+"e282ac81ff9d0a",
+null
+],
+[
+"utf-8-sig",
+"c0afeda080efbbbff09f8df09f",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"f4908080c3a9e080e282ac",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"e08093efbbbf",
+null
+],
+[
+"ascii",
+"0ae080e080",
+"'ascii' codec can't decode byte 0xe0 in position 1: ordinal not in range(128)"
+],
+[
+"cp1252",
+"e080e282e2",
+null
+],
+[
+"latin-1",
+"0a809d",
+null
+],
+[
+"ascii",
+"8de28293610a0a",
+"'ascii' codec can't decode byte 0x8d in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"0d0a0d0a",
+null
+],
+[
+"cp1252",
+"f09f9880",
+null
+],
+[
+"utf-8-sig",
+"f49080800d0a93",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"eda08093819d93",
+"'ascii' codec can't decode byte 0xed in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"e282ac",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"c3a9e2c0afe20af09f",
+"'ascii' codec can't decode byte 0xc3 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"c0afe2e080",
+null
+],
+[
+"utf-8-sig",
+"0d0ac0afe080efbbbfff",
+"'utf-8' codec can't decode byte 0xc0 in position 2: invalid start byte"
+],
+[
+"latin-1",
+"e20a0a",
+null
+],
+[
+"latin-1",
+"0ac3a9",
+null
+],
+[
+"utf-8-sig",
+"9d8093eda080e080e080",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"latin-1",
+"f09f9880c0af",
+null
+],
+[
+"utf-8",
+"9d819d810d0a",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"utf-8",
+"e261c0af8de2efbbbf",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"61c0afe282ac93e080",
+null
+],
+[
+"latin-1",
+"efbbbf61e282acc0af0a",
+null
+],
+[
+"latin-1",
+"80f09f9880eda080e282acf490808093",
+null
+],
+[
+"ascii",
+"8d80",
+"'ascii' codec can't decode byte 0x8d in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"fff09f9880e28280f09f",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"cp1252",
+"0d0a",
+null
+],
+[
+"cp1252",
+"8d0a9d",
+"'charmap' codec can't decode byte 0x8d in position 0: character maps to <undefined>"
+],
+[
+"utf-8",
+"0a8defbbbfe080",
+"'utf-8' codec can't decode byte 0x8d in position 1: invalid start byte"
+],
+[
+"latin-1",
+"0a",
+null
+],
+[
+"utf-8-sig",
+"c0afc0afc0aff09f",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"eda08080e2829380",
+null
+],
+[
+"utf-8",
+"f09f9880e282efbbbf",
+"'utf-8' codec can't decode bytes in position 4-5: invalid continuation byte"
+],
+[
+"ascii",
+"c0aff09f9880",
+"'ascii' codec can't decode byte 0xc0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"0d0a6180ff",
+"'utf-8' codec can't decode byte 0x80 in position 3: invalid start byte"
+],
+[
+"latin-1",
+"f09f",
+null
+],
+[
+"ascii",
+"ff810a8de080ff",
+"'ascii' codec can't decode byte 0xff in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"efbbbf0d0af09f9880",
+null
+],
+[
+"cp1252",
+"e282f09f80c3a9",
+null
+],
+[
+"latin-1",
+"93ff93c0af8d",
+null
+],
+[
+"latin-1",
+"93",
+null
+],
+[
+"ascii",
+"c0aff09f8d",
+"'ascii' codec can't decode byte 0xc0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"e2c3a9e080efbbbf",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"61c3a9f09ff4908080f4908080",
+"'utf-8' codec can't decode bytes in position 3-4: invalid continuation byte"
+],
+[
+"utf-8",
+"e2",
+"'utf-8' codec can't decode byte 0xe2 in position 0: unexpected end of data"
+],
+[
+"latin-1",
+"eda080e2e2f09f9880",
+null
+],
+[
+"latin-1",
+"81e282ace080e2eda080",
+null
+],
+[
+"utf-8-sig",
+"8d0d0a0d0a",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"cp1252",
+"81eda080f09f930d0a",
+"'charmap' codec can't decode byte 0x81 in position 0: character maps to <undefined>"
+],
+[
+"ascii",
+"e0800d0ac0afc0af61",
+"'ascii' codec can't decode byte 0xe0 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"e2efbbbf",
+null
+],
+[
+"ascii",
+"0d0ae282c3a9",
+"'ascii' codec can't decode byte 0xe2 in position 2: ordinal not in range(128)"
+],
+[
+"ascii",
+"e080e282acc3a9c0afe2",
+"'ascii' codec can't decode byte 0xe0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"f09feda08093",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"80ff0d0a80eda080",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"ascii",
+"61",
+null
+],
+[
+"latin-1",
+"e282ac0a810a0a",
+null
+],
+[
+"latin-1",
+"c3a9e2",
+null
+],
+[
+"cp1252",
+"eda080f09f",
+null
+],
+[
+"utf-8",
+"0d0ae28280f09f",
+"'utf-8' codec can't decode bytes in position 5-6: unexpected end of data"
+],
+[
+"ascii",
+"eda080ff818d61c0af",
+"'ascii' codec can't decode byte 0xed in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"e281c0af8de2efbbbf",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"93e080",
+null
+],
+[
+"utf-8-sig",
+"c3a90ae2eda080c3a9e282",
+"'utf-8' codec can't decode byte 0xe2 in position 3: invalid continuation byte"
+],
+[
+"latin-1",
+"619d808d",
+null
+],
+[
+"latin-1",
+"efbbbfe282",
+null
+],
+[
+"utf-8-sig",
+"f4908080f09f988080eda0800d0a",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"9d",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"latin-1",
+"f09f98800d0a81e282",
+null
+],
+[
+"utf-8-sig",
+"f49080809de282ac",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"8de2829dff8d",
+null
+],
+[
+"utf-8-sig",
+"f09f9880efbbbf",
+null
+],
+[
+"cp1252",
+"e080819d8de2829d",
+"'charmap' codec can't decode byte 0x81 in position 2: character maps to <undefined>"
+],
+[
+"latin-1",
+"f49080800a9d80f09f9880",
+null
+],
+[
+"utf-8",
+"f09f9880",
+null
+],
+[
+"utf-8",
+"e2820d0a0d0ae080f09f0a",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"cp1252",
+"61e080e2ff",
+null
+],
+[
+"utf-8-sig",
+"0d0af09fe282",
+"'utf-8' codec can't decode bytes in position 2-3: invalid continuation byte"
+],
+[
+"utf-8",
+"0a",
+null
+],
+[
+"utf-8-sig",
+"e080efbbbf0d0a",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"61e282e2e282acc0af",
+"'utf-8' codec can't decode bytes in position 1-2: invalid continuation byte"
+],
+[
+"ascii",
+"f09fe080e0800d0a",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"ffe2eda080f09f9880e2",
+"'ascii' codec can't decode byte 0xff in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"e2",
+null
+],
+[
+"utf-8-sig",
+"8de2f09f81",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"latin-1",
+"e261",
+null
+],
+[
+"utf-8-sig",
+"f49080800d0ae2efbbbf9d9d",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"80c0af",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"c0af",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"ascii",
+"f4908080e282",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"f09f",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"e2e282ace282ace282",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"efbbbfc3a9",
+null
+],
+[
+"latin-1",
+"93f4908080",
+null
+],
+[
+"utf-8-sig",
+"93c0afe2eda08081",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"e2e0809d0a",
+"'charmap' codec can't decode byte 0x9d in position 3: character maps to <undefined>"
+],
+[
+"ascii",
+"809d",
+"'ascii' codec can't decode byte 0x80 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"e2938defbbbf",
+null
+],
+[
+"utf-8",
+"c3a9efbbbf81efbbbfe080",
+"'utf-8' codec can't decode byte 0x81 in position 5: invalid start byte"
+],
+[
+"cp1252",
+"9381",
+"'charmap' codec can't decode byte 0x81 in position 1: character maps to <undefined>"
+],
+[
+"utf-8",
+"0a0a",
+null
+],
+[
+"latin-1",
+"80",
+null
+],
+[
+"utf-8-sig",
+"ffe2efbbbf",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"cp1252",
+"0d0a810d0ae2f09ff09f",
+"'charmap' codec can't decode byte 0x81 in position 2: character maps to <undefined>"
+],
+[
+"latin-1",
+"eda08081",
+null
+],
+[
+"utf-8-sig",
+"c3a9f09f0ac3a9",
+"'utf-8' codec can't decode bytes in position 2-3: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"c3a9eda080c3a9",
+"'utf-8' codec can't decode byte 0xed in position 2: invalid continuation byte"
+],
+[
+"utf-8",
+"e28281c0af",
+"'utf-8' codec can't decode byte 0xc0 in position 3: invalid start byte"
+],
+[
+"cp1252",
+"8d80f09f9880e282",
+"'charmap' codec can't decode byte 0x8d in position 0: character maps to <undefined>"
+],
+[
+"cp1252",
+"eda080c0af",
+null
+],
+[
+"utf-8",
+"816161ff",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"8d",
+"'charmap' codec can't decode byte 0x8d in position 0: character maps to <undefined>"
+],
+[
+"latin-1",
+"809d80",
+null
+],
+[
+"cp1252",
+"c3a9",
+null
+],
+[
+"latin-1",
+"808df09f9880ff",
+null
+],
+[
+"utf-8-sig",
+"fff09f9880e080",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"utf-8",
+"c3a9ff80",
+"'utf-8' codec can't decode byte 0xff in position 2: invalid start byte"
+],
+[
+"ascii",
+"efbbbfc0aff09ff09f8d",
+"'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"9d61",
+"'ascii' codec can't decode byte 0x9d in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"c0af",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"810aeda080e282ac",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"8dc0af",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"0ac3a9f09f",
+"'utf-8' codec can't decode bytes in position 3-4: unexpected end of data"
+],
+[
+"utf-8-sig",
+"9d80e2828d",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"utf-8",
+"e282f09f61e282610a",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"cp1252",
+"e282eda0800d0ae282ac",
+null
+],
+[
+"utf-8-sig",
+"81e08080",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"efbbbf0ac0af",
+"'utf-8' codec can't decode byte 0xc0 in position 4: invalid start byte"
+],
+[
+"latin-1",
+"c0af938de281c3a9",
+null
+],
+[
+"ascii",
+"eda080c3a9f09f9880",
+"'ascii' codec can't decode byte 0xed in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"93810d0a",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"80f09fefbbbf",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"ascii",
+"e282aceda080f09f9880f4908080",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"8de282c3a961e282",
+"'charmap' codec can't decode byte 0x8d in position 0: character maps to <undefined>"
+],
+[
+"ascii",
+"61efbbbf80e080",
+"'ascii' codec can't decode byte 0xef in position 1: ordinal not in range(128)"
+],
+[
+"latin-1",
+"f09f9880c0aff09fc3a981",
+null
+],
+[
+"utf-8",
+"c3a98d",
+"'utf-8' codec can't decode byte 0x8d in position 2: invalid start byte"
+],
+[
+"latin-1",
+"8d9de2f09f9880e08081",
+null
+],
+[
+"cp1252",
+"efbbbf8df09f619361",
+"'charmap' codec can't decode byte 0x8d in position 3: character maps to <undefined>"
+],
+[
+"ascii",
+"f09f98809dffefbbbf81",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"0d0af09f9880",
+"'ascii' codec can't decode byte 0xf0 in position 2: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"80c0aff4908080c0af0a93",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"e080efbbbf8de282",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"e282ace2828d",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"e282ac93c3a9f4908080",
+"'utf-8' codec can't decode byte 0x93 in position 3: invalid start byte"
+],
+[
+"ascii",
+"f4908080",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"e080c3a9e282e2",
+null
+],
+[
+"ascii",
+"8d0d0a81",
+"'ascii' codec can't decode byte 0x8d in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"f09f988080efbbbfc0af93",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"e282eda080e2",
+null
+],
+[
+"utf-8",
+"e282acefbbbfe080",
+"'utf-8' codec can't decode byte 0xe0 in position 6: invalid continuation byte"
+],
+[
+"cp1252",
+"e080e2ff",
+null
+],
+[
+"ascii",
+"efbbbf0d0af09f9880f09f0d0a",
+"'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"efbbbfe080",
+null
+],
+[
+"utf-8",
+"e080eda080f4908080",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"6180efbbbff4908080e282acf09f",
+null
+],
+[
+"cp1252",
+"c3a9e282ac80810d0a",
+"'charmap' codec can't decode byte 0x81 in position 6: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"f09fc3a9",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8",
+"e282f4908080f4908080efbbbf",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"cp1252",
+"efbbbff09f9880",
+null
+],
+[
+"latin-1",
+"939d9d61e2c0af",
+null
+],
+[
+"ascii",
+"0aeda0800af09f9880",
+"'ascii' codec can't decode byte 0xed in position 1: ordinal not in range(128)"
+],
+[
+"latin-1",
+"f09f9880e0808de20a",
+null
+],
+[
+"latin-1",
+"80f09f9880efbbbf",
+null
+],
+[
+"cp1252",
+"93",
+null
+],
+[
+"ascii",
+"e282ac",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"c3a90d0a",
+null
+],
+[
+"utf-8",
+"c0af",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"eda080efbbbf619380",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"6193e2",
+null
+],
+[
+"latin-1",
+"e282ace28281f09f98800a",
+null
+],
+[
+"ascii",
+"e2e20d0affe2",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"9d81e282ac93e2829d",
+"'charmap' codec can't decode byte 0x9d in position 0: character maps to <undefined>"
+],
+[
+"ascii",
+"0d0a0d0aff",
+"'ascii' codec can't decode byte 0xff in position 4: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"fff4908080",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"cp1252",
+"8defbbbfe080c3a9",
+"'charmap' codec can't decode byte 0x8d in position 0: character maps to <undefined>"
+],
+[
+"utf-8",
+"fff09feda0800a0a",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"utf-8",
+"ff",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"cp1252",
+"f09f9880",
+null
+],
+[
+"latin-1",
+"eda080e2828080",
+null
+],
+[
+"cp1252",
+"c3a9f09f9880efbbbf",
+null
+],
+[
+"latin-1",
+"f09f61e2",
+null
+],
+[
+"ascii",
+"c3a9c3a9f09f9880e282ac0d0ae080",
+"'ascii' codec can't decode byte 0xc3 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"eda080",
+null
+],
+[
+"utf-8",
+"0af09f98808081eda080eda080",
+"'utf-8' codec can't decode byte 0x80 in position 5: invalid start byte"
+],
+[
+"utf-8-sig",
+"e2829381e282ac9d",
+"'utf-8' codec can't decode byte 0x81 in position 3: invalid start byte"
+],
+[
+"latin-1",
+"e0809df09fefbbbfffefbbbf",
+null
+],
+[
+"utf-8-sig",
+"e282ac0a",
+null
+],
+[
+"ascii",
+"eda080ffc3a90d0a9d81",
+"'ascii' codec can't decode byte 0xed in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"efbbbff09fe282ac8061",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8",
+"fff09f80f490808080c3a9",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"cp1252",
+"e2820a61eda080",
+null
+],
+[
+"utf-8",
+"c0afe282f4908080eda080e282e080",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"8d93",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"ascii",
+"0a0d0ae282ac",
+"'ascii' codec can't decode byte 0xe2 in position 3: ordinal not in range(128)"
+],
+[
+"ascii",
+"9de080ffffefbbbf",
+"'ascii' codec can't decode byte 0x9d in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"810d0a81f09f9880f09f0a",
+"'ascii' codec can't decode byte 0x81 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"f49080800aefbbbfeda080",
+null
+],
+[
+"ascii",
+"0a81f4908080f09f988093",
+"'ascii' codec can't decode byte 0x81 in position 1: ordinal not in range(128)"
+],
+[
+"latin-1",
+"f09f",
+null
+],
+[
+"ascii",
+"eda080efbbbf",
+"'ascii' codec can't decode byte 0xed in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"81f4908080efbbbf",
+null
+],
+[
+"ascii",
+"e080f09f9880e0809d",
+"'ascii' codec can't decode byte 0xe0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"e2",
+"'utf-8' codec can't decode byte 0xe2 in position 0: unexpected end of data"
+],
+[
+"utf-8",
+"e080f09f",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"eda080",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"eda080f09fc0af93f09f9880",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"f4908080e282efbbbf80",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"93e080f09f98806180",
+null
+],
+[
+"ascii",
+"f09f9880eda080",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"c3a9eda080",
+null
+],
+[
+"ascii",
+"619dc0af0d0a",
+"'ascii' codec can't decode byte 0x9d in position 1: ordinal not in range(128)"
+],
+[
+"cp1252",
+"e282c0aff4908080f09f",
+"'charmap' codec can't decode byte 0x90 in position 5: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"80c0afeda080",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"efbbbfeda080e2828181f09f",
+"'charmap' codec can't decode byte 0x81 in position 8: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"e080efbbbf",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"f4908080f09f9880c0aff09f9880efbbbf",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"f09f988093",
+null
+],
+[
+"cp1252",
+"e080800d0a61e080",
+null
+],
+[
+"latin-1",
+"8d",
+null
+],
+[
+"latin-1",
+"93f09f80eda080c0af8d",
+null
+],
+[
+"ascii",
+"efbbbf",
+"'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"f09f98806181eda080ff81",
+"'utf-8' codec can't decode byte 0x81 in position 5: invalid start byte"
+],
+[
+"cp1252",
+"619d0d0aff",
+"'charmap' codec can't decode byte 0x9d in position 1: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"f09f",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"utf-8",
+"ff9d8d93",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"0d0a0a0a",
+null
+],
+[
+"latin-1",
+"0ac0aff09f9880e282e080",
+null
+],
+[
+"utf-8-sig",
+"0a8080f4908080ff",
+"'utf-8' codec can't decode byte 0x80 in position 1: invalid start byte"
+],
+[
+"cp1252",
+"efbbbf9de282f09ff4908080f09f",
+"'charmap' codec can't decode byte 0x9d in position 3: character maps to <undefined>"
+],
+[
+"utf-8",
+"0ae282ac8dff",
+"'utf-8' codec can't decode byte 0x8d in position 4: invalid start byte"
+],
+[
+"ascii",
+"e282eda08093ff",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"f4908080800d0ae28281",
+"'charmap' codec can't decode byte 0x90 in position 1: character maps to <undefined>"
+],
+[
+"cp1252",
+"9393",
+null
+],
+[
+"utf-8-sig",
+"eda080",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"0d0a81e282acffe080",
+null
+],
+[
+"latin-1",
+"efbbbf61930d0af09f0d0a",
+null
+],
+[
+"ascii",
+"93",
+"'ascii' codec can't decode byte 0x93 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"c0af",
+null
+],
+[
+"utf-8",
+"81",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"f09f9880e080",
+null
+],
+[
+"cp1252",
+"f09f98800d0ae080e282acefbbbf",
+null
+],
+[
+"utf-8-sig",
+"81",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"ascii",
+"eda080",
+"'ascii' codec can't decode byte 0xed in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"0ae2",
+"'utf-8' codec can't decode byte 0xe2 in position 1: unexpected end of data"
+],
+[
+"utf-8",
+"f4908080e282ac61",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"81",
+"'ascii' codec can't decode byte 0x81 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"c0af93f09feda0800d0a",
+"'ascii' codec can't decode byte 0xc0 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"f490808061",
+null
+],
+[
+"ascii",
+"ffffe2c3a9",
+"'ascii' codec can't decode byte 0xff in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"81e282acefbbbfefbbbfe080",
+null
+],
+[
+"utf-8",
+"f09fefbbbf",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"latin-1",
+"0ac0af93eda080",
+null
+],
+[
+"ascii",
+"f09f9880",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"c0af0d0a939de282ace282",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"c3a9e293e282ac0d0a",
+"'utf-8' codec can't decode bytes in position 2-3: invalid continuation byte"
+],
+[
+"utf-8",
+"81f49080809d",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"80f09f9880efbbbf93f09f9880e282",
+null
+],
+[
+"cp1252",
+"e080f09f9880",
+null
+],
+[
+"latin-1",
+"9df09f9880e282acf09ff09f",
+null
+],
+[
+"utf-8-sig",
+"618de2e282",
+"'utf-8' codec can't decode byte 0x8d in position 1: invalid start byte"
+],
+[
+"ascii",
+"ff",
+"'ascii' codec can't decode byte 0xff in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"0a",
+null
+],
+[
+"cp1252",
+"c0af",
+null
+],
+[
+"cp1252",
+"8180e282ac",
+"'charmap' codec can't decode byte 0x81 in position 0: character maps to <undefined>"
+],
+[
+"utf-8",
+"6180efbbbf61f09f8d",
+"'utf-8' codec can't decode byte 0x80 in position 1: invalid start byte"
+],
+[
+"cp1252",
+"f09f9880c3a9efbbbf61",
+null
+],
+[
+"utf-8-sig",
+"c3a9e282acf09f9880e282e281",
+"'utf-8' codec can't decode bytes in position 9-10: invalid continuation byte"
+],
+[
+"cp1252",
+"e080efbbbfc0af81",
+"'charmap' codec can't decode byte 0x81 in position 7: character maps to <undefined>"
+],
+[
+"utf-8",
+"efbbbff09f8deda08080",
+"'utf-8' codec can't decode bytes in position 3-5: invalid continuation byte"
+],
+[
+"utf-8",
+"f09f93",
+"'utf-8' codec can't decode bytes in position 0-2: unexpected end of data"
+],
+[
+"utf-8-sig",
+"9d61f09f988081",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"latin-1",
+"c0afc0afff0d0ac0af",
+null
+],
+[
+"utf-8-sig",
+"80800d0a",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"latin-1",
+"c0af",
+null
+],
+[
+"latin-1",
+"9df09fc3a9ff80f4908080",
+null
+],
+[
+"utf-8",
+"e080eda080e282acf4908080e282",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"eda080e2f09f9880f09f0a",
+null
+],
+[
+"ascii",
+"ff",
+"'ascii' codec can't decode byte 0xff in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"eda080e2",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"c3a9",
+null
+],
+[
+"ascii",
+"eda0809de2",
+"'ascii' codec can't decode byte 0xed in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"f49080800d0af09f988061e282ac",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"9d8de080e2",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"utf-8",
+"93",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"8deda080f09f9880c0af8defbbbf",
+"'charmap' codec can't decode byte 0x8d in position 0: character maps to <undefined>"
+],
+[
+"latin-1",
+"c3a90d0a",
+null
+],
+[
+"utf-8",
+"eda080efbbbf",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"f4908080efbbbfe280",
+null
+],
+[
+"latin-1",
+"6161e080",
+null
+],
+[
+"utf-8-sig",
+"0a80f4908080e080f49080800d0a",
+"'utf-8' codec can't decode byte 0x80 in position 1: invalid start byte"
+],
+[
+"cp1252",
+"81ffc0aff490808093",
+"'charmap' codec can't decode byte 0x81 in position 0: character maps to <undefined>"
+],
+[
+"ascii",
+"f09f61c3a981",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"eda0808d0aff93",
+"'charmap' codec can't decode byte 0x8d in position 3: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"93",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"latin-1",
+"0d0a0d0a",
+null
+],
+[
+"cp1252",
+"8df09fe2",
+"'charmap' codec can't decode byte 0x8d in position 0: character maps to <undefined>"
+],
+[
+"utf-8",
+"e282",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"latin-1",
+"f09f9880e080e282ac",
+null
+],
+[
+"utf-8-sig",
+"81",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"ascii",
+"9de080",
+"'ascii' codec can't decode byte 0x9d in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"f09fefbbbf",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"e282e080f4908080",
+"'charmap' codec can't decode byte 0x90 in position 5: character maps to <undefined>"
+],
+[
+"cp1252",
+"eda08061939dc0af",
+"'charmap' codec can't decode byte 0x9d in position 5: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"eda0800a0a",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"f09f98809dff80eda080e080",
+"'utf-8' codec can't decode byte 0x9d in position 4: invalid start byte"
+],
+[
+"utf-8",
+"ffe282ac61eda08061",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"cp1252",
+"819d",
+"'charmap' codec can't decode byte 0x81 in position 0: character maps to <undefined>"
+],
+[
+"ascii",
+"93f09f93c0af",
+"'ascii' codec can't decode byte 0x93 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"f09f80f09f9880ff",
+null
+],
+[
+"latin-1",
+"93e29dc3a9",
+null
+],
+[
+"latin-1",
+"0a",
+null
+],
+[
+"ascii",
+"c0af0d0a",
+"'ascii' codec can't decode byte 0xc0 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"93f09f98808d",
+null
+],
+[
+"utf-8-sig",
+"efbbbf0a938061",
+"'utf-8' codec can't decode byte 0x93 in position 1: invalid start byte"
+],
+[
+"ascii",
+"f4908080ffe2e282ac0d0a",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"f09fc3a9",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"0ae282",
+null
+],
+[
+"latin-1",
+"ff800d0ae080",
+null
+],
+[
+"ascii",
+"9361e2c3a9e2c0af",
+"'ascii' codec can't decode byte 0x93 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"e282acff",
+"'utf-8' codec can't decode byte 0xff in position 3: invalid start byte"
+],
+[
+"utf-8-sig",
+"e28280ff61",
+"'utf-8' codec can't decode byte 0xff in position 3: invalid start byte"
+],
+[
+"utf-8-sig",
+"e282ace282acff93e282acf4908080",
+"'utf-8' codec can't decode byte 0xff in position 6: invalid start byte"
+],
+[
+"utf-8",
+"efbbbf81f49080800d0a",
+"'utf-8' codec can't decode byte 0x81 in position 3: invalid start byte"
+],
+[
+"utf-8",
+"61f49080800d0af49080809d93",
+"'utf-8' codec can't decode byte 0xf4 in position 1: invalid continuation byte"
+],
+[
+"ascii",
+"0d0a9d81f09f98808d",
+"'ascii' codec can't decode byte 0x9d in position 2: ordinal not in range(128)"
+],
+[
+"ascii",
+"808dff",
+"'ascii' codec can't decode byte 0x80 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"0d0ae080930d0aff0a",
+"'utf-8' codec can't decode byte 0xe0 in position 2: invalid continuation byte"
+],
+[
+"ascii",
+"e282eda080efbbbfe282e282",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"e282ace282ac",
+null
+],
+[
+"latin-1",
+"eda080c0af0d0a",
+null
+],
+[
+"utf-8",
+"f4908080ff61",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"eda080e282ace080f09f9880",
+"'ascii' codec can't decode byte 0xed in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"80e08061",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"610d0a9defbbbf0d0a",
+"'utf-8' codec can't decode byte 0x9d in position 3: invalid start byte"
+],
+[
+"cp1252",
+"0d0ae282ace2820d0a8d",
+"'charmap' codec can't decode byte 0x8d in position 9: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"80e282",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"810ac0af",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"e2e0808de282ace080efbbbf",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"f49080800d0af09f9880c0af",
+"'charmap' codec can't decode byte 0x90 in position 1: character maps to <undefined>"
+],
+[
+"latin-1",
+"eda080",
+null
+],
+[
+"ascii",
+"8de282",
+"'ascii' codec can't decode byte 0x8d in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"0d0a",
+null
+],
+[
+"ascii",
+"0d0ae2829df4908080",
+"'ascii' codec can't decode byte 0xe2 in position 2: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"efbbbfc3a9810d0ae2",
+"'utf-8' codec can't decode byte 0x81 in position 2: invalid start byte"
+],
+[
+"cp1252",
+"80f09f98800a0d0af09f9880",
+null
+],
+[
+"latin-1",
+"0ae282ac",
+null
+],
+[
+"ascii",
+"61939d",
+"'ascii' codec can't decode byte 0x93 in position 1: ordinal not in range(128)"
+],
+[
+"cp1252",
+"e282ac0a",
+null
+],
+[
+"utf-8-sig",
+"9df4908080",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"cp1252",
+"efbbbf800d0a61e2",
+null
+],
+[
+"latin-1",
+"c3a90d0a93f09f9880f09f9880e282",
+null
+],
+[
+"latin-1",
+"c0af0ac3a98d81e080",
+null
+],
+[
+"utf-8",
+"e28280",
+null
+],
+[
+"latin-1",
+"e080c0aff4908080ff9df4908080",
+null
+],
+[
+"utf-8-sig",
+"eda080f490808061",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"f4908080f09f93f490808080efbbbf",
+null
+],
+[
+"cp1252",
+"939deda080",
+"'charmap' codec can't decode byte 0x9d in position 1: character maps to <undefined>"
+],
+[
+"ascii",
+"0a",
+null
+],
+[
+"ascii",
+"0a0d0af49080808d8d8d",
+"'ascii' codec can't decode byte 0xf4 in position 3: ordinal not in range(128)"
+],
+[
+"latin-1",
+"e282ac",
+null
+],
+[
+"latin-1",
+"8161e282",
+null
+],
+[
+"utf-8-sig",
+"81efbbbf9361eda0800d0a",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"e20a61f09f",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"efbbbf8d81e2f09f",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"f09f",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"ascii",
+"9defbbbf9d80eda080",
+"'ascii' codec can't decode byte 0x9d in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"8d",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"latin-1",
+"0d0ac0af61e282ac61",
+null
+],
+[
+"utf-8-sig",
+"61",
+null
+],
+[
+"utf-8",
+"0a",
+null
+],
+[
+"cp1252",
+"81efbbbfe282ac81",
+"'charmap' codec can't decode byte 0x81 in position 0: character maps to <undefined>"
+],
+[
+"utf-8",
+"8defbbbf93e2f09f9880",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"latin-1",
+"939d0a",
+null
+],
+[
+"utf-8",
+"61e261",
+"'utf-8' codec can't decode byte 0xe2 in position 1: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"e282e282ac",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8",
+"f4908080f09f9880e2f4908080",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"f09f816180f4908080",
+null
+],
+[
+"utf-8-sig",
+"f09f988093810d0af49080809d",
+"'utf-8' codec can't decode byte 0x93 in position 4: invalid start byte"
+],
+[
+"cp1252",
+"6180e282ac",
+null
+],
+[
+"utf-8",
+"ffc3a99d",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"cp1252",
+"c0aff09f98800ac3a9f09ff09f",
+null
+],
+[
+"utf-8",
+"e2820d0a9d81",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"ascii",
+"ff0aefbbbff4908080",
+"'ascii' codec can't decode byte 0xff in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"f490808080eda080",
+null
+],
+[
+"latin-1",
+"0a",
+null
+],
+[
+"cp1252",
+"f09fefbbbfe080",
+null
+],
+[
+"ascii",
+"e2",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"eda080eda080c3a9e282",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"e2f09f9880f49080800d0a",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"93ff",
+"'ascii' codec can't decode byte 0x93 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"0d0affe282ac",
+"'utf-8' codec can't decode byte 0xff in position 2: invalid start byte"
+],
+[
+"cp1252",
+"6181efbbbf",
+"'charmap' codec can't decode byte 0x81 in position 1: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"9361f09fe080c3a9",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"e282eda080e261",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"ascii",
+"f09f98800d0aefbbbf",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"ffc0afc0aff4908080c3a9",
+"'ascii' codec can't decode byte 0xff in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"939d800d0a",
+null
+],
+[
+"latin-1",
+"f09f9880",
+null
+],
+[
+"utf-8-sig",
+"818180c0aff4908080",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"ascii",
+"9df09f80c0af9de080",
+"'ascii' codec can't decode byte 0x9d in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"0d0af09f9880e2efbbbf",
+null
+],
+[
+"utf-8-sig",
+"9d",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"ascii",
+"f09fe2828defbbbfeda080",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"c3a9f09fefbbbfe282acc3a981",
+"'utf-8' codec can't decode bytes in position 2-3: invalid continuation byte"
+],
+[
+"latin-1",
+"8d80e28261c0af81",
+null
+],
+[
+"cp1252",
+"8df09fc3a9ff8d0a",
+"'charmap' codec can't decode byte 0x8d in position 0: character maps to <undefined>"
+],
+[
+"cp1252",
+"f09fe282c3a9e282ac",
+null
+],
+[
+"utf-8-sig",
+"e2f09f9880c3a993",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"9393c3a9e0808d",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"latin-1",
+"e28293c3a9e282",
+null
+],
+[
+"latin-1",
+"e080f490808093ff61e080",
+null
+],
+[
+"utf-8-sig",
+"ffc0aff09feda08061",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"utf-8",
+"6181e2",
+"'utf-8' codec can't decode byte 0x81 in position 1: invalid start byte"
+],
+[
+"ascii",
+"9d",
+"'ascii' codec can't decode byte 0x9d in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"9df09ffff09f0d0a80",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"0a",
+null
+],
+[
+"utf-8",
+"f09f",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"latin-1",
+"f09f9361c0af",
+null
+],
+[
+"utf-8",
+"eda080",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"e2efbbbfe282",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"c3a993eda080f09f9880",
+"'utf-8' codec can't decode byte 0x93 in position 2: invalid start byte"
+],
+[
+"ascii",
+"810d0a",
+"'ascii' codec can't decode byte 0x81 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"0d0ae282c0affff09fe080",
+null
+],
+[
+"latin-1",
+"0d0aff",
+null
+],
+[
+"latin-1",
+"9dc3a9",
+null
+],
+[
+"utf-8",
+"938d",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"latin-1",
+"eda080",
+null
+],
+[
+"utf-8",
+"619d0d0aff",
+"'utf-8' codec can't decode byte 0x9d in position 1: invalid start byte"
+],
+[
+"utf-8",
+"80",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"808d81e0809d0d0a",
+"'charmap' codec can't decode byte 0x8d in position 1: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"93e080c3a9e2",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"latin-1",
+"f49080800d0aeda080efbbbff09f80",
+null
+],
+[
+"utf-8",
+"eda080",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"9de282e2f4908080eda080e282ac",
+"'charmap' codec can't decode byte 0x9d in position 0: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"0d0a",
+null
+],
+[
+"utf-8",
+"e282c3a981e282ac",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"cp1252",
+"9d",
+"'charmap' codec can't decode byte 0x9d in position 0: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"e282aceda080",
+"'utf-8' codec can't decode byte 0xed in position 3: invalid continuation byte"
+],
+[
+"ascii",
+"e282ac61f4908080e2",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"e08080f4908080e28280",
+null
+],
+[
+"cp1252",
+"0d0ae2e282acf09f9880",
+null
+],
+[
+"utf-8",
+"e282ac61e282ac",
+null
+],
+[
+"cp1252",
+"e282ac80e08081f4908080",
+"'charmap' codec can't decode byte 0x81 in position 6: character maps to <undefined>"
+],
+[
+"utf-8",
+"f09ff09f",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"ascii",
+"f09f9880",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"eda08061f09f9880",
+null
+],
+[
+"latin-1",
+"8d810d0a",
+null
+],
+[
+"ascii",
+"eda080eda080",
+"'ascii' codec can't decode byte 0xed in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"809df09fe2c0af",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"819d9df09fc3a9",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"latin-1",
+"c0af0d0ae080f4908080",
+null
+],
+[
+"ascii",
+"0a0d0a",
+null
+],
+[
+"latin-1",
+"e20d0a61",
+null
+],
+[
+"utf-8",
+"e080",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"8d",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"ascii",
+"80809381",
+"'ascii' codec can't decode byte 0x80 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"f490808061efbbbf",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"e282efbbbfc0af",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"ascii",
+"e080e080fff09f80",
+"'ascii' codec can't decode byte 0xe0 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"8dff",
+null
+],
+[
+"ascii",
+"f49080800d0a",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"c0af0d0a",
+null
+],
+[
+"cp1252",
+"8180c3a9930d0a",
+"'charmap' codec can't decode byte 0x81 in position 0: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"eda080f09f9880809d",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"e282acf4908080",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"9dff",
+"'charmap' codec can't decode byte 0x9d in position 0: character maps to <undefined>"
+],
+[
+"latin-1",
+"0af490808061e282",
+null
+],
+[
+"utf-8-sig",
+"e282ac8d8dff",
+"'utf-8' codec can't decode byte 0x8d in position 3: invalid start byte"
+],
+[
+"utf-8-sig",
+"8d",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"e080808d",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"8df4908080e080",
+"'ascii' codec can't decode byte 0x8d in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"8df09ff09f9880ff9d",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"cp1252",
+"ff0a",
+null
+],
+[
+"utf-8",
+"efbbbfe2e0800ae282",
+"'utf-8' codec can't decode byte 0xe2 in position 3: invalid continuation byte"
+],
+[
+"utf-8",
+"f49080808defbbbfe2",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"0ae08080",
+"'ascii' codec can't decode byte 0xe0 in position 1: ordinal not in range(128)"
+],
+[
+"ascii",
+"f4908080",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"f09f988061efbbbf",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"c3a9",
+null
+],
+[
+"latin-1",
+"9d619df09f98808d0d0a",
+null
+],
+[
+"utf-8",
+"e080f09f988080",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"ff800a",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"ascii",
+"e282800a",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"0d0a",
+null
+],
+[
+"ascii",
+"ff93e20a61",
+"'ascii' codec can't decode byte 0xff in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"e080f49080808d93c0af0d0a",
+"'ascii' codec can't decode byte 0xe0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"819dc0aff09f9880e282e282",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"e080eda080f09fff",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"0d0a8181c0af0d0a",
+null
+],
+[
+"cp1252",
+"0d0ae2820d0a800d0af09f",
+null
+],
+[
+"latin-1",
+"e2f09f9880f4908080",
+null
+],
+[
+"latin-1",
+"e080f09f",
+null
+],
+[
+"utf-8-sig",
+"e282e282ace080c3a9e282ace282ac",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"ascii",
+"e281efbbbfc0afc3a9",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"e282acf49080808d",
+"'charmap' codec can't decode byte 0x90 in position 4: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"efbbbf81f09f93",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"latin-1",
+"9d93e2",
+null
+],
+[
+"utf-8-sig",
+"8180ff",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"eda080",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"f4908080",
+null
+],
+[
+"ascii",
+"9d81",
+"'ascii' codec can't decode byte 0x9d in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"efbbbff09f988081f09f98809d9d",
+"'utf-8' codec can't decode byte 0x81 in position 7: invalid start byte"
+],
+[
+"utf-8",
+"0d0a61",
+null
+],
+[
+"ascii",
+"e282f09f",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"8d0a",
+null
+],
+[
+"utf-8-sig",
+"93c0af9d0d0a",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"616161",
+null
+],
+[
+"cp1252",
+"f09f8d8d9381f09f",
+"'charmap' codec can't decode byte 0x8d in position 2: character maps to <undefined>"
+],
+[
+"latin-1",
+"0d0ae08080f490808080f4908080",
+null
+],
+[
+"utf-8",
+"0af09f988061",
+null
+],
+[
+"latin-1",
+"eda080e2f09f9880",
+null
+],
+[
+"utf-8",
+"ff81",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"ascii",
+"f09f9880",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"f4908080e080",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"e080f49080809d8d",
+"'ascii' codec can't decode byte 0xe0 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"e08081",
+null
+],
+[
+"utf-8-sig",
+"e080939393ff",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"e0800ae2e2828d",
+"'ascii' codec can't decode byte 0xe0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"f09f9880efbbbf9dc0af9380",
+"'utf-8' codec can't decode byte 0x9d in position 7: invalid start byte"
+],
+[
+"cp1252",
+"c3a9e282ac61",
+null
+],
+[
+"latin-1",
+"f09fc3a98d",
+null
+],
+[
+"utf-8-sig",
+"61f4908080",
+"'utf-8' codec can't decode byte 0xf4 in position 1: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"0d0a61f4908080",
+"'utf-8' codec can't decode byte 0xf4 in position 3: invalid continuation byte"
+],
+[
+"latin-1",
+"efbbbf",
+null
+],
+[
+"cp1252",
+"818d81",
+"'charmap' codec can't decode byte 0x81 in position 0: character maps to <undefined>"
+],
+[
+"utf-8",
+"f49080808d",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"e281",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"utf-8-sig",
+"8093f09f9880c0afefbbbf",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"e080f09f9880",
+null
+],
+[
+"ascii",
+"8dff61",
+"'ascii' codec can't decode byte 0x8d in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"e2efbbbf",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"9de080e2c0afe282",
+"'ascii' codec can't decode byte 0x9d in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"c3a9efbbbff4908080ffff",
+"'utf-8' codec can't decode byte 0xf4 in position 5: invalid continuation byte"
+],
+[
+"cp1252",
+"efbbbff4908080",
+"'charmap' codec can't decode byte 0x90 in position 4: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"80ff80",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"ascii",
+"0a9dc0afc3a9eda080",
+"'ascii' codec can't decode byte 0x9d in position 1: ordinal not in range(128)"
+],
+[
+"cp1252",
+"c3a9c3a9e08061",
+null
+],
+[
+"latin-1",
+"f09f9880f4908080e282",
+null
+],
+[
+"cp1252",
+"8dc0af",
+"'charmap' codec can't decode byte 0x8d in position 0: character maps to <undefined>"
+],
+[
+"ascii",
+"9d",
+"'ascii' codec can't decode byte 0x9d in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"ff",
+null
+],
+[
+"utf-8-sig",
+"f490808061e29df09f",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"e080e282acf09f",
+null
+],
+[
+"utf-8-sig",
+"c0af8d0d0a0a",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"ascii",
+"e080",
+"'ascii' codec can't decode byte 0xe0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"e281f09fe2e080e282ac",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"0ac0afe282",
+"'utf-8' codec can't decode byte 0xc0 in position 1: invalid start byte"
+],
+[
+"ascii",
+"80",
+"'ascii' codec can't decode byte 0x80 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"c0af8d930a",
+"'charmap' codec can't decode byte 0x8d in position 2: character maps to <undefined>"
+],
+[
+"ascii",
+"e080e282ac",
+"'ascii' codec can't decode byte 0xe0 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"e080800d0ae080808d",
+"'charmap' codec can't decode byte 0x8d in position 8: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"e28261f09f",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"800a",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"latin-1",
+"e282f4908080",
+null
+],
+[
+"latin-1",
+"eda080f09f9880e2e2",
+null
+],
+[
+"utf-8",
+"810d0ae2610a",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"ff0d0a93",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"eda080efbbbf",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"81",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"ascii",
+"c3a9f09f",
+"'ascii' codec can't decode byte 0xc3 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"808d9de282acc0af",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"0af4908080f09f988081938d",
+"'charmap' codec can't decode byte 0x90 in position 2: character maps to <undefined>"
+],
+[
+"latin-1",
+"0a80ffe080",
+null
+],
+[
+"utf-8",
+"f09f",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"latin-1",
+"e282c3a9",
+null
+],
+[
+"utf-8",
+"80e0800ac3a9",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"0d0ae282ac808181f09f9880",
+"'utf-8' codec can't decode byte 0x80 in position 5: invalid start byte"
+],
+[
+"ascii",
+"f09fefbbbfeda080c3a9f09f9880",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"93",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"latin-1",
+"c3a99df09f61f09f9880e080",
+null
+],
+[
+"latin-1",
+"8d9df09f",
+null
+],
+[
+"utf-8",
+"efbbbf61f09f9880f09f9880c0af",
+"'utf-8' codec can't decode byte 0xc0 in position 12: invalid start byte"
+],
+[
+"ascii",
+"0d0ae080c3a981eda080eda080",
+"'ascii' codec can't decode byte 0xe0 in position 2: ordinal not in range(128)"
+],
+[
+"cp1252",
+"fff09f988080c0aff4908080eda080",
+"'charmap' codec can't decode byte 0x90 in position 9: character maps to <undefined>"
+],
+[
+"ascii",
+"81eda080f09f98808d0d0a",
+"'ascii' codec can't decode byte 0x81 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"c3a9c0afe282ac93",
+"'utf-8' codec can't decode byte 0xc0 in position 2: invalid start byte"
+],
+[
+"utf-8-sig",
+"e080",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"8d61eda0809de080",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"cp1252",
+"0d0ae080",
+null
+],
+[
+"ascii",
+"e2c3a90a",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"8de282ac80f09f9880",
+null
+],
+[
+"cp1252",
+"0d0ae282e282ac9de080",
+"'charmap' codec can't decode byte 0x9d in position 7: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"c0afe080",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"f4908080e2",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"e2efbbbf9de282ac",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"93f09fc3a9",
+"'ascii' codec can't decode byte 0x93 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"9df09f9880",
+null
+],
+[
+"ascii",
+"c0af",
+"'ascii' codec can't decode byte 0xc0 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"f09f988080809d0d0a",
+null
+],
+[
+"ascii",
+"0d0a61",
+null
+],
+[
+"utf-8",
+"f09f98800d0af09f9880f09f98808181",
+"'utf-8' codec can't decode byte 0x81 in position 14: invalid start byte"
+],
+[
+"latin-1",
+"0d0a9de282ace2",
+null
+],
+[
+"cp1252",
+"c3a9e282",
+null
+],
+[
+"latin-1",
+"8193f490808093",
+null
+],
+[
+"ascii",
+"93c0af810aefbbbf",
+"'ascii' codec can't decode byte 0x93 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"efbbbf618d",
+"'utf-8' codec can't decode byte 0x8d in position 1: invalid start byte"
+],
+[
+"cp1252",
+"80e080c0af8d",
+"'charmap' codec can't decode byte 0x8d in position 5: character maps to <undefined>"
+],
+[
+"cp1252",
+"80",
+null
+],
+[
+"utf-8-sig",
+"80f09f",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"ascii",
+"f09fe28df49080800a",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"93e282ace282f09f",
+null
+],
+[
+"utf-8",
+"e282eda080c0aff4908080",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"ascii",
+"f09fe080c0afe0808d93",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"93",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"e080ffefbbbff09f",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"9de2e282",
+"'ascii' codec can't decode byte 0x9d in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"eda080",
+"'ascii' codec can't decode byte 0xed in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"e2eda080ff",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"0a",
+null
+],
+[
+"latin-1",
+"c0af0a93e282acf09fefbbbf",
+null
+],
+[
+"latin-1",
+"e282e282ac8defbbbfff",
+null
+],
+[
+"utf-8",
+"f4908080e282ffc3a9",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"e080c0af93e08093c3a9",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"61",
+null
+],
+[
+"utf-8",
+"eda080e28281c3a9",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"e282acc0afefbbbf9de282acff",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"c3a9",
+null
+],
+[
+"utf-8",
+"e29361efbbbf",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"ascii",
+"8dc3a961f49080800ac0af",
+"'ascii' codec can't decode byte 0x8d in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"0a0af09ff09f9880",
+"'utf-8' codec can't decode bytes in position 2-3: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"efbbbff09f",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"utf-8-sig",
+"81",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"0a93",
+"'utf-8' codec can't decode byte 0x93 in position 1: invalid start byte"
+],
+[
+"utf-8",
+"c0afc0af9defbbbf61",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"c3a9",
+null
+],
+[
+"utf-8-sig",
+"e080f09f",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"ff8d61810ac3a9",
+"'charmap' codec can't decode byte 0x8d in position 1: character maps to <undefined>"
+],
+[
+"ascii",
+"81e0809393",
+"'ascii' codec can't decode byte 0x81 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"e282",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"utf-8-sig",
+"f09fe282eda08081c0af",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8",
+"81f09f9880",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"93938defbbbf8d0d0a",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"latin-1",
+"c3a9",
+null
+],
+[
+"utf-8",
+"f09f61ffe282ace2",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"efbbbfe282",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"utf-8-sig",
+"0a8d",
+"'utf-8' codec can't decode byte 0x8d in position 1: invalid start byte"
+],
+[
+"cp1252",
+"eda0808d",
+"'charmap' codec can't decode byte 0x8d in position 3: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"e080f09f9880f4908080",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"e080e282ace080",
+null
+],
+[
+"latin-1",
+"8193e282acf09f98808d",
+null
+],
+[
+"cp1252",
+"8061",
+null
+],
+[
+"latin-1",
+"e282ac9d9de080ff61",
+null
+],
+[
+"utf-8-sig",
+"8d80610ae2",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"utf-8",
+"f09f0af09f0d0a",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"latin-1",
+"80f09f98800a0ac0afeda080",
+null
+],
+[
+"latin-1",
+"efbbbf",
+null
+],
+[
+"utf-8",
+"0d0a",
+null
+],
+[
+"latin-1",
+"e08080",
+null
+],
+[
+"utf-8-sig",
+"81f4908080",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"0d0ae28281",
+"'charmap' codec can't decode byte 0x81 in position 4: character maps to <undefined>"
+],
+[
+"cp1252",
+"9d8df49080800a9d93",
+"'charmap' codec can't decode byte 0x9d in position 0: character maps to <undefined>"
+],
+[
+"utf-8",
+"eda080",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"c3a9",
+"'ascii' codec can't decode byte 0xc3 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"f09f9880",
+null
+],
+[
+"utf-8-sig",
+"e0809dc3a9",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"f490808061e0800a",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"c3a98deda08080",
+null
+],
+[
+"utf-8-sig",
+"80e282ac81",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"eda080f490808081e28281",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"9d",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"cp1252",
+"0d0ae080f09f93",
+null
+],
+[
+"latin-1",
+"c0afefbbbf",
+null
+],
+[
+"utf-8-sig",
+"e2efbbbf0d0affeda080",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"9dffeda080eda080e282",
+"'ascii' codec can't decode byte 0x9d in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"93e282ac8df4908080",
+"'charmap' codec can't decode byte 0x8d in position 4: character maps to <undefined>"
+],
+[
+"latin-1",
+"f09f",
+null
+],
+[
+"ascii",
+"eda080c0af",
+"'ascii' codec can't decode byte 0xed in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"eda080f09f9880f09f",
+null
+],
+[
+"ascii",
+"8d",
+"'ascii' codec can't decode byte 0x8d in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"80",
+"'ascii' codec can't decode byte 0x80 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"8081e08093eda080",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"f09fe282ac",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"cp1252",
+"c0afff80ff81",
+"'charmap' codec can't decode byte 0x81 in position 5: character maps to <undefined>"
+],
+[
+"latin-1",
+"61eda080eda080e282ace2",
+null
+],
+[
+"cp1252",
+"efbbbff09f9880f09f",
+null
+],
+[
+"latin-1",
+"f49080809d8d",
+null
+],
+[
+"utf-8-sig",
+"eda08081",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"81f09fc3a99deda080eda080",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"latin-1",
+"f4908080f09f",
+null
+],
+[
+"ascii",
+"e2c0afc3a9",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"0d0af09f8d",
+"'utf-8' codec can't decode bytes in position 2-4: unexpected end of data"
+],
+[
+"ascii",
+"f4908080ffefbbbff09f9880f09f",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"819de20d0aefbbbfefbbbf",
+null
+],
+[
+"latin-1",
+"61e282",
+null
+],
+[
+"latin-1",
+"e080",
+null
+],
+[
+"latin-1",
+"e282ace2f09f93eda080",
+null
+],
+[
+"latin-1",
+"efbbbf0d0ae2e2e282",
+null
+],
+[
+"utf-8-sig",
+"8d",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"utf-8",
+"e080eda080efbbbfe282",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"eda080610d0af09f",
+null
+],
+[
+"utf-8-sig",
+"e282ac81e2",
+"'utf-8' codec can't decode byte 0x81 in position 3: invalid start byte"
+],
+[
+"ascii",
+"81c3a961",
+"'ascii' codec can't decode byte 0x81 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"eda08061e282610d0a",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"9d",
+"'charmap' codec can't decode byte 0x9d in position 0: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"e282ace080efbbbf",
+"'utf-8' codec can't decode byte 0xe0 in position 3: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"81eda0800d0ac3a99d8d",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"0ac0af9361e282ace2",
+"'utf-8' codec can't decode byte 0xc0 in position 1: invalid start byte"
+],
+[
+"cp1252",
+"e282",
+null
+],
+[
+"ascii",
+"e2eda080f09f",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"93e261e282aceda080f4908080",
+"'charmap' codec can't decode byte 0x90 in position 10: character maps to <undefined>"
+],
+[
+"ascii",
+"efbbbf8d0d0a9d",
+"'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"0d0ac0af80e282",
+"'utf-8' codec can't decode byte 0xc0 in position 2: invalid start byte"
+],
+[
+"cp1252",
+"0af09f988080f49080809d",
+"'charmap' codec can't decode byte 0x90 in position 7: character maps to <undefined>"
+],
+[
+"ascii",
+"e080",
+"'ascii' codec can't decode byte 0xe0 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"f4908080c0af93f09f9880ff",
+"'charmap' codec can't decode byte 0x90 in position 1: character maps to <undefined>"
+],
+[
+"latin-1",
+"800a",
+null
+],
+[
+"utf-8-sig",
+"f4908080efbbbf0a",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"efbbbf61",
+"'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"eda080",
+null
+],
+[
+"utf-8-sig",
+"e282ace282ac8dc3a9",
+"'utf-8' codec can't decode byte 0x8d in position 6: invalid start byte"
+],
+[
+"ascii",
+"93",
+"'ascii' codec can't decode byte 0x93 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"e080e282",
+null
+],
+[
+"ascii",
+"f4908080e2",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"818d8181e080",
+"'charmap' codec can't decode byte 0x81 in position 0: character maps to <undefined>"
+],
+[
+"latin-1",
+"eda080f4908080c0af",
+null
+],
+[
+"cp1252",
+"f09f",
+null
+],
+[
+"latin-1",
+"f09f9880eda08093e282ac",
+null
+],
+[
+"latin-1",
+"ff93f09f98806181",
+null
+],
+[
+"utf-8",
+"e080c3a9c0afefbbbf",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"61f09fe2829de280",
+"'ascii' codec can't decode byte 0xf0 in position 1: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"e2c0af61800d0a",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"c0af",
+null
+],
+[
+"ascii",
+"efbbbfefbbbf93c0af0a61",
+"'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"ff809d0d0a",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"cp1252",
+"61f09f9880e080e080efbbbfefbbbf",
+null
+],
+[
+"utf-8-sig",
+"8df09f988080e282",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"latin-1",
+"e2",
+null
+],
+[
+"cp1252",
+"9dff6193c3a9",
+"'charmap' codec can't decode byte 0x9d in position 0: character maps to <undefined>"
+],
+[
+"cp1252",
+"9dc0af818180efbbbf",
+"'charmap' codec can't decode byte 0x9d in position 0: character maps to <undefined>"
+],
+[
+"cp1252",
+"e2f4908080f09fe080",
+"'charmap' codec can't decode byte 0x90 in position 2: character maps to <undefined>"
+],
+[
+"latin-1",
+"93819defbbbf",
+null
+],
+[
+"utf-8-sig",
+"93f09f0aeda080",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"c3a9",
+null
+],
+[
+"utf-8-sig",
+"9d0ae282ac",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"e282f4908080e282efbbbf",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8",
+"0d0a8defbbbf",
+"'utf-8' codec can't decode byte 0x8d in position 2: invalid start byte"
+],
+[
+"ascii",
+"0d0a",
+null
+],
+[
+"ascii",
+"c3a99defbbbfe08080",
+"'ascii' codec can't decode byte 0xc3 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"80c0afe282c0afff",
+null
+],
+[
+"ascii",
+"e282acc0afe2e282acc3a9",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"8df09f",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"utf-8",
+"f09f98800af09f9880",
+null
+],
+[
+"utf-8",
+"c0af8df09f9d",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"latin-1",
+"c3a9ff8deda080f09f9880",
+null
+],
+[
+"cp1252",
+"f09f9880e282acf09fe28293f09f",
+null
+],
+[
+"utf-8",
+"9defbbbfe282eda080",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"cp1252",
+"9de282",
+"'charmap' codec can't decode byte 0x9d in position 0: character maps to <undefined>"
+],
+[
+"latin-1",
+"f09fe282acf49080808dc3a981",
+null
+],
+[
+"ascii",
+"8de2f09f",
+"'ascii' codec can't decode byte 0x8d in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"f09f0d0a80930d0ac0af",
+null
+],
+[
+"latin-1",
+"800d0a80",
+null
+],
+[
+"latin-1",
+"efbbbff09f0ae080",
+null
+],
+[
+"utf-8",
+"610a8d9deda0808d",
+"'utf-8' codec can't decode byte 0x8d in position 2: invalid start byte"
+],
+[
+"cp1252",
+"e282f4908080c0af",
+"'charmap' codec can't decode byte 0x90 in position 3: character maps to <undefined>"
+],
+[
+"ascii",
+"80efbbbfe0800ae282ac",
+"'ascii' codec can't decode byte 0x80 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"efbbbf610d0a0a0ae282ac",
+null
+],
+[
+"latin-1",
+"e2930d0a",
+null
+],
+[
+"utf-8-sig",
+"efbbbfffe0800d0a0a93",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"ascii",
+"9d",
+"'ascii' codec can't decode byte 0x9d in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"61e280f09f9880",
+null
+],
+[
+"utf-8-sig",
+"c3a9f09f",
+"'utf-8' codec can't decode bytes in position 2-3: unexpected end of data"
+],
+[
+"cp1252",
+"e080efbbbf",
+null
+],
+[
+"utf-8-sig",
+"61c0afff0a93",
+"'utf-8' codec can't decode byte 0xc0 in position 1: invalid start byte"
+],
+[
+"utf-8-sig",
+"e29dffeda080",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8",
+"819d",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"e282e2e282eda0800ae282ac",
+null
+],
+[
+"latin-1",
+"e282",
+null
+],
+[
+"cp1252",
+"0ae282ac",
+null
+],
+[
+"ascii",
+"61eda080f09fe2e282",
+"'ascii' codec can't decode byte 0xed in position 1: ordinal not in range(128)"
+],
+[
+"latin-1",
+"8d",
+null
+],
+[
+"utf-8",
+"6193e080616181",
+"'utf-8' codec can't decode byte 0x93 in position 1: invalid start byte"
+],
+[
+"latin-1",
+"8d93f09f98809de28d",
+null
+],
+[
+"latin-1",
+"819380610d0ac3a9",
+null
+],
+[
+"cp1252",
+"e2e080efbbbf8080",
+null
+],
+[
+"latin-1",
+"9361efbbbfeda080f09f81",
+null
+],
+[
+"cp1252",
+"80fff490808081f4908080",
+"'charmap' codec can't decode byte 0x90 in position 3: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"e080e29de080f4908080eda080",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"930aefbbbf9d61",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"ascii",
+"ffeda080",
+"'ascii' codec can't decode byte 0xff in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"efbbbfefbbbf",
+null
+],
+[
+"utf-8-sig",
+"e282efbbbf",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"ascii",
+"f09fefbbbf0ac0af",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"f09f0d0aeda080eda080",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8",
+"9d",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"utf-8",
+"f490808081f4908080800aefbbbf",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"e0809de282e2829dc0af",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"61ffeda0800d0a93",
+null
+],
+[
+"latin-1",
+"e0800d0aefbbbf",
+null
+],
+[
+"latin-1",
+"c3a9f09f",
+null
+],
+[
+"ascii",
+"81eda080f09f9880e282ff",
+"'ascii' codec can't decode byte 0x81 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"e282acc0aff09f98808d80",
+null
+],
+[
+"cp1252",
+"8d8de28281",
+"'charmap' codec can't decode byte 0x8d in position 0: character maps to <undefined>"
+],
+[
+"utf-8",
+"c3a98dc0af",
+"'utf-8' codec can't decode byte 0x8d in position 2: invalid start byte"
+],
+[
+"latin-1",
+"f09f988093f4908080c0afefbbbf61",
+null
+],
+[
+"ascii",
+"c3a9",
+"'ascii' codec can't decode byte 0xc3 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"e080",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"ffffeda0800d0a",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"ascii",
+"c0afe080e080eda080f4908080f09f",
+"'ascii' codec can't decode byte 0xc0 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"efbbbff09fe282ac8d",
+"'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"e282ac0a",
+null
+],
+[
+"ascii",
+"e282acf09f",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"f09f9880eda080e2e282ac",
+"'utf-8' codec can't decode byte 0xed in position 4: invalid continuation byte"
+],
+[
+"ascii",
+"e080e0800d0a93e2",
+"'ascii' codec can't decode byte 0xe0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"80610d0ac3a980",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"80ff0d0ac3a9e282",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"80e2f49080809d93ff",
+"'charmap' codec can't decode byte 0x90 in position 3: character maps to <undefined>"
+],
+[
+"latin-1",
+"9df09f9880ff",
+null
+],
+[
+"latin-1",
+"e281",
+null
+],
+[
+"cp1252",
+"e080f09f9880e282ff",
+null
+],
+[
+"cp1252",
+"eda080e2e080",
+null
+],
+[
+"utf-8",
+"c0afe282ac",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"93f09f8161",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"f09f9880",
+null
+],
+[
+"ascii",
+"e28293",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"93f09f9880eda080eda080c3a9",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"0d0af09f9880e2829d",
+"'charmap' codec can't decode byte 0x9d in position 8: character maps to <undefined>"
+],
+[
+"ascii",
+"e282ac",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"f09f938d",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"e282ac",
+null
+],
+[
+"ascii",
+"0d0ac0afeda080",
+"'ascii' codec can't decode byte 0xc0 in position 2: ordinal not in range(128)"
+],
+[
+"latin-1",
+"e282ac61e282",
+null
+],
+[
+"utf-8-sig",
+"0d0ae080e28281e282c3a9",
+"'utf-8' codec can't decode byte 0xe0 in position 2: invalid continuation byte"
+],
+[
+"utf-8",
+"8d0afff4908080",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"utf-8",
+"9d8df09f9880c0aff09f9880f09f",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"eda080c3a9e080f09f9880e2820d0a",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"93e29de261",
+"'ascii' codec can't decode byte 0x93 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"f09ff09f9880c3a90d0a",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"cp1252",
+"93f09f9880",
+null
+],
+[
+"ascii",
+"ffe080",
+"'ascii' codec can't decode byte 0xff in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"f09f98800d0a93e282f4908080",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"eda080936161f4908080",
+"'charmap' codec can't decode byte 0x90 in position 7: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"ff",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"cp1252",
+"819df09fe282ff0a",
+"'charmap' codec can't decode byte 0x81 in position 0: character maps to <undefined>"
+],
+[
+"latin-1",
+"61",
+null
+],
+[
+"utf-8",
+"0a9d0affc3a90d0a",
+"'utf-8' codec can't decode byte 0x9d in position 1: invalid start byte"
+],
+[
+"latin-1",
+"0ae282ac0d0a61e080",
+null
+],
+[
+"utf-8-sig",
+"93",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"latin-1",
+"8d8d80e080e080e282ac",
+null
+],
+[
+"cp1252",
+"eda080e282c0af",
+null
+],
+[
+"latin-1",
+"93efbbbfeda080f09f988093efbbbf",
+null
+],
+[
+"utf-8-sig",
+"c3a9c0afc0af",
+"'utf-8' codec can't decode byte 0xc0 in position 2: invalid start byte"
+],
+[
+"utf-8-sig",
+"938dc3a9",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"latin-1",
+"f09f9880e282",
+null
+],
+[
+"utf-8",
+"8161e282ace28280",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"efbbbf0d0af09fe282",
+null
+],
+[
+"utf-8-sig",
+"f4908080e2",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"e080f09fe2820a",
+"'ascii' codec can't decode byte 0xe0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"efbbbf0d0a0a",
+null
+],
+[
+"utf-8-sig",
+"0a6180efbbbfc3a9",
+"'utf-8' codec can't decode byte 0x80 in position 2: invalid start byte"
+],
+[
+"utf-8-sig",
+"eda080e282acf4908080",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"e282",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"9dff81f09f9880e282ac81",
+null
+],
+[
+"ascii",
+"0a",
+null
+],
+[
+"utf-8",
+"f09feda080fff4908080",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"ascii",
+"f490808061c3a980c3a980",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"c0afeda080e280ff",
+null
+],
+[
+"ascii",
+"e080",
+"'ascii' codec can't decode byte 0xe0 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"e282c0afe2f09f",
+null
+],
+[
+"latin-1",
+"8d9dc0afe2e20d0a",
+null
+],
+[
+"utf-8",
+"efbbbff09f9880c0af0d0ae080",
+"'utf-8' codec can't decode byte 0xc0 in position 7: invalid start byte"
+],
+[
+"latin-1",
+"0d0af09feda080",
+null
+],
+[
+"cp1252",
+"81e282",
+"'charmap' codec can't decode byte 0x81 in position 0: character maps to <undefined>"
+],
+[
+"ascii",
+"e2e080",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"936180",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"f09fffc0af80f09f0a",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8",
+"618d8d8d8180",
+"'utf-8' codec can't decode byte 0x8d in position 1: invalid start byte"
+],
+[
+"cp1252",
+"9d9d",
+"'charmap' codec can't decode byte 0x9d in position 0: character maps to <undefined>"
+],
+[
+"utf-8",
+"e282e080e080f09f9880efbbbf",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8",
+"efbbbfe080",
+"'utf-8' codec can't decode byte 0xe0 in position 3: invalid continuation byte"
+],
+[
+"utf-8",
+"ff",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"latin-1",
+"eda080",
+null
+],
+[
+"utf-8",
+"c3a96193f09f",
+"'utf-8' codec can't decode byte 0x93 in position 3: invalid start byte"
+],
+[
+"utf-8-sig",
+"eda080e2efbbbf81",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"0d0af09f98800a",
+null
+],
+[
+"utf-8",
+"e282ac930af09f98809d80",
+"'utf-8' codec can't decode byte 0x93 in position 3: invalid start byte"
+],
+[
+"utf-8",
+"eda080efbbbf61c3a9e2",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"9d",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"cp1252",
+"e2",
+null
+],
+[
+"ascii",
+"6181efbbbfe282acf09f",
+"'ascii' codec can't decode byte 0x81 in position 1: ordinal not in range(128)"
+],
+[
+"latin-1",
+"f09f80c0af",
+null
+],
+[
+"utf-8-sig",
+"80f09f93c3a9c3a9",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"c3a980efbbbf",
+null
+],
+[
+"latin-1",
+"e282ac93f09fefbbbf",
+null
+],
+[
+"ascii",
+"0af09f0a",
+"'ascii' codec can't decode byte 0xf0 in position 1: ordinal not in range(128)"
+],
+[
+"cp1252",
+"f09f98808de2",
+"'charmap' codec can't decode byte 0x8d in position 4: character maps to <undefined>"
+],
+[
+"latin-1",
+"61f4908080f4908080",
+null
+],
+[
+"cp1252",
+"c0af",
+null
+],
+[
+"utf-8",
+"f4908080f09fefbbbf",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"0ac0af",
+"'ascii' codec can't decode byte 0xc0 in position 1: ordinal not in range(128)"
+],
+[
+"utf-8",
+"61",
+null
+],
+[
+"latin-1",
+"0d0ac3a9e282ac61c0af9d",
+null
+],
+[
+"utf-8-sig",
+"f09f988061",
+null
+],
+[
+"utf-8-sig",
+"fff09f",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"utf-8",
+"8d",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"utf-8",
+"80936180f09f93",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"ascii",
+"e282aceda080819d93f09f",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"e2e282ace280f4908080eda080",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"61efbbbfefbbbfe293",
+null
+],
+[
+"utf-8-sig",
+"930a81c0af",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"f09f988080",
+"'utf-8' codec can't decode byte 0x80 in position 4: invalid start byte"
+],
+[
+"cp1252",
+"e2820ae282ac",
+null
+],
+[
+"ascii",
+"eda080f09f81c3a9e080c0af",
+"'ascii' codec can't decode byte 0xed in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"619d0a",
+"'ascii' codec can't decode byte 0x9d in position 1: ordinal not in range(128)"
+],
+[
+"latin-1",
+"8d",
+null
+],
+[
+"latin-1",
+"eda080c0afeda080e282acf09fe282ac",
+null
+],
+[
+"cp1252",
+"80",
+null
+],
+[
+"latin-1",
+"f4908080f09f9880",
+null
+],
+[
+"ascii",
+"810a93",
+"'ascii' codec can't decode byte 0x81 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"0d0a61",
+null
+],
+[
+"cp1252",
+"e282efbbbfefbbbf81",
+"'charmap' codec can't decode byte 0x81 in position 8: character maps to <undefined>"
+],
+[
+"latin-1",
+"80619de282ace282",
+null
+],
+[
+"latin-1",
+"0d0ae2820d0a",
+null
+],
+[
+"latin-1",
+"efbbbf",
+null
+],
+[
+"ascii",
+"c0afe282f09f9880",
+"'ascii' codec can't decode byte 0xc0 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"80e080",
+null
+],
+[
+"ascii",
+"81e282ac",
+"'ascii' codec can't decode byte 0x81 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"ff93",
+"'ascii' codec can't decode byte 0xff in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"f09f9de28281c3a90a",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"930a809df09f988093",
+"'ascii' codec can't decode byte 0x93 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"e08093efbbbfe281",
+"'charmap' codec can't decode byte 0x81 in position 7: character maps to <undefined>"
+],
+[
+"cp1252",
+"93",
+null
+],
+[
+"utf-8-sig",
+"c3a9c0afefbbbfe282ff",
+"'utf-8' codec can't decode byte 0xc0 in position 2: invalid start byte"
+],
+[
+"latin-1",
+"f4908080e282f09f9880efbbbf",
+null
+],
+[
+"latin-1",
+"81e080eda080c0afefbbbf61",
+null
+],
+[
+"cp1252",
+"0aeda08061efbbbf",
+null
+],
+[
+"cp1252",
+"93ffe282e282810a",
+"'charmap' codec can't decode byte 0x81 in position 6: character maps to <undefined>"
+],
+[
+"utf-8",
+"c0afc0afc0afe282ac",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"efbbbfefbbbfffeda080",
+null
+],
+[
+"utf-8-sig",
+"c3a9818d",
+"'utf-8' codec can't decode byte 0x81 in position 2: invalid start byte"
+],
+[
+"utf-8",
+"9d",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"latin-1",
+"938181f09f9880f4908080",
+null
+],
+[
+"utf-8",
+"e282f09fe282c3a9f09f9880ff",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8",
+"e282acc0af9d0d0a0a",
+"'utf-8' codec can't decode byte 0xc0 in position 3: invalid start byte"
+],
+[
+"latin-1",
+"e2820d0ae282ac",
+null
+],
+[
+"utf-8",
+"93f09f9880eda08061e080",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"61eda080",
+null
+],
+[
+"utf-8",
+"e282acefbbbfeda080e282ace282",
+"'utf-8' codec can't decode byte 0xed in position 6: invalid continuation byte"
+],
+[
+"ascii",
+"8defbbbfe282acf09f9880",
+"'ascii' codec can't decode byte 0x8d in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"93e282",
+null
+],
+[
+"cp1252",
+"e282ace282ac8d",
+"'charmap' codec can't decode byte 0x8d in position 6: character maps to <undefined>"
+],
+[
+"cp1252",
+"e080e282ffc0afefbbbf",
+null
+],
+[
+"ascii",
+"0af09f0d0ae261",
+"'ascii' codec can't decode byte 0xf0 in position 1: ordinal not in range(128)"
+],
+[
+"ascii",
+"c3a9",
+"'ascii' codec can't decode byte 0xc3 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"80",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"ascii",
+"8de080c0af8dc3a9c0af",
+"'ascii' codec can't decode byte 0x8d in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"8d0d0a9d",
+null
+],
+[
+"utf-8-sig",
+"0d0ae261",
+"'utf-8' codec can't decode byte 0xe2 in position 2: invalid continuation byte"
+],
+[
+"latin-1",
+"c0af930d0ae282",
+null
+],
+[
+"latin-1",
+"c3a9c0af61c3a9efbbbf",
+null
+],
+[
+"ascii",
+"93fff4908080",
+"'ascii' codec can't decode byte 0x93 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"e282ac61e0800d0ac3a98d",
+null
+],
+[
+"utf-8-sig",
+"c0af",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"ascii",
+"8080610d0af49080809d",
+"'ascii' codec can't decode byte 0x80 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"e2828dc3a9eda08093",
+"'charmap' codec can't decode byte 0x8d in position 2: character maps to <undefined>"
+],
+[
+"utf-8",
+"eda080",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"80c3a9efbbbfe080ff",
+"'ascii' codec can't decode byte 0x80 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"0d0a0a",
+null
+],
+[
+"utf-8",
+"61efbbbfff",
+"'utf-8' codec can't decode byte 0xff in position 4: invalid start byte"
+],
+[
+"utf-8",
+"efbbbfe282ac81",
+"'utf-8' codec can't decode byte 0x81 in position 6: invalid start byte"
+],
+[
+"utf-8",
+"0d0a93c3a9ff9d93",
+"'utf-8' codec can't decode byte 0x93 in position 2: invalid start byte"
+],
+[
+"latin-1",
+"f09f9880eda080",
+null
+],
+[
+"utf-8-sig",
+"f09fefbbbfc3a90d0a",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"latin-1",
+"8dc3a9e080e0809380",
+null
+],
+[
+"ascii",
+"e2efbbbf8193f4908080",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"c0afe282ac80",
+null
+],
+[
+"ascii",
+"0d0a93",
+"'ascii' codec can't decode byte 0x93 in position 2: ordinal not in range(128)"
+],
+[
+"ascii",
+"c3a9e2f09f9880ffc3a9f09f9880",
+"'ascii' codec can't decode byte 0xc3 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"c3a9",
+null
+],
+[
+"utf-8-sig",
+"f09f",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"ascii",
+"f4908080f09f9880e261e28261",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"f09f9880e282f09f9880eda080f09fe080",
+null
+],
+[
+"latin-1",
+"c0afc0afffe282ac80",
+null
+],
+[
+"ascii",
+"6180f09f9880efbbbf",
+"'ascii' codec can't decode byte 0x80 in position 1: ordinal not in range(128)"
+],
+[
+"latin-1",
+"ffc3a9e2f09fe282c0af",
+null
+],
+[
+"latin-1",
+"818d",
+null
+],
+[
+"cp1252",
+"80eda080c0af",
+null
+],
+[
+"utf-8",
+"8df09f9d",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"cp1252",
+"8df09f9880",
+"'charmap' codec can't decode byte 0x8d in position 0: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"e281efbbbfc0afefbbbfff",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"e282",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"ascii",
+"0ae2f09fe282ff",
+"'ascii' codec can't decode byte 0xe2 in position 1: ordinal not in range(128)"
+],
+[
+"ascii",
+"c0af61",
+"'ascii' codec can't decode byte 0xc0 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"e28081f4908080",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"e28280efbbbf81f49080800d0a",
+null
+],
+[
+"utf-8-sig",
+"f4908080eda0800d0a8df09f9880",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"93",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"ascii",
+"f09f9880eda080eda080f4908080",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"80f09f98800d0a0aefbbbf0a",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"c0aff09ff4908080e282",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"ascii",
+"0d0ae2c0afe080ff",
+"'ascii' codec can't decode byte 0xe2 in position 2: ordinal not in range(128)"
+],
+[
+"latin-1",
+"9de282e2f09fe282ac",
+null
+],
+[
+"utf-8-sig",
+"efbbbfe0809dff93ff",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"f4908080eda08080e282ac81",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"f09fefbbbfe080",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"ffff",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"cp1252",
+"f09f988081e28261e2828d",
+"'charmap' codec can't decode byte 0x81 in position 4: character maps to <undefined>"
+],
+[
+"latin-1",
+"c3a9",
+null
+],
+[
+"latin-1",
+"fff4908080",
+null
+],
+[
+"utf-8-sig",
+"e080",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"e282",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"cp1252",
+"800d0a619d80e080",
+"'charmap' codec can't decode byte 0x9d in position 4: character maps to <undefined>"
+],
+[
+"ascii",
+"efbbbfe2828d61f49080808d",
+"'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"ffff0d0a0a9381",
+null
+],
+[
+"latin-1",
+"81c3a90a",
+null
+],
+[
+"ascii",
+"8de2",
+"'ascii' codec can't decode byte 0x8d in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"c3a9f4908080",
+"'charmap' codec can't decode byte 0x90 in position 3: character maps to <undefined>"
+],
+[
+"latin-1",
+"8d",
+null
+],
+[
+"cp1252",
+"efbbbff09f9880ffe282aceda080",
+null
+],
+[
+"utf-8-sig",
+"e080e282ace2",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"f49080808defbbbf",
+null
+],
+[
+"cp1252",
+"618d",
+"'charmap' codec can't decode byte 0x8d in position 1: character maps to <undefined>"
+],
+[
+"utf-8",
+"c0af8de080fff09f98808d",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"81f09f",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"ascii",
+"80",
+"'ascii' codec can't decode byte 0x80 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"eda0808deda08081e080",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"f09f9de2820d0a",
+"'charmap' codec can't decode byte 0x9d in position 2: character maps to <undefined>"
+],
+[
+"ascii",
+"61c3a9c3a981f49080809d",
+"'ascii' codec can't decode byte 0xc3 in position 1: ordinal not in range(128)"
+],
+[
+"latin-1",
+"0a",
+null
+],
+[
+"ascii",
+"93f4908080efbbbf",
+"'ascii' codec can't decode byte 0x93 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"f49080808deda0800af09f9880",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"c0aff49080808d8180",
+null
+],
+[
+"utf-8-sig",
+"e080ff",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"e080f09f98809de080",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"eda0809de282e0808d80",
+null
+],
+[
+"ascii",
+"f490808080",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"8180e261f09f9880",
+"'ascii' codec can't decode byte 0x81 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"c3a9c0af",
+"'ascii' codec can't decode byte 0xc3 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"ffe080",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"cp1252",
+"efbbbfe282acefbbbff09f98806181",
+"'charmap' codec can't decode byte 0x81 in position 14: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"e282c0afc0afffe282ac",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"latin-1",
+"8061",
+null
+],
+[
+"utf-8-sig",
+"8d80f09f98800a93e2",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"latin-1",
+"e080f49080809d9d",
+null
+],
+[
+"utf-8-sig",
+"f09f9880c0af",
+"'utf-8' codec can't decode byte 0xc0 in position 4: invalid start byte"
+],
+[
+"cp1252",
+"c3a981",
+"'charmap' codec can't decode byte 0x81 in position 2: character maps to <undefined>"
+],
+[
+"utf-8",
+"e2efbbbff09f",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"e282",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"utf-8",
+"6193f09fffe28261",
+"'utf-8' codec can't decode byte 0x93 in position 1: invalid start byte"
+],
+[
+"ascii",
+"c3a9c0afc0af8d81",
+"'ascii' codec can't decode byte 0xc3 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"939d0d0ae0800d0a",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"e282acf09fe2f4908080",
+"'utf-8' codec can't decode bytes in position 3-4: invalid continuation byte"
+],
+[
+"ascii",
+"f49080800d0a81eda0808d0a",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"8061f09f98800a93ff",
+null
+],
+[
+"utf-8-sig",
+"938d",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"ascii",
+"0d0aeda0800d0a81e2",
+"'ascii' codec can't decode byte 0xed in position 2: ordinal not in range(128)"
+],
+[
+"latin-1",
+"9df09fff",
+null
+],
+[
+"utf-8",
+"9d0a",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"cp1252",
+"e2e2",
+null
+],
+[
+"cp1252",
+"e080809d80",
+"'charmap' codec can't decode byte 0x9d in position 3: character maps to <undefined>"
+],
+[
+"cp1252",
+"ffc0af9df09f9d",
+"'charmap' codec can't decode byte 0x9d in position 3: character maps to <undefined>"
+],
+[
+"cp1252",
+"6181efbbbf80f09fe080",
+"'charmap' codec can't decode byte 0x81 in position 1: character maps to <undefined>"
+],
+[
+"latin-1",
+"eda080e282ace2",
+null
+],
+[
+"latin-1",
+"9380",
+null
+],
+[
+"latin-1",
+"8d8dc0afe080",
+null
+],
+[
+"utf-8-sig",
+"e28280",
+null
+],
+[
+"utf-8",
+"f4908080f4908080c0aff09ff4908080",
+"'utf-8' codec can't decode byte 0xf4 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"fff09f9880efbbbfc0af",
+null
+],
+[
+"utf-8-sig",
+"e282",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"cp1252",
+"e0800d0aeda0800af09f98800a",
+null
+],
+[
+"latin-1",
+"c0af",
+null
+],
+[
+"utf-8-sig",
+"81e282e2",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"ascii",
+"80",
+"'ascii' codec can't decode byte 0x80 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"f09feda080e282f09ff09f98808d",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"ascii",
+"efbbbf0d0a",
+"'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"e282f09f988081eda080ff",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"e282ac810d0a9d810d0a",
+"'utf-8' codec can't decode byte 0x81 in position 3: invalid start byte"
+],
+[
+"latin-1",
+"0ae080e282",
+null
+],
+[
+"ascii",
+"f09f9880",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"e282ffefbbbfeda080",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"latin-1",
+"e0800d0af09f9880",
+null
+],
+[
+"utf-8",
+"8df09f618de282acefbbbf",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"utf-8",
+"c0af8d0a",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"e2e2",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"utf-8",
+"e2820d0ac3a9",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"cp1252",
+"81f49080808d",
+"'charmap' codec can't decode byte 0x81 in position 0: character maps to <undefined>"
+],
+[
+"ascii",
+"0d0ac0af",
+"'ascii' codec can't decode byte 0xc0 in position 2: ordinal not in range(128)"
+],
+[
+"utf-8",
+"0aefbbbfc3a9f09f80f4908080",
+"'utf-8' codec can't decode bytes in position 6-8: invalid continuation byte"
+],
+[
+"latin-1",
+"0d0ae282acc0af",
+null
+],
+[
+"utf-8-sig",
+"80eda08093efbbbff09f0d0a",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"0a",
+null
+],
+[
+"utf-8",
+"9d",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"e282e080eda080",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"ascii",
+"0a",
+null
+],
+[
+"cp1252",
+"eda0809d0d0ac0aff09fe282ac",
+"'charmap' codec can't decode byte 0x9d in position 3: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"80c0afc0af61",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"e2829d93e080e282ac",
+"'utf-8' codec can't decode byte 0x93 in position 3: invalid start byte"
+],
+[
+"utf-8-sig",
+"e2c0af0d0a",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"latin-1",
+"e282ace2",
+null
+],
+[
+"utf-8-sig",
+"e20aefbbbf0d0a8d",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"efbbbf61e282ace080e080",
+null
+],
+[
+"cp1252",
+"0a808df09f",
+"'charmap' codec can't decode byte 0x8d in position 2: character maps to <undefined>"
+],
+[
+"cp1252",
+"f49080806161",
+"'charmap' codec can't decode byte 0x90 in position 1: character maps to <undefined>"
+],
+[
+"cp1252",
+"e28061eda080",
+null
+],
+[
+"ascii",
+"619dc0af",
+"'ascii' codec can't decode byte 0x9d in position 1: ordinal not in range(128)"
+],
+[
+"utf-8",
+"0ae282ac",
+null
+],
+[
+"latin-1",
+"ff9d0a",
+null
+],
+[
+"ascii",
+"f09f9880",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"c3a9",
+"'ascii' codec can't decode byte 0xc3 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"f09f9880fff490808080",
+null
+],
+[
+"ascii",
+"c3a96181",
+"'ascii' codec can't decode byte 0xc3 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"0a61ffefbbbf",
+"'utf-8' codec can't decode byte 0xff in position 2: invalid start byte"
+],
+[
+"cp1252",
+"eda080f09f9880f09f0a61",
+null
+],
+[
+"ascii",
+"f09ff09f8dffc3a9f09f9880",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"e282ac8d0d0ae282ac8d80",
+null
+],
+[
+"utf-8",
+"93e080",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"eda0800ac0af",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"e282e282ac",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"ascii",
+"8081e282acff8d",
+"'ascii' codec can't decode byte 0x80 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"f4908080e28d9d9d",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"809df09f",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"efbbbf",
+null
+],
+[
+"cp1252",
+"e282acf4908080",
+"'charmap' codec can't decode byte 0x90 in position 4: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"f09f",
+"'utf-8' codec can't decode bytes in position 0-1: unexpected end of data"
+],
+[
+"latin-1",
+"e28261f4908080e080f09f",
+null
+],
+[
+"latin-1",
+"e282e282e2",
+null
+],
+[
+"utf-8",
+"8de28261810a",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"latin-1",
+"f09f9880c0af",
+null
+],
+[
+"cp1252",
+"93f09f9880",
+null
+],
+[
+"latin-1",
+"f09ff4908080f09f",
+null
+],
+[
+"cp1252",
+"8d",
+"'charmap' codec can't decode byte 0x8d in position 0: character maps to <undefined>"
+],
+[
+"cp1252",
+"e282eda080e2",
+null
+],
+[
+"ascii",
+"f4908080f09f9880",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"0a93e080eda080",
+"'ascii' codec can't decode byte 0x93 in position 1: ordinal not in range(128)"
+],
+[
+"latin-1",
+"ff81eda0808d80",
+null
+],
+[
+"cp1252",
+"eda080c0aff09f930ae282",
+null
+],
+[
+"latin-1",
+"e282930d0a",
+null
+],
+[
+"ascii",
+"8d80e28280",
+"'ascii' codec can't decode byte 0x8d in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"e282e080f4908080e080",
+null
+],
+[
+"utf-8-sig",
+"81e282ac",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"8df09f",
+"'utf-8' codec can't decode byte 0x8d in position 0: invalid start byte"
+],
+[
+"latin-1",
+"eda080c3a98de2e28281",
+null
+],
+[
+"utf-8",
+"e20a0ac3a90d0a9d",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"f09f9880",
+null
+],
+[
+"ascii",
+"61eda080",
+"'ascii' codec can't decode byte 0xed in position 1: ordinal not in range(128)"
+],
+[
+"utf-8",
+"c0af",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"80",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"utf-8",
+"81e0800d0a9d",
+"'utf-8' codec can't decode byte 0x81 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"c3a9e28261",
+"'utf-8' codec can't decode bytes in position 2-3: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"eda080c3a9c0afe282f09f9880eda080",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"e282ace080c0afe282ac",
+null
+],
+[
+"cp1252",
+"e2e282ac",
+null
+],
+[
+"utf-8",
+"61",
+null
+],
+[
+"latin-1",
+"f4908080",
+null
+],
+[
+"ascii",
+"e282ace080e0808193",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8-sig",
+"e2ff",
+"'utf-8' codec can't decode byte 0xe2 in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"c0afe2e2efbbbf61",
+null
+],
+[
+"ascii",
+"f09f9880800d0ae08080f4908080",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"0d0ae282ac",
+null
+],
+[
+"utf-8",
+"e080f4908080c0aff09f9880e080c0af",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"9d",
+"'utf-8' codec can't decode byte 0x9d in position 0: invalid start byte"
+],
+[
+"ascii",
+"c3a99df09f9880",
+"'ascii' codec can't decode byte 0xc3 in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"ff8161e0808d",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"cp1252",
+"939de08093eda08093",
+"'charmap' codec can't decode byte 0x9d in position 1: character maps to <undefined>"
+],
+[
+"ascii",
+"efbbbf",
+"'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)"
+],
+[
+"utf-8",
+"c0af",
+"'utf-8' codec can't decode byte 0xc0 in position 0: invalid start byte"
+],
+[
+"ascii",
+"81e080",
+"'ascii' codec can't decode byte 0x81 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"81",
+"'charmap' codec can't decode byte 0x81 in position 0: character maps to <undefined>"
+],
+[
+"utf-8",
+"93ffc3a9",
+"'utf-8' codec can't decode byte 0x93 in position 0: invalid start byte"
+],
+[
+"cp1252",
+"e261810d0a",
+"'charmap' codec can't decode byte 0x81 in position 2: character maps to <undefined>"
+],
+[
+"utf-8",
+"809d938d9d",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"ascii",
+"eda080",
+"'ascii' codec can't decode byte 0xed in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"f4908080",
+null
+],
+[
+"ascii",
+"80e29381c0af",
+"'ascii' codec can't decode byte 0x80 in position 0: ordinal not in range(128)"
+],
+[
+"cp1252",
+"c3a90d0a0a9df4908080",
+"'charmap' codec can't decode byte 0x9d in position 5: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"e0800a618dc3a90d0a",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"utf-8-sig",
+"800a0ae2",
+"'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+],
+[
+"utf-8-sig",
+"eda080",
+"'utf-8' codec can't decode byte 0xed in position 0: invalid continuation byte"
+],
+[
+"ascii",
+"f4908080e282e0800d0a93",
+"'ascii' codec can't decode byte 0xf4 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"f09f61efbbbff09f61",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"latin-1",
+"81f49080809df09f9880800a",
+null
+],
+[
+"utf-8",
+"e08081e282ace2e2",
+"'utf-8' codec can't decode byte 0xe0 in position 0: invalid continuation byte"
+],
+[
+"cp1252",
+"61e2f4908080eda080eda080c0af",
+"'charmap' codec can't decode byte 0x90 in position 3: character maps to <undefined>"
+],
+[
+"utf-8",
+"c3a9e080e282ac80efbbbf",
+"'utf-8' codec can't decode byte 0xe0 in position 2: invalid continuation byte"
+],
+[
+"cp1252",
+"938d0a8180efbbbf",
+"'charmap' codec can't decode byte 0x8d in position 1: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"ff0a",
+"'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+],
+[
+"cp1252",
+"8d",
+"'charmap' codec can't decode byte 0x8d in position 0: character maps to <undefined>"
+],
+[
+"utf-8-sig",
+"e2820d0a0d0a80",
+"'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte"
+],
+[
+"cp1252",
+"e2",
+null
+],
+[
+"cp1252",
+"e282ac8d81",
+"'charmap' codec can't decode byte 0x8d in position 3: character maps to <undefined>"
+],
+[
+"ascii",
+"f09f9880f09fe2efbbbf80c0af",
+"'ascii' codec can't decode byte 0xf0 in position 0: ordinal not in range(128)"
+],
+[
+"ascii",
+"e282ac0d0a8061",
+"'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+]
+]

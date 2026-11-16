@@ -1,0 +1,144 @@
+{
+  "fixtures": [
+    "tests/fixtures/bom.py",
+    "tests/fixtures/branches.py",
+    "tests/fixtures/crlf.py",
+    "tests/fixtures/empty.py",
+    "tests/fixtures/format_specs.py",
+    "tests/fixtures/future_braces.py",
+    "tests/fixtures/modern.py",
+    "tests/fixtures/newer_syntax.py",
+    "tests/fixtures/nul_byte.py",
+    "tests/fixtures/quirks.py",
+    "tests/fixtures/strings.py",
+    "tests/fixtures/syntax_error.py",
+    "tests/fixtures/tabs.py",
+    "tests/fixtures/long_shebang"
+  ],
+  "cases": {
+    "json": {
+      "flags": [
+        "-j"
+      ],
+      "format": "json",
+      "file": "cc-json.json"
+    },
+    "json-closures": {
+      "flags": [
+        "-j",
+        "--show-closures"
+      ],
+      "format": "json",
+      "file": "cc-json-closures.json"
+    },
+    "json-no-assert": {
+      "flags": [
+        "-j",
+        "--no-assert"
+      ],
+      "format": "json",
+      "file": "cc-json-no-assert.json"
+    },
+    "json-min-b": {
+      "flags": [
+        "-j",
+        "-n",
+        "b"
+      ],
+      "format": "json",
+      "file": "cc-json-min-b.json"
+    },
+    "text": {
+      "flags": [],
+      "format": "text",
+      "file": "cc-text.txt"
+    },
+    "text-scores-average": {
+      "flags": [
+        "-s",
+        "-a"
+      ],
+      "format": "text",
+      "file": "cc-text-scores-average.txt"
+    },
+    "text-total-average-range": {
+      "flags": [
+        "-s",
+        "--total-average",
+        "-n",
+        "B",
+        "-x",
+        "C"
+      ],
+      "format": "text",
+      "file": "cc-text-total-average-range.txt"
+    },
+    "text-lines-closures": {
+      "flags": [
+        "-s",
+        "-o",
+        "LINES",
+        "--show-closures"
+      ],
+      "format": "text",
+      "file": "cc-text-lines-closures.txt"
+    },
+    "text-alpha": {
+      "flags": [
+        "-o",
+        "alpha"
+      ],
+      "format": "text",
+      "file": "cc-text-alpha.txt"
+    }
+  },
+  "hal_fixtures": [
+    "tests/fixtures/hal/async_defs.py",
+    "tests/fixtures/hal/aug.py",
+    "tests/fixtures/hal/big_effort.py",
+    "tests/fixtures/hal/bigint_float.py",
+    "tests/fixtures/hal/bigint_hex.py",
+    "tests/fixtures/hal/boolop.py",
+    "tests/fixtures/hal/bytes_str.py",
+    "tests/fixtures/hal/compare.py",
+    "tests/fixtures/hal/concat.py",
+    "tests/fixtures/hal/contexts.py",
+    "tests/fixtures/hal/cr.py",
+    "tests/fixtures/hal/crlf_bytes.py",
+    "tests/fixtures/hal/dup.py",
+    "tests/fixtures/hal/empty.py",
+    "tests/fixtures/hal/format_specs.py",
+    "tests/fixtures/hal/fspec.py",
+    "tests/fixtures/hal/fstr.py",
+    "tests/fixtures/hal/inf.py",
+    "tests/fixtures/hal/lambda_comp.py",
+    "tests/fixtures/hal/match.py",
+    "tests/fixtures/hal/name_str_collide.py",
+    "tests/fixtures/hal/nested.py",
+    "tests/fixtures/hal/no_operators.py",
+    "tests/fixtures/hal/num_eq.py",
+    "tests/fixtures/hal/skipped.py",
+    "tests/fixtures/hal/surrogate.py",
+    "tests/fixtures/hal/tabs.py",
+    "tests/fixtures/hal/typealias.py",
+    "tests/fixtures/hal/walrus_starred.py"
+  ],
+  "hal_cases": {
+    "json": {
+      "flags": [
+        "-j"
+      ],
+      "file": "hal-json.json"
+    },
+    "text": {
+      "flags": [],
+      "file": "hal-text.txt"
+    },
+    "text-functions": {
+      "flags": [
+        "-f"
+      ],
+      "file": "hal-text-functions.txt"
+    }
+  }
+}

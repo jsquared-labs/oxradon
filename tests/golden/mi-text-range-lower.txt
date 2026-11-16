@@ -1,0 +1,9 @@
+tests/fixtures/mi/ff_in_string.py
+    ERROR: SyntaxError at line: 1
+tests/fixtures/mi/ls_parse_error.py
+    ERROR: invalid syntax (<unknown>, line 2)
+tests/fixtures/mi/ls_raw_error.py
+    ERROR: SyntaxError at line: 1
+tests/fixtures/mi/rank_b.py - B (13.82)
+tests/fixtures/mi/raw_error{y}.py
+    ERROR: SyntaxError at line: 1

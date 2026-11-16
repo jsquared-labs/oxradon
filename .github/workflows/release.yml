@@ -1,0 +1,428 @@
+name: Release
+
+# Builds, tests and publishes oxradon. The rules are Spec P (revision 3):
+# - jsquared-labs/oxradon-ci, started by hand, with a pre-release version: TestPyPI only;
+# - jsquared-labs/oxradon, on the tag v<Cargo.toml version>: crates.io, then PyPI, each waiting
+#   for Rob's approval in its GitHub environment;
+# - anything else stops in the first job.
+# Every wheel is built once, tested as installed, and published byte for byte as tested. Jobs that
+# can publish compile nothing. To recover from a failed upload, re-run the failed jobs of the same
+# run (never start a new run for a version that has started; it would rebuild).
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Without an explicit shell, a run step is `bash -e` with no pipefail, and a refusal piped into
+# `tee` would pass. `shell: bash` is `bash -eo pipefail`.
+defaults:
+  run:
+    shell: bash
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  CARGO_TERM_COLOR: always
+  RUST_TOOLCHAIN: "1.97.1"
+  MATURIN_VERSION: "1.16.0"
+  PYTHON_IMAGE: python:3.14.10-alpine
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    outputs:
+      destination: ${{ steps.route.outputs.destination }}
+      version: ${{ steps.route.outputs.version }}
+      pep440: ${{ steps.route.outputs.pep440 }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - run: python3 -m unittest discover -s scripts -p test_release.py
+      - id: route
+        run: python3 scripts/release.py route
+
+  tests:
+    needs: guard
+    uses: ./.github/workflows/ci.yml
+    with:
+      release: true
+
+  crate:
+    needs: guard
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - run: rustup toolchain install "$RUST_TOOLCHAIN" --profile minimal && rustup default "$RUST_TOOLCHAIN"
+      - name: Package and check the file list
+        run: |
+          test -z "$(git status --porcelain)"
+          # No verify build here: the next step builds, tests and installs the extracted copy.
+          cargo package --no-verify --locked
+          cargo package --list --locked > "$RUNNER_TEMP/crate-files.txt"
+          python3 scripts/release.py crate-list "$RUNNER_TEMP/crate-files.txt"
+      # publish-crates relies on packaging being repeatable: it repackages the tag without
+      # compiling and requires the same bytes. Proven here first, on a fresh clone elsewhere.
+      - name: Packaging is repeatable
+        run: |
+          git clone -q . "$RUNNER_TEMP/clone"
+          (cd "$RUNNER_TEMP/clone" && cargo package --no-verify --locked -q)
+          cmp "$RUNNER_TEMP/clone/target/package/oxradon-${{ needs.guard.outputs.version }}.crate" \
+              "target/package/oxradon-${{ needs.guard.outputs.version }}.crate"
+      - name: Test and install from the extracted package
+        run: |
+          crate="target/package/oxradon-${{ needs.guard.outputs.version }}.crate"
+          mkdir -p "$RUNNER_TEMP/extracted"
+          tar -xzf "$crate" -C "$RUNNER_TEMP/extracted"
+          src="$RUNNER_TEMP/extracted/oxradon-${{ needs.guard.outputs.version }}"
+          (cd "$src" && cargo test --locked --no-fail-fast)
+          cargo install --locked --path "$src" --root "$RUNNER_TEMP/installed"
+          "$RUNNER_TEMP/installed/bin/oxradon" cc -s tests/fixtures/branches.py
+          mkdir crate-out
+          cp "$crate" crate-out/
+          sha256sum "$crate" | tee crate-out/sha256.txt
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          if-no-files-found: error
+          name: crate
+          path: crate-out/
+
+  build:
+    needs: guard
+    name: build (${{ matrix.platform }})
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { platform: linux-gnu-x86_64, runner: ubuntu-latest, target: x86_64-unknown-linux-gnu, manylinux: "2014" }
+          - { platform: linux-gnu-aarch64, runner: ubuntu-24.04-arm, target: aarch64-unknown-linux-gnu, manylinux: "2014" }
+          - { platform: linux-musl-x86_64, runner: ubuntu-latest, target: x86_64-unknown-linux-musl, manylinux: musllinux_1_2 }
+          - { platform: linux-musl-aarch64, runner: ubuntu-24.04-arm, target: aarch64-unknown-linux-musl, manylinux: musllinux_1_2 }
+          - { platform: macos-aarch64, runner: macos-latest, target: aarch64-apple-darwin, macos: "11.0" }
+          - { platform: macos-x86_64, runner: macos-15-intel, target: x86_64-apple-darwin, macos: "10.12" }
+    env:
+      MACOSX_DEPLOYMENT_TARGET: ${{ matrix.macos }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: PyO3/maturin-action@e83996d129638aa358a18fbd1dfb82f0b0fb5d3b # v1.51.0
+        with:
+          maturin-version: ${{ env.MATURIN_VERSION }}
+          rust-toolchain: ${{ env.RUST_TOOLCHAIN }}
+          target: ${{ matrix.target }}
+          manylinux: ${{ matrix.manylinux || 'off' }}
+          args: --release --locked --out dist
+      - name: Check the wheel
+        run: |
+          set -eu
+          ls dist
+          test "$(ls dist | wc -l)" -eq 1
+          wheel=$(ls dist/*.whl)
+          test "$(python3 scripts/release.py check-wheel "$wheel" "${{ needs.guard.outputs.pep440 }}")" = "${{ matrix.platform }}"
+          mkdir -p "$RUNNER_TEMP/bin"
+          unzip -p "$wheel" "oxradon-${{ needs.guard.outputs.pep440 }}.data/scripts/oxradon" > "$RUNNER_TEMP/bin/oxradon"
+          case "${{ matrix.platform }}" in
+            linux-gnu-*)
+              # The newest glibc symbol version the binary needs must be at most 2.17.
+              newest=$(objdump -T "$RUNNER_TEMP/bin/oxradon" | grep -o 'GLIBC_[0-9.]*' | sort -uV | tail -1)
+              echo "newest glibc symbol: $newest"
+              test "$(printf '%s\nGLIBC_2.17\n' "$newest" | sort -V | tail -1)" = GLIBC_2.17 ;;
+            macos-*)
+              # Targets before 10.14 are recorded as LC_VERSION_MIN_MACOSX (`version`), later
+              # ones as LC_BUILD_VERSION (`minos`, whose section also lists tool `version`s).
+              minos=$(vtool -show-build "$RUNNER_TEMP/bin/oxradon" | awk '
+                /LC_VERSION_MIN_MACOSX/ { old = 1 }
+                old && $1 == "version" { print $2; exit }
+                $1 == "minos" { print $2; exit }')
+              echo "minimum macOS: $minos"
+              test "$minos" = "${{ matrix.macos }}" ;;
+          esac
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          if-no-files-found: error
+          name: wheel-${{ matrix.platform }}
+          path: dist/
+
+  smoke:
+    needs: [guard, build]
+    name: smoke (${{ matrix.platform }})
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { platform: linux-gnu-x86_64, runner: ubuntu-latest, old_glibc: quay.io/pypa/manylinux2014_x86_64, py39: true }
+          - { platform: linux-gnu-aarch64, runner: ubuntu-24.04-arm, old_glibc: quay.io/pypa/manylinux2014_aarch64 }
+          - { platform: linux-musl-x86_64, runner: ubuntu-latest, alpine: true }
+          - { platform: linux-musl-aarch64, runner: ubuntu-24.04-arm, alpine: true }
+          - { platform: macos-aarch64, runner: macos-latest }
+          - { platform: macos-x86_64, runner: macos-15-intel }
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: wheel-${{ matrix.platform }}
+          path: dist
+      - if: ${{ !matrix.alpine }}
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.14"
+      - if: ${{ !matrix.alpine }}
+        uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+      - if: ${{ !matrix.alpine }}
+        run: rustup toolchain install "$RUST_TOOLCHAIN" --profile minimal && rustup default "$RUST_TOOLCHAIN"
+      - name: Test the installed wheel
+        if: ${{ !matrix.alpine }}
+        run: |
+          mkdir -p records
+          sh scripts/smoke_wheel.sh dist/*.whl "${{ matrix.platform }}" "${{ needs.guard.outputs.version }}" \
+            "${{ needs.guard.outputs.pep440 }}" "records/${{ matrix.platform }}.json"
+      # The oldest Python requires-python allows, through pip, uv tool and uvx, each isolated.
+      - name: Install with Python 3.9
+        if: ${{ matrix.py39 }}
+        run: |
+          w=$RUNNER_TEMP/py39
+          export UV_PYTHON_INSTALL_DIR=$w/pythons
+          uv python install -q 3.9
+          py=$(uv python find 3.9)
+          "$py" -m venv "$w/venv"
+          "$w/venv/bin/pip" install -q --no-index dist/*.whl
+          test "$("$w/venv/bin/oxradon" --version)" = "oxradon ${{ needs.guard.outputs.version }}"
+          UV_CACHE_DIR=$w/c1 UV_TOOL_DIR=$w/tools UV_TOOL_BIN_DIR=$w/bin \
+            uv tool install -q --python "$py" --no-index --find-links dist "oxradon==${{ needs.guard.outputs.pep440 }}"
+          "$w/tools/oxradon/bin/python" --version | grep -q '^Python 3\.9\.'
+          test "$("$w/bin/oxradon" --version)" = "oxradon ${{ needs.guard.outputs.version }}"
+          test "$(UV_CACHE_DIR=$w/c2 uvx -q --isolated --python "$py" --no-index --find-links dist \
+            --from "oxradon==${{ needs.guard.outputs.pep440 }}" oxradon --version)" = "oxradon ${{ needs.guard.outputs.version }}"
+      # musl: a native Alpine container on the Ubuntu host, the tests as a non-root user so the
+      # permission tests don't skip themselves.
+      - name: Test the installed wheel in Alpine
+        if: ${{ matrix.alpine }}
+        run: |
+          mkdir -p records
+          chmod -R a+rwX .
+          docker run --rm -v "$PWD:/w" -w /w -e "RUST_TOOLCHAIN=$RUST_TOOLCHAIN" "$PYTHON_IMAGE" sh -euc '
+            apk add --no-cache build-base curl git > /dev/null
+            adduser -D tester
+            su tester -c "
+              set -eu
+              curl -sSf https://sh.rustup.rs | sh -s -- -y -q --profile minimal --default-toolchain $RUST_TOOLCHAIN
+              . ~/.cargo/env
+              python3 -m pip install --user -q uv
+              export PATH=\$HOME/.local/bin:\$PATH
+              cp -r /w ~/src && cd ~/src
+              sh scripts/smoke_wheel.sh dist/*.whl ${{ matrix.platform }} ${{ needs.guard.outputs.version }} ${{ needs.guard.outputs.pep440 }} records/${{ matrix.platform }}.json
+              cp records/*.json /w/records/
+            "
+          '
+      # glibc 2.17, the oldest the manylinux2014 tag claims, and Python 3.9, the oldest
+      # requires-python allows. cc and raw only: mi's last digit follows the C library's maths.
+      - name: Run on glibc 2.17 with Python 3.9
+        if: ${{ matrix.old_glibc }}
+        run: |
+          python3 -m venv "$RUNNER_TEMP/host"
+          "$RUNNER_TEMP/host/bin/pip" install -q --no-index dist/*.whl
+          for cmd in "cc -s -j" "raw -s -j"; do "$RUNNER_TEMP/host/bin/oxradon" $cmd tests/fixtures/*.py; done > "$RUNNER_TEMP/host.txt"
+          docker run --rm -v "$PWD:/w" -w /w "${{ matrix.old_glibc }}" sh -euc '
+            ldd --version | head -1 >&2
+            /opt/python/cp39-cp39/bin/python -m venv /tmp/v
+            /tmp/v/bin/pip install -q --no-index dist/*.whl
+            for cmd in "cc -s -j" "raw -s -j"; do /tmp/v/bin/oxradon $cmd tests/fixtures/*.py; done
+          ' > "$RUNNER_TEMP/old.txt"
+          cmp "$RUNNER_TEMP/host.txt" "$RUNNER_TEMP/old.txt"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          if-no-files-found: error
+          name: record-${{ matrix.platform }}
+          path: records/
+
+  windows:
+    needs: [guard, build]
+    runs-on: windows-latest
+    steps:
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: wheel-*
+          merge-multiple: true
+          path: dist
+      - name: pip refuses cleanly, with no build attempt
+        shell: bash
+        run: |
+          if python -m pip install --no-index --find-links dist "oxradon==${{ needs.guard.outputs.pep440 }}" > out.txt 2>&1; then
+            cat out.txt; echo "installed on Windows"; exit 1
+          fi
+          cat out.txt
+          grep -q "No matching distribution found for oxradon==${{ needs.guard.outputs.pep440 }}" out.txt
+          ! grep -qi "building" out.txt
+
+  assemble:
+    needs: [guard, tests, crate, smoke, windows]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read  # to find the last parity run for the summary
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: wheel-*
+          merge-multiple: true
+          path: dist
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: record-*
+          merge-multiple: true
+          path: records
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: crate
+          path: crate
+      # Parity with radon (the diff scripts over the stdlib and the corpus) takes hours, so a
+      # release doesn't rerun it; the summary names the last green run and what changed since.
+      - name: Check and list what will be published
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          parity=""
+          for id in $(gh run list --repo "$GITHUB_REPOSITORY" --workflow ci.yml --event workflow_dispatch \
+                        --limit 30 --json databaseId --jq '.[].databaseId'); do
+            if gh run view "$id" --repo "$GITHUB_REPOSITORY" --json jobs \
+                 --jq '.jobs[] | select(.name | startswith("parity")) | .conclusion' | grep -qx success; then
+              parity=$id
+              break
+            fi
+          done
+          {
+            echo "## oxradon ${{ needs.guard.outputs.version }} → ${{ needs.guard.outputs.destination }}"
+            echo
+            echo "Commit \`$GITHUB_SHA\`. Approving publishes exactly the files below."
+            echo
+            echo "- Each wheel was installed on its own platform and the whole test suite ran against the installed binary; the library-level maths-table tests in \`golden_mi.rs\` check the library build instead."
+            echo "- The crate was built, tested and installed from its own package."
+            if [ -n "$parity" ]; then
+              sha=$(gh run view "$parity" --repo "$GITHUB_REPOSITORY" --json headSha --jq .headSha)
+              changed=$(git diff --name-only "$sha" HEAD -- src/ Cargo.toml Cargo.lock | wc -l)
+              echo "- Parity with radon is not rerun by a release. Last green parity run: [$parity]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$parity) on \`${sha:0:7}\`; files in \`src/\`, \`Cargo.toml\` or \`Cargo.lock\` changed since: $changed."
+            else
+              echo "- **No green parity run found** among the last 30 hand-started CI runs. Parity with radon is not rerun by a release."
+            fi
+            echo
+            echo "| File | SHA-256 |"
+            echo "|---|---|"
+            python3 scripts/release.py assemble dist records "${{ needs.guard.outputs.pep440 }}" manifest.json
+            echo "| \`$(basename crate/*.crate)\` | \`$(cut -d' ' -f1 crate/sha256.txt)\` |"
+          } | tee -a "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          if-no-files-found: error
+          name: manifest
+          path: manifest.json
+
+  publish-testpypi:
+    needs: [guard, assemble]
+    if: needs.guard.outputs.destination == 'testpypi'
+    runs-on: ubuntu-latest
+    environment:
+      name: testpypi
+      url: https://test.pypi.org/project/oxradon/${{ needs.guard.outputs.pep440 }}/
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: wheel-*
+          merge-multiple: true
+          path: dist
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: manifest
+      # No "is it already there?" check before uploading: PyPI's CDN keeps whatever answer such a
+      # check gets for up to 10 minutes, so it goes stale the moment the upload succeeds (seen on
+      # TestPyPI twice, 2026-11-15). PyPI itself accepts an identical file again as a no-op and
+      # refuses a different file under the same name (warehouse forklift/legacy.py,
+      # _is_duplicate_file), so re-running this job uploads only what is missing, safely.
+      - run: python3 scripts/release.py verify-dist dist manifest.json
+      - uses: pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086 # v1.14.3
+        with:
+          repository-url: https://test.pypi.org/legacy/
+          packages-dir: dist
+
+  publish-crates:
+    needs: [guard, assemble]
+    if: needs.guard.outputs.destination == 'production'
+    runs-on: ubuntu-latest
+    environment:
+      name: crates-io
+      url: https://crates.io/crates/oxradon/${{ needs.guard.outputs.version }}
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - run: rustup toolchain install "$RUST_TOOLCHAIN" --profile minimal && rustup default "$RUST_TOOLCHAIN"
+      # Outside the checkout: the repackaging step requires a clean tree.
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: crate
+          path: ${{ runner.temp }}/tested
+      - id: state
+        run: python3 scripts/release.py crates-io "${{ needs.guard.outputs.version }}" "$RUNNER_TEMP"/tested/*.crate
+      # Repackage the tag's checkout without compiling; it must be the tested crate, byte for byte.
+      - if: steps.state.outputs.state == 'absent'
+        run: |
+          test -z "$(git status --porcelain)"
+          cargo package --no-verify --locked
+          cmp "target/package/oxradon-${{ needs.guard.outputs.version }}.crate" "$RUNNER_TEMP"/tested/*.crate
+      - if: steps.state.outputs.state == 'absent'
+        id: auth
+        uses: rust-lang/crates-io-auth-action@3268eb413133e2960fa4ae0e963ca76380c54cd9 # v1.0.6
+      - if: steps.state.outputs.state == 'absent'
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ steps.auth.outputs.token }}
+        run: cargo publish --no-verify --locked
+      - name: crates.io has the tested crate
+        run: |
+          for i in 1 2 3 4 5 6; do
+            state=$(python3 scripts/release.py crates-io "${{ needs.guard.outputs.version }}" "$RUNNER_TEMP"/tested/*.crate | sed -n 's/^state=//p')
+            test "$state" = published && exit 0
+            sleep 20
+          done
+          exit 1
+
+  publish-pypi:
+    needs: [guard, publish-crates]
+    if: needs.guard.outputs.destination == 'production'
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/project/oxradon/${{ needs.guard.outputs.pep440 }}/
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: wheel-*
+          merge-multiple: true
+          path: dist
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: manifest
+      # No "is it already there?" check before uploading: PyPI's CDN keeps whatever answer such a
+      # check gets for up to 10 minutes, so it goes stale the moment the upload succeeds (seen on
+      # TestPyPI twice, 2026-11-15). PyPI itself accepts an identical file again as a no-op and
+      # refuses a different file under the same name (warehouse forklift/legacy.py,
+      # _is_duplicate_file), so re-running this job uploads only what is missing, safely.
+      - run: python3 scripts/release.py verify-dist dist manifest.json
+      - uses: pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086 # v1.14.3
+        with:
+          packages-dir: dist

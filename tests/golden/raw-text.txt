@@ -1,0 +1,228 @@
+tests/fixtures/bom.py
+    LOC: 2
+    LLOC: 2
+    SLOC: 2
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 0
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+tests/fixtures/branches.py
+    LOC: 82
+    LLOC: 71
+    SLOC: 67
+    Comments: 0
+    Single comments: 1
+    Multi: 0
+    Blank: 14
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+tests/fixtures/crlf.py
+    LOC: 5
+    LLOC: 5
+    SLOC: 5
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 0
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+tests/fixtures/empty.py
+    LOC: 0
+    LLOC: 0
+    SLOC: 0
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 0
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+tests/fixtures/format_specs.py
+    LOC: 37
+    LLOC: 25
+    SLOC: 18
+    Comments: 0
+    Single comments: 0
+    Multi: 4
+    Blank: 15
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 11%
+tests/fixtures/future_braces.py
+    LOC: 5
+    LLOC: 3
+    SLOC: 3
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 2
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+tests/fixtures/modern.py
+    LOC: 23
+    LLOC: 15
+    SLOC: 14
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 9
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+tests/fixtures/newer_syntax.py
+    LOC: 2
+    LLOC: 2
+    SLOC: 2
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 0
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+tests/fixtures/nul_byte.py
+    ERROR: SyntaxError at line: 2
+tests/fixtures/quirks.py
+    LOC: 91
+    LLOC: 57
+    SLOC: 60
+    Comments: 4
+    Single comments: 4
+    Multi: 0
+    Blank: 27
+    - Comment Stats
+        (C % L): 4%
+        (C % S): 7%
+        (C + M % L): 4%
+tests/fixtures/raw/cr.py
+    LOC: 8
+    LLOC: 3
+    SLOC: 3
+    Comments: 1
+    Single comments: 1
+    Multi: 2
+    Blank: 2
+    - Comment Stats
+        (C % L): 12%
+        (C % S): 33%
+        (C + M % L): 38%
+tests/fixtures/raw/docstrings.py
+    LOC: 19
+    LLOC: 13
+    SLOC: 7
+    Comments: 1
+    Single comments: 3
+    Multi: 8
+    Blank: 1
+    - Comment Stats
+        (C % L): 5%
+        (C % S): 14%
+        (C + M % L): 47%
+tests/fixtures/raw/errors.py
+    ERROR: SyntaxError at line: 1
+tests/fixtures/raw/field_bracket.py
+    ERROR: SyntaxError at line: 4
+tests/fixtures/raw/fstrings.py
+    LOC: 13
+    LLOC: 13
+    SLOC: 13
+    Comments: 1
+    Single comments: 0
+    Multi: 0
+    Blank: 0
+    - Comment Stats
+        (C % L): 8%
+        (C % S): 8%
+        (C + M % L): 8%
+tests/fixtures/raw/lines.py
+    LOC: 22
+    LLOC: 9
+    SLOC: 14
+    Comments: 3
+    Single comments: 2
+    Multi: 0
+    Blank: 6
+    - Comment Stats
+        (C % L): 14%
+        (C % S): 21%
+        (C + M % L): 14%
+tests/fixtures/raw/logical.py
+    LOC: 22
+    LLOC: 42
+    SLOC: 22
+    Comments: 2
+    Single comments: 0
+    Multi: 0
+    Blank: 0
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 9%
+        (C + M % L): 9%
+tests/fixtures/raw/percent.py
+    LOC: 8
+    LLOC: 1
+    SLOC: 1
+    Comments: 1
+    Single comments: 1
+    Multi: 0
+    Blank: 6
+    - Comment Stats
+        (C % L): 12%
+        (C % S): 100%
+        (C + M % L): 12%
+tests/fixtures/raw/split_string.py
+    ERROR: SyntaxError at line: 2
+tests/fixtures/raw/unterminated.py
+    ERROR: SyntaxError at line: 3
+tests/fixtures/strings.py
+    LOC: 30
+    LLOC: 15
+    SLOC: 19
+    Comments: 1
+    Single comments: 1
+    Multi: 0
+    Blank: 10
+    - Comment Stats
+        (C % L): 3%
+        (C % S): 5%
+        (C + M % L): 3%
+tests/fixtures/syntax_error.py
+    ERROR: SyntaxError at line: 1
+tests/fixtures/tabs.py
+    LOC: 32
+    LLOC: 21
+    SLOC: 24
+    Comments: 0
+    Single comments: 1
+    Multi: 0
+    Blank: 7
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+tests/fixtures/long_shebang
+    LOC: 3
+    LLOC: 2
+    SLOC: 2
+    Comments: 1
+    Single comments: 1
+    Multi: 0
+    Blank: 0
+    - Comment Stats
+        (C % L): 33%
+        (C % S): 50%
+        (C + M % L): 33%

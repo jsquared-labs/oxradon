@@ -1,0 +1,34 @@
+tests/fixtures/bom.py
+    ERROR: invalid non-printable character U+FEFF (<unknown>, line 1)
+tests/fixtures/future_braces.py
+    ERROR: not a chance (<unknown>, line 1)
+tests/fixtures/hal/big_effort.py - B (9.86)
+tests/fixtures/mi/ff_in_string.py
+    ERROR: SyntaxError at line: 1
+tests/fixtures/mi/ls_parse_error.py
+    ERROR: invalid syntax (<unknown>, line 2)
+tests/fixtures/mi/ls_raw_error.py
+    ERROR: SyntaxError at line: 1
+tests/fixtures/mi/rank_b.py - B (13.82)
+tests/fixtures/mi/rank_c.py - C (6.93)
+tests/fixtures/mi/rank_zero.py - C (0.00)
+tests/fixtures/mi/raw_error{y}.py
+    ERROR: SyntaxError at line: 1
+tests/fixtures/newer_syntax.py
+    ERROR: iterable unpacking cannot be used in comprehension (<unknown>, line 2)
+tests/fixtures/nul_byte.py
+    ERROR: source code string cannot contain null bytes
+tests/fixtures/raw/errors.py
+    ERROR: invalid digit '2' in binary literal (<unknown>, line 1)
+tests/fixtures/raw/field_bracket.py
+    ERROR: f-string: unmatched ')' (<unknown>, line 4)
+tests/fixtures/raw/lines.py
+    ERROR: invalid syntax (<unknown>, line 1)
+tests/fixtures/raw/logical.py
+    ERROR: invalid syntax (<unknown>, line 11)
+tests/fixtures/raw/split_string.py
+    ERROR: SyntaxError at line: 2
+tests/fixtures/raw/unterminated.py
+    ERROR: unterminated triple-quoted string literal (detected at line 4) (<unknown>, line 3)
+tests/fixtures/syntax_error.py
+    ERROR: invalid syntax (<unknown>, line 1)

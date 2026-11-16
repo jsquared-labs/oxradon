@@ -1,0 +1,211 @@
+{
+  "cases": {
+    "raw-text": {
+      "flags": [],
+      "files": [
+        "tests/fixtures/bom.py",
+        "tests/fixtures/branches.py",
+        "tests/fixtures/crlf.py",
+        "tests/fixtures/empty.py",
+        "tests/fixtures/format_specs.py",
+        "tests/fixtures/future_braces.py",
+        "tests/fixtures/modern.py",
+        "tests/fixtures/newer_syntax.py",
+        "tests/fixtures/nul_byte.py",
+        "tests/fixtures/quirks.py",
+        "tests/fixtures/raw/cr.py",
+        "tests/fixtures/raw/docstrings.py",
+        "tests/fixtures/raw/errors.py",
+        "tests/fixtures/raw/field_bracket.py",
+        "tests/fixtures/raw/fstrings.py",
+        "tests/fixtures/raw/lines.py",
+        "tests/fixtures/raw/logical.py",
+        "tests/fixtures/raw/percent.py",
+        "tests/fixtures/raw/split_string.py",
+        "tests/fixtures/raw/unterminated.py",
+        "tests/fixtures/strings.py",
+        "tests/fixtures/syntax_error.py",
+        "tests/fixtures/tabs.py",
+        "tests/fixtures/long_shebang"
+      ],
+      "file": "raw-text.txt"
+    },
+    "raw-text-summary": {
+      "flags": [
+        "-s"
+      ],
+      "files": [
+        "tests/fixtures/bom.py",
+        "tests/fixtures/branches.py",
+        "tests/fixtures/crlf.py",
+        "tests/fixtures/empty.py",
+        "tests/fixtures/format_specs.py",
+        "tests/fixtures/future_braces.py",
+        "tests/fixtures/modern.py",
+        "tests/fixtures/newer_syntax.py",
+        "tests/fixtures/nul_byte.py",
+        "tests/fixtures/quirks.py",
+        "tests/fixtures/raw/cr.py",
+        "tests/fixtures/raw/docstrings.py",
+        "tests/fixtures/raw/errors.py",
+        "tests/fixtures/raw/field_bracket.py",
+        "tests/fixtures/raw/fstrings.py",
+        "tests/fixtures/raw/lines.py",
+        "tests/fixtures/raw/logical.py",
+        "tests/fixtures/raw/percent.py",
+        "tests/fixtures/raw/split_string.py",
+        "tests/fixtures/raw/unterminated.py",
+        "tests/fixtures/strings.py",
+        "tests/fixtures/syntax_error.py",
+        "tests/fixtures/tabs.py",
+        "tests/fixtures/long_shebang"
+      ],
+      "file": "raw-text-summary.txt"
+    },
+    "raw-json": {
+      "flags": [
+        "-j"
+      ],
+      "files": [
+        "tests/fixtures/bom.py",
+        "tests/fixtures/branches.py",
+        "tests/fixtures/crlf.py",
+        "tests/fixtures/empty.py",
+        "tests/fixtures/format_specs.py",
+        "tests/fixtures/future_braces.py",
+        "tests/fixtures/modern.py",
+        "tests/fixtures/newer_syntax.py",
+        "tests/fixtures/nul_byte.py",
+        "tests/fixtures/quirks.py",
+        "tests/fixtures/raw/cr.py",
+        "tests/fixtures/raw/docstrings.py",
+        "tests/fixtures/raw/errors.py",
+        "tests/fixtures/raw/field_bracket.py",
+        "tests/fixtures/raw/fstrings.py",
+        "tests/fixtures/raw/lines.py",
+        "tests/fixtures/raw/logical.py",
+        "tests/fixtures/raw/percent.py",
+        "tests/fixtures/raw/split_string.py",
+        "tests/fixtures/raw/unterminated.py",
+        "tests/fixtures/strings.py",
+        "tests/fixtures/syntax_error.py",
+        "tests/fixtures/tabs.py",
+        "tests/fixtures/long_shebang"
+      ],
+      "file": "raw-json.json"
+    },
+    "raw-json-summary": {
+      "flags": [
+        "-j",
+        "-s"
+      ],
+      "files": [
+        "tests/fixtures/bom.py",
+        "tests/fixtures/branches.py",
+        "tests/fixtures/crlf.py",
+        "tests/fixtures/empty.py",
+        "tests/fixtures/format_specs.py",
+        "tests/fixtures/future_braces.py",
+        "tests/fixtures/modern.py",
+        "tests/fixtures/newer_syntax.py",
+        "tests/fixtures/nul_byte.py",
+        "tests/fixtures/quirks.py",
+        "tests/fixtures/raw/cr.py",
+        "tests/fixtures/raw/docstrings.py",
+        "tests/fixtures/raw/errors.py",
+        "tests/fixtures/raw/field_bracket.py",
+        "tests/fixtures/raw/fstrings.py",
+        "tests/fixtures/raw/lines.py",
+        "tests/fixtures/raw/logical.py",
+        "tests/fixtures/raw/percent.py",
+        "tests/fixtures/raw/split_string.py",
+        "tests/fixtures/raw/unterminated.py",
+        "tests/fixtures/strings.py",
+        "tests/fixtures/syntax_error.py",
+        "tests/fixtures/tabs.py",
+        "tests/fixtures/long_shebang"
+      ],
+      "file": "raw-json-summary.json"
+    },
+    "raw-text-walk": {
+      "flags": [],
+      "files": [
+        "tests/fixtures/raw"
+      ],
+      "file": "raw-text-walk.txt"
+    },
+    "raw-json-notebook-flags": {
+      "flags": [
+        "-j",
+        "--include-ipynb",
+        "--ipynb-cells"
+      ],
+      "files": [
+        "tests/fixtures/raw/notebook.ipynb",
+        "tests/fixtures/raw/percent.py"
+      ],
+      "file": "raw-json-notebook-flags.json"
+    },
+    "raw-text-summary-failures": {
+      "flags": [
+        "-s"
+      ],
+      "files": [
+        "tests/fixtures/raw/unterminated.py",
+        "tests/fixtures/nul_byte.py"
+      ],
+      "file": "raw-text-summary-failures.txt"
+    }
+  },
+  "config": {
+    "exclude-ignore": {
+      "files": {
+        "radon.cfg": "[radon]\nexclude = */b*.py\nignore = skip\n",
+        "a.py": "# a\nx = 1\n",
+        "b1.py": "y = 2\n",
+        "skip/c.py": "z = 3\n",
+        "sub/d.py": "\"\"\"d\"\"\"\n"
+      },
+      "args": [
+        "raw",
+        "."
+      ],
+      "read": null,
+      "expected": {
+        "stdout": "b1.py\n    LOC: 1\n    LLOC: 1\n    SLOC: 1\n    Comments: 0\n    Single comments: 0\n    Multi: 0\n    Blank: 0\n    - Comment Stats\n        (C % L): 0%\n        (C % S): 0%\n        (C + M % L): 0%\na.py\n    LOC: 2\n    LLOC: 1\n    SLOC: 1\n    Comments: 1\n    Single comments: 1\n    Multi: 0\n    Blank: 0\n    - Comment Stats\n        (C % L): 50%\n        (C % S): 100%\n        (C + M % L): 50%\nsub/d.py\n    LOC: 1\n    LLOC: 1\n    SLOC: 0\n    Comments: 0\n    Single comments: 1\n    Multi: 0\n    Blank: 0\n    - Comment Stats\n        (C % L): 0%\n        (C % S): 0%\n        (C + M % L): 0%\n"
+      }
+    },
+    "setup-cfg-flag-wins": {
+      "files": {
+        "setup.cfg": "[radon]\nexclude = *.py\n",
+        "a.py": "x = 1; y = 2\n"
+      },
+      "args": [
+        "raw",
+        "-s",
+        "-e",
+        "nothing",
+        "."
+      ],
+      "read": null,
+      "expected": {
+        "stdout": "a.py\n    LOC: 1\n    LLOC: 2\n    SLOC: 1\n    Comments: 0\n    Single comments: 0\n    Multi: 0\n    Blank: 0\n    - Comment Stats\n        (C % L): 0%\n        (C % S): 0%\n        (C + M % L): 0%\n** Total **\n    LOC: 1\n    LLOC: 2\n    SLOC: 1\n    Comments: 0\n    Single comments: 0\n    Multi: 0\n    Blank: 0\n    - Comment Stats\n        (C % L): 0%\n        (C % S): 0%\n        (C + M % L): 0%\n"
+      }
+    },
+    "pyproject-output-file": {
+      "files": {
+        "pyproject.toml": "[tool.radon]\noutput_file = \"report.txt\"\n",
+        "a.py": "if x: pass\n"
+      },
+      "args": [
+        "raw",
+        "."
+      ],
+      "read": "report.txt",
+      "expected": {
+        "stdout": "",
+        "file": "a.py\n    LOC: 1\n    LLOC: 2\n    SLOC: 1\n    Comments: 0\n    Single comments: 0\n    Multi: 0\n    Blank: 0\n    - Comment Stats\n        (C % L): 0%\n        (C % S): 0%\n        (C + M % L): 0%\n"
+      }
+    }
+  }
+}

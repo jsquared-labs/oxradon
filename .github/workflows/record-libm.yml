@@ -1,0 +1,93 @@
+name: Record radon's platform maths
+
+# Runs radon 6.0.1 where the C library's maths rounds differently from the Apple silicon Mac the
+# recordings were made on: Alpine Linux (musl) on x86-64 and ARM, and an Intel Mac. It uploads
+# what radon prints, so the tests can expect radon's own results there. The recordings come from
+# radon only, never from oxradon's output. Started by hand; the files it uploads are reviewed
+# and committed by hand.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  musl:
+    name: musl (${{ matrix.arch }})
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { arch: x86_64, runner: ubuntu-latest }
+          - { arch: aarch64, runner: ubuntu-24.04-arm }
+    steps:
+      - uses: actions/checkout@v7
+      # A native container started from the Ubuntu host, so no glibc layer is involved.
+      - name: Record in Alpine
+        run: |
+          mkdir -p musl
+          docker run --rm -v "$PWD:/w" -w /w python:3.14.10-alpine sh -euc '
+            python -m venv /oracle
+            /oracle/bin/pip install -q radon==6.0.1
+            {
+              echo "alpine $(cat /etc/alpine-release)"
+              ldd 2>&1 | head -2 | tail -1
+              /oracle/bin/python -VV
+              uname -m
+            } > musl/versions.txt
+            # The overlay first: it compares with the recorded (macOS) tables before the full
+            # runs below overwrite them.
+            /oracle/bin/python -I scripts/update_golden_mi.py --linux-overlay musl
+            mv musl/mi-compute.linux.json musl/mi-compute.musl.json
+            mv musl/mi-params.linux.json musl/mi-params.musl.json
+            /oracle/bin/python -I scripts/update_golden_mi.py /oracle/bin/radon
+            /oracle/bin/python scripts/update_golden.py /oracle/bin/radon
+            /oracle/bin/python -I scripts/update_golden_raw.py /oracle/bin/radon
+            # The values hard-coded in tests/mi_cli.rs and tests/hal_cli.rs.
+            /oracle/bin/radon mi -j tests/fixtures/mi/rank_b.py > musl/mi_cli-rank_b.json
+            printf "x = 1 + 2\n" > /tmp/hal_cli.py
+            /oracle/bin/radon hal -j /tmp/hal_cli.py > musl/hal_cli.json
+            chmod -R a+rwX musl tests/golden
+          '
+          cat musl/versions.txt
+          git diff --stat -- tests/golden | tee musl/golden-diff-stat.txt
+          git diff -- tests/golden > musl/golden.diff
+      - uses: actions/upload-artifact@v7
+        with:
+          name: musl-${{ matrix.arch }}
+          path: musl/
+
+  # Intel macOS: radon on the runner's own CPython 3.14.10, as on the Apple silicon Mac.
+  macos-x86_64:
+    runs-on: macos-15-intel
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.14.10"
+      - name: Record
+        run: |
+          python -m venv "$RUNNER_TEMP/oracle"
+          oracle="$RUNNER_TEMP/oracle/bin"
+          "$oracle/pip" install -q radon==6.0.1
+          mkdir -p out
+          { sw_vers; "$oracle/python" -VV; uname -m; } > out/versions.txt
+          "$oracle/python" -I scripts/update_golden_mi.py --linux-overlay out
+          mv out/mi-compute.linux.json out/mi-compute.macos-x86_64.json
+          mv out/mi-params.linux.json out/mi-params.macos-x86_64.json
+          "$oracle/python" -I scripts/update_golden_mi.py "$oracle/radon"
+          "$oracle/python" scripts/update_golden.py "$oracle/radon"
+          "$oracle/python" -I scripts/update_golden_raw.py "$oracle/radon"
+          "$oracle/radon" mi -j tests/fixtures/mi/rank_b.py > out/mi_cli-rank_b.json
+          printf 'x = 1 + 2\n' > "$RUNNER_TEMP/hal_cli.py"
+          "$oracle/radon" hal -j "$RUNNER_TEMP/hal_cli.py" > out/hal_cli.json
+          cat out/versions.txt
+          git diff --stat -- tests/golden | tee out/golden-diff-stat.txt
+          git diff -- tests/golden > out/golden.diff
+      - uses: actions/upload-artifact@v7
+        with:
+          name: macos-x86_64
+          if-no-files-found: error
+          path: out/

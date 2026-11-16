@@ -1,0 +1,20 @@
+tests/fixtures/mi/braces{{x}}.py - A
+tests/fixtures/mi/docstrings.py - A
+tests/fixtures/mi/empty_lines.py - A
+tests/fixtures/mi/equal_a.py - A
+tests/fixtures/mi/ff_in_string.py
+    ERROR: SyntaxError at line: 1
+tests/fixtures/mi/format_specs.py - A
+tests/fixtures/mi/ls_parse_error.py
+    ERROR: invalid syntax (<unknown>, line 2)
+tests/fixtures/mi/ls_raw_error.py
+    ERROR: SyntaxError at line: 1
+tests/fixtures/mi/module_level.py - A
+tests/fixtures/mi/one_name.py - A
+tests/fixtures/mi/only_comments.py - A
+tests/fixtures/mi/rank_b.py - B
+tests/fixtures/mi/rank_c.py - C
+tests/fixtures/mi/rank_zero.py - C
+tests/fixtures/mi/raw_error{y}.py
+    ERROR: SyntaxError at line: 1
+tests/fixtures/mi/tabs.py - A

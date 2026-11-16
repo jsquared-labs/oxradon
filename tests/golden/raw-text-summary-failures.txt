@@ -1,0 +1,16 @@
+tests/fixtures/raw/unterminated.py
+    ERROR: SyntaxError at line: 3
+tests/fixtures/nul_byte.py
+    ERROR: SyntaxError at line: 2
+** Total **
+    LOC: 0
+    LLOC: 0
+    SLOC: 0
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 0
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%

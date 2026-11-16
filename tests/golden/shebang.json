@@ -1,0 +1,6508 @@
+[
+ {
+  "label": "literal b''",
+  "parts": [
+   ""
+  ],
+  "radon": false
+ },
+ {
+  "label": "literal b'#'",
+  "parts": [
+   "23"
+  ],
+  "radon": false
+ },
+ {
+  "label": "literal b'#!'",
+  "parts": [
+   "2321"
+  ],
+  "radon": false
+ },
+ {
+  "label": "literal b'#!python'",
+  "parts": [
+   "2321707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "literal b'#!python\\r'",
+  "parts": [
+   "2321707974686f6e0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "literal b'#!python\\n'",
+  "parts": [
+   "2321707974686f6e0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "literal b'#!python\\r\\n'",
+  "parts": [
+   "2321707974686f6e0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "literal b'#!python\\r\\xc3'",
+  "parts": [
+   "2321707974686f6e0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "literal b'#!python\\n\\xc3'",
+  "parts": [
+   "2321707974686f6e0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "literal b'#!python\\r\\n\\xc3'",
+  "parts": [
+   "2321707974686f6e0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "literal b'#!python\\r\\r\\xc3'",
+  "parts": [
+   "2321707974686f6e0d0dc3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "literal b'#!python\\n\\xff'",
+  "parts": [
+   "2321707974686f6e0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "literal b'#!py\\nthon'",
+  "parts": [
+   "232170790a74686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "literal b'#\\n!python'",
+  "parts": [
+   "230a21707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "literal b'\\xef\\xbb\\xbf#!python\\n'",
+  "parts": [
+   "efbbbf2321707974686f6e0a"
+  ],
+  "radon": false
+ },
+ {
+  "label": "literal b'#!/usr/bin/env python3\\n'",
+  "parts": [
+   "23212f7573722f62696e2f656e7620707974686f6e330a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "literal b'#!/bin/sh\\npython\\n'",
+  "parts": [
+   "23212f62696e2f73680a707974686f6e0a"
+  ],
+  "radon": false
+ },
+ {
+  "label": "literal b'#!python\\xe2\\x82'",
+  "parts": [
+   "2321707974686f6ee282"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8189, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8189, then b'': python after",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8189, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8189, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8187,
+   "c3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8189, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8189, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8187,
+   "ff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8189, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8189, then b'abc': python after",
+  "parts": [
+   "2321",
+   8187,
+   "616263707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8189, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8189, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8187,
+   "e282ac707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8189, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8189, then b'': python after",
+  "parts": [
+   "2321",
+   8187,
+   "0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8189, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8189, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8187,
+   "0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8189, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8189, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8187,
+   "0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8189, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8189, then b'abc': python after",
+  "parts": [
+   "2321",
+   8187,
+   "0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8189, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8189, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8187,
+   "0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8189, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8189, then b'': python after",
+  "parts": [
+   "2321",
+   8187,
+   "0d707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8189, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8189, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8187,
+   "0dc3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8189, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8189, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8187,
+   "0dff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8189, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8189, then b'abc': python after",
+  "parts": [
+   "2321",
+   8187,
+   "0d616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8189, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8189, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8187,
+   "0de282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8189, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8189, then b'': python after",
+  "parts": [
+   "2321",
+   8187,
+   "0d0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8189, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8189, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8187,
+   "0d0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8189, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8189, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8187,
+   "0d0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8189, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8189, then b'abc': python after",
+  "parts": [
+   "2321",
+   8187,
+   "0d0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8189, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8181,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8189, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8187,
+   "0d0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8190, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8190, then b'': python after",
+  "parts": [
+   "2321",
+   8188,
+   "707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8190, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8190, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8188,
+   "c3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8190, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8190, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8188,
+   "ff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8190, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8190, then b'abc': python after",
+  "parts": [
+   "2321",
+   8188,
+   "616263707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8190, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8190, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8188,
+   "e282ac707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8190, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8190, then b'': python after",
+  "parts": [
+   "2321",
+   8188,
+   "0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8190, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8190, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8188,
+   "0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8190, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8190, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8188,
+   "0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8190, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8190, then b'abc': python after",
+  "parts": [
+   "2321",
+   8188,
+   "0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8190, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8190, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8188,
+   "0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8190, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8190, then b'': python after",
+  "parts": [
+   "2321",
+   8188,
+   "0d707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8190, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8190, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8188,
+   "0dc3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8190, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8190, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8188,
+   "0dff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8190, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8190, then b'abc': python after",
+  "parts": [
+   "2321",
+   8188,
+   "0d616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8190, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8190, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8188,
+   "0de282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8190, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8190, then b'': python after",
+  "parts": [
+   "2321",
+   8188,
+   "0d0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8190, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8190, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8188,
+   "0d0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8190, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "0d0aff"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8190, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8188,
+   "0d0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8190, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8190, then b'abc': python after",
+  "parts": [
+   "2321",
+   8188,
+   "0d0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8190, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8182,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8190, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8188,
+   "0d0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8191, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8191, then b'': python after",
+  "parts": [
+   "2321",
+   8189,
+   "707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8191, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8191, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8189,
+   "c3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8191, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8191, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8189,
+   "ff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8191, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8191, then b'abc': python after",
+  "parts": [
+   "2321",
+   8189,
+   "616263707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8191, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8191, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8189,
+   "e282ac707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8191, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8191, then b'': python after",
+  "parts": [
+   "2321",
+   8189,
+   "0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8191, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8191, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8189,
+   "0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8191, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "0aff"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8191, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8189,
+   "0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8191, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8191, then b'abc': python after",
+  "parts": [
+   "2321",
+   8189,
+   "0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8191, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8191, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8189,
+   "0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8191, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8191, then b'': python after",
+  "parts": [
+   "2321",
+   8189,
+   "0d707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8191, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8191, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8189,
+   "0dc3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8191, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8191, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8189,
+   "0dff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8191, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8191, then b'abc': python after",
+  "parts": [
+   "2321",
+   8189,
+   "0d616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8191, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8191, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8189,
+   "0de282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8191, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8191, then b'': python after",
+  "parts": [
+   "2321",
+   8189,
+   "0d0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8191, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8191, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8189,
+   "0d0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8191, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8191, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8189,
+   "0d0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8191, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8191, then b'abc': python after",
+  "parts": [
+   "2321",
+   8189,
+   "0d0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8191, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8191, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8189,
+   "0d0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8192, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8192, then b'': python after",
+  "parts": [
+   "2321",
+   8190,
+   "707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8192, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8192, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8190,
+   "c3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8192, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8192, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8190,
+   "ff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8192, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8192, then b'abc': python after",
+  "parts": [
+   "2321",
+   8190,
+   "616263707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8192, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8192, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8190,
+   "e282ac707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8192, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8192, then b'': python after",
+  "parts": [
+   "2321",
+   8190,
+   "0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8192, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8192, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8190,
+   "0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8192, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8192, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8190,
+   "0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8192, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8192, then b'abc': python after",
+  "parts": [
+   "2321",
+   8190,
+   "0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8192, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8192, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8190,
+   "0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8192, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8192, then b'': python after",
+  "parts": [
+   "2321",
+   8190,
+   "0d707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8192, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8192, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8190,
+   "0dc3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8192, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8192, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8190,
+   "0dff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8192, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8192, then b'abc': python after",
+  "parts": [
+   "2321",
+   8190,
+   "0d616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8192, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8192, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8190,
+   "0de282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8192, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8192, then b'': python after",
+  "parts": [
+   "2321",
+   8190,
+   "0d0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8192, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8192, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8190,
+   "0d0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8192, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8192, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8190,
+   "0d0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8192, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8192, then b'abc': python after",
+  "parts": [
+   "2321",
+   8190,
+   "0d0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8192, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8184,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8192, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8190,
+   "0d0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8193, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8193, then b'': python after",
+  "parts": [
+   "2321",
+   8191,
+   "707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8193, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8193, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8191,
+   "c3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8193, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8193, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8191,
+   "ff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8193, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8193, then b'abc': python after",
+  "parts": [
+   "2321",
+   8191,
+   "616263707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8193, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8193, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8191,
+   "e282ac707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8193, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8193, then b'': python after",
+  "parts": [
+   "2321",
+   8191,
+   "0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8193, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8193, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8191,
+   "0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8193, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8193, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8191,
+   "0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8193, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8193, then b'abc': python after",
+  "parts": [
+   "2321",
+   8191,
+   "0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8193, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8193, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8191,
+   "0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8193, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8193, then b'': python after",
+  "parts": [
+   "2321",
+   8191,
+   "0d707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8193, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8193, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8191,
+   "0dc3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8193, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8193, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8191,
+   "0dff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8193, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8193, then b'abc': python after",
+  "parts": [
+   "2321",
+   8191,
+   "0d616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8193, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8193, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8191,
+   "0de282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8193, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8193, then b'': python after",
+  "parts": [
+   "2321",
+   8191,
+   "0d0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8193, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8193, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8191,
+   "0d0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8193, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8193, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8191,
+   "0d0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8193, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8193, then b'abc': python after",
+  "parts": [
+   "2321",
+   8191,
+   "0d0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8193, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8185,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8193, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8191,
+   "0d0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8194, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8194, then b'': python after",
+  "parts": [
+   "2321",
+   8192,
+   "707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8194, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8194, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8194, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8192,
+   "c3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8194, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8194, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8194, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8192,
+   "ff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8194, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8194, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8194, then b'abc': python after",
+  "parts": [
+   "2321",
+   8192,
+   "616263707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8194, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8194, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8194, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8192,
+   "e282ac707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8194, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8194, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8194, then b'': python after",
+  "parts": [
+   "2321",
+   8192,
+   "0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8194, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8194, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8194, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8192,
+   "0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8194, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8194, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8194, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8192,
+   "0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8194, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8194, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8194, then b'abc': python after",
+  "parts": [
+   "2321",
+   8192,
+   "0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8194, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8194, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8194, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8192,
+   "0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8194, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8194, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8194, then b'': python after",
+  "parts": [
+   "2321",
+   8192,
+   "0d707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8194, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8194, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8194, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8192,
+   "0dc3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8194, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8194, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8194, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8192,
+   "0dff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8194, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8194, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8194, then b'abc': python after",
+  "parts": [
+   "2321",
+   8192,
+   "0d616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8194, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8194, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8194, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8192,
+   "0de282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8194, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8194, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8194, then b'': python after",
+  "parts": [
+   "2321",
+   8192,
+   "0d0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8194, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8194, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8194, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8192,
+   "0d0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8194, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8194, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8194, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8192,
+   "0d0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8194, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8194, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8194, then b'abc': python after",
+  "parts": [
+   "2321",
+   8192,
+   "0d0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8194, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8194, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8186,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8194, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8192,
+   "0d0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8194, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   0,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8200, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8200, then b'': python after",
+  "parts": [
+   "2321",
+   8198,
+   "707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8200, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8200, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8200, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8200, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8198,
+   "c3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8200, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8200, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8200, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8200, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8198,
+   "ff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8200, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8200, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 8200, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8200, then b'abc': python after",
+  "parts": [
+   "2321",
+   8198,
+   "616263707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8200, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8200, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8200, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8200, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8198,
+   "e282ac707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8200, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 8200, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'': python after",
+  "parts": [
+   "2321",
+   8198,
+   "0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8198,
+   "0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8198,
+   "0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'abc': python after",
+  "parts": [
+   "2321",
+   8198,
+   "0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8198,
+   "0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 8200, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'': python after",
+  "parts": [
+   "2321",
+   8198,
+   "0d707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8198,
+   "0dc3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8198,
+   "0dff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'abc': python after",
+  "parts": [
+   "2321",
+   8198,
+   "0d616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8198,
+   "0de282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 8200, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'': python after",
+  "parts": [
+   "2321",
+   8198,
+   "0d0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   8198,
+   "0d0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   8198,
+   "0d0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'abc': python after",
+  "parts": [
+   "2321",
+   8198,
+   "0d0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   8192,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   8198,
+   "0d0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   5,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 8200, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   6,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16383, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16383, then b'': python after",
+  "parts": [
+   "2321",
+   16381,
+   "707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16383, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16383, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16383, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16383, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   16381,
+   "c3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16383, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16383, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16383, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16383, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   16381,
+   "ff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16383, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16383, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16383, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16383, then b'abc': python after",
+  "parts": [
+   "2321",
+   16381,
+   "616263707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16383, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16383, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16383, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16383, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   16381,
+   "e282ac707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16383, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16383, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'': python after",
+  "parts": [
+   "2321",
+   16381,
+   "0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   16381,
+   "0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "0aff"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   16381,
+   "0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "0aff"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "0aff"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'abc': python after",
+  "parts": [
+   "2321",
+   16381,
+   "0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   16381,
+   "0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16383, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'': python after",
+  "parts": [
+   "2321",
+   16381,
+   "0d707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   16381,
+   "0dc3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   16381,
+   "0dff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'abc': python after",
+  "parts": [
+   "2321",
+   16381,
+   "0d616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   16381,
+   "0de282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16383, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'': python after",
+  "parts": [
+   "2321",
+   16381,
+   "0d0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   16381,
+   "0d0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   16381,
+   "0d0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'abc': python after",
+  "parts": [
+   "2321",
+   16381,
+   "0d0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   16375,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   16381,
+   "0d0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8188,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16383, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8189,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16384, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16384, then b'': python after",
+  "parts": [
+   "2321",
+   16382,
+   "707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16384, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16384, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16384, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16384, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   16382,
+   "c3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16384, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16384, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16384, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16384, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   16382,
+   "ff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16384, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16384, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16384, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16384, then b'abc': python after",
+  "parts": [
+   "2321",
+   16382,
+   "616263707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16384, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16384, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16384, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16384, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   16382,
+   "e282ac707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16384, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16384, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'': python after",
+  "parts": [
+   "2321",
+   16382,
+   "0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   16382,
+   "0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   16382,
+   "0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'abc': python after",
+  "parts": [
+   "2321",
+   16382,
+   "0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   16382,
+   "0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16384, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'': python after",
+  "parts": [
+   "2321",
+   16382,
+   "0d707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   16382,
+   "0dc3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   16382,
+   "0dff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'abc': python after",
+  "parts": [
+   "2321",
+   16382,
+   "0d616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   16382,
+   "0de282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16384, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'': python after",
+  "parts": [
+   "2321",
+   16382,
+   "0d0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   16382,
+   "0d0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   16382,
+   "0d0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'abc': python after",
+  "parts": [
+   "2321",
+   16382,
+   "0d0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   16376,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   16382,
+   "0d0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8189,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16384, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8190,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16385, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16385, then b'': python after",
+  "parts": [
+   "2321",
+   16383,
+   "707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16385, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16385, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16385, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16385, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   16383,
+   "c3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16385, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16385, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16385, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16385, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   16383,
+   "ff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16385, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16385, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16385, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16385, then b'abc': python after",
+  "parts": [
+   "2321",
+   16383,
+   "616263707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16385, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16385, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16385, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16385, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   16383,
+   "e282ac707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16385, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16385, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'': python after",
+  "parts": [
+   "2321",
+   16383,
+   "0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   16383,
+   "0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   16383,
+   "0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'abc': python after",
+  "parts": [
+   "2321",
+   16383,
+   "0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   16383,
+   "0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16385, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'': python after",
+  "parts": [
+   "2321",
+   16383,
+   "0d707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   16383,
+   "0dc3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   16383,
+   "0dff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'abc': python after",
+  "parts": [
+   "2321",
+   16383,
+   "0d616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   16383,
+   "0de282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16385, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'': python after",
+  "parts": [
+   "2321",
+   16383,
+   "0d0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   16383,
+   "0d0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   16383,
+   "0d0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'abc': python after",
+  "parts": [
+   "2321",
+   16383,
+   "0d0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   16377,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   16383,
+   "0d0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8190,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16385, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8191,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16386, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16386, then b'': python after",
+  "parts": [
+   "2321",
+   16384,
+   "707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16386, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16386, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   ""
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16386, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16386, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   16384,
+   "c3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16386, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16386, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "c3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16386, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16386, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   16384,
+   "ff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16386, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16386, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "ff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'' at 16386, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16386, then b'abc': python after",
+  "parts": [
+   "2321",
+   16384,
+   "616263707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16386, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16386, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16386, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16386, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   16384,
+   "e282ac707974686f6e"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16386, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'' at 16386, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "e282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'': python after",
+  "parts": [
+   "2321",
+   16384,
+   "0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   16384,
+   "0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   16384,
+   "0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'abc': python after",
+  "parts": [
+   "2321",
+   16384,
+   "0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   16384,
+   "0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\n' at 16386, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'': python after",
+  "parts": [
+   "2321",
+   16384,
+   "0d707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "0d"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   16384,
+   "0dc3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "0dc3"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   16384,
+   "0dff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "0dff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'abc': python after",
+  "parts": [
+   "2321",
+   16384,
+   "0d616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "0d616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   16384,
+   "0de282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r' at 16386, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "0de282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'': python after",
+  "parts": [
+   "2321",
+   16384,
+   "0d0a707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "0d0a"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'\\xc3': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'\\xc3': python after",
+  "parts": [
+   "2321",
+   16384,
+   "0d0ac3707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'\\xc3': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'\\xc3': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "0d0ac3"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'\\xff': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'\\xff': python after",
+  "parts": [
+   "2321",
+   16384,
+   "0d0aff707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'\\xff': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'\\xff': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "0d0aff"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'abc': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'abc': python after",
+  "parts": [
+   "2321",
+   16384,
+   "0d0a616263707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'abc': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'abc': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "0d0a616263"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'\\xe2\\x82\\xac': python first",
+  "parts": [
+   "2321707974686f6e",
+   16378,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'\\xe2\\x82\\xac': python after",
+  "parts": [
+   "2321",
+   16384,
+   "0d0ae282ac707974686f6e"
+  ],
+  "radon": false
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'\\xe2\\x82\\xac': python split",
+  "parts": [
+   "2321",
+   8187,
+   "707974686f6e",
+   8191,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ },
+ {
+  "label": "term b'\\r\\n' at 16386, then b'\\xe2\\x82\\xac': euro split",
+  "parts": [
+   "2321707974686f6e",
+   8183,
+   "e282ac",
+   8192,
+   "0d0ae282ac"
+  ],
+  "radon": true
+ }
+]

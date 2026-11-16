@@ -1,0 +1,58 @@
+[package]
+name = "oxradon"
+version = "0.1.0"
+edition = "2024"
+# The oldest Rust the pinned Ruff parser crates accept; the tests pass on it.
+rust-version = "1.97"
+description = "A fast, drop-in Rust port of radon, the Python code metrics tool"
+license = "MIT"
+homepage = "https://oxradon.dev"
+repository = "https://github.com/jsquared-labs/oxradon"
+keywords = ["python", "complexity", "metrics", "radon", "cli"]
+categories = ["command-line-utilities", "development-tools"]
+# The crate ships the source and the tests with their recordings. The scripts
+# compare against a local radon install and are only useful from a checkout.
+exclude = ["/scripts/", "/clippy.toml", "/.gitignore", "/REVIEW-NOTE.md", "/site/", "/pyproject.toml", "/.github/"]
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+rayon = "1.12"
+regex = "1"
+# Ruff's parser crates are internal to Ruff and change API between releases,
+# so they are pinned exactly.
+ruff_python_ast = "=0.0.22"
+ruff_python_parser = "=0.0.22"
+ruff_source_file = "=0.0.22"
+ruff_text_size = "=0.0.22"
+# The tables Ruff's lexer decides identifiers with; oxradon's port of CPython's
+# lexer needs the same answer. Already in the tree through `ruff_python_parser`.
+unicode-ident = "1"
+
+# CPython ignores SIGXFSZ; oxradon does the same without unsafe code.
+[target.'cfg(unix)'.dependencies]
+signal-hook = "0.4.6"
+
+[dev-dependencies]
+serde_json = "1"
+
+# The PTY tests check colorama's exit-time reset on a real terminal.
+[target.'cfg(unix)'.dev-dependencies]
+nix = { version = "0.31.3", features = ["term"] }
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+# Getters returning values are self-evidently meant to be used.
+must_use_candidate = "allow"
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+
+# `cargo build --profile profiling`: release speed with symbols for samply.
+[profile.profiling]
+inherits = "release"
+debug = true

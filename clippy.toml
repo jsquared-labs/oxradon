@@ -1,0 +1,2 @@
+# Proper nouns that are not code, for clippy::doc_markdown.
+doc-valid-idents = ["CPython", "IPython", "PyPI", ".."]

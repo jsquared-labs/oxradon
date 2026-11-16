@@ -1,0 +1,20 @@
+tests/fixtures/mi/braces{{x}}.py - [32mA (100.00)[0m
+tests/fixtures/mi/docstrings.py - [32mA (88.10)[0m
+tests/fixtures/mi/empty_lines.py - [32mA (100.00)[0m
+tests/fixtures/mi/equal_a.py - [32mA (100.00)[0m
+tests/fixtures/mi/ff_in_string.py
+    [1m[31mERROR[0m: SyntaxError at line: 1
+tests/fixtures/mi/format_specs.py - [32mA (81.86)[0m
+tests/fixtures/mi/ls_parse_error.py
+    [1m[31mERROR[0m: invalid syntax (<unknown>, line 2)
+tests/fixtures/mi/ls_raw_error.py
+    [1m[31mERROR[0m: SyntaxError at line: 1
+tests/fixtures/mi/module_level.py - [32mA (41.71)[0m
+tests/fixtures/mi/one_name.py - [32mA (100.00)[0m
+tests/fixtures/mi/only_comments.py - [32mA (100.00)[0m
+tests/fixtures/mi/rank_b.py - [33mB (13.82)[0m
+tests/fixtures/mi/rank_c.py - [31mC (6.93)[0m
+tests/fixtures/mi/rank_zero.py - [31mC (0.00)[0m
+tests/fixtures/mi/raw_error{y}.py
+    [1m[31mERROR[0m: SyntaxError at line: 1
+tests/fixtures/mi/tabs.py - [32mA (65.07)[0m

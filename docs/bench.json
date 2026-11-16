@@ -1,0 +1,11 @@
+{
+  "machine": "Apple M5 (10 cores), warm file cache",
+  "corpus": "3,824 files from Django, SymPy, SQLAlchemy, Pydantic, Rich, Black, FastAPI and httpx",
+  "measured": "2026-11-15",
+  "rows": [
+    {"command": "cc", "radon_s": 6.89, "oxradon_s": 0.167, "speedup": 41},
+    {"command": "hal", "radon_s": 6.55, "oxradon_s": 0.259, "speedup": 25},
+    {"command": "raw", "radon_s": 139, "oxradon_s": 0.179, "speedup": 776},
+    {"command": "mi", "radon_s": 156, "oxradon_s": 0.326, "speedup": 478}
+  ]
+}

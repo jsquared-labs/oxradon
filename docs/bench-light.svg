@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" width="760" height="210" role="img" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+<title>Time to analyze 3,824 Python files: radon and oxradon</title>
+<text x="500" y="14" fill="#6B6257" text-anchor="end" font-size="13" font-weight="400">radon</text>
+<text x="600" y="14" fill="#C4501B" text-anchor="end" font-size="13" font-weight="400">oxradon</text>
+<text x="0" y="48" fill="#1F1B16" text-anchor="start" font-size="15" font-weight="600">cc</text>
+<rect x="56" y="34" width="14.6" height="18" rx="2" fill="#CFC7B8"/>
+<rect x="56" y="31" width="3" height="24" fill="#C4501B"/>
+<text x="500" y="48" fill="#6B6257" text-anchor="end" font-size="14" font-weight="400">6.9 s</text>
+<text x="600" y="48" fill="#C4501B" text-anchor="end" font-size="14" font-weight="400">0.17 s</text>
+<text x="760" y="50" fill="#C4501B" text-anchor="end" font-size="19" font-weight="700">41x faster</text>
+<text x="0" y="92" fill="#1F1B16" text-anchor="start" font-size="15" font-weight="600">hal</text>
+<rect x="56" y="78" width="13.9" height="18" rx="2" fill="#CFC7B8"/>
+<rect x="56" y="75" width="3" height="24" fill="#C4501B"/>
+<text x="500" y="92" fill="#6B6257" text-anchor="end" font-size="14" font-weight="400">6.5 s</text>
+<text x="600" y="92" fill="#C4501B" text-anchor="end" font-size="14" font-weight="400">0.26 s</text>
+<text x="760" y="94" fill="#C4501B" text-anchor="end" font-size="19" font-weight="700">25x faster</text>
+<text x="0" y="136" fill="#1F1B16" text-anchor="start" font-size="15" font-weight="600">raw</text>
+<rect x="56" y="122" width="294.0" height="18" rx="2" fill="#CFC7B8"/>
+<rect x="56" y="119" width="3" height="24" fill="#C4501B"/>
+<text x="500" y="136" fill="#6B6257" text-anchor="end" font-size="14" font-weight="400">2 min 19 s</text>
+<text x="600" y="136" fill="#C4501B" text-anchor="end" font-size="14" font-weight="400">0.18 s</text>
+<text x="760" y="138" fill="#C4501B" text-anchor="end" font-size="19" font-weight="700">776x faster</text>
+<text x="0" y="180" fill="#1F1B16" text-anchor="start" font-size="15" font-weight="600">mi</text>
+<rect x="56" y="166" width="330.0" height="18" rx="2" fill="#CFC7B8"/>
+<rect x="56" y="163" width="3" height="24" fill="#C4501B"/>
+<text x="500" y="180" fill="#6B6257" text-anchor="end" font-size="14" font-weight="400">2 min 36 s</text>
+<text x="600" y="180" fill="#C4501B" text-anchor="end" font-size="14" font-weight="400">0.33 s</text>
+<text x="760" y="182" fill="#C4501B" text-anchor="end" font-size="19" font-weight="700">478x faster</text>
+</svg>

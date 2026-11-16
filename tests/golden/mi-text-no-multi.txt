@@ -1,0 +1,84 @@
+tests/fixtures/bom.py
+    ERROR: invalid non-printable character U+FEFF (<unknown>, line 1)
+tests/fixtures/branches.py - A (38.73)
+tests/fixtures/crlf.py - A (100.00)
+tests/fixtures/empty.py - A (100.00)
+tests/fixtures/format_specs.py - A (57.63)
+tests/fixtures/future_braces.py
+    ERROR: not a chance (<unknown>, line 1)
+tests/fixtures/hal/async_defs.py - A (74.15)
+tests/fixtures/hal/aug.py - A (84.09)
+tests/fixtures/hal/big_effort.py - B (9.86)
+tests/fixtures/hal/bigint_float.py - A (96.52)
+tests/fixtures/hal/bigint_hex.py - A (96.52)
+tests/fixtures/hal/boolop.py - A (88.52)
+tests/fixtures/hal/bytes_str.py - A (95.12)
+tests/fixtures/hal/compare.py - A (91.06)
+tests/fixtures/hal/concat.py - A (96.52)
+tests/fixtures/hal/contexts.py - A (71.81)
+tests/fixtures/hal/cr.py - A (96.52)
+tests/fixtures/hal/crlf_bytes.py - A (96.52)
+tests/fixtures/hal/dup.py - A (71.56)
+tests/fixtures/hal/empty.py - A (100.00)
+tests/fixtures/hal/format_specs.py - A (57.63)
+tests/fixtures/hal/fspec.py - A (84.96)
+tests/fixtures/hal/fstr.py - A (95.12)
+tests/fixtures/hal/inf.py - A (92.31)
+tests/fixtures/hal/lambda_comp.py - A (78.29)
+tests/fixtures/hal/match.py - A (72.55)
+tests/fixtures/hal/name_str_collide.py - A (96.52)
+tests/fixtures/hal/nested.py - A (78.72)
+tests/fixtures/hal/no_operators.py - A (100.00)
+tests/fixtures/hal/num_eq.py - A (89.17)
+tests/fixtures/hal/skipped.py - A (74.55)
+tests/fixtures/hal/surrogate.py - A (91.86)
+tests/fixtures/hal/tabs.py - A (65.07)
+tests/fixtures/hal/typealias.py - A (74.80)
+tests/fixtures/hal/walrus_starred.py - A (82.22)
+tests/fixtures/mi/braces{{x}}.py - A (100.00)
+tests/fixtures/mi/docstrings.py - A (98.08)
+tests/fixtures/mi/empty_lines.py - A (100.00)
+tests/fixtures/mi/equal_a.py - A (100.00)
+tests/fixtures/mi/ff_in_string.py
+    ERROR: SyntaxError at line: 1
+tests/fixtures/mi/format_specs.py - A (57.63)
+tests/fixtures/mi/ls_parse_error.py
+    ERROR: invalid syntax (<unknown>, line 2)
+tests/fixtures/mi/ls_raw_error.py
+    ERROR: SyntaxError at line: 1
+tests/fixtures/mi/module_level.py - A (41.71)
+tests/fixtures/mi/one_name.py - A (100.00)
+tests/fixtures/mi/only_comments.py - A (100.00)
+tests/fixtures/mi/rank_b.py - B (13.82)
+tests/fixtures/mi/rank_c.py - C (6.93)
+tests/fixtures/mi/rank_zero.py - C (0.00)
+tests/fixtures/mi/raw_error{y}.py
+    ERROR: SyntaxError at line: 1
+tests/fixtures/mi/tabs.py - A (65.07)
+tests/fixtures/modern.py - A (65.20)
+tests/fixtures/newer_syntax.py
+    ERROR: iterable unpacking cannot be used in comprehension (<unknown>, line 2)
+tests/fixtures/nul_byte.py
+    ERROR: source code string cannot contain null bytes
+tests/fixtures/quirks.py - A (63.11)
+tests/fixtures/raw/cr.py - A (100.00)
+tests/fixtures/raw/docstrings.py - A (100.00)
+tests/fixtures/raw/errors.py
+    ERROR: invalid digit '2' in binary literal (<unknown>, line 1)
+tests/fixtures/raw/field_bracket.py
+    ERROR: f-string: unmatched ')' (<unknown>, line 4)
+tests/fixtures/raw/fstrings.py - A (100.00)
+tests/fixtures/raw/lines.py
+    ERROR: invalid syntax (<unknown>, line 1)
+tests/fixtures/raw/logical.py
+    ERROR: invalid syntax (<unknown>, line 11)
+tests/fixtures/raw/percent.py - A (100.00)
+tests/fixtures/raw/split_string.py
+    ERROR: SyntaxError at line: 2
+tests/fixtures/raw/unterminated.py
+    ERROR: unterminated triple-quoted string literal (detected at line 4) (<unknown>, line 3)
+tests/fixtures/strings.py - A (100.00)
+tests/fixtures/syntax_error.py
+    ERROR: invalid syntax (<unknown>, line 1)
+tests/fixtures/tabs.py - A (65.07)
+tests/fixtures/long_shebang - A (100.00)
