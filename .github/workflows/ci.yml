@@ -1,7 +1,10 @@
 name: CI
 
 on:
+  # Other branches are tested through their pull request, and release tags through release.yml,
+  # so nothing is tested twice.
   push:
+    branches: [main]
   pull_request:
   workflow_dispatch:
   # release.yml runs these tests on the release commit before it builds anything.
@@ -44,7 +47,7 @@ jobs:
       - run: cargo doc --no-deps
 
   # macOS minutes count ten times in a private repository, so there this job runs only when the
-  # workflow is started by hand. In a public repository it runs on every push. A release always
+  # workflow is started by hand. In a public repository it runs whenever CI does. A release always
   # runs it.
   test-macos:
     name: test (macos-latest)
