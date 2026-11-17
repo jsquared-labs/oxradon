@@ -1,10 +1,10 @@
 name: CI
 
 on:
-  # Other branches are tested through their pull request, so a PR branch is not tested twice.
+  # Other branches are tested through their pull request, and release tags through release.yml,
+  # so nothing is tested twice.
   push:
     branches: [main]
-    tags: ["v*"]
   pull_request:
   workflow_dispatch:
   # release.yml runs these tests on the release commit before it builds anything.
